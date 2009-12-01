@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>com.mosabuam.android.sdk-deployer</groupId>
+	<artifactId>android-platforms</artifactId>
+	<packaging>pom</packaging>
+    <name>Android Platforms</name>
+
+    <parent>
+        <groupId>com.mosabuam.android.sdk-deployer</groupId>
+        <artifactId>maven-android-sdk-deployer</artifactId>
+        <version>0.1-SNAPSHOT</version>
+    </parent>
+    
+    <modules>
+        <module>android-1.1</module>
+        <module>android-1.5</module>
+        <module>android-1.6</module>
+        <module>android-2.0</module>
+    </modules>
+</project>

@@ -1,0 +1,83 @@
+Maven Android SDK Deployer
+
+The Maven Android SDK Deployer is a helper maven project that can be used to install the libraries
+necessary to build Android applications with Maven and the Maven Android Plugin. These are mostly android.jar and
+maps.jar at the moment although the setup can be expanded easily.
+
+How to Use
+----------
+
+- download the Android SDK r3 from http://developer.android.com/sdk/index.html following the instructions there
+
+- edit the property sdk.path to contain the absolute folder you just installed the SDK to
+
+- run the command "mvn install" in the root folder of this project (same as README you are just reading)
+
+- as a result you should find the android.jar and maps.jar in various versions in your users local repository
+  (~/.m2/repository/android and ~/.m2/repository/com/google/android/maps) and you can therefore use the following
+  dependencies in your project
+
+  for the core platforms
+
+          <dependency>
+              <groupId>android</groupId>
+              <artifactId>android</artifactId>
+              <version>1.1</version>
+              <scope>provided</scope>
+          </dependency>
+
+          <dependency>
+              <groupId>android</groupId>
+              <artifactId>android</artifactId>
+              <version>1.5</version>
+              <scope>provided</scope>
+          </dependency>
+
+          <dependency>
+              <groupId>android</groupId>
+              <artifactId>android</artifactId>
+              <version>1.6</version>
+              <scope>provided</scope>
+          </dependency>
+
+          <dependency>
+              <groupId>android</groupId>
+              <artifactId>android</artifactId>
+              <version>2.0</version>
+              <scope>provided</scope>
+          </dependency>
+
+  for the maps add ons
+
+          <dependency>
+              <groupId>com.google.android.maps</groupId>
+              <artifactId>maps</artifactId>
+              <version>3-r03</version>
+              <scope>provided</scope>
+          </dependency>
+
+          <dependency>
+              <groupId>com.google.android.maps</groupId>
+              <artifactId>maps</artifactId>
+              <version>4-r01</version>
+              <scope>provided</scope>
+          </dependency>
+
+          <dependency>
+              <groupId>com.google.android.maps</groupId>
+              <artifactId>maps</artifactId>
+              <version>5-r01</version>
+              <scope>provided</scope>
+          </dependency>
+
+Potential todo items
+--------------------
+
+- add deploy plugin configuration to deploy to remote server (e.g. Nexus instance)
+
+- configure clean plugin calls to delete files in local repository, if deemed useful by users
+
+- add automatic download and install of SDK into .m2/repository somewhere, could then use dependency plugin to
+  pull into target and use from there, problem SDK license agreement 
+
+

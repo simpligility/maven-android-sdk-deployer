@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>com.mosabuam.android.sdk-deployer</groupId>
+	<artifactId>android-add-ons</artifactId>
+	<packaging>pom</packaging>
+    <name>Android Add-Ons</name>
+
+    <parent>
+        <groupId>com.mosabuam.android.sdk-deployer</groupId>
+	    <artifactId>maven-android-sdk-deployer</artifactId>
+	    <version>0.1-SNAPSHOT</version>
+    </parent>
+    
+    <modules>
+        <module>google-apis-3-r03</module>
+        <module>google-apis-4-r01</module>
+        <module>google-apis-5-r01</module>
+    </modules>
+</project>

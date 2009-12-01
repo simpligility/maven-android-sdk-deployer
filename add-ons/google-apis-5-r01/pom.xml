@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>com.mosabuam.android.sdk-deployer</groupId>
+	<artifactId>google-apis-5-r01</artifactId>
+	<packaging>pom</packaging>
+    <name>Android Add-On Google API 5 r01</name>
+
+    <parent>
+        <groupId>com.mosabuam.android.sdk-deployer</groupId>
+        <artifactId>android-add-ons</artifactId>
+        <version>0.1-SNAPSHOT</version>
+    </parent>
+
+    <build>
+        <plugins>
+            <plugin>
+                <artifactId>maven-install-plugin</artifactId>
+                <executions>
+                    <execution>
+                        <phase>install</phase>
+                        <goals><goal>install-file</goal></goals>
+                        <configuration>
+                            <groupId>${addon.googlemaps.groupid}</groupId>
+                            <artifactId>${addon.googlemaps.artifactid}</artifactId>
+                            <packaging>jar</packaging>
+                            <version>5-r01</version>
+                            <!-- careful, path has underscore as nice inconsistency --> 
+                            <file>${sdk.addons.path}/google_apis-5_r01/libs/maps.jar</file>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+        </plugins>
+    </build>
+</project>
