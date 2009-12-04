@@ -9,12 +9,13 @@
     <parent>
         <groupId>com.mosabuam.android.sdk-deployer</groupId>
 	    <artifactId>maven-android-sdk-deployer</artifactId>
-	    <version>0.1-SNAPSHOT</version>
+	    <version>0.2</version>
     </parent>
     
     <modules>
         <module>google-apis-3-r03</module>
         <module>google-apis-4-r01</module>
         <module>google-apis-5-r01</module>
+        <module>google-apis-6-r01</module>
     </modules>
 </project>

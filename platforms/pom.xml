@@ -3,13 +3,13 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.mosabuam.android.sdk-deployer</groupId>
 	<artifactId>android-platforms</artifactId>
-	<packaging>pom</packaging>
+    <packaging>pom</packaging>
     <name>Android Platforms</name>
 
     <parent>
         <groupId>com.mosabuam.android.sdk-deployer</groupId>
         <artifactId>maven-android-sdk-deployer</artifactId>
-        <version>0.1-SNAPSHOT</version>
+        <version>0.2</version>
     </parent>
     
     <modules>
@@ -17,5 +17,6 @@
         <module>android-1.5</module>
         <module>android-1.6</module>
         <module>android-2.0</module>
+        <module>android-2.0.1</module>
     </modules>
 </project>

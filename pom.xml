@@ -3,7 +3,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.mosabuam.android.sdk-deployer</groupId>
 	<artifactId>maven-android-sdk-deployer</artifactId>
-	<version>0.1-SNAPSHOT</version>
+	<version>0.2</version>
 	<packaging>pom</packaging>
     <name>Maven Android SDK Deployer</name>
     <description>The Maven Android SDK Deployer is a helper maven project that can be used to install the libraries
@@ -14,6 +14,12 @@
         <!-- absolute path to the Android SDK 2.0 install, edit here or override in settings.xml -->
         <sdk.path>/home/java/software/android-sdk-linux/</sdk.path>
 
+        <!-- The repository server for your android artifacts (e.g. Nexus instance in this example)-->
+        <repo.id>android.repo</repo.id>
+        <repo.url>http://localhost:9081/nexus/content/repositories/thirdparty</repo.url>
+        <!-- you need to provide username and password for the server in your settings.xml, see documentation
+            for the maven-deploy-plugin -->
+
         <!-- Following properties don't need to be changed   by user -->
         <sdk.platforms.path>${sdk.path}/platforms</sdk.platforms.path>
         <sdk.addons.path>${sdk.path}/add-ons</sdk.addons.path>
@@ -22,7 +28,15 @@
         <addon.googlemaps.groupid>com.google.android.maps</addon.googlemaps.groupid>
         <addon.googlemaps.artifactid>maps</addon.googlemaps.artifactid>
     </properties>
-    
+
+    <distributionManagement>
+        <repository>
+            <id>${repo.id}</id>
+            <name>Android Repository</name>
+            <url>${repo.url}</url>
+        </repository>
+    </distributionManagement>
+
     <modules>
         <module>platforms</module>
         <module>add-ons</module>

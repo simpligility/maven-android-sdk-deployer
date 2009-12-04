@@ -70,14 +70,46 @@ How to Use
               <scope>provided</scope>
           </dependency>
 
+
+How To Use for Deploying Onto Remote Server
+-------------------------------------------
+
+The above deployment works fine for one machine, but what if you need to supply a whole team of developers and a cluster
+of build machines with the artifacts. Well, you follow these steps:
+
+- as a condition you need to have a repository server used by all those machines and the following process will deploy to
+this server, which will in turn provide the artifacts to all the machines.
+
+- edit the repo.url property in the pom.xml to point to the repository you want to publish to and then add a server with
+the credentials to your settings.xml.
+
+E.g.
+<settings>
+    <servers>
+        <server>
+            <id>android.repo</id>
+            <username>your username</username>
+            <password>your password</password>
+        </server>
+    </servers>
+</settings>
+
+- run the command "mvn deploy" in the root folder of this project (same as README you are just reading)
+
+- as a result you should find the artifact in the repository of your remote server
+
+For more information about this stuff look at the documentation for the maven-deploy-plugin.
+
+
 Potential todo items
 --------------------
-
-- add deploy plugin configuration to deploy to remote server (e.g. Nexus instance)
 
 - configure clean plugin calls to delete files in local repository, if deemed useful by users
 
 - add automatic download and install of SDK into .m2/repository somewhere, could then use dependency plugin to
   pull into target and use from there, problem SDK license agreement 
 
+- add custom pom files for install/deploy that eg. define dependency from maps to android jar
+
+- maybe some sort of reporting of errors, failures and success as well
 

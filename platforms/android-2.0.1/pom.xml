@@ -2,9 +2,9 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.mosabuam.android.sdk-deployer</groupId>
-	<artifactId>android-1.6</artifactId>
+	<artifactId>android-2.0.1</artifactId>
 	<packaging>pom</packaging>
-    <name>Android Platform 1.6</name>
+    <name>Android Platform 2.0.1</name>
 
     <parent>
         <groupId>com.mosabuam.android.sdk-deployer</groupId>
@@ -13,9 +13,10 @@
     </parent>
 
     <properties>
-        <jar.path>${sdk.platforms.path}/android-1.5/android.jar</jar.path>
-        <jar.version>1.5</jar.version>
+        <jar.path>${sdk.platforms.path}/android-2.0.1/android.jar</jar.path>
+        <jar.version>2.0.1</jar.version>
     </properties>
+
 
     <build>
         <plugins>

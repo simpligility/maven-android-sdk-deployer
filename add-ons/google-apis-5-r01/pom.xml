@@ -9,8 +9,14 @@
     <parent>
         <groupId>com.mosabuam.android.sdk-deployer</groupId>
         <artifactId>android-add-ons</artifactId>
-        <version>0.1-SNAPSHOT</version>
+        <version>0.2</version>
     </parent>
+
+    <properties>
+        <!-- careful, path has underscore as nice inconsistency -->
+        <jar.path>${sdk.addons.path}/google_apis-5_r01/libs/maps.jar</jar.path>
+        <jar.version>5-r01</jar.version>
+    </properties>
 
     <build>
         <plugins>
@@ -24,9 +30,27 @@
                             <groupId>${addon.googlemaps.groupid}</groupId>
                             <artifactId>${addon.googlemaps.artifactid}</artifactId>
                             <packaging>jar</packaging>
-                            <version>5-r01</version>
-                            <!-- careful, path has underscore as nice inconsistency --> 
-                            <file>${sdk.addons.path}/google_apis-5_r01/libs/maps.jar</file>
+                            <version>${jar.version}</version>
+                            <file>${jar.path}</file>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+            <plugin>
+                <artifactId>maven-deploy-plugin</artifactId>
+                <executions>
+                    <execution>
+                        <id>a</id>
+                        <phase>deploy</phase>
+                        <goals><goal>deploy-file</goal></goals>
+                        <configuration>
+                            <groupId>${platform.android.groupid}</groupId>
+                            <artifactId>${platform.android.artifactid}</artifactId>
+                            <packaging>jar</packaging>
+                            <version>${jar.version}</version>
+                            <file>${jar.path}</file>
+                            <url>${repo.url}</url>
+                            <repositoryId>${repo.id}</repositoryId>
                         </configuration>
                     </execution>
                 </executions>

@@ -2,19 +2,20 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.mosabuam.android.sdk-deployer</groupId>
-	<artifactId>android-1.6</artifactId>
+	<artifactId>google-apis-6-r01</artifactId>
 	<packaging>pom</packaging>
-    <name>Android Platform 1.6</name>
+    <name>Android Add-On Google API 6 r01</name>
 
     <parent>
         <groupId>com.mosabuam.android.sdk-deployer</groupId>
-        <artifactId>android-platforms</artifactId>
+        <artifactId>android-add-ons</artifactId>
         <version>0.2</version>
     </parent>
 
     <properties>
-        <jar.path>${sdk.platforms.path}/android-1.5/android.jar</jar.path>
-        <jar.version>1.5</jar.version>
+        <!-- careful, path has underscore as nice inconsistency -->
+        <jar.path>${sdk.addons.path}/google_apis-6_r01/libs/maps.jar</jar.path>
+        <jar.version>6-r01</jar.version>
     </properties>
 
     <build>
@@ -26,8 +27,8 @@
                         <phase>install</phase>
                         <goals><goal>install-file</goal></goals>
                         <configuration>
-                            <groupId>${platform.android.groupid}</groupId>
-                            <artifactId>${platform.android.artifactid}</artifactId>
+                            <groupId>${addon.googlemaps.groupid}</groupId>
+                            <artifactId>${addon.googlemaps.artifactid}</artifactId>
                             <packaging>jar</packaging>
                             <version>${jar.version}</version>
                             <file>${jar.path}</file>

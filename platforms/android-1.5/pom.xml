@@ -9,8 +9,13 @@
     <parent>
         <groupId>com.mosabuam.android.sdk-deployer</groupId>
         <artifactId>android-platforms</artifactId>
-        <version>0.1-SNAPSHOT</version>
+        <version>0.2</version>
     </parent>
+
+    <properties>
+        <jar.path>${sdk.platforms.path}/android-1.5/android.jar</jar.path>
+        <jar.version>1.5</jar.version>
+    </properties>
 
     <build>
         <plugins>
@@ -24,8 +29,27 @@
                             <groupId>${platform.android.groupid}</groupId>
                             <artifactId>${platform.android.artifactid}</artifactId>
                             <packaging>jar</packaging>
-                            <version>1.5</version>
-                            <file>${sdk.platforms.path}/android-1.5/android.jar</file>
+                            <version>${jar.version}</version>
+                            <file>${jar.path}</file>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+            <plugin>
+                <artifactId>maven-deploy-plugin</artifactId>
+                <executions>
+                    <execution>
+                        <id>a</id>
+                        <phase>deploy</phase>
+                        <goals><goal>deploy-file</goal></goals>
+                        <configuration>
+                            <groupId>${platform.android.groupid}</groupId>
+                            <artifactId>${platform.android.artifactid}</artifactId>
+                            <packaging>jar</packaging>
+                            <version>${jar.version}</version>
+                            <file>${jar.path}</file>
+                            <url>${repo.url}</url>
+                            <repositoryId>${repo.id}</repositoryId>
                         </configuration>
                     </execution>
                 </executions>
