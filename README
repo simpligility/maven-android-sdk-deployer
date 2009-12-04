@@ -9,7 +9,7 @@ How to Use
 
 - download the Android SDK r4 from http://developer.android.com/sdk/index.html following the instructions there
 
-- edit the property sdk.path to contain the absolute folder you just installed the SDK to
+- edit the property android.sdk.path to contain the absolute folder you just installed the SDK to
 
 - run the command "mvn install" in the root folder of this project (same as README you are just reading)
 
