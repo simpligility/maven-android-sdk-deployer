@@ -7,7 +7,7 @@ maps.jar at the moment although the setup can be expanded easily.
 How to Use
 ----------
 
-- download the Android SDK r3 from http://developer.android.com/sdk/index.html following the instructions there
+- download the Android SDK r4 from http://developer.android.com/sdk/index.html following the instructions there
 
 - edit the property sdk.path to contain the absolute folder you just installed the SDK to
 
