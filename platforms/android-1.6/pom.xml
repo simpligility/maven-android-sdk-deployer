@@ -13,8 +13,8 @@
     </parent>
 
     <properties>
-        <jar.path>${sdk.platforms.path}/android-1.5/android.jar</jar.path>
-        <jar.version>1.5</jar.version>
+        <jar.path>${sdk.platforms.path}/android-1.6/android.jar</jar.path>
+        <jar.version>1.6</jar.version>
     </properties>
 
     <build>
