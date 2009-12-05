@@ -13,8 +13,7 @@
     </parent>
 
     <properties>
-        <jar.path>${sdk.platforms.path}/android-2.0.1/android.jar</jar.path>
-        <jar.version>2.0.1</jar.version>
+        <jar.simpleVersion>2.0.1</jar.simpleVersion>
     </properties>
 
 
@@ -54,6 +53,10 @@
                         </configuration>
                     </execution>
                 </executions>
+            </plugin>
+            <plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>properties-maven-plugin</artifactId>
             </plugin>
         </plugins>
     </build>

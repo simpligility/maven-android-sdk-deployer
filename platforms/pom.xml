@@ -11,6 +11,12 @@
         <artifactId>maven-android-sdk-deployer</artifactId>
         <version>0.3-SNAPSHOT</version>
     </parent>
+
+    <properties>
+        <jar.directory>${sdk.platforms.path}/android-${jar.simpleVersion}</jar.directory>
+        <jar.path>${jar.directory}/android.jar</jar.path>
+        <jar.version>${jar.simpleVersion}_r${Pkg.Revision}</jar.version>
+    </properties>
     
     <modules>
         <module>android-1.1</module>
