@@ -13,9 +13,9 @@
     </parent>
 
     <properties>
+        <jar.simpleVersion>6</jar.simpleVersion>
         <!-- careful, path has underscore as nice inconsistency -->
-        <jar.path>${sdk.addons.path}/google_apis-6_r01/libs/maps.jar</jar.path>
-        <jar.version>6-r01</jar.version>
+        <addon.directory>google_apis-6_r01</addon.directory>
     </properties>
 
     <build>
@@ -44,8 +44,8 @@
                         <phase>deploy</phase>
                         <goals><goal>deploy-file</goal></goals>
                         <configuration>
-                            <groupId>${platform.android.groupid}</groupId>
-                            <artifactId>${platform.android.artifactid}</artifactId>
+                            <groupId>${addon.googlemaps.groupid}</groupId>
+                            <artifactId>${addon.googlemaps.artifactid}</artifactId>
                             <packaging>jar</packaging>
                             <version>${jar.version}</version>
                             <file>${jar.path}</file>
@@ -54,6 +54,10 @@
                         </configuration>
                     </execution>
                 </executions>
+            </plugin>
+            <plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>properties-maven-plugin</artifactId>
             </plugin>
         </plugins>
     </build>

@@ -22,28 +22,35 @@ How to Use
           <dependency>
               <groupId>android</groupId>
               <artifactId>android</artifactId>
-              <version>1.1</version>
+              <version>1.1_r1</version>
               <scope>provided</scope>
           </dependency>
 
           <dependency>
               <groupId>android</groupId>
               <artifactId>android</artifactId>
-              <version>1.5</version>
+              <version>1.5_r3</version>
               <scope>provided</scope>
           </dependency>
 
           <dependency>
               <groupId>android</groupId>
               <artifactId>android</artifactId>
-              <version>1.6</version>
+              <version>1.6_r2</version>
               <scope>provided</scope>
           </dependency>
 
           <dependency>
               <groupId>android</groupId>
               <artifactId>android</artifactId>
-              <version>2.0</version>
+              <version>2.0_r1</version>
+              <scope>provided</scope>
+          </dependency>
+
+          <dependency>
+              <groupId>android</groupId>
+              <artifactId>android</artifactId>
+              <version>2.0.1_r1</version>
               <scope>provided</scope>
           </dependency>
 
@@ -52,24 +59,30 @@ How to Use
           <dependency>
               <groupId>com.google.android.maps</groupId>
               <artifactId>maps</artifactId>
-              <version>3-r03</version>
+              <version>3_r3</version>
               <scope>provided</scope>
           </dependency>
 
           <dependency>
               <groupId>com.google.android.maps</groupId>
               <artifactId>maps</artifactId>
-              <version>4-r01</version>
+              <version>4_r1</version>
               <scope>provided</scope>
           </dependency>
 
           <dependency>
               <groupId>com.google.android.maps</groupId>
               <artifactId>maps</artifactId>
-              <version>5-r01</version>
+              <version>5_r1</version>
               <scope>provided</scope>
           </dependency>
 
+          <dependency>
+              <groupId>com.google.android.maps</groupId>
+              <artifactId>maps</artifactId>
+              <version>6_r1</version>
+              <scope>provided</scope>
+          </dependency>
 
 How To Use for Deploying Onto Remote Server
 -------------------------------------------
@@ -103,8 +116,6 @@ For more information about this stuff look at the documentation for the maven-de
 
 Potential todo items
 --------------------
-
-- configure clean plugin calls to delete files in local repository, if deemed useful by users
 
 - add automatic download and install of SDK into .m2/repository somewhere, could then use dependency plugin to
   pull into target and use from there, problem SDK license agreement 

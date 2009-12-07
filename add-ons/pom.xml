@@ -11,6 +11,36 @@
 	    <artifactId>maven-android-sdk-deployer</artifactId>
 	    <version>0.3</version>
     </parent>
+
+    <properties>
+        <jar.path>${sdk.addons.path}/${addon.directory}/libs/maps.jar</jar.path>
+        <jar.version>${jar.simpleVersion}_r${Pkg.Revision}</jar.version>
+    </properties>
+
+    <build>
+        <pluginManagement>
+            <plugins>
+                <plugin>
+                    <groupId>org.codehaus.mojo</groupId>
+                    <artifactId>properties-maven-plugin</artifactId>
+                    <version>1.0-alpha-2</version>
+                    <executions>
+                        <execution>
+                            <phase>initialize</phase>
+                            <goals>
+                                <goal>read-project-properties</goal>
+                            </goals>
+                            <configuration>
+                                <files>
+                                    <file>${sdk.addons.path}/${addon.directory}/source.properties</file>
+                                </files>
+                            </configuration>
+                        </execution>
+                    </executions>
+                </plugin>
+            </plugins>
+        </pluginManagement>
+    </build>
     
     <modules>
         <module>google-apis-3-r03</module>
