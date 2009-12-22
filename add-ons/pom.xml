@@ -9,7 +9,7 @@
     <parent>
         <groupId>com.mosabuam.android.sdk-deployer</groupId>
 	    <artifactId>maven-android-sdk-deployer</artifactId>
-	    <version>0.3</version>
+	    <version>0.4</version>
     </parent>
 
     <properties>
@@ -43,9 +43,9 @@
     </build>
     
     <modules>
-        <module>google-apis-3-r03</module>
-        <module>google-apis-4-r01</module>
-        <module>google-apis-5-r01</module>
-        <module>google-apis-6-r01</module>
+        <module>google-apis-3</module>
+        <module>google-apis-4</module>
+        <module>google-apis-5</module>
+        <module>google-apis-6</module>
     </modules>
 </project>

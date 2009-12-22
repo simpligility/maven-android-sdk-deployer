@@ -1,0 +1,20 @@
+Changelog per release
+---------------------
+
+
+0.4
+
+- maps v4r2 change, small cleanup of folder names, added license and changelog
+
+0.3
+
+- sdk 2.0.1 changes and cleanup
+
+0.2
+
+- got deploy working to get into remote repos, documentation additions and more
+
+0.1
+
+- initial setup working for install
+

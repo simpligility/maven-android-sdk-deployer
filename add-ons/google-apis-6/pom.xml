@@ -2,19 +2,20 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.mosabuam.android.sdk-deployer</groupId>
-	<artifactId>google-apis-4-r01</artifactId>
+	<artifactId>google-apis-6</artifactId>
 	<packaging>pom</packaging>
-    <name>Android Add-On Google API 4 r01</name>
+    <name>Android Add-On Google API 6</name>
 
     <parent>
         <groupId>com.mosabuam.android.sdk-deployer</groupId>
         <artifactId>android-add-ons</artifactId>
-        <version>0.3</version>
+        <version>0.4</version>
     </parent>
 
     <properties>
-        <jar.simpleVersion>4</jar.simpleVersion>
-        <addon.directory>google_apis-4-r01</addon.directory>
+        <jar.simpleVersion>6</jar.simpleVersion>
+        <!-- careful, path has underscore as nice inconsistency -->
+        <addon.directory>google_apis-6_r01</addon.directory>
     </properties>
 
     <build>
