@@ -1,4 +1,7 @@
 Maven Android SDK Deployer
+--------------------------
+
+Author: Manfred Moser manfred@simpligility.com http://www.simpligility.com
 
 The Maven Android SDK Deployer is a helper maven project that can be used to install the libraries
 necessary to build Android applications with Maven and the Maven Android Plugin. These are mostly android.jar and
@@ -7,11 +10,22 @@ maps.jar at the moment although the setup can be expanded easily.
 How to Use
 ----------
 
-- download the Android SDK r4 from http://developer.android.com/sdk/index.html following the instructions there
+- download the latest Android SDK from http://developer.android.com/sdk/index.html following the instructions there,
+for the default usage of the deployer install all platforms and add-on apis
 
-- edit the property android.sdk.path to contain the absolute folder you just installed the SDK to
+- set up the environment variable ANDROID_HOME to contain the absolute folder you just installed the SDK to
+ (e.g. under bash: export ANDROID_HOME=/opt/android_sdk_linux)
 
-- run the command "mvn install" in the root folder of this project (same as README you are just reading)
+- run the command "mvn install" in the root folder of this project (same as README you are just reading) to install all
+ platforms and add-on apis
+
+- to install only a certain sdk level use
+
+mvn install -P 1.1
+mvn install -P 1.5
+mvn install -P 1.6
+mvn install -P 2.0
+mvn install -P 2.1
 
 - as a result you should find the android.jar and maps.jar in various versions in your users local repository
   (~/.m2/repository/android and ~/.m2/repository/com/google/android/maps) and you can therefore use the following
@@ -54,6 +68,13 @@ How to Use
               <scope>provided</scope>
           </dependency>
 
+          <dependency>
+              <groupId>android</groupId>
+              <artifactId>android</artifactId>
+              <version>2.1_r1</version>
+              <scope>provided</scope>
+          </dependency>
+
   for the maps add ons
 
           <dependency>
@@ -84,6 +105,13 @@ How to Use
               <scope>provided</scope>
           </dependency>
 
+          <dependency>
+              <groupId>com.google.android.maps</groupId>
+              <artifactId>maps</artifactId>
+              <version>7_r1</version>
+              <scope>provided</scope>
+          </dependency>
+
 How To Use for Deploying Onto Remote Server
 -------------------------------------------
 
@@ -107,20 +135,20 @@ E.g.
     </servers>
 </settings>
 
-- run the command "mvn deploy" in the root folder of this project (same as README you are just reading)
+- run the command "mvn deploy" in the root folder of this project (same as README you are just reading), you can also
+ use the same profile options for the different api levels 
 
 - as a result you should find the artifact in the repository of your remote server
 
 For more information about this stuff look at the documentation for the maven-deploy-plugin.
 
-
-Know problems
+Known problems
 -------------
 
 When updating an existing android sdk install the add-ons subfolder can sometimes be reused
 and their contents be updates so you could end up with e.g. the google maps-4r2 in a folder
 named google_apis-4_r01. To work around this just uninstall the affected add-on and reinstall
- it with the android sdk tool. 
+it with the android sdk tool.
 
 Potential todo items
 --------------------
@@ -132,3 +160,7 @@ Potential todo items
 
 - maybe some sort of reporting of errors, failures and success as well
 
+Contributors
+------------
+
+Hugo Josefson <hugo@josefson.org> - properties plugin usage

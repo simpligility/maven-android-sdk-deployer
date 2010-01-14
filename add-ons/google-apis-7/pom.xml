@@ -2,18 +2,20 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.simpligility.android.sdk-deployer</groupId>
-	<artifactId>android-1.1</artifactId>
+	<artifactId>google-apis-7</artifactId>
 	<packaging>pom</packaging>
-    <name>Android Platform 1.1</name>
+    <name>Android Add-On Google API 7</name>
 
     <parent>
         <groupId>com.simpligility.android.sdk-deployer</groupId>
-        <artifactId>android-platforms</artifactId>
+        <artifactId>android-add-ons</artifactId>
         <version>0.5</version>
     </parent>
 
     <properties>
-        <jar.simpleVersion>1.1</jar.simpleVersion>
+        <jar.simpleVersion>7</jar.simpleVersion>
+        <!-- careful, path has underscore as nice inconsistency -->
+        <addon.directory>google_apis-7_r01</addon.directory>
     </properties>
 
     <build>
@@ -25,8 +27,8 @@
                         <phase>install</phase>
                         <goals><goal>install-file</goal></goals>
                         <configuration>
-                            <groupId>${platform.android.groupid}</groupId>
-                            <artifactId>${platform.android.artifactid}</artifactId>
+                            <groupId>${addon.googlemaps.groupid}</groupId>
+                            <artifactId>${addon.googlemaps.artifactid}</artifactId>
                             <packaging>jar</packaging>
                             <version>${jar.version}</version>
                             <file>${jar.path}</file>
@@ -42,8 +44,8 @@
                         <phase>deploy</phase>
                         <goals><goal>deploy-file</goal></goals>
                         <configuration>
-                            <groupId>${platform.android.groupid}</groupId>
-                            <artifactId>${platform.android.artifactid}</artifactId>
+                            <groupId>${addon.googlemaps.groupid}</groupId>
+                            <artifactId>${addon.googlemaps.artifactid}</artifactId>
                             <packaging>jar</packaging>
                             <version>${jar.version}</version>
                             <file>${jar.path}</file>

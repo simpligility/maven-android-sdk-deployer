@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 	<modelVersion>4.0.0</modelVersion>
-	<groupId>com.mosabuam.android.sdk-deployer</groupId>
+	<groupId>com.simpligility.android.sdk-deployer</groupId>
 	<artifactId>maven-android-sdk-deployer</artifactId>
-	<version>0.4</version>
+	<version>0.5</version>
 	<packaging>pom</packaging>
     <name>Maven Android SDK Deployer</name>
     <description>The Maven Android SDK Deployer is a helper maven project that can be used to install the libraries
@@ -11,8 +11,8 @@
     maps.jar at the moment although the setup can be expanded easily.</description>
 
     <properties>
-        <!-- absolute path to the Android SDK 2.0 install, edit here or override in settings.xml -->
-        <android.sdk.path>/home/java/software/android-sdk-linux/</android.sdk.path>
+        <!-- absolute path to the Android SDK 2.0 install as defined in the ANDROID_HOME environment variable -->
+        <android.sdk.path>${env.ANDROID_HOME}/</android.sdk.path>
 
         <!-- The repository server for your android artifacts (e.g. Nexus instance in this example)-->
         <repo.id>android.repo</repo.id>

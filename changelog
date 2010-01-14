@@ -2,6 +2,13 @@ Changelog per release
 ---------------------
 
 
+0.5
+
+- changed package to com.simpligility
+- added support for platform 2.1 and addons 7
+- added profiles for separate install of sdk levels 1.1, 1.5, 1.6, 2.0 and 2.1
+- updated documentation accordingly
+
 0.4
 
 - maps v4r2 change, small cleanup of folder names, added license and changelog
