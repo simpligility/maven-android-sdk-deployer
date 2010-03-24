@@ -2,6 +2,17 @@ Changelog per release
 ---------------------
 
 
+0.6
+
+- upgraded naming for platforms to new naming convention with latest sdk release (r5) and changes that happened recently
+  with the naming (as of 2010-03-23) so that platform folder are now named android-7, where e.g. 7 is the API level 7
+  that equals 2.1
+- removed support for platform 1.1, since it marked as obsolete now
+- removed support for platform 2.0, since it is replaced by 2.0.1 and also marked obsolete, therefore there is no
+  google addon api level 5 anymore either...
+- removed profile for 1.1
+- updated documentation accordingly
+
 0.5
 
 - changed package to com.simpligility

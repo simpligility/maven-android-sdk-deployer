@@ -2,20 +2,19 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.simpligility.android.sdk-deployer</groupId>
-	<artifactId>android-2.0</artifactId>
+	<artifactId>android-4</artifactId>
 	<packaging>pom</packaging>
-    <name>Android Platform 2.0</name>
+    <name>Android Platform 1.6</name>
 
     <parent>
         <groupId>com.simpligility.android.sdk-deployer</groupId>
         <artifactId>android-platforms</artifactId>
-        <version>0.5</version>
+        <version>0.6</version>
     </parent>
 
     <properties>
-        <jar.simpleVersion>2.0</jar.simpleVersion>
+        <jar.simpleVersion>1.6</jar.simpleVersion>
     </properties>
-
 
     <build>
         <plugins>

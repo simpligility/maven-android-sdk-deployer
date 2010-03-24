@@ -9,13 +9,13 @@
     <parent>
         <groupId>com.simpligility.android.sdk-deployer</groupId>
         <artifactId>maven-android-sdk-deployer</artifactId>
-        <version>0.5</version>
+        <version>0.6</version>
     </parent>
 
     <properties>
-        <jar.directory>${sdk.platforms.path}/android-${jar.simpleVersion}</jar.directory>
+        <jar.directory>${sdk.platforms.path}/${project.artifactId}</jar.directory>
         <jar.path>${jar.directory}/android.jar</jar.path>
-        <jar.version>${jar.simpleVersion}_r${Pkg.Revision}</jar.version>
+        <jar.version>${Platform.Version}_r${Pkg.Revision}</jar.version>
     </properties>
 
     <build>
@@ -50,43 +50,34 @@
                 <activeByDefault>true</activeByDefault>
             </activation>
             <modules>
-                <module>android-1.1</module>
-                <module>android-1.5</module>
-                <module>android-1.6</module>
-                <module>android-2.0</module>
-                <module>android-2.0.1</module>
-                <module>android-2.1</module>
-            </modules>
-        </profile>
-        <profile>
-            <id>1.1</id>
-            <modules>
-                <module>android-1.1</module>
+                <module>android-3</module>
+                <module>android-4</module>
+                <module>android-6</module>
+                <module>android-7</module>
             </modules>
         </profile>
         <profile>
             <id>1.5</id>
             <modules>
-                <module>android-1.5</module>
+                <module>android-3</module>
             </modules>
         </profile>
         <profile>
             <id>1.6</id>
             <modules>
-                <module>android-1.6</module>
+                <module>android-4</module>
             </modules>
         </profile>
         <profile>
-            <id>2.0</id>
+            <id>2.0.1</id>
             <modules>
-                <module>android-2.0</module>
-                <module>android-2.0.1</module>
+                <module>android-6</module>
             </modules>
         </profile>
         <profile>
             <id>2.1</id>
             <modules>
-                <module>android-2.1</module>
+                <module>android-7</module>
             </modules>
         </profile>
     </profiles>

@@ -3,6 +3,7 @@ target
 *.iws
 *.ipr
 *.iml
+.idea
 .classpath
 .project
 .settings

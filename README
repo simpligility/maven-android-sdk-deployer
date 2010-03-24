@@ -21,10 +21,9 @@ for the default usage of the deployer install all platforms and add-on apis
 
 - to install only a certain sdk level use
 
-mvn install -P 1.1
 mvn install -P 1.5
 mvn install -P 1.6
-mvn install -P 2.0
+mvn install -P 2.0.1
 mvn install -P 2.1
 
 - as a result you should find the android.jar and maps.jar in various versions in your users local repository
@@ -32,13 +31,6 @@ mvn install -P 2.1
   dependencies in your project
 
   for the core platforms
-
-          <dependency>
-              <groupId>android</groupId>
-              <artifactId>android</artifactId>
-              <version>1.1_r1</version>
-              <scope>provided</scope>
-          </dependency>
 
           <dependency>
               <groupId>android</groupId>
@@ -51,13 +43,6 @@ mvn install -P 2.1
               <groupId>android</groupId>
               <artifactId>android</artifactId>
               <version>1.6_r2</version>
-              <scope>provided</scope>
-          </dependency>
-
-          <dependency>
-              <groupId>android</groupId>
-              <artifactId>android</artifactId>
-              <version>2.0_r1</version>
               <scope>provided</scope>
           </dependency>
 
@@ -88,13 +73,6 @@ mvn install -P 2.1
               <groupId>com.google.android.maps</groupId>
               <artifactId>maps</artifactId>
               <version>4_r2</version>
-              <scope>provided</scope>
-          </dependency>
-
-          <dependency>
-              <groupId>com.google.android.maps</groupId>
-              <artifactId>maps</artifactId>
-              <version>5_r1</version>
               <scope>provided</scope>
           </dependency>
 
