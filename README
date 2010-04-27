@@ -15,6 +15,8 @@ for the default usage of the deployer install all platforms and add-on apis
 
 - set up the environment variable ANDROID_HOME to contain the absolute folder you just installed the SDK to
  (e.g. under bash: export ANDROID_HOME=/opt/android_sdk_linux)
+ 
+ - ensure that the folder for ANDROID _HOME and all files within are readable by the current user
 
 - run the command "mvn install" in the root folder of this project (same as README you are just reading) to install all
  platforms and add-on apis
