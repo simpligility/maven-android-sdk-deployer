@@ -3,7 +3,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.simpligility.android.sdk-deployer</groupId>
 	<artifactId>maven-android-sdk-deployer</artifactId>
-	<version>0.6</version>
+	<version>0.7</version>
 	<packaging>pom</packaging>
     <name>Maven Android SDK Deployer</name>
     <description>The Maven Android SDK Deployer is a helper maven project that can be used to install the libraries
@@ -29,6 +29,17 @@
         <addon.googlemaps.artifactid>maps</addon.googlemaps.artifactid>
     </properties>
 
+    <issueManagement>
+    	<system>Github </system>
+    	<url>http://github.com/mosabua/maven-android-sdk-deployer/issues</url>
+    </issueManagement>
+    <mailingLists>
+        <mailingList>
+            <name>Maven Android Developers</name>
+            <post>http://groups.google.com/group/maven-android-developers/post</post>
+            <subscribe>http://groups.google.com/group/maven-android-developers</subscribe>
+        </mailingList>
+    </mailingLists>
     <distributionManagement>
         <repository>
             <id>${repo.id}</id>

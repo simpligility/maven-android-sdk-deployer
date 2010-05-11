@@ -1,6 +1,11 @@
 Changelog per release
 ---------------------
 
+0.7
+
+- changed readme to markdown
+- added mailinglist and issue tracker details to readme and pom
+- documented solution for recurring issue with old platform folder names
 
 0.6
 

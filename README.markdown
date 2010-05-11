@@ -11,7 +11,9 @@ How to Use
 ----------
 
 - download the latest Android SDK from http://developer.android.com/sdk/index.html following the instructions there,
-for the default usage of the deployer install all platforms and add-on apis
+for the default usage of the deployer install all platforms and add-on apis, ensure that all folder in the platforms
+folder have names like android-3, android-4 and so on. If you find names using the platform version (e.g. 15) in the folder
+ name reinstall that platform from the android tool
 
 - set up the environment variable ANDROID_HOME to contain the absolute folder you just installed the SDK to
  (e.g. under bash: export ANDROID_HOME=/opt/android_sdk_linux)
@@ -122,13 +124,31 @@ E.g.
 
 For more information about this stuff look at the documentation for the maven-deploy-plugin.
 
+Mailinglist - Questions
+-----------------------
+
+Please direct any questions to the commubnity at the Maven Android Developers mailinglist at
+http://groups.google.com/group/maven-android-developers
+ 
 Known problems
 -------------
+
+- Platforms and Add on folder names changes in SDK
 
 When updating an existing android sdk install the add-ons subfolder can sometimes be reused
 and their contents be updates so you could end up with e.g. the google maps-4r2 in a folder
 named google_apis-4_r01. To work around this just uninstall the affected add-on and reinstall
 it with the android sdk tool.
+
+Similarly the platform specific folder used to be e.g. android-1.5 and is now android-3 using the api level as the numeric
+identifier. If your SDK install uses the old folder names for any platform simply reinstall that platform with the android
+tool.
+
+Issues
+------
+
+If you find any problems or would like to suggest a feature,  please feel free to file an issue on github at
+http://github.com/mosabua/maven-android-sdk-deployer/issues
 
 Potential todo items
 --------------------
@@ -139,6 +159,8 @@ Potential todo items
 - add custom pom files for install/deploy that eg. define dependency from maps to android jar
 
 - maybe some sort of reporting of errors, failures and success as well
+
+- maybe even somehow create source jar files and get them uploaded as well
 
 Contributors
 ------------
