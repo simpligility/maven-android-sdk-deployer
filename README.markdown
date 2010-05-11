@@ -1,7 +1,7 @@
 Maven Android SDK Deployer
 --------------------------
 
-Author: Manfred Moser manfred@simpligility.com http://www.simpligility.com
+Author: Manfred Moser <manfred@simpligility.com> [http://www.simpligility.com]
 
 The Maven Android SDK Deployer is a helper maven project that can be used to install the libraries
 necessary to build Android applications with Maven and the Maven Android Plugin. These are mostly android.jar and
@@ -20,15 +20,19 @@ folder have names like android-3, android-4 and so on. If you find names using t
  
  - ensure that the folder for ANDROID _HOME and all files within are readable by the current user
 
-- run the command "mvn install" in the root folder of this project (same as README you are just reading) to install all
+- run the command
+
+    mvn install
+
+ in the root folder of this project (same as README you are just reading) to install all
  platforms and add-on apis
 
 - to install only a certain sdk level use
 
-mvn install -P 1.5
-mvn install -P 1.6
-mvn install -P 2.0.1
-mvn install -P 2.1
+    mvn install -P 1.5
+    mvn install -P 1.6
+    mvn install -P 2.0.1
+    mvn install -P 2.1
 
 - as a result you should find the android.jar and maps.jar in various versions in your users local repository
   (~/.m2/repository/android and ~/.m2/repository/com/google/android/maps) and you can therefore use the following
@@ -117,7 +121,11 @@ E.g.
     </servers>
 </settings>
 
-- run the command "mvn deploy" in the root folder of this project (same as README you are just reading), you can also
+- run the command
+
+    mvn deploy
+
+ in the root folder of this project (same as README you are just reading), you can also
  use the same profile options for the different api levels 
 
 - as a result you should find the artifact in the repository of your remote server
@@ -128,7 +136,7 @@ Mailinglist - Questions
 -----------------------
 
 Please direct any questions to the commubnity at the Maven Android Developers mailinglist at
-http://groups.google.com/group/maven-android-developers
+[http://groups.google.com/group/maven-android-developers]
  
 Known problems
 -------------
