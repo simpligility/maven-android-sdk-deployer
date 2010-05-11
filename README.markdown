@@ -1,7 +1,7 @@
 Maven Android SDK Deployer
 --------------------------
 
-Author: Manfred Moser <manfred@simpligility.com> [http://www.simpligility.com]
+Author: Manfred Moser <manfred@simpligility.com> (http://www.simpligility.com)
 
 The Maven Android SDK Deployer is a helper maven project that can be used to install the libraries
 necessary to build Android applications with Maven and the Maven Android Plugin. These are mostly android.jar and
@@ -136,7 +136,7 @@ Mailinglist - Questions
 -----------------------
 
 Please direct any questions to the commubnity at the Maven Android Developers mailinglist at
-[http://groups.google.com/group/maven-android-developers]
+(http://groups.google.com/group/maven-android-developers)
  
 Known problems
 -------------
@@ -156,7 +156,7 @@ Issues
 ------
 
 If you find any problems or would like to suggest a feature,  please feel free to file an issue on github at
-http://github.com/mosabua/maven-android-sdk-deployer/issues
+(http://github.com/mosabua/maven-android-sdk-deployer/issues)
 
 Potential todo items
 --------------------
