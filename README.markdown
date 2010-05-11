@@ -1,7 +1,7 @@
 Maven Android SDK Deployer
 --------------------------
 
-Author: Manfred Moser <manfred@simpligility.com> (http://www.simpligility.com)
+Author: Manfred Moser manfred@simpligility.com  at [simpligility technologies inc](http://www.simpligility.com)
 
 The Maven Android SDK Deployer is a helper maven project that can be used to install the libraries
 necessary to build Android applications with Maven and the Maven Android Plugin. These are mostly android.jar and
@@ -30,8 +30,11 @@ folder have names like android-3, android-4 and so on. If you find names using t
 - to install only a certain sdk level use
 
     mvn install -P 1.5
+
     mvn install -P 1.6
+
     mvn install -P 2.0.1
+
     mvn install -P 2.1
 
 - as a result you should find the android.jar and maps.jar in various versions in your users local repository
@@ -135,8 +138,7 @@ For more information about this stuff look at the documentation for the maven-de
 Mailinglist - Questions
 -----------------------
 
-Please direct any questions to the commubnity at the Maven Android Developers mailinglist at
-(http://groups.google.com/group/maven-android-developers)
+Please direct any questions to the commubnity at the  Maven Android Developers mailinglist at http://groups.google.com/group/maven-android-developers
  
 Known problems
 -------------
@@ -155,8 +157,7 @@ tool.
 Issues
 ------
 
-If you find any problems or would like to suggest a feature,  please feel free to file an issue on github at
-(http://github.com/mosabua/maven-android-sdk-deployer/issues)
+If you find any problems or would like to suggest a feature,  please feel free to file an issue on github at http://github.com/mosabua/maven-android-sdk-deployer/issues
 
 Potential todo items
 --------------------
@@ -170,7 +171,7 @@ Potential todo items
 
 - maybe even somehow create source jar files and get them uploaded as well
 
-Contributors
-------------
+Additional Contributors
+-----------------------
 
 Hugo Josefson <hugo@josefson.org> - properties plugin usage
