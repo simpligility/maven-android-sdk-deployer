@@ -1,6 +1,10 @@
 Changelog per release
 ---------------------
 
+0.8
+
+- added platform 2.2 (froyo) support
+
 0.7
 
 - changed readme to markdown

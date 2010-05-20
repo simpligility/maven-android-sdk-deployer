@@ -37,6 +37,8 @@ folder have names like android-3, android-4 and so on. If you find names using t
 
     mvn install -P 2.1
 
+    mvn install -P 2.2
+
 - as a result you should find the android.jar and maps.jar in various versions in your users local repository
   (~/.m2/repository/android and ~/.m2/repository/com/google/android/maps) and you can therefore use the following
   dependencies in your project
@@ -46,14 +48,14 @@ folder have names like android-3, android-4 and so on. If you find names using t
           <dependency>
               <groupId>android</groupId>
               <artifactId>android</artifactId>
-              <version>1.5_r3</version>
+              <version>1.5_r4</version>
               <scope>provided</scope>
           </dependency>
 
           <dependency>
               <groupId>android</groupId>
               <artifactId>android</artifactId>
-              <version>1.6_r2</version>
+              <version>1.6_r3</version>
               <scope>provided</scope>
           </dependency>
 
@@ -67,7 +69,14 @@ folder have names like android-3, android-4 and so on. If you find names using t
           <dependency>
               <groupId>android</groupId>
               <artifactId>android</artifactId>
-              <version>2.1_r1</version>
+              <version>2.1_r2</version>
+              <scope>provided</scope>
+          </dependency>
+
+          <dependency>
+              <groupId>android</groupId>
+              <artifactId>android</artifactId>
+              <version>2.2_r1</version>
               <scope>provided</scope>
           </dependency>
 
