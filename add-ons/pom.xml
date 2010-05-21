@@ -9,12 +9,13 @@
     <parent>
         <groupId>com.simpligility.android.sdk-deployer</groupId>
 	    <artifactId>maven-android-sdk-deployer</artifactId>
-	    <version>0.8</version>
+	    <version>0.9</version>
     </parent>
 
     <properties>
         <jar.path>${sdk.addons.path}/${addon.directory}/libs/maps.jar</jar.path>
         <jar.version>${AndroidVersion.ApiLevel}_r${Pkg.Revision}</jar.version>
+        <addon.directory>addon_google_apis_google_inc_${jar.simpleVersion}</addon.directory>
     </properties>
 
     <build>
@@ -51,8 +52,8 @@
             <modules>
                 <module>google-apis-3</module>
                 <module>google-apis-4</module>
-                <module>google-apis-6</module>
                 <module>google-apis-7</module>
+                <module>google-apis-8</module>
             </modules>
         </profile>
         <profile>
@@ -74,21 +75,21 @@
             </modules>
         </profile>
         <profile>
-            <id>2.0.1</id>
-            <activation>
-                <activeByDefault>true</activeByDefault>
-            </activation>
-            <modules>
-                <module>google-apis-6</module>
-            </modules>
-        </profile>
-        <profile>
             <id>2.1</id>
             <activation>
                 <activeByDefault>true</activeByDefault>
             </activation>
             <modules>
                 <module>google-apis-7</module>
+            </modules>
+        </profile>
+        <profile>
+            <id>2.2</id>
+            <activation>
+                <activeByDefault>true</activeByDefault>
+            </activation>
+            <modules>
+                <module>google-apis-8</module>
             </modules>
         </profile>
     </profiles>

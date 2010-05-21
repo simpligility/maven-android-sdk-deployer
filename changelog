@@ -1,6 +1,11 @@
 Changelog per release
 ---------------------
 
+0.9
+
+- fixed issue 6 missing maps support for 2.2
+- removed obsolete platforms 2.0 and 2.0.1
+
 0.8
 
 - added platform 2.2 (froyo) support

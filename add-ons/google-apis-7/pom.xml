@@ -9,13 +9,11 @@
     <parent>
         <groupId>com.simpligility.android.sdk-deployer</groupId>
         <artifactId>android-add-ons</artifactId>
-        <version>0.8</version>
+        <version>0.9</version>
     </parent>
 
     <properties>
         <jar.simpleVersion>7</jar.simpleVersion>
-        <!-- careful, path has underscore as nice inconsistency -->
-        <addon.directory>google_apis-7_r01</addon.directory>
     </properties>
 
     <build>

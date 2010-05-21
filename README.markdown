@@ -13,7 +13,9 @@ How to Use
 - download the latest Android SDK from http://developer.android.com/sdk/index.html following the instructions there,
 for the default usage of the deployer install all platforms and add-on apis, ensure that all folder in the platforms
 folder have names like android-3, android-4 and so on. If you find names using the platform version (e.g. 15) in the folder
- name reinstall that platform from the android tool
+ name reinstall that platform from the android tool. In a similar manner the folder names in add-ons have to use the pattern
+ addon_google_apis_google_inc_3 up to addon_google_apis_google_inc_8. If the folder names are different reinstall the add-ons
+ as well
 
 - set up the environment variable ANDROID_HOME to contain the absolute folder you just installed the SDK to
  (e.g. under bash: export ANDROID_HOME=/opt/android_sdk_linux)
@@ -32,8 +34,6 @@ folder have names like android-3, android-4 and so on. If you find names using t
     mvn install -P 1.5
 
     mvn install -P 1.6
-
-    mvn install -P 2.0.1
 
     mvn install -P 2.1
 
@@ -56,13 +56,6 @@ folder have names like android-3, android-4 and so on. If you find names using t
               <groupId>android</groupId>
               <artifactId>android</artifactId>
               <version>1.6_r3</version>
-              <scope>provided</scope>
-          </dependency>
-
-          <dependency>
-              <groupId>android</groupId>
-              <artifactId>android</artifactId>
-              <version>2.0.1_r1</version>
               <scope>provided</scope>
           </dependency>
 
@@ -99,14 +92,14 @@ folder have names like android-3, android-4 and so on. If you find names using t
           <dependency>
               <groupId>com.google.android.maps</groupId>
               <artifactId>maps</artifactId>
-              <version>6_r1</version>
+              <version>7_r1</version>
               <scope>provided</scope>
           </dependency>
 
           <dependency>
               <groupId>com.google.android.maps</groupId>
               <artifactId>maps</artifactId>
-              <version>7_r1</version>
+              <version>8_r1</version>
               <scope>provided</scope>
           </dependency>
 

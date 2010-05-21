@@ -9,11 +9,11 @@
     <parent>
         <groupId>com.simpligility.android.sdk-deployer</groupId>
         <artifactId>android-platforms</artifactId>
-        <version>0.8</version>
+        <version>0.9</version>
     </parent>
 
     <properties>
-        <jar.simpleVersion>2.1</jar.simpleVersion>
+        <jar.simpleVersion>2.2</jar.simpleVersion>
     </properties>
 
 

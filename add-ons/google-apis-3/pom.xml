@@ -9,12 +9,11 @@
     <parent>
         <groupId>com.simpligility.android.sdk-deployer</groupId>
         <artifactId>android-add-ons</artifactId>
-        <version>0.8</version>
+        <version>0.9</version>
     </parent>
 
     <properties>
         <jar.simpleVersion>3</jar.simpleVersion>
-        <addon.directory>google_apis-3-r03</addon.directory>
     </properties>
 
     <build>
