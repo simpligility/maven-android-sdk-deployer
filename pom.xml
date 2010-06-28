@@ -3,7 +3,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.simpligility.android.sdk-deployer</groupId>
 	<artifactId>maven-android-sdk-deployer</artifactId>
-	<version>0.9</version>
+	<version>0.10</version>
 	<packaging>pom</packaging>
     <name>Maven Android SDK Deployer</name>
     <description>The Maven Android SDK Deployer is a helper maven project that can be used to install the libraries

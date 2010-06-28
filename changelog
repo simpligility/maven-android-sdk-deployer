@@ -1,6 +1,10 @@
 Changelog per release
 ---------------------
 
+0.10
+
+- updated documentation to reflect availability of android jar files in maven central
+
 0.9
 
 - fixed issue 6 missing maps support for 2.2

@@ -3,9 +3,17 @@ Maven Android SDK Deployer
 
 Author: Manfred Moser manfred@simpligility.com  at [simpligility technologies inc](http://www.simpligility.com)
 
+
+ATTENTION!
+Currently android.jar artifacts are available in Maven central and unless you use maps related dependencies or insist on
+using the original jar files from the local SDK install, you will not need this tool anymore.
+
 The Maven Android SDK Deployer is a helper maven project that can be used to install the libraries
-necessary to build Android applications with Maven and the Maven Android Plugin. These are mostly android.jar and
-maps.jar at the moment although the setup can be expanded easily.
+necessary to build Android applications with Maven and the Maven Android Plugin directly from your local Android SDK
+installation.
+
+The android.jar artifacts in Maven central are available with the groupId com.google.android, whereas this tool uses
+android.android to avoid overlap.
 
 How to Use
 ----------
