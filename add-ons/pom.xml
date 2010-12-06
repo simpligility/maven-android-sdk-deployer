@@ -54,42 +54,37 @@
                 <module>google-apis-4</module>
                 <module>google-apis-7</module>
                 <module>google-apis-8</module>
+                <module>google-apis-9</module>
             </modules>
         </profile>
         <profile>
             <id>1.5</id>
-            <activation>
-                <activeByDefault>true</activeByDefault>
-            </activation>
             <modules>
                 <module>google-apis-3</module>
             </modules>
         </profile>
         <profile>
             <id>1.6</id>
-            <activation>
-                <activeByDefault>true</activeByDefault>
-            </activation>
             <modules>
                 <module>google-apis-4</module>
             </modules>
         </profile>
         <profile>
             <id>2.1</id>
-            <activation>
-                <activeByDefault>true</activeByDefault>
-            </activation>
             <modules>
                 <module>google-apis-7</module>
             </modules>
         </profile>
         <profile>
             <id>2.2</id>
-            <activation>
-                <activeByDefault>true</activeByDefault>
-            </activation>
             <modules>
                 <module>google-apis-8</module>
+            </modules>
+        </profile>
+        <profile>
+            <id>2.3</id>
+            <modules>
+                <module>google-apis-9</module>
             </modules>
         </profile>
     </profiles>

@@ -8,6 +8,9 @@ ATTENTION!
 Currently android.jar artifacts are available in Maven central and unless you use maps related dependencies or insist on
 using the original jar files from the local SDK install, you will not need this tool anymore.
 
+You will however need this tool to access the latest Android 2.3 release or to work around bugs like missing JSON libraries
+in some older artifacts deployed to Maven central. If you  use this tool make sure your dependencies are as documented here.
+
 The Maven Android SDK Deployer is a helper maven project that can be used to install the libraries
 necessary to build Android applications with Maven and the Maven Android Plugin directly from your local Android SDK
 installation.
@@ -47,6 +50,8 @@ folder have names like android-3, android-4 and so on. If you find names using t
 
     mvn install -P 2.2
 
+    mvn install -P 2.3
+
 - as a result you should find the android.jar and maps.jar in various versions in your users local repository
   (~/.m2/repository/android and ~/.m2/repository/com/google/android/maps) and you can therefore use the following
   dependencies in your project
@@ -81,6 +86,13 @@ folder have names like android-3, android-4 and so on. If you find names using t
               <scope>provided</scope>
           </dependency>
 
+          <dependency>
+              <groupId>android</groupId>
+              <artifactId>android</artifactId>
+              <version>2.3_r1</version>
+              <scope>provided</scope>
+          </dependency>
+
   for the maps add ons
 
           <dependency>
@@ -108,6 +120,13 @@ folder have names like android-3, android-4 and so on. If you find names using t
               <groupId>com.google.android.maps</groupId>
               <artifactId>maps</artifactId>
               <version>8_r1</version>
+              <scope>provided</scope>
+          </dependency>
+
+          <dependency>
+              <groupId>com.google.android.maps</groupId>
+              <artifactId>maps</artifactId>
+              <version>9_r1</version>
               <scope>provided</scope>
           </dependency>
 
@@ -148,7 +167,8 @@ For more information about this stuff look at the documentation for the maven-de
 Mailinglist - Questions
 -----------------------
 
-Please direct any questions to the commubnity at the  Maven Android Developers mailinglist at http://groups.google.com/group/maven-android-developers
+Please direct any questions to the community at the  Maven Android Developers mailing list at
+http://groups.google.com/group/maven-android-developers
  
 Known problems
 -------------
@@ -167,19 +187,15 @@ tool.
 Issues
 ------
 
-If you find any problems or would like to suggest a feature,  please feel free to file an issue on github at http://github.com/mosabua/maven-android-sdk-deployer/issues
+If you find any problems or would like to suggest a feature,  please feel free to file an issue on github at
+http://github.com/mosabua/maven-android-sdk-deployer/issues
 
 Potential todo items
 --------------------
 
-- add automatic download and install of SDK into .m2/repository somewhere, could then use dependency plugin to
-  pull into target and use from there, problem SDK license agreement 
-
 - add custom pom files for install/deploy that eg. define dependency from maps to android jar
 
 - maybe some sort of reporting of errors, failures and success as well
-
-- maybe even somehow create source jar files and get them uploaded as well
 
 Additional Contributors
 -----------------------
