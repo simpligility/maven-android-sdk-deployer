@@ -3,13 +3,13 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.simpligility.android.sdk-deployer</groupId>
 	<artifactId>android-9</artifactId>
-	<packaging>pom</packaging>
-    <name>Android Platform 2.3</name>
+	<packaging>pom</packaging>                     3
+    <name>Android Platform 2.3 API 9</name>
 
     <parent>
         <groupId>com.simpligility.android.sdk-deployer</groupId>
         <artifactId>android-platforms</artifactId>
-        <version>0.10</version>
+        <version>0.11</version>
     </parent>
 
     <properties>
