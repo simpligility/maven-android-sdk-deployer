@@ -52,6 +52,8 @@ folder have names like android-3, android-4 and so on. If you find names using t
 
     mvn install -P 2.3
 
+    mvn install -P Honeycomb
+
 - as a result you should find the android.jar and maps.jar in various versions in your users local repository
   (~/.m2/repository/android and ~/.m2/repository/com/google/android/maps) and you can therefore use the following
   dependencies in your project
@@ -93,6 +95,13 @@ folder have names like android-3, android-4 and so on. If you find names using t
               <scope>provided</scope>
           </dependency>
 
+          <dependency>
+              <groupId>android</groupId>
+              <artifactId>android</artifactId>
+              <version>Honeycomb_r1</version>
+              <scope>provided</scope>
+          </dependency>
+
   for the maps add ons
 
           <dependency>
@@ -129,6 +138,7 @@ folder have names like android-3, android-4 and so on. If you find names using t
               <version>9_r1</version>
               <scope>provided</scope>
           </dependency>
+
 
 How To Use for Deploying Onto Remote Server
 -------------------------------------------
