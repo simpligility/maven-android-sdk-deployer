@@ -55,6 +55,7 @@
                 <module>android-7</module>
                 <module>android-8</module>
                 <module>android-9</module>
+                <module>android-10</module>
                 <module>android-Honeycomb</module>
             </modules>
         </profile>
@@ -86,6 +87,12 @@
             <id>2.3</id>
             <modules>
                 <module>android-9</module>
+            </modules>
+        </profile>
+        <profile>
+            <id>2.3.3</id>
+            <modules>
+                <module>android-10</module>
             </modules>
         </profile>
          <profile>

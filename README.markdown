@@ -91,7 +91,14 @@ folder have names like android-3, android-4 and so on. If you find names using t
           <dependency>
               <groupId>android</groupId>
               <artifactId>android</artifactId>
-              <version>2.3_r1</version>
+              <version>2.3.1_r2</version>
+              <scope>provided</scope>
+          </dependency>
+
+          <dependency>
+              <groupId>android</groupId>
+              <artifactId>android</artifactId>
+              <version>2.3.3_r1</version>
               <scope>provided</scope>
           </dependency>
 
@@ -128,17 +135,24 @@ folder have names like android-3, android-4 and so on. If you find names using t
           <dependency>
               <groupId>com.google.android.maps</groupId>
               <artifactId>maps</artifactId>
-              <version>8_r1</version>
+              <version>8_r2</version>
               <scope>provided</scope>
           </dependency>
 
           <dependency>
               <groupId>com.google.android.maps</groupId>
               <artifactId>maps</artifactId>
-              <version>9_r1</version>
+              <version>9_r2</version>
               <scope>provided</scope>
           </dependency>
 
+
+          <dependency>
+              <groupId>com.google.android.maps</groupId>
+              <artifactId>maps</artifactId>
+              <version>10_r1</version>
+              <scope>provided</scope>
+          </dependency>
 
 How To Use for Deploying Onto Remote Server
 -------------------------------------------
