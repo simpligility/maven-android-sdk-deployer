@@ -52,6 +52,8 @@ folder have names like android-3, android-4 and so on. If you find names using t
 
     mvn install -P 2.3
 
+    mvn install -P 2.3.3
+
     mvn install -P Honeycomb
 
 - as a result you should find the android.jar and maps.jar in various versions in your users local repository
