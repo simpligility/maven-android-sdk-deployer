@@ -54,7 +54,7 @@ folder have names like android-3, android-4 and so on. If you find names using t
 
     mvn install -P 2.3.3
 
-    mvn install -P Honeycomb
+    mvn install -P 3.0
 
 - as a result you should find the android.jar and maps.jar in various versions in your users local repository
   (~/.m2/repository/android and ~/.m2/repository/com/google/android/maps) and you can therefore use the following
@@ -86,7 +86,7 @@ folder have names like android-3, android-4 and so on. If you find names using t
           <dependency>
               <groupId>android</groupId>
               <artifactId>android</artifactId>
-              <version>2.2_r1</version>
+              <version>2.2_r2</version>
               <scope>provided</scope>
           </dependency>
 
@@ -107,7 +107,7 @@ folder have names like android-3, android-4 and so on. If you find names using t
           <dependency>
               <groupId>android</groupId>
               <artifactId>android</artifactId>
-              <version>Honeycomb_r1</version>
+              <version>3.0_r1</version>
               <scope>provided</scope>
           </dependency>
 

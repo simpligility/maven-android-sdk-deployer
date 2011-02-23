@@ -96,12 +96,6 @@
                 <module>android-10</module>
             </modules>
         </profile>
-         <profile>
-            <id>Honeycomb</id>
-            <modules>
-                <module>android-Honeycomb</module>
-            </modules>
-        </profile>
         <profile>
             <id>3.0</id>
             <modules>
