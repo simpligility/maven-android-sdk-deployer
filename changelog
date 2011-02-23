@@ -1,6 +1,20 @@
 Changelog per release
 ---------------------
 
+0.3
+
+- removed honeycomb preview sdk release support
+- added platform 3.0 support
+
+0.12
+
+- added honeycomb preview sdk support
+- added platform 2.3.3 support
+
+0.11
+
+- added platform 2.3 (gingerbread) support
+
 0.10
 
 - updated documentation to reflect availability of android jar files in maven central
