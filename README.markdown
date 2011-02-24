@@ -148,11 +148,17 @@ folder have names like android-3, android-4 and so on. If you find names using t
               <scope>provided</scope>
           </dependency>
 
-
           <dependency>
               <groupId>com.google.android.maps</groupId>
               <artifactId>maps</artifactId>
               <version>10_r1</version>
+              <scope>provided</scope>
+          </dependency>
+
+          <dependency>
+              <groupId>com.google.android.maps</groupId>
+              <artifactId>maps</artifactId>
+              <version>11_r1</version>
               <scope>provided</scope>
           </dependency>
 

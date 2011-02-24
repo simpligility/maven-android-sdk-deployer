@@ -56,6 +56,7 @@
                 <module>google-apis-8</module>
                 <module>google-apis-9</module>
                 <module>google-apis-10</module>
+                <module>google-apis-11</module>
             </modules>
         </profile>
         <profile>
@@ -92,6 +93,12 @@
             <id>2.3.3</id>
             <modules>
                 <module>google-apis-10</module>
+            </modules>
+        </profile>
+        <profile>
+            <id>3.0</id>
+            <modules>
+                <module>google-apis-11</module>
             </modules>
         </profile>
     </profiles>
