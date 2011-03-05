@@ -1,6 +1,10 @@
 Changelog per release
 ---------------------
 
+0.3.2
+
+- added support for compatibility extras jar
+
 0.3.1
 
 - added missing maps for 11

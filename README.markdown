@@ -162,6 +162,16 @@ folder have names like android-3, android-4 and so on. If you find names using t
               <scope>provided</scope>
           </dependency>
 
+
+    for the compatibility extra (ATTENTION! Do NOT use provided scope!!)
+
+          <dependency>
+              <groupId>com.google.android.extras</groupId>
+              <artifactId>compatibility</artifactId>
+              <version>4</version>
+          </dependency>
+
+
 How To Use for Deploying Onto Remote Server
 -------------------------------------------
 
