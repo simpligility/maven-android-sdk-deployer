@@ -166,8 +166,8 @@ folder have names like android-3, android-4 and so on. If you find names using t
     for the compatibility extra (ATTENTION! Do NOT use provided scope!!)
 
           <dependency>
-              <groupId>com.google.android.extras</groupId>
-              <artifactId>compatibility</artifactId>
+              <groupId>android.support</groupId>
+              <artifactId>V4</artifactId>
               <version>4</version>
           </dependency>
 

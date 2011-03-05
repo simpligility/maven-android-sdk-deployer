@@ -14,6 +14,7 @@
 
     <properties>
         <jar.path>${sdk.extras.path}/android/compatibility/v4/android-support-v4.jar</jar.path>
+        <android.support.artifactid>V4</android.support.artifactid>
         <jar.version>4</jar.version>
     </properties>
     <build>
@@ -26,7 +27,7 @@
                         <goals><goal>install-file</goal></goals>
                         <configuration>
                             <groupId>${extras.compatibility.groupid}</groupId>
-                            <artifactId>${extras.compatibility.artifactid}</artifactId>
+                            <artifactId>${android.support.artifactid}</artifactId>
                             <packaging>jar</packaging>
                             <version>${jar.version}</version>
                             <file>${jar.path}</file>
@@ -43,7 +44,7 @@
                         <goals><goal>deploy-file</goal></goals>
                         <configuration>
                             <groupId>${extras.compatibility.groupid}</groupId>
-                            <artifactId>${extras.compatibility.artifactid}</artifactId>
+                            <artifactId>${android.support.artifactid}</artifactId>
                             <packaging>jar</packaging>
                             <version>${jar.version}</version>
                             <file>${jar.path}</file>

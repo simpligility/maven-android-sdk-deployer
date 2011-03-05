@@ -28,8 +28,7 @@
         <platform.android.artifactid>android</platform.android.artifactid>
         <addon.googlemaps.groupid>com.google.android.maps</addon.googlemaps.groupid>
         <addon.googlemaps.artifactid>maps</addon.googlemaps.artifactid>
-        <extras.compatibility.groupid>com.google.android.extras</extras.compatibility.groupid>
-        <extras.compatibility.artifactid>compatibility</extras.compatibility.artifactid>
+        <extras.compatibility.groupid>android.support</extras.compatibility.groupid>
     </properties>
 
     <issueManagement>
