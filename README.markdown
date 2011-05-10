@@ -194,7 +194,7 @@ folder have names like android-3, android-4 and so on. If you find names using t
         mvn clean install
 
   For example to install only the compatibilty v4 extra you can do the following
-                                                           a
+
         mvn clean install -N
         cd extras
         mvn clean install -N
