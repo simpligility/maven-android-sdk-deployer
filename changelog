@@ -1,6 +1,11 @@
 Changelog per release
 ---------------------
 
+0.3.3
+
+ - added support for platform 3.1, api 12
+ - added documentation to only install specific artifact
+
 0.3.2
 
 - added support for compatibility extras jar

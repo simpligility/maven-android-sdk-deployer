@@ -111,7 +111,14 @@ folder have names like android-3, android-4 and so on. If you find names using t
               <scope>provided</scope>
           </dependency>
 
-  for the maps add ons
+          <dependency>
+              <groupId>android</groupId>
+              <artifactId>android</artifactId>
+              <version>3.1_r1</version>
+              <scope>provided</scope>
+          </dependency>
+
+    for the maps add ons
 
           <dependency>
               <groupId>com.google.android.maps</groupId>
@@ -162,6 +169,12 @@ folder have names like android-3, android-4 and so on. If you find names using t
               <scope>provided</scope>
           </dependency>
 
+          <dependency>
+              <groupId>com.google.android.maps</groupId>
+              <artifactId>maps</artifactId>
+              <version>12_r1</version>
+              <scope>provided</scope>
+          </dependency>
 
     for the compatibility extra (ATTENTION! Do NOT use provided scope!!)
 
@@ -170,6 +183,33 @@ folder have names like android-3, android-4 and so on. If you find names using t
               <artifactId>V4</artifactId>
               <version>4</version>
           </dependency>
+
+
+- to install only a specific module use
+
+        mvn clean install -N
+
+  in any parent folder of the desired package and then the usual
+
+        mvn clean install
+
+  For example to install only the compatibilty v4 extra you can do the following
+                                                           a
+        mvn clean install -N
+        cd extras
+        mvn clean install -N
+        cd compatibility-v4
+        mvn clean install
+
+  Similar for only API level 12 add on use
+
+        mvn clean install -N
+        cd add-ons
+        mvn clean install -N
+        cd google-apis-12
+        mvn clean install
+
+  The same could be done with deploy
 
 
 How To Use for Deploying Onto Remote Server

@@ -2,9 +2,9 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.simpligility.android.sdk-deployer</groupId>
-	<artifactId>google-apis-3</artifactId>
+	<artifactId>google-apis-12</artifactId>
 	<packaging>pom</packaging>
-    <name>Android Add-On Google Platform 1.5 API 3</name>
+    <name>Android Add-On Google Platform 3.1 API 12</name>
 
     <parent>
         <groupId>com.simpligility.android.sdk-deployer</groupId>
@@ -13,7 +13,7 @@
     </parent>
 
     <properties>
-        <jar.simpleVersion>3</jar.simpleVersion>
+        <jar.simpleVersion>12</jar.simpleVersion>
     </properties>
 
     <build>
