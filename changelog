@@ -5,6 +5,9 @@ Changelog per release
 
  - added support for platform 3.2, api 13
  - added support for compatibility extras (v13) jar
+ - changed GAV coordinates for compatibility extras to better reflect usage
+   and also added reading of properties file so that GAV can use revision as
+   package number
 
 0.3.3
 

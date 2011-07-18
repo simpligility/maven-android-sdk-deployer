@@ -24,6 +24,7 @@
         <sdk.platforms.path>${android.sdk.path}/platforms</sdk.platforms.path>
         <sdk.addons.path>${android.sdk.path}/add-ons</sdk.addons.path>
         <sdk.extras.path>${android.sdk.path}/extras</sdk.extras.path>
+        <sdk.extras.compatibility.path>${sdk.extras.path}/android/compatibility</sdk.extras.compatibility.path>
         <platform.android.groupid>android</platform.android.groupid>
         <platform.android.artifactid>android</platform.android.artifactid>
         <addon.googlemaps.groupid>com.google.android.maps</addon.googlemaps.groupid>

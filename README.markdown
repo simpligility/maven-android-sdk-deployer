@@ -3,10 +3,11 @@ Maven Android SDK Deployer
 
 Author: Manfred Moser manfred@simpligility.com  at [simpligility technologies inc](http://www.simpligility.com)
 
-
 ATTENTION!
-Currently android.jar artifacts are available in Maven central and unless you use maps related dependencies or insist on
-using the original jar files from the local SDK install, you will not need this tool anymore.
+Currently android.jar artifacts are available in Maven central and unless you
+ use maps related dependencies or the compatibility library jar files or
+ insist on using the original jar files from the local SDK install,
+ you will not need this tool anymore.
 
 You will however need this tool to access the latest Android 2.3 release or to work around bugs like missing JSON libraries
 in some older artifacts deployed to Maven central. If you  use this tool make sure your dependencies are as documented here.
@@ -60,153 +61,154 @@ folder have names like android-3, android-4 and so on. If you find names using t
 
     mvn install -P 3.2
 
-- as a result you should find the android.jar and maps.jar in various versions in your users local repository
-  (~/.m2/repository/android and ~/.m2/repository/com/google/android/maps) and you can therefore use the following
-  dependencies in your project
+- as a result you should find the android.jar and maps.jar in various versions
+  in your users local repository (~/.m2/repository/android and
+  ~/.m2/repository/com/google/android/maps and ) and you can therefore use the
+  following dependencies in your project
 
   for the core platforms
 
-          <dependency>
-              <groupId>android</groupId>
-              <artifactId>android</artifactId>
-              <version>1.5_r4</version>
-              <scope>provided</scope>
-          </dependency>
+    <dependency>
+      <groupId>android</groupId>
+      <artifactId>android</artifactId>
+      <version>1.5_r4</version>
+      <scope>provided</scope>
+    </dependency>
 
-          <dependency>
-              <groupId>android</groupId>
-              <artifactId>android</artifactId>
-              <version>1.6_r3</version>
-              <scope>provided</scope>
-          </dependency>
+    <dependency>
+      <groupId>android</groupId>
+      <artifactId>android</artifactId>
+      <version>1.6_r3</version>
+      <scope>provided</scope>
+    </dependency>
 
-          <dependency>
-              <groupId>android</groupId>
-              <artifactId>android</artifactId>
-              <version>2.1_r2</version>
-              <scope>provided</scope>
-          </dependency>
+    <dependency>
+      <groupId>android</groupId>
+      <artifactId>android</artifactId>
+      <version>2.1_r2</version>
+      <scope>provided</scope>
+    </dependency>
 
-          <dependency>
-              <groupId>android</groupId>
-              <artifactId>android</artifactId>
-              <version>2.2_r2</version>
-              <scope>provided</scope>
-          </dependency>
+    <dependency>
+      <groupId>android</groupId>
+      <artifactId>android</artifactId>
+      <version>2.2_r2</version>
+      <scope>provided</scope>
+    </dependency>
 
-          <dependency>
-              <groupId>android</groupId>
-              <artifactId>android</artifactId>
-              <version>2.3.1_r2</version>
-              <scope>provided</scope>
-          </dependency>
+    <dependency>
+      <groupId>android</groupId>
+      <artifactId>android</artifactId>
+      <version>2.3.1_r2</version>
+      <scope>provided</scope>
+    </dependency>
 
-          <dependency>
-              <groupId>android</groupId>
-              <artifactId>android</artifactId>
-              <version>2.3.3_r1</version>
-              <scope>provided</scope>
-          </dependency>
+    <dependency>
+      <groupId>android</groupId>
+      <artifactId>android</artifactId>
+      <version>2.3.3_r1</version>
+      <scope>provided</scope>
+    </dependency>
 
-          <dependency>
-              <groupId>android</groupId>
-              <artifactId>android</artifactId>
-              <version>3.0_r1</version>
-              <scope>provided</scope>
-          </dependency>
+    <dependency>
+      <groupId>android</groupId>
+      <artifactId>android</artifactId>
+      <version>3.0_r1</version>
+      <scope>provided</scope>
+    </dependency>
 
-          <dependency>
-              <groupId>android</groupId>
-              <artifactId>android</artifactId>
-              <version>3.1_r1</version>
-              <scope>provided</scope>
-          </dependency>
+    <dependency>
+      <groupId>android</groupId>
+      <artifactId>android</artifactId>
+      <version>3.1_r2</version>
+      <scope>provided</scope>
+    </dependency>
 
-          <dependency>
-              <groupId>android</groupId>
-              <artifactId>android</artifactId>
-              <version>3.2_r1</version>
-              <scope>provided</scope>
-          </dependency>
+    <dependency>
+      <groupId>android</groupId>
+      <artifactId>android</artifactId>
+      <version>3.2_r1</version>
+      <scope>provided</scope>
+    </dependency>
 
-    for the maps add ons
+for the maps add ons
 
-          <dependency>
-              <groupId>com.google.android.maps</groupId>
-              <artifactId>maps</artifactId>
-              <version>3_r3</version>
-              <scope>provided</scope>
-          </dependency>
+    <dependency>
+      <groupId>com.google.android.maps</groupId>
+      <artifactId>maps</artifactId>
+      <version>3_r3</version>
+      <scope>provided</scope>
+    </dependency>
 
-          <dependency>
-              <groupId>com.google.android.maps</groupId>
-              <artifactId>maps</artifactId>
-              <version>4_r2</version>
-              <scope>provided</scope>
-          </dependency>
+    <dependency>
+      <groupId>com.google.android.maps</groupId>
+      <artifactId>maps</artifactId>
+      <version>4_r2</version>
+      <scope>provided</scope>
+    </dependency>
 
-          <dependency>
-              <groupId>com.google.android.maps</groupId>
-              <artifactId>maps</artifactId>
-              <version>7_r1</version>
-              <scope>provided</scope>
-          </dependency>
+    <dependency>
+      <groupId>com.google.android.maps</groupId>
+      <artifactId>maps</artifactId>
+      <version>7_r1</version>
+      <scope>provided</scope>
+    </dependency>
 
-          <dependency>
-              <groupId>com.google.android.maps</groupId>
-              <artifactId>maps</artifactId>
-              <version>8_r2</version>
-              <scope>provided</scope>
-          </dependency>
+    <dependency>
+      <groupId>com.google.android.maps</groupId>
+      <artifactId>maps</artifactId>
+      <version>8_r2</version>
+      <scope>provided</scope>
+    </dependency>
 
-          <dependency>
-              <groupId>com.google.android.maps</groupId>
-              <artifactId>maps</artifactId>
-              <version>9_r2</version>
-              <scope>provided</scope>
-          </dependency>
+    <dependency>
+      <groupId>com.google.android.maps</groupId>
+      <artifactId>maps</artifactId>
+      <version>9_r2</version>
+      <scope>provided</scope>
+    </dependency>
 
-          <dependency>
-              <groupId>com.google.android.maps</groupId>
-              <artifactId>maps</artifactId>
-              <version>10_r1</version>
-              <scope>provided</scope>
-          </dependency>
+    <dependency>
+      <groupId>com.google.android.maps</groupId>
+      <artifactId>maps</artifactId>
+      <version>10_r1</version>
+      <scope>provided</scope>
+    </dependency>
 
-          <dependency>
-              <groupId>com.google.android.maps</groupId>
-              <artifactId>maps</artifactId>
-              <version>11_r1</version>
-              <scope>provided</scope>
-          </dependency>
+    <dependency>
+      <groupId>com.google.android.maps</groupId>
+      <artifactId>maps</artifactId>
+      <version>11_r1</version>
+      <scope>provided</scope>
+    </dependency>
 
-          <dependency>
-              <groupId>com.google.android.maps</groupId>
-              <artifactId>maps</artifactId>
-              <version>12_r1</version>
-              <scope>provided</scope>
-          </dependency>
+    <dependency>
+      <groupId>com.google.android.maps</groupId>
+      <artifactId>maps</artifactId>
+      <version>12_r1</version>
+      <scope>provided</scope>
+    </dependency>
 
-          <dependency>
-              <groupId>com.google.android.maps</groupId>
-              <artifactId>maps</artifactId>
-              <version>13_r1</version>
-              <scope>provided</scope>
-          </dependency>
+    <dependency>
+      <groupId>com.google.android.maps</groupId>
+      <artifactId>maps</artifactId>
+      <version>13_r1</version>
+      <scope>provided</scope>
+    </dependency>
 
-    for the compatibility extra (ATTENTION! Do NOT use provided scope!!)
+  for the compatibility extra (ATTENTION! Do NOT use provided scope!!)
 
-          <dependency>
-              <groupId>android.support</groupId>
-              <artifactId>V4</artifactId>
-              <version>4</version>
-          </dependency>
+    <dependency>
+      <groupId>android.support</groupId>
+      <artifactId>compatibility-v4</artifactId>
+      <version>r3</version>
+    </dependency>
 
-          <dependency>
-              <groupId>android.support</groupId>
-              <artifactId>V13</artifactId>
-              <version>13</version>
-          </dependency>
+    <dependency>
+      <groupId>android.support</groupId>
+      <artifactId>compatibility-v13</artifactId>
+      <version>r3</version>
+    </dependency>
 
 
 - to install only a specific module use
@@ -307,3 +309,4 @@ Additional Contributors
 -----------------------
 
 Hugo Josefson <hugo@josefson.org> - properties plugin usage
+Jake Wharton <jakewharton@gmail.com> - 3.2 and compatibility v13 support
