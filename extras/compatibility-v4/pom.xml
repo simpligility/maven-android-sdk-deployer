@@ -9,7 +9,7 @@
     <parent>
         <groupId>com.simpligility.android.sdk-deployer</groupId>
         <artifactId>android-extras</artifactId>
-        <version>0.3.3</version>
+        <version>0.3.4</version>
     </parent>
 
     <properties>

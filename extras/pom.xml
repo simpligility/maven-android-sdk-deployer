@@ -9,7 +9,7 @@
     <parent>
         <groupId>com.simpligility.android.sdk-deployer</groupId>
         <artifactId>maven-android-sdk-deployer</artifactId>
-        <version>0.3.3</version>
+        <version>0.3.4</version>
     </parent>
     <profiles>
         <profile>
@@ -19,6 +19,7 @@
             </activation>
             <modules>
                 <module>compatibility-v4</module>
+                <module>compatibility-v13</module>
             </modules>
         </profile>
     </profiles>

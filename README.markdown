@@ -56,6 +56,10 @@ folder have names like android-3, android-4 and so on. If you find names using t
 
     mvn install -P 3.0
 
+    mvn install -P 3.1
+
+    mvn install -P 3.2
+
 - as a result you should find the android.jar and maps.jar in various versions in your users local repository
   (~/.m2/repository/android and ~/.m2/repository/com/google/android/maps) and you can therefore use the following
   dependencies in your project
@@ -118,6 +122,13 @@ folder have names like android-3, android-4 and so on. If you find names using t
               <scope>provided</scope>
           </dependency>
 
+          <dependency>
+              <groupId>android</groupId>
+              <artifactId>android</artifactId>
+              <version>3.2_r1</version>
+              <scope>provided</scope>
+          </dependency>
+
     for the maps add ons
 
           <dependency>
@@ -176,12 +187,25 @@ folder have names like android-3, android-4 and so on. If you find names using t
               <scope>provided</scope>
           </dependency>
 
+          <dependency>
+              <groupId>com.google.android.maps</groupId>
+              <artifactId>maps</artifactId>
+              <version>13_r1</version>
+              <scope>provided</scope>
+          </dependency>
+
     for the compatibility extra (ATTENTION! Do NOT use provided scope!!)
 
           <dependency>
               <groupId>android.support</groupId>
               <artifactId>V4</artifactId>
               <version>4</version>
+          </dependency>
+
+          <dependency>
+              <groupId>android.support</groupId>
+              <artifactId>V13</artifactId>
+              <version>13</version>
           </dependency>
 
 

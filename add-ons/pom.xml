@@ -9,7 +9,7 @@
     <parent>
         <groupId>com.simpligility.android.sdk-deployer</groupId>
 	    <artifactId>maven-android-sdk-deployer</artifactId>
-	    <version>0.3.3</version>
+	    <version>0.3.4</version>
     </parent>
 
     <properties>
@@ -58,6 +58,7 @@
                 <module>google-apis-10</module>
                 <module>google-apis-11</module>
                 <module>google-apis-12</module>
+                <module>google-apis-13</module>
             </modules>
         </profile>
         <profile>
@@ -106,6 +107,12 @@
             <id>3.1</id>
             <modules>
                 <module>google-apis-12</module>
+            </modules>
+        </profile>
+        <profile>
+            <id>3.2</id>
+            <modules>
+                <module>google-apis-13</module>
             </modules>
         </profile>
     </profiles>
