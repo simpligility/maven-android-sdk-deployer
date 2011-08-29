@@ -219,7 +219,7 @@ for the maps add ons
 
         mvn clean install
 
-  For example to install only the compatibilty v4 extra you can do the following
+  For example to install only the compatibility v4 extra you can do the following
 
         mvn clean install -N
         cd extras
