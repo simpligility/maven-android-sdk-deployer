@@ -29,6 +29,8 @@
         <platform.android.artifactid>android</platform.android.artifactid>
         <addon.googlemaps.groupid>com.google.android.maps</addon.googlemaps.groupid>
         <addon.googlemaps.artifactid>maps</addon.googlemaps.artifactid>
+        <addon.android.future.usb.groupid>android.future</addon.android.future.usb.groupid>
+        <addon.android.future.usb.artifactid>usb</addon.android.future.usb.artifactid>
         <extras.compatibility.groupid>android.support</extras.compatibility.groupid>
     </properties>
 

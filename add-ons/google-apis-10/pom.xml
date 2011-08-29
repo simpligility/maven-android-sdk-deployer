@@ -14,6 +14,7 @@
 
     <properties>
         <jar.simpleVersion>10</jar.simpleVersion>
+        <usb.jar.path>${sdk.addons.path}/${addon.directory}/libs/usb.jar</usb.jar.path>
     </properties>
 
     <build>
@@ -22,6 +23,7 @@
                 <artifactId>maven-install-plugin</artifactId>
                 <executions>
                     <execution>
+                        <id>maps</id>
                         <phase>install</phase>
                         <goals><goal>install-file</goal></goals>
                         <configuration>
@@ -32,13 +34,25 @@
                             <file>${jar.path}</file>
                         </configuration>
                     </execution>
+                    <execution>
+                        <id>usb</id>
+                        <phase>install</phase>
+                        <goals><goal>install-file</goal></goals>
+                        <configuration>
+                            <groupId>${addon.android.future.usb.groupid}</groupId>
+                            <artifactId>${addon.android.future.usb.artifactid}</artifactId>
+                            <packaging>jar</packaging>
+                            <version>${jar.version}</version>
+                            <file>${usb.jar.path}</file>
+                        </configuration>
+                    </execution>
                 </executions>
             </plugin>
             <plugin>
                 <artifactId>maven-deploy-plugin</artifactId>
                 <executions>
                     <execution>
-                        <id>a</id>
+                        <id>maps</id>
                         <phase>deploy</phase>
                         <goals><goal>deploy-file</goal></goals>
                         <configuration>
@@ -47,6 +61,20 @@
                             <packaging>jar</packaging>
                             <version>${jar.version}</version>
                             <file>${jar.path}</file>
+                            <url>${repo.url}</url>
+                            <repositoryId>${repo.id}</repositoryId>
+                        </configuration>
+                    </execution>
+                    <execution>
+                        <id>usb</id>
+                        <phase>deploy</phase>
+                        <goals><goal>deploy-file</goal></goals>
+                        <configuration>
+                            <groupId>${addon.android.future.usb.groupid}</groupId>
+                            <artifactId>${addon.android.future.usb.artifactid}</artifactId>
+                            <packaging>jar</packaging>
+                            <version>${jar.version}</version>
+                            <file>${usb.jar.path}</file>
                             <url>${repo.url}</url>
                             <repositoryId>${repo.id}</repositoryId>
                         </configuration>
