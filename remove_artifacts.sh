@@ -1,4 +1,4 @@
 rm -rvf ~/.m2/repository/android
-rm -rfv ~/.m2/repository/com/google/android/maps
+rm -rfv ~/.m2/repository/com/google/android/
 
 
