@@ -50,8 +50,6 @@ folder have names like android-3, android-4 and so on. If you find names using t
 
     mvn install -P 2.2
 
-    mvn install -P 2.3
-
     mvn install -P 2.3.3
 
     mvn install -P 3.0
@@ -92,13 +90,6 @@ folder have names like android-3, android-4 and so on. If you find names using t
       <groupId>android</groupId>
       <artifactId>android</artifactId>
       <version>2.2_r2</version>
-      <scope>provided</scope>
-    </dependency>
-
-    <dependency>
-      <groupId>android</groupId>
-      <artifactId>android</artifactId>
-      <version>2.3.1_r2</version>
       <scope>provided</scope>
     </dependency>
 
@@ -157,13 +148,6 @@ for the maps add ons
       <groupId>com.google.android.maps</groupId>
       <artifactId>maps</artifactId>
       <version>8_r2</version>
-      <scope>provided</scope>
-    </dependency>
-
-    <dependency>
-      <groupId>com.google.android.maps</groupId>
-      <artifactId>maps</artifactId>
-      <version>9_r2</version>
       <scope>provided</scope>
     </dependency>
 

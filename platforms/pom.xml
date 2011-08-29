@@ -54,7 +54,6 @@
                 <module>android-4</module>
                 <module>android-7</module>
                 <module>android-8</module>
-                <module>android-9</module>
                 <module>android-10</module>
                 <module>android-11</module>
                 <module>android-12</module>
@@ -83,12 +82,6 @@
             <id>2.2</id>
             <modules>
                 <module>android-8</module>
-            </modules>
-        </profile>
-        <profile>
-            <id>2.3</id>
-            <modules>
-                <module>android-9</module>
             </modules>
         </profile>
         <profile>
