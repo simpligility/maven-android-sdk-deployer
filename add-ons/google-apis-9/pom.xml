@@ -4,7 +4,7 @@
 	<groupId>com.simpligility.android.sdk-deployer</groupId>
 	<artifactId>google-apis-9</artifactId>
 	<packaging>pom</packaging>
-    <name>Android Add-On Google Platform 2.3 API 9</name>
+    <name>Android Add-On Google Platform 2.3 API 9 (Maps)</name>
 
     <parent>
         <groupId>com.simpligility.android.sdk-deployer</groupId>

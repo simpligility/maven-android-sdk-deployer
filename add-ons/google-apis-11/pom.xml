@@ -4,7 +4,7 @@
 	<groupId>com.simpligility.android.sdk-deployer</groupId>
 	<artifactId>google-apis-11</artifactId>
 	<packaging>pom</packaging>
-    <name>Android Add-On Google Platform 3.0 API 11</name>
+    <name>Android Add-On Google Platform 3.0 API 11 (Maps)</name>
 
     <parent>
         <groupId>com.simpligility.android.sdk-deployer</groupId>

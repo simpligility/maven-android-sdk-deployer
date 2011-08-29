@@ -4,7 +4,7 @@
 	<groupId>com.simpligility.android.sdk-deployer</groupId>
 	<artifactId>google-apis-7</artifactId>
 	<packaging>pom</packaging>
-    <name>Android Add-On Google Platform 2.1 API 7</name>
+    <name>Android Add-On Google Platform 2.1 API 7 (Maps)</name>
 
     <parent>
         <groupId>com.simpligility.android.sdk-deployer</groupId>

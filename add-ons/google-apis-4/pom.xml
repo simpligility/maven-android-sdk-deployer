@@ -4,7 +4,7 @@
 	<groupId>com.simpligility.android.sdk-deployer</groupId>
 	<artifactId>google-apis-4</artifactId>
 	<packaging>pom</packaging>
-    <name>Android Add-On Google Platform 1.6 API 4</name>
+    <name>Android Add-On Google Platform 1.6 API 4 (Maps)</name>
 
     <parent>
         <groupId>com.simpligility.android.sdk-deployer</groupId>

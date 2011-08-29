@@ -1,6 +1,12 @@
 Changelog per release
 ---------------------
 
+1.0.0
+
+ - added support for USB addon for platforms 10, 12, 13
+ - upped version to 1.0.0 since the tools works like a charm for a while now and the 0.x seems silly
+ - removed platform 9 (2.3.1) since it is obsolete according to the android tool
+
 0.3.4
 
  - added support for platform 3.2, api 13

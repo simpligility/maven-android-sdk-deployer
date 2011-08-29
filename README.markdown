@@ -4,10 +4,9 @@ Maven Android SDK Deployer
 Author: Manfred Moser manfred@simpligility.com  at [simpligility technologies inc](http://www.simpligility.com)
 
 ATTENTION!
-Currently android.jar artifacts are available in Maven central and unless you
- use maps related dependencies or the compatibility library jar files or
- insist on using the original jar files from the local SDK install,
- you will not need this tool anymore.
+Currently some android.jar artifacts are available in Maven central and unless you
+ use maps or usb related dependencies, android 3.0+, the compatibility library jar files or
+ insist on using the original jar files from the local SDK install, you will not need this tool anymore.
 
 You will however need this tool to access the latest Android 2.3 release or to work around bugs like missing JSON libraries
 in some older artifacts deployed to Maven central. If you  use this tool make sure your dependencies are as documented here.
@@ -196,6 +195,29 @@ for the maps add ons
       <scope>provided</scope>
     </dependency>
 
+  for the usb add on
+
+   <dependency>
+      <groupId>com.android.future</groupId>
+      <artifactId>usb</artifactId>
+      <version>10_r1</version>
+      <scope>provided</scope>
+    </dependency>
+
+    <dependency>
+      <groupId>com.android.future</groupId>
+      <artifactId>usb</artifactId>
+      <version>12_r1</version>
+      <scope>provided</scope>
+    </dependency>
+
+    <dependency>
+      <groupId>com.android.future</groupId>
+      <artifactId>usb</artifactId>
+      <version>13_r1</version>
+      <scope>provided</scope>
+    </dependency>
+
   for the compatibility extra (ATTENTION! Do NOT use provided scope!!)
 
     <dependency>
@@ -311,3 +333,4 @@ Additional Contributors
 Hugo Josefson <hugo@josefson.org> - properties plugin usage
 Jake Wharton <jakewharton@gmail.com> - 3.2 and compatibility v13 support
 https://github.com/holdensmagicalunicorn - spelling fix
+Guto Maia <guto@guto.net>- initial USB add on support
