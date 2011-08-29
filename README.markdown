@@ -310,3 +310,4 @@ Additional Contributors
 
 Hugo Josefson <hugo@josefson.org> - properties plugin usage
 Jake Wharton <jakewharton@gmail.com> - 3.2 and compatibility v13 support
+https://github.com/holdensmagicalunicorn - spelling fix
