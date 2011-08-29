@@ -181,7 +181,7 @@ for the maps add ons
 
   for the usb add on
 
-   <dependency>
+    <dependency>
       <groupId>com.android.future</groupId>
       <artifactId>usb</artifactId>
       <version>10_r1</version>
