@@ -21,12 +21,14 @@ android.android to avoid overlap.
 How to Use
 ----------
 
-- download the latest Android SDK from http://developer.android.com/sdk/index.html following the instructions there,
-for the default usage of the deployer install all platforms and add-on apis, ensure that all folder in the platforms
-folder have names like android-3, android-4 and so on. If you find names using the platform version (e.g. 15) in the folder
- name reinstall that platform from the android tool. In a similar manner the folder names in add-ons have to use the pattern
- addon_google_apis_google_inc_3 up to addon_google_apis_google_inc_8. If the folder names are different reinstall the add-ons
- as well
+- download the latest Android SDK from http://developer.android.com/sdk/index.html following the instructions there.
+ - For the default usage of the deployer install **all platforms and add-on apis**, ensure that all folder in the platforms
+folder have names like android-3, android-4 and so on. 
+ - If you find names using the platform version (e.g. 15) in the folder
+ name reinstall that platform from the android tool. 
+ - In a similar manner the folder names in add-ons have to use the pattern
+ addon_google_apis_google_inc_3 up to addon_google_apis_google_inc_8. 
+ - If the folder names are different reinstall the add-ons as well
 
 - set up the environment variable ANDROID_HOME to contain the absolute folder you just installed the SDK to
  (e.g. under bash: export ANDROID_HOME=/opt/android_sdk_linux)
