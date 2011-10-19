@@ -3,10 +3,16 @@ Maven Android SDK Deployer
 
 Author: Manfred Moser manfred@simpligility.com  at [simpligility technologies inc](http://www.simpligility.com)
 
+ATTENTION with ADK 14
+
+The SDK changed folder names again. This time for all the Google Add Ons. The Maven Android SDK Deployer'
+is adapted to the new naming scheme. To do that yourself remove all "Google APIs by Google Inc" in
+the android SDK manager and install them again.
+
 ATTENTION!
-Currently some android.jar artifacts are available in Maven central and unless you
- use maps or usb related dependencies, android 3.0+, the compatibility library jar files or
- insist on using the original jar files from the local SDK install, you will not need this tool anymore.
+Currently some android.jar artifacts are available in Maven central and unless you use maps or usb
+related dependencies, android 3.0+, the compatibility library jar files or insist on using the
+original jar files from the local SDK install, you will not need this tool anymore.
 
 You will however need this tool to access the latest Android 2.3 release or to work around bugs like missing JSON libraries
 in some older artifacts deployed to Maven central. If you  use this tool make sure your dependencies are as documented here.
@@ -84,35 +90,35 @@ folder have names like android-3, android-4 and so on.
     <dependency>
       <groupId>android</groupId>
       <artifactId>android</artifactId>
-      <version>2.1_r2</version>
+      <version>2.1_r3</version>
       <scope>provided</scope>
     </dependency>
 
     <dependency>
       <groupId>android</groupId>
       <artifactId>android</artifactId>
-      <version>2.2_r2</version>
+      <version>2.2_r3</version>
       <scope>provided</scope>
     </dependency>
 
     <dependency>
       <groupId>android</groupId>
       <artifactId>android</artifactId>
-      <version>2.3.3_r1</version>
+      <version>2.3.3_r2</version>
       <scope>provided</scope>
     </dependency>
 
     <dependency>
       <groupId>android</groupId>
       <artifactId>android</artifactId>
-      <version>3.0_r1</version>
+      <version>3.0_r2</version>
       <scope>provided</scope>
     </dependency>
 
     <dependency>
       <groupId>android</groupId>
       <artifactId>android</artifactId>
-      <version>3.1_r2</version>
+      <version>3.1_r3</version>
       <scope>provided</scope>
     </dependency>
 
@@ -120,6 +126,13 @@ folder have names like android-3, android-4 and so on.
       <groupId>android</groupId>
       <artifactId>android</artifactId>
       <version>3.2_r1</version>
+      <scope>provided</scope>
+    </dependency>
+
+    <dependency>
+      <groupId>android</groupId>
+      <artifactId>android</artifactId>
+      <version>4.0_r1</version>
       <scope>provided</scope>
     </dependency>
 
@@ -156,7 +169,7 @@ for the maps add ons
     <dependency>
       <groupId>com.google.android.maps</groupId>
       <artifactId>maps</artifactId>
-      <version>10_r1</version>
+      <version>10_r2</version>
       <scope>provided</scope>
     </dependency>
 
@@ -178,6 +191,13 @@ for the maps add ons
       <groupId>com.google.android.maps</groupId>
       <artifactId>maps</artifactId>
       <version>13_r1</version>
+      <scope>provided</scope>
+    </dependency>
+
+    <dependency>
+      <groupId>com.google.android.maps</groupId>
+      <artifactId>maps</artifactId>
+      <version>14_r1</version>
       <scope>provided</scope>
     </dependency>
 
@@ -204,18 +224,25 @@ for the maps add ons
       <scope>provided</scope>
     </dependency>
 
+    <dependency>
+      <groupId>com.android.future</groupId>
+      <artifactId>usb</artifactId>
+      <version>14_r1</version>
+      <scope>provided</scope>
+    </dependency>
+
   for the compatibility extra (ATTENTION! Do NOT use provided scope!!)
 
     <dependency>
       <groupId>android.support</groupId>
       <artifactId>compatibility-v4</artifactId>
-      <version>r3</version>
+      <version>r4</version>
     </dependency>
 
     <dependency>
       <groupId>android.support</groupId>
       <artifactId>compatibility-v13</artifactId>
-      <version>r3</version>
+      <version>r4</version>
     </dependency>
 
 
@@ -320,3 +347,4 @@ Additional Contributors
 - Jake Wharton <jakewharton@gmail.com> - 3.2 and compatibility v13 support
 - https://github.com/holdensmagicalunicorn - spelling fix
 - Guto Maia <guto@guto.net>- initial USB add on support
+- Lorenzo Villani - initial 4.0 support

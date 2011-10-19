@@ -1,6 +1,13 @@
 Changelog per release
 ---------------------
 
+1.1.0
+
+ - added support for Android 4.0, api 14, Ice Cream Sandwich
+ - adapted to changes from SDK r14
+ - updated documentation to latest dependency versions
+ - attention all add on folder got changed in name, need to remove and reinstall
+
 1.0.0
 
  - added support for USB addon for platforms 10, 12, 13
