@@ -58,6 +58,7 @@
                 <module>android-11</module>
                 <module>android-12</module>
                 <module>android-13</module>
+                <module>android-14</module>
             </modules>
         </profile>
         <profile>
@@ -106,6 +107,12 @@
             <id>3.2</id>
             <modules>
                 <module>android-13</module>
+            </modules>
+        </profile>
+        <profile>
+            <id>4.0</id>
+            <modules>
+                <module>android-14</module>
             </modules>
         </profile>
     </profiles>
