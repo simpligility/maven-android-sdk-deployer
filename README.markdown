@@ -294,7 +294,6 @@ which will in turn provide the artifacts to all the machines.
 you want to publish to and then add a server with the credentials to
 your settings.xml.
 
-E.g.
     <settings>
       <servers>
         <server>
