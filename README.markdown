@@ -3,6 +3,11 @@ Maven Android SDK Deployer
 
 Author: Manfred Moser manfred@simpligility.com  at [simpligility technologies inc](http://www.simpligility.com)
 
+The Maven Android SDK Deployer is a helper maven project that can be
+used to install the libraries necessary to build Android applications
+with Maven and the Android Maven Plugin directly from your local
+Android SDK installation.
+
 ATTENTION with ADK 14
 
 The SDK changed folder names again. This time for all the Google Add
@@ -21,11 +26,6 @@ release or to work around bugs like missing JSON libraries in some
 older artifacts deployed to Maven central. If you use this tool make
 sure your dependencies are as documented here.
 
-The Maven Android SDK Deployer is a helper maven project that can be
-used to install the libraries necessary to build Android applications
-with Maven and the Maven Android Plugin directly from your local
-Android SDK installation.
-
 The android.jar artifacts in Maven central are available with the
 groupId com.google.android, whereas this tool uses android.android to
 avoid overlap.
@@ -33,51 +33,52 @@ avoid overlap.
 How to Use
 ----------
 
-- Download the latest Android SDK from http://developer.android.com/sdk/index.html following the instructions there.
- - For the default usage of the deployer install **all platforms and add-on apis**, ensure that all folder in the platforms
-folder have names like android-3, android-4 and so on. 
- - If you find names using the platform version (e.g. 15) in the folder
- name reinstall that platform from the android tool. 
- - In a similar manner the folder names in add-ons have to use the pattern
- addon_google_apis_google_inc_3 up to addon_google_apis_google_inc_8. 
- - If the folder names are different reinstall the add-ons as well
-
-- set up the environment variable ANDROID_HOME to contain the absolute folder you just installed the SDK to
- (e.g. under bash: export ANDROID_HOME=/opt/android_sdk_linux)
+Download the latest Android SDK from
+http://developer.android.com/sdk/index.html following the instructions
+there.
  
- - ensure that the folder for ANDROID _HOME and all files within are readable by the current user
+- For the default usage of the deployer install **all platforms and
+add-on apis**, ensure that all folder in the platforms folder have
+names like android-3, android-4 and so on.  
 
-- run the command
+- If you find names using the platform version (e.g. 15) in the folder
+name reinstall that platform from the android tool.
+
+- In a similar manner the folder names in add-ons have to use the
+pattern addon_google_apis_google_inc_-3 up to
+addon_google_apis_google_inc_-8.  - If the folder names are different
+reinstall the add-ons as well
+
+Set up the environment variable ANDROID_HOME to contain the absolute
+ folder you just installed the SDK to (e.g. under bash: export
+ ANDROID_HOME=/opt/android_sdk_linux) and ensure that the folder for
+ ANDROID_HOME and all files within are readable by the current user
+
+Run the command
 
     mvn install
 
- in the root folder of this project (same as README you are just reading) to install all
- platforms and add-on apis
+in the root folder of this project (same as README you are just
+reading) to install all platforms and add-on apis
 
-- to install only a certain sdk level use
+To install only a certain sdk level use
 
     mvn install -P 1.5
-
     mvn install -P 1.6
-
     mvn install -P 2.1
-
     mvn install -P 2.2
-
     mvn install -P 2.3.3
-
     mvn install -P 3.0
-
     mvn install -P 3.1
-
     mvn install -P 3.2
+    mvn install -P 4.0
 
-- as a result you should find the android.jar and maps.jar in various versions
-  in your users local repository (~/.m2/repository/android and
-  ~/.m2/repository/com/google/android/maps and ) and you can therefore use the
-  following dependencies in your project
+As a result you should find the android.jar and maps.jar in various
+versions in your users local repository (~/.m2/repository/android and
+~/.m2/repository/com/google/android/maps and ) and you can therefore
+use the following dependencies in your project
 
-  for the core platforms
+For the core platforms
 
     <dependency>
       <groupId>android</groupId>
@@ -142,7 +143,7 @@ folder have names like android-3, android-4 and so on.
       <scope>provided</scope>
     </dependency>
 
-for the maps add ons
+For the maps add ons
 
     <dependency>
       <groupId>com.google.android.maps</groupId>
@@ -207,7 +208,7 @@ for the maps add ons
       <scope>provided</scope>
     </dependency>
 
-  for the usb add on
+For the usb add on
 
     <dependency>
       <groupId>com.android.future</groupId>
@@ -237,7 +238,7 @@ for the maps add ons
       <scope>provided</scope>
     </dependency>
 
-  for the compatibility extra (ATTENTION! Do NOT use provided scope!!)
+For the compatibility extra (ATTENTION! Do NOT use provided scope!!)
 
     <dependency>
       <groupId>android.support</groupId>
@@ -252,15 +253,16 @@ for the maps add ons
     </dependency>
 
 
-- to install only a specific module use
+To install only a specific module use
 
         mvn clean install -N
 
-  in any parent folder of the desired package and then the usual
+in any parent folder of the desired package and then the usual
 
         mvn clean install
 
-  For example to install only the compatibility v4 extra you can do the following
+For example to install only the compatibility v4 extra you can do the
+following
 
         mvn clean install -N
         cd extras
@@ -268,7 +270,7 @@ for the maps add ons
         cd compatibility-v4
         mvn clean install
 
-  Similar for only API level 12 add on use
+Similar for only API level 12 add on use
 
         mvn clean install -N
         cd add-ons
@@ -276,7 +278,7 @@ for the maps add ons
         cd google-apis-12
         mvn clean install
 
-  The same could be done with deploy
+The same could be done with deploy
 
 
 How To Use for Deploying Onto Remote Server
