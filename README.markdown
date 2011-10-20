@@ -5,29 +5,35 @@ Author: Manfred Moser manfred@simpligility.com  at [simpligility technologies in
 
 ATTENTION with ADK 14
 
-The SDK changed folder names again. This time for all the Google Add Ons. The Maven Android SDK Deployer'
-is adapted to the new naming scheme. To do that yourself remove all "Google APIs by Google Inc" in
+The SDK changed folder names again. This time for all the Google Add
+Ons. The Maven Android SDK Deployer' is adapted to the new naming
+scheme. To do that yourself remove all "Google APIs by Google Inc" in
 the android SDK manager and install them again.
 
-ATTENTION!
-Currently some android.jar artifacts are available in Maven central and unless you use maps or usb
-related dependencies, android 3.0+, the compatibility library jar files or insist on using the
-original jar files from the local SDK install, you will not need this tool anymore.
+ATTENTION!  Currently some android.jar artifacts are available in
+Maven central and unless you use maps or usb related dependencies,
+android 3.0+, the compatibility library jar files or insist on using
+the original jar files from the local SDK install, you will not need
+this tool anymore.
 
-You will however need this tool to access the latest Android 2.3 release or to work around bugs like missing JSON libraries
-in some older artifacts deployed to Maven central. If you  use this tool make sure your dependencies are as documented here.
+You will however need this tool to access the latest Android 2.3
+release or to work around bugs like missing JSON libraries in some
+older artifacts deployed to Maven central. If you use this tool make
+sure your dependencies are as documented here.
 
-The Maven Android SDK Deployer is a helper maven project that can be used to install the libraries
-necessary to build Android applications with Maven and the Maven Android Plugin directly from your local Android SDK
-installation.
+The Maven Android SDK Deployer is a helper maven project that can be
+used to install the libraries necessary to build Android applications
+with Maven and the Maven Android Plugin directly from your local
+Android SDK installation.
 
-The android.jar artifacts in Maven central are available with the groupId com.google.android, whereas this tool uses
-android.android to avoid overlap.
+The android.jar artifacts in Maven central are available with the
+groupId com.google.android, whereas this tool uses android.android to
+avoid overlap.
 
 How to Use
 ----------
 
-- download the latest Android SDK from http://developer.android.com/sdk/index.html following the instructions there.
+- Download the latest Android SDK from http://developer.android.com/sdk/index.html following the instructions there.
  - For the default usage of the deployer install **all platforms and add-on apis**, ensure that all folder in the platforms
 folder have names like android-3, android-4 and so on. 
  - If you find names using the platform version (e.g. 15) in the folder
@@ -276,41 +282,48 @@ for the maps add ons
 How To Use for Deploying Onto Remote Server
 -------------------------------------------
 
-The above deployment works fine for one machine, but what if you need to supply a whole team of developers and a cluster
-of build machines with the artifacts. Well, you follow these steps:
+The above deployment works fine for one machine, but what if you need
+to supply a whole team of developers and a cluster of build machines
+with the artifacts. Well, you follow these steps:
 
-- as a condition you need to have a repository server used by all those machines and the following process will deploy to
-this server, which will in turn provide the artifacts to all the machines.
+- as a condition you need to have a repository server used by all
+those machines and the following process will deploy to this server,
+which will in turn provide the artifacts to all the machines.
 
-- edit the repo.url property in the pom.xml to point to the repository you want to publish to and then add a server with
-the credentials to your settings.xml.
+- edit the repo.url property in the pom.xml to point to the repository
+you want to publish to and then add a server with the credentials to
+your settings.xml.
 
 E.g.
-<settings>
-    <servers>
+    <settings>
+      <servers>
         <server>
-            <id>android.repo</id>
-            <username>your username</username>
-            <password>your password</password>
+          <id>android.repo</id>
+          <username>your username</username>
+          <password>your password</password>
         </server>
-    </servers>
-</settings>
+      </servers>
+    </settings>
 
 - run the command
 
     mvn deploy
 
- in the root folder of this project (same as README you are just reading), you can also
- use the same profile options for the different api levels 
+ in the root folder of this project (same as README you are just
+ reading), you can also use the same profile options for the different
+ api levels
 
-- as a result you should find the artifact in the repository of your remote server
+- as a result you should find the artifact in the repository of your
+  remote server
 
-For more information about this stuff look at the documentation for the maven-deploy-plugin.
+For more information about this stuff look at the documentation for
+the maven-deploy-plugin.
 
 Mailinglist - Questions
 -----------------------
 
-Please direct any questions to the community at the  Maven Android Developers mailing list at
+Please direct any questions to the community at the Maven Android
+Developers mailing list at
 http://groups.google.com/group/maven-android-developers
  
 Known problems
@@ -318,25 +331,29 @@ Known problems
 
 - Platforms and Add on folder names changes in SDK
 
-When updating an existing android sdk install the add-ons subfolder can sometimes be reused
-and their contents be updates so you could end up with e.g. the google maps-4r2 in a folder
-named google_apis-4_r01. To work around this just uninstall the affected add-on and reinstall
-it with the android sdk tool.
+When updating an existing android sdk install the add-ons subfolder
+can sometimes be reused and their contents be updates so you could end
+up with e.g. the google maps-4r2 in a folder named
+google_apis-4_r01. To work around this just uninstall the affected
+add-on and reinstall it with the android sdk tool.
 
-Similarly the platform specific folder used to be e.g. android-1.5 and is now android-3 using the api level as the numeric
-identifier. If your SDK install uses the old folder names for any platform simply reinstall that platform with the android
-tool.
+Similarly the platform specific folder used to be e.g. android-1.5 and
+is now android-3 using the api level as the numeric identifier. If
+your SDK install uses the old folder names for any platform simply
+reinstall that platform with the android tool.
 
 Issues
 ------
 
-If you find any problems or would like to suggest a feature,  please feel free to file an issue on github at
+If you find any problems or would like to suggest a feature, please
+feel free to file an issue on github at
 http://github.com/mosabua/maven-android-sdk-deployer/issues
 
 Potential todo items
 --------------------
 
-- add custom pom files for install/deploy that eg. define dependency from maps to android jar
+- add custom pom files for install/deploy that eg. define dependency
+  from maps to android jar
 
 - maybe some sort of reporting of errors, failures and success as well
 
