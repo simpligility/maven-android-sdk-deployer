@@ -284,13 +284,13 @@ How To Use for Deploying Onto Remote Server
 
 The above deployment works fine for one machine, but what if you need
 to supply a whole team of developers and a cluster of build machines
-with the artifacts. Well, you follow these steps:
+with the artifacts.
 
-- as a condition you need to have a repository server used by all
+As a condition you need to have a repository server used by all
 those machines and the following process will deploy to this server,
 which will in turn provide the artifacts to all the machines.
 
-- edit the repo.url property in the pom.xml to point to the repository
+Edit the repo.url property in the pom.xml to point to the repository
 you want to publish to and then add a server with the credentials to
 your settings.xml.
 
@@ -304,16 +304,14 @@ your settings.xml.
       </servers>
     </settings>
 
-- run the command
+Run the command
 
     mvn deploy
 
- in the root folder of this project (same as README you are just
- reading), you can also use the same profile options for the different
- api levels
-
-- as a result you should find the artifact in the repository of your
-  remote server
+in the root folder of this project (same as README you are just
+reading), you can also use the same profile options for the different
+api level. As a result you should find the artifact in the repository
+of your remote server
 
 For more information about this stuff look at the documentation for
 the maven-deploy-plugin.
