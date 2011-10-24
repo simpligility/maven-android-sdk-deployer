@@ -13,7 +13,7 @@
     </parent>
 
     <properties>
-        <jar.path>${sdk.extras.path}/android/compatibility/v4/android-support-v4.jar</jar.path>
+        <jar.path>${sdk.extras.compatibility.path}/v4/android-support-v4.jar</jar.path>
         <android.support.artifactid>compatibility-v4</android.support.artifactid>
         <jar.version>r${Pkg.Revision}</jar.version>
     </properties>
