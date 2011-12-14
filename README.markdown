@@ -139,7 +139,7 @@ For the core platforms
     <dependency>
       <groupId>android</groupId>
       <artifactId>android</artifactId>
-      <version>4.0_r1</version>
+      <version>4.0_r2</version>
       <scope>provided</scope>
     </dependency>
 
@@ -204,7 +204,7 @@ For the maps add ons
     <dependency>
       <groupId>com.google.android.maps</groupId>
       <artifactId>maps</artifactId>
-      <version>14_r1</version>
+      <version>14_r2</version>
       <scope>provided</scope>
     </dependency>
 
@@ -213,7 +213,7 @@ For the usb add on
     <dependency>
       <groupId>com.android.future</groupId>
       <artifactId>usb</artifactId>
-      <version>10_r1</version>
+      <version>10_r2</version>
       <scope>provided</scope>
     </dependency>
 
@@ -234,7 +234,7 @@ For the usb add on
     <dependency>
       <groupId>com.android.future</groupId>
       <artifactId>usb</artifactId>
-      <version>14_r1</version>
+      <version>14_r2</version>
       <scope>provided</scope>
     </dependency>
 
@@ -243,13 +243,13 @@ For the compatibility extra (ATTENTION! Do NOT use provided scope!!)
     <dependency>
       <groupId>android.support</groupId>
       <artifactId>compatibility-v4</artifactId>
-      <version>r4</version>
+      <version>r5</version>
     </dependency>
 
     <dependency>
       <groupId>android.support</groupId>
       <artifactId>compatibility-v13</artifactId>
-      <version>r4</version>
+      <version>r5</version>
     </dependency>
 
 
@@ -258,7 +258,7 @@ To install only a specific module use
         mvn clean install -N
 
 in any parent folder of the desired package and then the usual
-
+                                  1
         mvn clean install
 
 For example to install only the compatibility v4 extra you can do the

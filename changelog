@@ -1,6 +1,10 @@
 Changelog per release
 ---------------------
 
+1.1.1
+
+ - adapted documentation to new revisions from SDK 16 release
+
 1.1.0
 
  - added support for Android 4.0, api 14, Ice Cream Sandwich
