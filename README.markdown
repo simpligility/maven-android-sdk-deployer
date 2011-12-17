@@ -139,7 +139,7 @@ For the core platforms
     <dependency>
       <groupId>android</groupId>
       <artifactId>android</artifactId>
-      <version>4.0_r2</version>
+      <version>4.0_r3</version>
       <scope>provided</scope>
     </dependency>
 
@@ -243,13 +243,13 @@ For the compatibility extra (ATTENTION! Do NOT use provided scope!!)
     <dependency>
       <groupId>android.support</groupId>
       <artifactId>compatibility-v4</artifactId>
-      <version>r5</version>
+      <version>r6</version>
     </dependency>
 
     <dependency>
       <groupId>android.support</groupId>
       <artifactId>compatibility-v13</artifactId>
-      <version>r5</version>
+      <version>r6</version>
     </dependency>
 
 
