@@ -8,13 +8,6 @@ used to install the libraries necessary to build Android applications
 with Maven and the Android Maven Plugin directly from your local
 Android SDK installation.
 
-ATTENTION with ADK 14
-
-The SDK changed folder names again. This time for all the Google Add
-Ons. The Maven Android SDK Deployer' is adapted to the new naming
-scheme. To do that yourself remove all "Google APIs by Google Inc" in
-the android SDK manager and install them again.
-
 ATTENTION!  Currently some android.jar artifacts are available in
 Maven central and unless you use maps or usb related dependencies,
 android 3.0+, the compatibility library jar files or insist on using
@@ -363,6 +356,13 @@ is now android-3 using the api level as the numeric identifier. If
 your SDK install uses the old folder names for any platform simply
 reinstall that platform with the android tool.
 
+ATTENTION with ADK 14
+
+The SDK changed folder names again. This time for all the Google Add
+Ons. The Maven Android SDK Deployer' is adapted to the new naming
+scheme. To do that yourself remove all "Google APIs by Google Inc" in
+the android SDK manager and install them again.
+
 Issues
 ------
 
@@ -382,7 +382,7 @@ Additional Contributors
 -----------------------
 
 - Hugo Josefson <hugo@josefson.org> - properties plugin usage
-- Jake Wharton <jakewharton@gmail.com> - 3.2 and compatibility v13 support
+- Jake Wharton <jakewharton@gmail.com> - 3.2, compatibility v13 and 4.0.3 support
 - https://github.com/holdensmagicalunicorn - spelling fix
 - Guto Maia <guto@guto.net>- initial USB add on support
 - Lorenzo Villani - initial 4.0 support
