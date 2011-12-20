@@ -60,6 +60,7 @@
                 <module>google-apis-12</module>
                 <module>google-apis-13</module>
                 <module>google-apis-14</module>
+                <module>google-apis-15</module>
             </modules>
         </profile>
         <profile>
@@ -114,6 +115,12 @@
             <id>4.0</id>
             <modules>
                 <module>google-apis-14</module>
+            </modules>
+        </profile>
+        <profile>
+            <id>4.0.3</id>
+            <modules>
+                <module>google-apis-15</module>
             </modules>
         </profile>
     </profiles>

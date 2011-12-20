@@ -72,6 +72,7 @@ To install only a certain sdk level use
     mvn install -P 3.1
     mvn install -P 3.2
     mvn install -P 4.0
+    mvn install -P 4.0.3
 
 As a result you should find the android.jar and maps.jar in various
 versions in your users local repository (~/.m2/repository/android and
@@ -143,6 +144,13 @@ For the core platforms
       <scope>provided</scope>
     </dependency>
 
+    <dependency>
+      <groupId>android</groupId>
+      <artifactId>android</artifactId>
+      <version>4.0.3_r1</version>
+      <scope>provided</scope>
+    </dependency>
+
 For the maps add ons
 
     <dependency>
@@ -208,6 +216,13 @@ For the maps add ons
       <scope>provided</scope>
     </dependency>
 
+    <dependency>
+      <groupId>com.google.android.maps</groupId>
+      <artifactId>maps</artifactId>
+      <version>15_r1</version>
+      <scope>provided</scope>
+    </dependency>
+
 For the usb add on
 
     <dependency>
@@ -235,6 +250,13 @@ For the usb add on
       <groupId>com.android.future</groupId>
       <artifactId>usb</artifactId>
       <version>14_r2</version>
+      <scope>provided</scope>
+    </dependency>
+
+    <dependency>
+      <groupId>com.android.future</groupId>
+      <artifactId>usb</artifactId>
+      <version>15_r1</version>
       <scope>provided</scope>
     </dependency>
 
