@@ -1,6 +1,10 @@
 Changelog per release
 ---------------------
 
+1.1.2
+
+ - added support for API level 15 contributed by Jake Wharton
+
 1.1.1
 
  - adapted documentation to new revisions from SDK 16 release
