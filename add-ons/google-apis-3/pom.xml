@@ -14,6 +14,7 @@
 
     <properties>
         <jar.simpleVersion>3</jar.simpleVersion>
+        <addon.directory>addon-google_apis-google-${jar.simpleVersion}</addon.directory>
     </properties>
 
     <build>
