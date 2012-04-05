@@ -42,6 +42,7 @@
             <modules>
                 <module>compatibility-v4</module>
                 <module>compatibility-v13</module>
+                <module>analytics-v2</module>
             </modules>
         </profile>
     </profiles>
