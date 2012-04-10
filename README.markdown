@@ -140,7 +140,7 @@ For the core platforms
     <dependency>
       <groupId>android</groupId>
       <artifactId>android</artifactId>
-      <version>4.0.3_r1</version>
+      <version>4.0.3_r3</version>
       <scope>provided</scope>
     </dependency>
 
@@ -212,7 +212,7 @@ For the maps add ons
     <dependency>
       <groupId>com.google.android.maps</groupId>
       <artifactId>maps</artifactId>
-      <version>15_r1</version>
+      <version>15_r2</version>
       <scope>provided</scope>
     </dependency>
 
@@ -249,7 +249,7 @@ For the usb add on
     <dependency>
       <groupId>com.android.future</groupId>
       <artifactId>usb</artifactId>
-      <version>15_r1</version>
+      <version>15_r2</version>
       <scope>provided</scope>
     </dependency>
 
@@ -258,15 +258,22 @@ For the compatibility extra (ATTENTION! Do NOT use provided scope!!)
     <dependency>
       <groupId>android.support</groupId>
       <artifactId>compatibility-v4</artifactId>
-      <version>r6</version>
+      <version>r7</version>
     </dependency>
 
     <dependency>
       <groupId>android.support</groupId>
       <artifactId>compatibility-v13</artifactId>
-      <version>r6</version>
+      <version>r7</version>
     </dependency>
 
+For the Google Analytics extra (ATTENTION! Do NOT use provided scope!!)
+
+    <dependency>
+      <groupId>com.google.android.analytics</groupId>
+      <artifactId>analytics-v2</artifactId>
+      <version>r2</version>
+    </dependency>
 
 To install only a specific module use
 
