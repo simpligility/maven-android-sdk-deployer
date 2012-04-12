@@ -1,6 +1,11 @@
 Changelog per release
 ---------------------
 
+1.2.0
+
+ - added support for Google Analytics
+ - added support for AdMob
+
 1.1.2
 
  - added support for API level 15 contributed by Jake Wharton

@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
-	<modelVersion>4.0.0</modelVersion>
-	<groupId>com.simpligility.android.sdk-deployer</groupId>
-	<artifactId>maven-android-sdk-deployer</artifactId>
-	<version>1.1.2</version>
-	<packaging>pom</packaging>
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>com.simpligility.android.sdk-deployer</groupId>
+    <artifactId>maven-android-sdk-deployer</artifactId>
+    <version>1.2.0</version>
+    <packaging>pom</packaging>
     <name>Maven Android SDK Deployer</name>
     <description>The Maven Android SDK Deployer is a helper maven project that can be used to install the libraries
     necessary to build Android applications with Maven and the Maven Android Plugin. These are mostly android.jar and
@@ -39,8 +39,8 @@
     </properties>
 
     <issueManagement>
-    	<system>Github </system>
-    	<url>http://github.com/mosabua/maven-android-sdk-deployer/issues</url>
+    <system>Github </system>
+    <url>http://github.com/mosabua/maven-android-sdk-deployer/issues</url>
     </issueManagement>
     <mailingLists>
         <mailingList>

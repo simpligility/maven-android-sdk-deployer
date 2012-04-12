@@ -401,3 +401,5 @@ Additional Contributors
 - https://github.com/holdensmagicalunicorn - spelling fix
 - Guto Maia <guto@guto.net>- initial USB add on support
 - Lorenzo Villani - initial 4.0 support
+- Paul Merlin http://eskatos.github.com - Google Analytics extra
+- Matteo Panella <morpheus@level28.org> - Google AdMobs extra
