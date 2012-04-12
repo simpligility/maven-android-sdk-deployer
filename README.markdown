@@ -275,6 +275,14 @@ For the Google Analytics extra (ATTENTION! Do NOT use provided scope!!)
       <version>r2</version>
     </dependency>
 
+For the Google AdMob Ads extra (ATTENTION! Do NOT use provided scope!!)
+
+    <dependency>
+      <groupId>com.google.android.admob</groupId>
+      <artifactId>admob-v4</artifactId>
+      <version>r4</version>
+    </dependency>
+
 To install only a specific module use
 
         mvn clean install -N
