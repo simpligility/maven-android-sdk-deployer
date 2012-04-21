@@ -279,8 +279,8 @@ For the Google AdMob Ads extra (ATTENTION! Do NOT use provided scope!!)
 
     <dependency>
       <groupId>com.google.android.admob</groupId>
-      <artifactId>admob-v4</artifactId>
-      <version>r4</version>
+      <artifactId>admob-v5</artifactId>
+      <version>r5</version>
     </dependency>
 
 To install only a specific module use

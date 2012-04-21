@@ -43,7 +43,7 @@
                 <module>compatibility-v4</module>
                 <module>compatibility-v13</module>
                 <module>analytics-v2</module>
-                <module>admob-v4</module>
+                <module>admob-v5</module>
             </modules>
         </profile>
     </profiles>
