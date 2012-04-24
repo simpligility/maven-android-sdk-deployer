@@ -2,9 +2,9 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.simpligility.android.sdk-deployer</groupId>
-    <artifactId>admob-v4</artifactId>
+    <artifactId>admob-v5</artifactId>
     <packaging>pom</packaging>
-    <name>Android Google AdMob Ads Extra V4</name>
+    <name>Android Google AdMob Ads Extra V5</name>
 
     <parent>
         <groupId>com.simpligility.android.sdk-deployer</groupId>
@@ -13,8 +13,8 @@
     </parent>
 
     <properties>
-        <jar.path>${sdk.extras.admob.path}/GoogleAdMobAdsSdk-4.3.1.jar</jar.path>
-        <extras.admob.artifactId>admob-v4</extras.admob.artifactId>
+        <jar.path>${sdk.extras.admob.path}/GoogleAdMobAdsSdk-6.0.0.jar</jar.path>
+        <extras.admob.artifactId>admob-v5</extras.admob.artifactId>
         <jar.version>r${Pkg.Revision}</jar.version>
     </properties>
     <build>
