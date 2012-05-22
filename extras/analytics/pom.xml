@@ -2,19 +2,19 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.simpligility.android.sdk-deployer</groupId>
-    <artifactId>analytics-v2</artifactId>
+    <artifactId>analytics</artifactId>
     <packaging>pom</packaging>
-    <name>Android Google Analytics Extra V2</name>
+    <name>Android Google Analytics Extra</name>
 
     <parent>
         <groupId>com.simpligility.android.sdk-deployer</groupId>
         <artifactId>android-extras</artifactId>
-        <version>1.2.0</version>
+        <version>1.2.1</version>
     </parent>
 
     <properties>
         <jar.path>${sdk.extras.analytics.path}/libGoogleAnalytics.jar</jar.path>
-        <extras.analytics.artifactId>analytics-v2</extras.analytics.artifactId>
+        <extras.analytics.artifactId>analytics</extras.analytics.artifactId>
         <jar.version>r${Pkg.Revision}</jar.version>
     </properties>
     <build>

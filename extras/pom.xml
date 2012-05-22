@@ -9,7 +9,7 @@
     <parent>
         <groupId>com.simpligility.android.sdk-deployer</groupId>
         <artifactId>maven-android-sdk-deployer</artifactId>
-        <version>1.2.0</version>
+        <version>1.2.1</version>
     </parent>
   <build>
     <plugins>
@@ -42,8 +42,8 @@
             <modules>
                 <module>compatibility-v4</module>
                 <module>compatibility-v13</module>
-                <module>analytics-v2</module>
-                <module>admob-v5</module>
+                <module>analytics</module>
+                <module>admob</module>
             </modules>
         </profile>
     </profiles>

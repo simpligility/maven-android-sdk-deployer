@@ -1,6 +1,11 @@
 Changelog per release
 ---------------------
 
+1.2.1
+
+ - cleaned up directory structure for analytics and admob
+   and GAV parameters
+
 1.2.0
 
  - added support for Google Analytics

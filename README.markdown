@@ -271,7 +271,7 @@ For the Google Analytics extra (ATTENTION! Do NOT use provided scope!!)
 
     <dependency>
       <groupId>com.google.android.analytics</groupId>
-      <artifactId>analytics-v2</artifactId>
+      <artifactId>analytics</artifactId>
       <version>r2</version>
     </dependency>
 
@@ -279,8 +279,8 @@ For the Google AdMob Ads extra (ATTENTION! Do NOT use provided scope!!)
 
     <dependency>
       <groupId>com.google.android.admob</groupId>
-      <artifactId>admob-v5</artifactId>
-      <version>r5</version>
+      <artifactId>admob</artifactId>
+      <version>6.0.1-r6</version>
     </dependency>
 
 To install only a specific module use
