@@ -30,6 +30,7 @@
                             <packaging>jar</packaging>
                             <version>${jar.version}</version>
                             <file>${jar.path}</file>
+                            <javadoc>${javadoc.path}</javadoc>
                         </configuration>
                     </execution>
                 </executions>
@@ -49,6 +50,7 @@
                             <file>${jar.path}</file>
                             <url>${repo.url}</url>
                             <repositoryId>${repo.id}</repositoryId>
+                            <javadoc>${javadoc.path}</javadoc>
                         </configuration>
                     </execution>
                 </executions>
