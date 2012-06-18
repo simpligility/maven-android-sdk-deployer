@@ -44,7 +44,6 @@
                 <inherited>false</inherited>
                 <executions>
                     <execution>
-                        <id>default-install</id>
                         <phase>none</phase>
                     </execution>
                 </executions>
