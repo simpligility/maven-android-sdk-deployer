@@ -137,7 +137,7 @@
                                     <goal>jar</goal>
                                 </goals>
                                 <configuration>
-                                    <classesDirectory>${android.sdk.path}/docs/reference/test</classesDirectory>
+                                    <classesDirectory>${android.sdk.path}/docs/reference</classesDirectory>
                                     <includes>
                                         <include>**/*</include>
                                     </includes>
