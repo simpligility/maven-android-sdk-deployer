@@ -61,6 +61,7 @@
                 <module>google-apis-13</module>
                 <module>google-apis-14</module>
                 <module>google-apis-15</module>
+                <module>google-apis-16</module>
             </modules>
         </profile>
         <profile>
@@ -121,6 +122,12 @@
             <id>4.0.3</id>
             <modules>
                 <module>google-apis-15</module>
+            </modules>
+        </profile>
+        <profile>
+            <id>4.1</id>
+            <modules>
+                <module>google-apis-16</module>
             </modules>
         </profile>
     </profiles>
