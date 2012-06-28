@@ -66,6 +66,7 @@ To install only a certain sdk level use
     mvn install -P 3.2
     mvn install -P 4.0
     mvn install -P 4.0.3
+    mvn install -P 4.1
 
 As a result you should find the android.jar and maps.jar in various
 versions in your users local repository (~/.m2/repository/android and
@@ -144,6 +145,13 @@ For the core platforms
       <scope>provided</scope>
     </dependency>
 
+    <dependency>
+      <groupId>android</groupId>
+      <artifactId>android</artifactId>
+      <version>4.1_r1</version>
+      <scope>provided</scope>
+    </dependency>
+
 For the maps add ons
 
     <dependency>
@@ -216,6 +224,13 @@ For the maps add ons
       <scope>provided</scope>
     </dependency>
 
+    <dependency>
+      <groupId>com.google.android.maps</groupId>
+      <artifactId>maps</artifactId>
+      <version>16_r1</version>
+      <scope>provided</scope>
+    </dependency>
+
 For the usb add on
 
     <dependency>
@@ -253,18 +268,25 @@ For the usb add on
       <scope>provided</scope>
     </dependency>
 
+    <dependency>
+      <groupId>com.android.future</groupId>
+      <artifactId>usb</artifactId>
+      <version>16_r1</version>
+      <scope>provided</scope>
+    </dependency>
+
 For the compatibility extra (ATTENTION! Do NOT use provided scope!!)
 
     <dependency>
       <groupId>android.support</groupId>
       <artifactId>compatibility-v4</artifactId>
-      <version>r7</version>
+      <version>r9</version>
     </dependency>
 
     <dependency>
       <groupId>android.support</groupId>
       <artifactId>compatibility-v13</artifactId>
-      <version>r7</version>
+      <version>r9</version>
     </dependency>
 
 For the Google Analytics extra (ATTENTION! Do NOT use provided scope!!)
@@ -281,6 +303,14 @@ For the Google AdMob Ads extra (ATTENTION! Do NOT use provided scope!!)
       <groupId>com.google.android.admob</groupId>
       <artifactId>admob</artifactId>
       <version>6.0.1-r6</version>
+    </dependency>
+
+For the Google Cloud Messaging Library extra (ATTENTION! Do NOT use provided scope!!)
+
+    <dependency>
+      <groupId>com.google.android.gcm</groupId>
+      <artifactId>gcm</artifactId>
+      <version>r1</version>
     </dependency>
 
 To install only a specific module use
