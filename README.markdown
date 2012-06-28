@@ -280,13 +280,13 @@ For the compatibility extra (ATTENTION! Do NOT use provided scope!!)
     <dependency>
       <groupId>android.support</groupId>
       <artifactId>compatibility-v4</artifactId>
-      <version>r7</version>
+      <version>r9</version>
     </dependency>
 
     <dependency>
       <groupId>android.support</groupId>
       <artifactId>compatibility-v13</artifactId>
-      <version>r7</version>
+      <version>r9</version>
     </dependency>
 
 For the Google Analytics extra (ATTENTION! Do NOT use provided scope!!)
