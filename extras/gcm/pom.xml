@@ -2,13 +2,13 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.simpligility.android.sdk-deployer</groupId>
-    <artifactId>android-extras</artifactId>
+    <artifactId>android-gcm</artifactId>
     <packaging>pom</packaging>
-    <name>Android Extras</name>
+    <name>Android GCM Extra</name>
 
     <parent>
         <groupId>com.simpligility.android.sdk-deployer</groupId>
-        <artifactId>maven-android-sdk-deployer</artifactId>
+        <artifactId>android-extras</artifactId>
         <version>1.2.1</version>
     </parent>
   <build>
@@ -25,7 +25,7 @@
             </goals>
             <configuration>
               <files>
-                <file>${sdk.extras.compatibility.path}/source.properties</file>
+                <file>${sdk.extras.gcm.path}/source.properties</file>
               </files>
             </configuration>
           </execution>
@@ -40,11 +40,8 @@
                 <activeByDefault>true</activeByDefault>
             </activation>
             <modules>
-                <module>compatibility-v4</module>
-                <module>compatibility-v13</module>
-                <module>analytics</module>
-                <module>admob</module>
-                <module>gcm</module>
+                <module>gcm-client</module>
+                <module>gcm-server</module>
             </modules>
         </profile>
     </profiles>
