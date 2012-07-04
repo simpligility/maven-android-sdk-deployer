@@ -38,9 +38,9 @@ names like android-3, android-4 and so on.
 name reinstall that platform from the android tool.
 
 - In a similar manner the folder names in add-ons have to use the
-pattern addon_google_apis_google_inc_-3 up to
-addon_google_apis_google_inc_-8.  - If the folder names are different
-reinstall the add-ons as well
+pattern addon_google_apis_google-3 up to addon_google_apis_google-15.
+
+- If the folder names are different reinstall the add-ons as well
 
 Set up the environment variable ANDROID_HOME to contain the absolute
  folder you just installed the SDK to (e.g. under bash: export
