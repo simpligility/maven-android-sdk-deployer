@@ -75,7 +75,6 @@
                     <artifactId>properties-maven-plugin</artifactId>
                     <version>1.0-alpha-2</version>
                 </plugin>
-
             </plugins>
         </pluginManagement>
     </build>

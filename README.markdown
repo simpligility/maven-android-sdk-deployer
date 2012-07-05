@@ -1,7 +1,21 @@
 Maven Android SDK Deployer
 --------------------------
 
-Author: Manfred Moser manfred@simpligility.com  at [simpligility technologies inc](http://www.simpligility.com)
+Author and Project Maintainer:
+
+Manfred Moser manfred@simpligility.com  at [simpligility technologies inc](http://www.simpligility.com)
+
+Contributors:
+
+- Hugo Josefson <hugo@josefson.org> - properties plugin usage
+- Jake Wharton <jakewharton@gmail.com> - 3.2, compatibility v13 and 4.0.3 support
+- https://github.com/holdensmagicalunicorn - spelling fix
+- Guto Maia <guto@guto.net>- initial USB add on support
+- Lorenzo Villani - initial 4.0 support
+- Paul Merlin http://eskatos.github.com - Google Analytics extra
+- Matteo Panella <morpheus@level28.org> - Google AdMobs extra
+- Benoit Billington https://github.com/Shusshu Google Cloud Messaging Client and Server
+
 
 The Maven Android SDK Deployer is a helper maven project that can be
 used to install the libraries necessary to build Android applications
@@ -11,10 +25,10 @@ Android SDK installation.
 ATTENTION!  Currently some android.jar artifacts are available in
 Maven central and unless you use maps or usb related dependencies,
 android 3.0+, the compatibility library jar files or insist on using
-the original jar files from the local SDK install, you will not need
+the original jar files from the local SDK install, you might not need
 this tool anymore.
 
-You will however need this tool to access the latest Android 2.3
+You will however need this tool to access the latest Android 4.1
 release or to work around bugs like missing JSON libraries in some
 older artifacts deployed to Maven central. If you use this tool make
 sure your dependencies are as documented here.
@@ -68,9 +82,8 @@ To install only a certain sdk level use
     mvn install -P 4.0.3
     mvn install -P 4.1
 
-As a result you should find the android.jar and maps.jar in various
-versions in your users local repository (~/.m2/repository/android and
-~/.m2/repository/com/google/android/maps and ) and you can therefore
+As a result you should find the android.jar and maps.jar and a number of other
+libraries in your users local repository (~/.m2/repository/) and you can therefore
 use the following dependencies in your project
 
 For the core platforms
@@ -305,13 +318,22 @@ For the Google AdMob Ads extra (ATTENTION! Do NOT use provided scope!!)
       <version>6.0.1-r6</version>
     </dependency>
 
-For the Google Cloud Messaging Library extra (ATTENTION! Do NOT use provided scope!!)
+For the Google Cloud Messaging Library extra client library (ATTENTION! Do NOT use provided scope!!)
 
     <dependency>
       <groupId>com.google.android.gcm</groupId>
-      <artifactId>gcm</artifactId>
+      <artifactId>gcm-client</artifactId>
       <version>r1</version>
     </dependency>
+
+For the Google Cloud Messaging Library extra server library (ATTENTION! Do NOT use provided scope!!)
+
+    <dependency>
+      <groupId>com.google.android.gcm</groupId>
+      <artifactId>gcm-server</artifactId>
+      <version>r1</version>
+    </dependency>
+
 
 To install only a specific module use
 
@@ -423,14 +445,4 @@ Potential todo items
 
 - maybe some sort of reporting of errors, failures and success as well
 
-Additional Contributors
------------------------
 
-- Hugo Josefson <hugo@josefson.org> - properties plugin usage
-- Jake Wharton <jakewharton@gmail.com> - 3.2, compatibility v13 and 4.0.3 support
-- https://github.com/holdensmagicalunicorn - spelling fix
-- Guto Maia <guto@guto.net>- initial USB add on support
-- Lorenzo Villani - initial 4.0 support
-- Paul Merlin http://eskatos.github.com - Google Analytics extra
-- Matteo Panella <morpheus@level28.org> - Google AdMobs extra
-- Benoit Billington https://github.com/Shusshu Google Cloud Messaging Client and Server
