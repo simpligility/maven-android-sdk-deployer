@@ -27,6 +27,7 @@
         <sdk.extras.compatibility.path>${sdk.extras.path}/android/support</sdk.extras.compatibility.path>
         <sdk.extras.analytics.path>${sdk.extras.path}/google/analytics_sdk</sdk.extras.analytics.path>
         <sdk.extras.admob.path>${sdk.extras.path}/google/admob_ads_sdk</sdk.extras.admob.path>
+        <sdk.extras.gcm.path>${sdk.extras.path}/google/gcm</sdk.extras.gcm.path>
         <platform.android.groupid>android</platform.android.groupid>
         <platform.android.artifactid>android</platform.android.artifactid>
         <addon.googlemaps.groupid>com.google.android.maps</addon.googlemaps.groupid>
@@ -36,6 +37,7 @@
         <extras.compatibility.groupid>android.support</extras.compatibility.groupid>
         <extras.analytics.groupid>com.google.android.analytics</extras.analytics.groupid>
         <extras.admob.groupid>com.google.android.admob</extras.admob.groupid>
+        <extras.gcm.groupid>com.google.android.gcm</extras.gcm.groupid>
     </properties>
 
     <issueManagement>

@@ -44,6 +44,7 @@
                 <module>compatibility-v13</module>
                 <module>analytics</module>
                 <module>admob</module>
+                <module>gcm</module>
             </modules>
         </profile>
     </profiles>
