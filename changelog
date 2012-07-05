@@ -1,6 +1,16 @@
 Changelog per release
 ---------------------
 
+1.3.0
+
+ - added support for GCM client and server by Benoit Billington and Matteo Panella
+   see https://github.com/mosabua/maven-android-sdk-deployer/pull/45
+ - added support for API level 16 provided by Matteo Panella
+   see https://github.com/mosabua/maven-android-sdk-deployer/pull/44
+ - updated documentation for new versions, cleanup and so on by Manfred Moser
+ - added profile for attaching javadoc provided by Michael Lake
+   see https://github.com/mosabua/maven-android-sdk-deployer/pull/41
+
 1.2.1
 
  - cleaned up directory structure for analytics and admob

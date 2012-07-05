@@ -13,9 +13,9 @@ Contributors:
 - Guto Maia <guto@guto.net>- initial USB add on support
 - Lorenzo Villani - initial 4.0 support
 - Paul Merlin http://eskatos.github.com - Google Analytics extra
-- Matteo Panella <morpheus@level28.org> - Google AdMobs extra
+- Matteo Panella <morpheus@level28.org> - Google AdMobs extra, support for 4.1
 - Benoit Billington https://github.com/Shusshu Google Cloud Messaging Client and Server
-
+- Michael Lake https://github.com/mlake support for Javadoc attachment for platforms
 
 The Maven Android SDK Deployer is a helper maven project that can be
 used to install the libraries necessary to build Android applications
@@ -399,6 +399,20 @@ of your remote server
 
 For more information about this stuff look at the documentation for
 the maven-deploy-plugin.
+
+
+Javadoc
+-------
+
+It is possible to create javadoc artifacts for the platforms
+where available in the sdk. To call it use
+
+    mvn clean install -Pall,with-javadoc
+
+and the respective javadoc jars will be created and also installed.
+This also works for deployment to a repository server
+
+    mvn clean deploy -Pall,with-javadoc
 
 Mailinglist - Questions
 -----------------------
