@@ -3,7 +3,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.simpligility.android.sdk-deployer</groupId>
     <artifactId>maven-android-sdk-deployer</artifactId>
-    <version>1.2.1</version>
+    <version>1.3.0</version>
     <packaging>pom</packaging>
     <name>Maven Android SDK Deployer</name>
     <description>The Maven Android SDK Deployer is a helper maven project that can be used to install the libraries
@@ -27,6 +27,7 @@
         <sdk.extras.compatibility.path>${sdk.extras.path}/android/support</sdk.extras.compatibility.path>
         <sdk.extras.analytics.path>${sdk.extras.path}/google/analytics_sdk</sdk.extras.analytics.path>
         <sdk.extras.admob.path>${sdk.extras.path}/google/admob_ads_sdk</sdk.extras.admob.path>
+        <sdk.extras.gcm.path>${sdk.extras.path}/google/gcm</sdk.extras.gcm.path>
         <platform.android.groupid>android</platform.android.groupid>
         <platform.android.artifactid>android</platform.android.artifactid>
         <addon.googlemaps.groupid>com.google.android.maps</addon.googlemaps.groupid>
@@ -36,6 +37,7 @@
         <extras.compatibility.groupid>android.support</extras.compatibility.groupid>
         <extras.analytics.groupid>com.google.android.analytics</extras.analytics.groupid>
         <extras.admob.groupid>com.google.android.admob</extras.admob.groupid>
+        <extras.gcm.groupid>com.google.android.gcm</extras.gcm.groupid>
     </properties>
 
     <issueManagement>
@@ -62,7 +64,7 @@
             <plugins>
                 <plugin>
                     <artifactId>maven-deploy-plugin</artifactId>
-                    <version>2.5</version>
+                    <version>2.7</version>
                 </plugin>
                 <plugin>
                     <artifactId>maven-install-plugin</artifactId>
@@ -73,7 +75,6 @@
                     <artifactId>properties-maven-plugin</artifactId>
                     <version>1.0-alpha-2</version>
                 </plugin>
-
             </plugins>
         </pluginManagement>
     </build>

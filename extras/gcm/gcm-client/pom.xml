@@ -2,49 +2,51 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.simpligility.android.sdk-deployer</groupId>
-    <artifactId>analytics</artifactId>
+    <artifactId>gcm-client</artifactId>
     <packaging>pom</packaging>
-    <name>Android Google Analytics Extra</name>
+    <name>Android Google Cloud Messaging Client Library Extra</name>
 
     <parent>
         <groupId>com.simpligility.android.sdk-deployer</groupId>
-        <artifactId>android-extras</artifactId>
+        <artifactId>android-gcm</artifactId>
         <version>1.3.0</version>
     </parent>
 
     <properties>
-        <jar.path>${sdk.extras.analytics.path}/libGoogleAnalytics.jar</jar.path>
-        <extras.analytics.artifactId>analytics</extras.analytics.artifactId>
+        <jar.path>${sdk.extras.gcm.path}/gcm-client/dist/gcm.jar</jar.path>
+        <extras.gcm-client.artifactId>gcm-client</extras.gcm-client.artifactId>
         <jar.version>r${Pkg.Revision}</jar.version>
     </properties>
     <build>
         <plugins>
-      <plugin>
-        <groupId>org.codehaus.mojo</groupId>
-        <artifactId>properties-maven-plugin</artifactId>
-        <executions>
-          <execution>
-            <phase>initialize</phase>
-            <goals>
-              <goal>read-project-properties</goal>
-            </goals>
-            <configuration>
-              <files>
-                <file>${sdk.extras.analytics.path}/source.properties</file>
-              </files>
-            </configuration>
-          </execution>
-        </executions>
-      </plugin>
+            <plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>properties-maven-plugin</artifactId>
+                <executions>
+                    <execution>
+                        <phase>initialize</phase>
+                        <goals>
+                            <goal>read-project-properties</goal>
+                        </goals>
+                        <configuration>
+                            <files>
+                                <file>${sdk.extras.gcm.path}/source.properties</file>
+                            </files>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
             <plugin>
                 <artifactId>maven-install-plugin</artifactId>
                 <executions>
                     <execution>
                         <phase>install</phase>
-                        <goals><goal>install-file</goal></goals>
+                        <goals>
+                            <goal>install-file</goal>
+                        </goals>
                         <configuration>
-                            <groupId>${extras.analytics.groupid}</groupId>
-                            <artifactId>${extras.analytics.artifactId}</artifactId>
+                            <groupId>${extras.gcm.groupid}</groupId>
+                            <artifactId>${extras.gcm-client.artifactId}</artifactId>
                             <packaging>jar</packaging>
                             <version>${jar.version}</version>
                             <file>${jar.path}</file>
@@ -58,10 +60,12 @@
                     <execution>
                         <id>a</id>
                         <phase>deploy</phase>
-                        <goals><goal>deploy-file</goal></goals>
+                        <goals>
+                            <goal>deploy-file</goal>
+                        </goals>
                         <configuration>
-                            <groupId>${extras.analytics.groupid}</groupId>
-                            <artifactId>${extras.analytics.artifactId}</artifactId>
+                            <groupId>${extras.gcm.groupid}</groupId>
+                            <artifactId>${extras.gcm-client.artifactId}</artifactId>
                             <packaging>jar</packaging>
                             <version>${jar.version}</version>
                             <file>${jar.path}</file>
