@@ -295,6 +295,12 @@ For the compatibility extra (ATTENTION! Do NOT use provided scope!!)
       <artifactId>compatibility-v4</artifactId>
       <version>r9</version>
     </dependency>
+    
+    <dependency>
+      <groupId>android.support</groupId>
+      <artifactId>compatibility-v7-gridlayout</artifactId>
+      <version>r9</version>
+    </dependency>
 
     <dependency>
       <groupId>android.support</groupId>
