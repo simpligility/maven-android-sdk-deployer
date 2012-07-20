@@ -13,6 +13,7 @@
     </parent>
 
     <properties>
+        <addon.directory>addon-google_apis-google-${jar.simpleVersion}</addon.directory>
         <jar.simpleVersion>16</jar.simpleVersion>
     </properties>
 
