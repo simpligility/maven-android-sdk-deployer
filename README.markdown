@@ -161,7 +161,7 @@ For the core platforms
     <dependency>
       <groupId>android</groupId>
       <artifactId>android</artifactId>
-      <version>4.1_r1</version>
+      <version>4.1_r2</version>
       <scope>provided</scope>
     </dependency>
 
@@ -240,7 +240,7 @@ For the maps add ons
     <dependency>
       <groupId>com.google.android.maps</groupId>
       <artifactId>maps</artifactId>
-      <version>16_r1</version>
+      <version>16_r2</version>
       <scope>provided</scope>
     </dependency>
 
@@ -284,7 +284,7 @@ For the usb add on
     <dependency>
       <groupId>com.android.future</groupId>
       <artifactId>usb</artifactId>
-      <version>16_r1</version>
+      <version>16_r2</version>
       <scope>provided</scope>
     </dependency>
 
@@ -329,7 +329,7 @@ For the Google Cloud Messaging Library extra client library (ATTENTION! Do NOT u
     <dependency>
       <groupId>com.google.android.gcm</groupId>
       <artifactId>gcm-client</artifactId>
-      <version>r1</version>
+      <version>r2</version>
     </dependency>
 
 For the Google Cloud Messaging Library extra server library (ATTENTION! Do NOT use provided scope!!)
@@ -337,7 +337,7 @@ For the Google Cloud Messaging Library extra server library (ATTENTION! Do NOT u
     <dependency>
       <groupId>com.google.android.gcm</groupId>
       <artifactId>gcm-server</artifactId>
-      <version>r1</version>
+      <version>r2</version>
     </dependency>
 
 
