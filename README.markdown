@@ -321,7 +321,7 @@ For the Google AdMob Ads extra (ATTENTION! Do NOT use provided scope!!)
     <dependency>
       <groupId>com.google.android.admob</groupId>
       <artifactId>admob</artifactId>
-      <version>6.0.1-r6</version>
+      <version>6.1.0-r7</version>
     </dependency>
 
 For the Google Cloud Messaging Library extra client library (ATTENTION! Do NOT use provided scope!!)
