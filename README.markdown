@@ -293,19 +293,19 @@ For the compatibility extra (ATTENTION! Do NOT use provided scope!!)
     <dependency>
       <groupId>android.support</groupId>
       <artifactId>compatibility-v4</artifactId>
-      <version>r9</version>
+      <version>r10</version>
     </dependency>
     
     <dependency>
       <groupId>android.support</groupId>
       <artifactId>compatibility-v7-gridlayout</artifactId>
-      <version>r9</version>
+      <version>r10</version>
     </dependency>
 
     <dependency>
       <groupId>android.support</groupId>
       <artifactId>compatibility-v13</artifactId>
-      <version>r9</version>
+      <version>r10</version>
     </dependency>
 
 For the Google Analytics extra (ATTENTION! Do NOT use provided scope!!)
@@ -329,7 +329,7 @@ For the Google Cloud Messaging Library extra client library (ATTENTION! Do NOT u
     <dependency>
       <groupId>com.google.android.gcm</groupId>
       <artifactId>gcm-client</artifactId>
-      <version>r2</version>
+      <version>r3</version>
     </dependency>
 
 For the Google Cloud Messaging Library extra server library (ATTENTION! Do NOT use provided scope!!)
@@ -337,7 +337,7 @@ For the Google Cloud Messaging Library extra server library (ATTENTION! Do NOT u
     <dependency>
       <groupId>com.google.android.gcm</groupId>
       <artifactId>gcm-server</artifactId>
-      <version>r2</version>
+      <version>r3</version>
     </dependency>
 
 
