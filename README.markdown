@@ -339,6 +339,14 @@ For the Google Cloud Messaging Library extra server library (ATTENTION! Do NOT u
       <artifactId>gcm-server</artifactId>
       <version>r3</version>
     </dependency>
+    
+For the Android annotations tools (ATTENTION! Do NOT use provided scope!!)
+
+    <dependency>
+      <groupId>com.google.android.annotations</groupId>
+      <artifactId>annotations</artifactId>
+      <version>20.0.3</version>
+    </dependency>
 
 
 To install only a specific module use

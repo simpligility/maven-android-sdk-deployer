@@ -28,6 +28,8 @@
         <sdk.extras.analytics.path>${sdk.extras.path}/google/analytics_sdk</sdk.extras.analytics.path>
         <sdk.extras.admob.path>${sdk.extras.path}/google/admob_ads_sdk</sdk.extras.admob.path>
         <sdk.extras.gcm.path>${sdk.extras.path}/google/gcm</sdk.extras.gcm.path>
+        <sdk.tools.path>${android.sdk.path}/tools</sdk.tools.path>
+        <sdk.tools.annotations.path>${android.sdk.path}/tools/support</sdk.tools.annotations.path>
         <platform.android.groupid>android</platform.android.groupid>
         <platform.android.artifactid>android</platform.android.artifactid>
         <addon.googlemaps.groupid>com.google.android.maps</addon.googlemaps.groupid>
@@ -38,6 +40,7 @@
         <extras.analytics.groupid>com.google.android.analytics</extras.analytics.groupid>
         <extras.admob.groupid>com.google.android.admob</extras.admob.groupid>
         <extras.gcm.groupid>com.google.android.gcm</extras.gcm.groupid>
+        <tools.annotations.groupid>com.google.android.annotations</tools.annotations.groupid>
     </properties>
 
     <issueManagement>
@@ -83,5 +86,6 @@
         <module>platforms</module>
         <module>add-ons</module>
         <module>extras</module>
+        <module>tools</module>
     </modules>
 </project>
