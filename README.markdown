@@ -14,7 +14,7 @@ Contributors:
 - Lorenzo Villani - initial 4.0 support
 - Paul Merlin http://eskatos.github.com - Google Analytics extra
 - Matteo Panella <morpheus@level28.org> - Google AdMobs extra, support for 4.1
-- Benoit Billington https://github.com/Shusshu Google Cloud Messaging Client and Server
+- Benoit Billington https://github.com/Shusshu Google Cloud Messaging Client and Server, annotations.jar
 - Michael Lake https://github.com/mlake support for Javadoc attachment for platforms
 
 The Maven Android SDK Deployer is a helper maven project that can be
@@ -161,7 +161,7 @@ For the core platforms
     <dependency>
       <groupId>android</groupId>
       <artifactId>android</artifactId>
-      <version>4.1_r2</version>
+      <version>4.1_r1</version>
       <scope>provided</scope>
     </dependency>
 
@@ -296,6 +296,7 @@ For the compatibility extra (ATTENTION! Do NOT use provided scope!!)
       <version>r10</version>
     </dependency>
     
+    <!-- This is currently not really working as a jar .. needs to be repackaged as apklib -->
     <dependency>
       <groupId>android.support</groupId>
       <artifactId>compatibility-v7-gridlayout</artifactId>
@@ -345,7 +346,7 @@ For the Android annotations tools (ATTENTION! Do NOT use provided scope!!)
     <dependency>
       <groupId>com.google.android.annotations</groupId>
       <artifactId>annotations</artifactId>
-      <version>20.0.3</version>
+      <version>20</version>
     </dependency>
 
 
