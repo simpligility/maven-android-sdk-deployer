@@ -341,12 +341,13 @@ For the Google Cloud Messaging Library extra server library (ATTENTION! Do NOT u
       <version>r3</version>
     </dependency>
     
-For the Android annotations tools (ATTENTION! Do NOT use provided scope!!)
+For the Android annotations tools 
 
     <dependency>
       <groupId>com.google.android.annotations</groupId>
       <artifactId>annotations</artifactId>
       <version>20</version>
+      <scope>provided</scope>
     </dependency>
 
 
