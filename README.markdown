@@ -16,6 +16,7 @@ Contributors:
 - Matteo Panella <morpheus@level28.org> - Google AdMobs extra, support for 4.1
 - Benoit Billington https://github.com/Shusshu Google Cloud Messaging Client and Server, annotations.jar
 - Michael Lake https://github.com/mlake support for Javadoc attachment for platforms
+- Matias Dumrauf http://github.com/mdumrauf - compatibility v7 library support
 
 The Maven Android SDK Deployer is a helper maven project that can be
 used to install the libraries necessary to build Android applications
@@ -295,11 +296,17 @@ For the compatibility extra (ATTENTION! Do NOT use provided scope!!)
       <artifactId>compatibility-v4</artifactId>
       <version>r10</version>
     </dependency>
-    
-    <!-- This is currently not really working as a jar .. needs to be repackaged as apklib -->
+
+    <!-- In order to use v7 extra, both dependencies need to be added -->
     <dependency>
       <groupId>android.support</groupId>
-      <artifactId>compatibility-v7-gridlayout</artifactId>
+      <artifactId>compatibility-v7-gridlayout-jar</artifactId>
+      <version>r10</version>
+    </dependency>
+
+    <dependency>
+      <groupId>android.support</groupId>
+      <artifactId>compatibility-v7-gridlayout-apklib</artifactId>
       <version>r10</version>
     </dependency>
 
