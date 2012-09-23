@@ -31,36 +31,16 @@
     </dependencies>
 
     <build>
-        <sourceDirectory>${sdk.extras.compatibility.path}/v7/gridlayout/src</sourceDirectory>
-
         <plugins>
             <plugin>
                 <groupId>com.jayway.maven.plugins.android.generation2</groupId>
                 <artifactId>android-maven-plugin</artifactId>
                 <extensions>true</extensions>
-            </plugin>
-
-            <plugin>
-              <artifactId>maven-resources-plugin</artifactId>
-              <version>2.4</version>
-              <executions>
-                <execution>
-                  <id>copy-resources</id>
-                  <phase>validate</phase>
-                  <goals>
-                    <goal>copy-resources</goal>
-                  </goals>
-                  <configuration>
-                    <outputDirectory>res</outputDirectory>
-                    <resources>          
-                      <resource>
-                        <directory>${sdk.extras.compatibility.path}/v7/gridlayout/res</directory>
-                        <filtering>true</filtering>
-                      </resource>
-                    </resources>              
-                  </configuration>            
-                </execution>
-              </executions>
+                <configuration>
+                  <androidManifestFile>${sdk.extras.compatibility.path}/v7/gridlayout/AndroidManifest.xml</androidManifestFile>
+                  <sourceDirectory>${sdk.extras.compatibility.path}/v7/gridlayout/src</sourceDirectory>
+                  <resourceDirectory>${sdk.extras.compatibility.path}/v7/gridlayout/res</resourceDirectory>
+                </configuration>  
             </plugin>
         </plugins>
     </build>
