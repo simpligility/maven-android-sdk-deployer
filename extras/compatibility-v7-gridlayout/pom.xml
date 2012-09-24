@@ -29,16 +29,16 @@
 
     <build>
         <plugins>
-                <plugin>
-                    <groupId>com.jayway.maven.plugins.android.generation2</groupId>
-                    <artifactId>android-maven-plugin</artifactId>
-                    <extensions>true</extensions>
-                    <configuration>
-                      <androidManifestFile>${sdk.extras.compatibility.path}/v7/gridlayout/AndroidManifest.xml</androidManifestFile>
-                      <sourceDirectory>${sdk.extras.compatibility.path}/v7/gridlayout/src</sourceDirectory>
-                      <resourceDirectory>${sdk.extras.compatibility.path}/v7/gridlayout/res</resourceDirectory>
-                    </configuration>  
-                </plugin>
+            <plugin>
+                <groupId>com.jayway.maven.plugins.android.generation2</groupId>
+                <artifactId>android-maven-plugin</artifactId>
+                <extensions>true</extensions>
+                <configuration>
+                  <androidManifestFile>${sdk.extras.compatibility.path}/v7/gridlayout/AndroidManifest.xml</androidManifestFile>
+                  <sourceDirectory>${sdk.extras.compatibility.path}/v7/gridlayout/src</sourceDirectory>
+                  <resourceDirectory>${sdk.extras.compatibility.path}/v7/gridlayout/res</resourceDirectory>
+                </configuration>  
+            </plugin>
 
             <plugin>
                 <artifactId>maven-install-plugin</artifactId>
@@ -65,6 +65,39 @@
                             <packaging>apklib</packaging>
                             <version>${jar.version}</version>
                             <file>target/${android.support.artifactid}-${project.version}.apklib</file>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+            <plugin>
+                <artifactId>maven-deploy-plugin</artifactId>
+                <executions>
+                    <execution>
+                        <id>jar-file</id>
+                        <phase>deploy</phase>
+                        <goals><goal>deploy-file</goal></goals>
+                        <configuration>
+                            <groupId>${extras.compatibility.groupid}</groupId>
+                            <artifactId>${android.support.artifactid}</artifactId>
+                            <packaging>jar</packaging>
+                            <version>${jar.version}</version>
+                            <file>${jar.path}</file>
+                            <url>${repo.url}</url>
+                            <repositoryId>${repo.id}</repositoryId>
+                        </configuration>
+                    </execution>
+                    <execution>
+                        <id>apklib-file</id>
+                        <phase>deploy</phase>
+                        <goals><goal>deploy-file</goal></goals>
+                        <configuration>
+                            <groupId>${extras.compatibility.groupid}</groupId>
+                            <artifactId>${android.support.artifactid}</artifactId>
+                            <packaging>apklib</packaging>
+                            <version>${jar.version}</version>
+                            <file>target/${android.support.artifactid}-${project.version}.apklib</file>
+                            <url>${repo.url}</url>
+                            <repositoryId>${repo.id}</repositoryId>
                         </configuration>
                     </execution>
                 </executions>
