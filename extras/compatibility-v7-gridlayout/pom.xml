@@ -2,10 +2,6 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
     <modelVersion>4.0.0</modelVersion>
-    <groupId>com.simpligility.android.sdk-deployer</groupId>
-    <artifactId>compatibility-v7-gridlayout</artifactId>
-    <packaging>pom</packaging>
-    <name>Android Compatibility Extra V7 Gridlayout Parent</name>
 
     <parent>
         <groupId>com.simpligility.android.sdk-deployer</groupId>
@@ -13,15 +9,58 @@
         <version>1.3.1</version>
     </parent>
 
+    <groupId>${extras.compatibility.groupid}</groupId>
+    <version>r${Pkg.Revision}</version>
+    <artifactId>compatibility-v7-gridlayout</artifactId>
+    <packaging>apklib</packaging>
+    <name>Android Compatibility Extra V7 Gridlayout Library</name>
+ 
 
     <properties>
-        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <lib.version>r${Pkg.Revision}</lib.version>
+        <android.support.artifactid>compatibility-v7-gridlayout</android.support.artifactid>
+        <jar.path>${sdk.extras.compatibility.path}/v7/gridlayout/libs/android-support-v7-gridlayout.jar</jar.path>
+        <jar.version>r${Pkg.Revision}</jar.version>
     </properties>
-    
-    <modules>
-        <module>compatibility-v7-gridlayout-jar</module>
-        <module>compatibility-v7-gridlayout-apklib</module>
-    </modules>
 
+
+    <dependencies>
+        <dependency>
+            <groupId>com.google.android</groupId>
+            <artifactId>android</artifactId>
+            <version>1.5_r4</version>
+            <scope>provided</scope>
+        </dependency>
+    </dependencies>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>com.jayway.maven.plugins.android.generation2</groupId>
+                <artifactId>android-maven-plugin</artifactId>
+                <extensions>true</extensions>
+                <configuration>
+                  <androidManifestFile>${sdk.extras.compatibility.path}/v7/gridlayout/AndroidManifest.xml</androidManifestFile>
+                  <sourceDirectory>${sdk.extras.compatibility.path}/v7/gridlayout/src</sourceDirectory>
+                  <resourceDirectory>${sdk.extras.compatibility.path}/v7/gridlayout/res</resourceDirectory>
+                </configuration>  
+            </plugin>
+
+            <plugin>
+                <artifactId>maven-install-plugin</artifactId>
+                <executions>
+                    <execution>
+                        <phase>install</phase>
+                        <goals><goal>install-file</goal></goals>
+                        <configuration>
+                            <groupId>${extras.compatibility.groupid}</groupId>
+                            <artifactId>${android.support.artifactid}</artifactId>
+                            <packaging>jar</packaging>
+                            <version>${jar.version}</version>
+                            <file>${jar.path}</file>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+        </plugins>
+    </build>
 </project>
