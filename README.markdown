@@ -297,23 +297,25 @@ For the compatibility extra (ATTENTION! Do NOT use provided scope!!)
       <version>r10</version>
     </dependency>
 
-    <!-- In order to use v7 extra, both dependencies need to be added -->
-    <dependency>
-      <groupId>android.support</groupId>
-      <artifactId>compatibility-v7-gridlayout-jar</artifactId>
-      <version>r10</version>
-    </dependency>
-
-    <dependency>
-      <groupId>android.support</groupId>
-      <artifactId>compatibility-v7-gridlayout-apklib</artifactId>
-      <version>r10</version>
-    </dependency>
-
     <dependency>
       <groupId>android.support</groupId>
       <artifactId>compatibility-v13</artifactId>
       <version>r10</version>
+    </dependency>
+
+    <!-- In order to use v7 extra, both dependencies need to be added -->
+    <dependency>
+      <groupId>android.support</groupId>
+      <artifactId>compatibility-v7-gridlayout</artifactId>
+      <version>r10</version>
+      <type>apklib</type>
+    </dependency>
+
+    <dependency>
+      <groupId>android.support</groupId>
+      <artifactId>compatibility-v7-gridlayout</artifactId>
+      <version>r10</version>
+      <type>jar</type>
     </dependency>
 
 For the Google Analytics extra (ATTENTION! Do NOT use provided scope!!)
