@@ -303,7 +303,8 @@ For the compatibility extra (ATTENTION! Do NOT use provided scope!!)
       <version>r10</version>
     </dependency>
 
-    <!-- In order to use v7 extra, both dependencies need to be added -->
+In order to use v7 extra, both dependencies (apklib & jar) are needed
+
     <dependency>
       <groupId>android.support</groupId>
       <artifactId>compatibility-v7-gridlayout</artifactId>
