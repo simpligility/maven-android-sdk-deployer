@@ -349,6 +349,14 @@ For the Android annotations tools
       <version>20</version>
       <scope>provided</scope>
     </dependency>
+    
+For the Google Play Services extra (ATTENTION! Do NOT use provided scope!!)
+
+    <dependency>
+      <groupId>com.google.android.googleplayservices</groupId>
+      <artifactId>google-play-services</artifactId>
+      <version>1.0.0-r1</version>
+    </dependency>
 
 
 To install only a specific module use
