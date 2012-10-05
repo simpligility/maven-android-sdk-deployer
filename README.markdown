@@ -17,7 +17,8 @@ Contributors:
 - Benoit Billington https://github.com/Shusshu Google Cloud Messaging Client and Server, annotations.jar
 - Michael Lake https://github.com/mlake support for Javadoc attachment for platforms
 - Nic Strong http://www.codepoets.co.nz Google Play Services (gms)
-
+- Matias Dumrauf http://github.com/mdumrauf - compatibility v7 library support
+                            
 The Maven Android SDK Deployer is a helper maven project that can be
 used to install the libraries necessary to build Android applications
 with Maven and the Android Maven Plugin directly from your local
@@ -162,7 +163,7 @@ For the core platforms
     <dependency>
       <groupId>android</groupId>
       <artifactId>android</artifactId>
-      <version>4.1_r1</version>
+      <version>4.1_r2</version>
       <scope>provided</scope>
     </dependency>
 
@@ -296,18 +297,27 @@ For the compatibility extra (ATTENTION! Do NOT use provided scope!!)
       <artifactId>compatibility-v4</artifactId>
       <version>r10</version>
     </dependency>
-    
-    <!-- This is currently not really working as a jar .. needs to be repackaged as apklib -->
-    <dependency>
-      <groupId>android.support</groupId>
-      <artifactId>compatibility-v7-gridlayout</artifactId>
-      <version>r10</version>
-    </dependency>
 
     <dependency>
       <groupId>android.support</groupId>
       <artifactId>compatibility-v13</artifactId>
       <version>r10</version>
+    </dependency>
+
+In order to use v7 extra, both dependencies (apklib & jar) are needed
+
+    <dependency>
+      <groupId>android.support</groupId>
+      <artifactId>compatibility-v7-gridlayout</artifactId>
+      <version>10</version>
+      <type>apklib</type>
+    </dependency>
+
+    <dependency>
+      <groupId>android.support</groupId>
+      <artifactId>compatibility-v7-gridlayout</artifactId>
+      <version>r10</version>
+      <type>jar</type>
     </dependency>
 
 For the Google Analytics extra (ATTENTION! Do NOT use provided scope!!)
