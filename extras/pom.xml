@@ -45,6 +45,7 @@
                 <module>analytics</module>
                 <module>admob</module>
                 <module>gcm</module>
+                <module>google-play-services</module>
             </modules>
         </profile>
     </profiles>
