@@ -41,7 +41,7 @@
         <extras.analytics.groupid>com.google.android.analytics</extras.analytics.groupid>
         <extras.admob.groupid>com.google.android.admob</extras.admob.groupid>
         <extras.gcm.groupid>com.google.android.gcm</extras.gcm.groupid>
-        <extras.google.play.services.groupid>com.google.android.googleplayservices</extras.google.play.services.groupid>
+        <extras.google.play.services.groupid>com.google.android.gms</extras.google.play.services.groupid>
         <tools.annotations.groupid>com.google.android.annotations</tools.annotations.groupid>
     </properties>
 

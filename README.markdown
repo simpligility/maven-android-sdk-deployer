@@ -16,6 +16,7 @@ Contributors:
 - Matteo Panella <morpheus@level28.org> - Google AdMobs extra, support for 4.1
 - Benoit Billington https://github.com/Shusshu Google Cloud Messaging Client and Server, annotations.jar
 - Michael Lake https://github.com/mlake support for Javadoc attachment for platforms
+- Nic Strong http://www.codepoets.co.nz Google Play Services (gms)
 
 The Maven Android SDK Deployer is a helper maven project that can be
 used to install the libraries necessary to build Android applications
@@ -353,9 +354,9 @@ For the Android annotations tools
 For the Google Play Services extra (ATTENTION! Do NOT use provided scope!!)
 
     <dependency>
-      <groupId>com.google.android.googleplayservices</groupId>
+      <groupId>com.google.android.gms</groupId>
       <artifactId>google-play-services</artifactId>
-      <version>1.0.0-r1</version>
+      <version>1</version>
     </dependency>
 
 

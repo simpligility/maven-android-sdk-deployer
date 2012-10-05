@@ -15,7 +15,7 @@
     <properties>
         <jar.path>${sdk.extras.google.play.services.path}/libs/google-play-services.jar</jar.path>
         <extras.google.play.services.artifactId>google-play-services</extras.google.play.services.artifactId>
-        <jar.version>1.0.0-r${Pkg.Revision}</jar.version>
+        <jar.version>${Pkg.Revision}</jar.version>
     </properties>
     <build>
         <plugins>
