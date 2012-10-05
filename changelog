@@ -1,6 +1,15 @@
 Changelog per release
 ---------------------
 
+2.0.0
+
+ - changed a bunch of versions to follow semver.org better by omitting the r for revision
+   this is a API breakage bascially ;-), contributed by Manfred Moser
+ - added support for gridlayout as combined jar/apklib, contributed by Matías Dumrauf
+   see https://github.com/mosabua/maven-android-sdk-deployer/pull/59
+ - added support for Google Play services, contributed by Nic Strong
+   see https://github.com/mosabua/maven-android-sdk-deployer/pull/60
+
 1.3.1
 
  - added support for annotations.jar by Benoit Billington and Manfred Moser
