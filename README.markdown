@@ -295,13 +295,13 @@ For the compatibility extra (ATTENTION! Do NOT use provided scope!!)
     <dependency>
       <groupId>android.support</groupId>
       <artifactId>compatibility-v4</artifactId>
-      <version>r10</version>
+      <version>10</version>
     </dependency>
 
     <dependency>
       <groupId>android.support</groupId>
       <artifactId>compatibility-v13</artifactId>
-      <version>r10</version>
+      <version>10</version>
     </dependency>
 
 In order to use v7 extra, both dependencies (apklib & jar) are needed
@@ -325,7 +325,7 @@ For the Google Analytics extra (ATTENTION! Do NOT use provided scope!!)
     <dependency>
       <groupId>com.google.android.analytics</groupId>
       <artifactId>analytics</artifactId>
-      <version>r2</version>
+      <version>2</version>
     </dependency>
 
 For the Google AdMob Ads extra (ATTENTION! Do NOT use provided scope!!)
@@ -341,7 +341,7 @@ For the Google Cloud Messaging Library extra client library (ATTENTION! Do NOT u
     <dependency>
       <groupId>com.google.android.gcm</groupId>
       <artifactId>gcm-client</artifactId>
-      <version>r3</version>
+      <version>3</version>
     </dependency>
 
 For the Google Cloud Messaging Library extra server library (ATTENTION! Do NOT use provided scope!!)
@@ -349,7 +349,7 @@ For the Google Cloud Messaging Library extra server library (ATTENTION! Do NOT u
     <dependency>
       <groupId>com.google.android.gcm</groupId>
       <artifactId>gcm-server</artifactId>
-      <version>r3</version>
+      <version>3</version>
     </dependency>
     
 For the Android annotations tools 
@@ -357,7 +357,7 @@ For the Android annotations tools
     <dependency>
       <groupId>com.google.android.annotations</groupId>
       <artifactId>annotations</artifactId>
-      <version>20</version>
+      <version>20.0.1</version>
       <scope>provided</scope>
     </dependency>
     
@@ -472,10 +472,11 @@ is now android-3 using the api level as the numeric identifier. If
 your SDK install uses the old folder names for any platform simply
 reinstall that platform with the android tool.
 
-ATTENTION with ADK 14
+In a similar manner the folder for the support libraries in the the sdk
+used to be compatibility and is now support
 
-The SDK changed folder names again. This time for all the Google Add
-Ons. The Maven Android SDK Deployer' is adapted to the new naming
+The Add ons used different folder names as well. The Maven Android SDK
+Deployer' is adapted to the lastet naming
 scheme. To do that yourself remove all "Google APIs by Google Inc" in
 the android SDK manager and install them again.
 

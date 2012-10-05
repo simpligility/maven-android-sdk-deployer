@@ -15,7 +15,7 @@
     <properties>
         <jar.path>${sdk.extras.analytics.path}/libGoogleAnalytics.jar</jar.path>
         <extras.analytics.artifactId>analytics</extras.analytics.artifactId>
-        <jar.version>r${Pkg.Revision}</jar.version>
+        <jar.version>${Pkg.Revision}</jar.version>
     </properties>
     <build>
         <plugins>

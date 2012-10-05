@@ -15,7 +15,7 @@
     <properties>
         <jar.path>${sdk.extras.compatibility.path}/v13/android-support-v13.jar</jar.path>
         <android.support.artifactid>compatibility-v13</android.support.artifactid>
-        <jar.version>r${Pkg.Revision}</jar.version>
+        <jar.version>${Pkg.Revision}</jar.version>
     </properties>
     <build>
         <plugins>

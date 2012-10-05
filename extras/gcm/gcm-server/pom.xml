@@ -15,7 +15,7 @@
     <properties>
         <jar.path>${sdk.extras.gcm.path}/gcm-server/dist/gcm-server.jar</jar.path>
         <extras.gcm-server.artifactId>gcm-server</extras.gcm-server.artifactId>
-        <jar.version>r${Pkg.Revision}</jar.version>
+        <jar.version>${Pkg.Revision}</jar.version>
     </properties>
     <build>
         <plugins>
