@@ -18,7 +18,8 @@ Contributors:
 - Michael Lake https://github.com/mlake support for Javadoc attachment for platforms
 - Nic Strong http://www.codepoets.co.nz Google Play Services (gms)
 - Matias Dumrauf http://github.com/mdumrauf - compatibility v7 library support
-                            
+- https://github.com/skyisle minor documentation fix                            
+
 The Maven Android SDK Deployer is a helper maven project that can be
 used to install the libraries necessary to build Android applications
 with Maven and the Android Maven Plugin directly from your local
