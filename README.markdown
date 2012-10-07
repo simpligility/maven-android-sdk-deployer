@@ -316,7 +316,7 @@ In order to use v7 extra, both dependencies (apklib & jar) are needed
     <dependency>
       <groupId>android.support</groupId>
       <artifactId>compatibility-v7-gridlayout</artifactId>
-      <version>r10</version>
+      <version>10</version>
       <type>jar</type>
     </dependency>
 
