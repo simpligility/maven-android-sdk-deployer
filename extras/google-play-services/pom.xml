@@ -64,7 +64,7 @@
                             <goal>deploy-file</goal>
                         </goals>
                         <configuration>
-                            <groupId>${extras.admob.groupid}</groupId>
+                            <groupId>${extras.google.play.services.groupid}</groupId>
                             <artifactId>${extras.google.play.services.artifactId}</artifactId>
                             <packaging>jar</packaging>
                             <version>${jar.version}</version>
