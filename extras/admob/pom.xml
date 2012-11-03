@@ -13,9 +13,9 @@
     </parent>
 
     <properties>
-        <jar.path>${sdk.extras.admob.path}/GoogleAdMobAdsSdk-6.1.0.jar</jar.path>
+        <jar.path>${sdk.extras.admob.path}/GoogleAdMobAdsSdk-6.2.1.jar</jar.path>
         <extras.admob.artifactId>admob</extras.admob.artifactId>
-        <jar.version>6.1.0-r${Pkg.Revision}</jar.version>
+        <jar.version>6.2.1-r${Pkg.Revision}</jar.version>
     </properties>
     <build>
         <plugins>
