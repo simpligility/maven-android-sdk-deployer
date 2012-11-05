@@ -19,6 +19,7 @@ Contributors:
 - Nic Strong http://www.codepoets.co.nz Google Play Services (gms)
 - Matias Dumrauf http://github.com/mdumrauf - compatibility v7 library support
 - https://github.com/skyisle minor documentation fix                            
+- Viacheslav Rodionov https://github.com/bepcyc AdbMob update
 
 The Maven Android SDK Deployer is a helper maven project that can be
 used to install the libraries necessary to build Android applications
@@ -164,7 +165,7 @@ For the core platforms
     <dependency>
       <groupId>android</groupId>
       <artifactId>android</artifactId>
-      <version>4.1_r2</version>
+      <version>4.1.2_r2</version>
       <scope>provided</scope>
     </dependency>
 
@@ -243,7 +244,7 @@ For the maps add ons
     <dependency>
       <groupId>com.google.android.maps</groupId>
       <artifactId>maps</artifactId>
-      <version>16_r2</version>
+      <version>16_r3</version>
       <scope>provided</scope>
     </dependency>
 
@@ -287,7 +288,7 @@ For the usb add on
     <dependency>
       <groupId>com.android.future</groupId>
       <artifactId>usb</artifactId>
-      <version>16_r2</version>
+      <version>16_r3</version>
       <scope>provided</scope>
     </dependency>
 
@@ -334,7 +335,7 @@ For the Google AdMob Ads extra (ATTENTION! Do NOT use provided scope!!)
     <dependency>
       <groupId>com.google.android.admob</groupId>
       <artifactId>admob</artifactId>
-      <version>6.1.0-r7</version>
+      <version>6.2.1-r8</version>
     </dependency>
 
 For the Google Cloud Messaging Library extra client library (ATTENTION! Do NOT use provided scope!!)
@@ -358,7 +359,7 @@ For the Android annotations tools
     <dependency>
       <groupId>com.google.android.annotations</groupId>
       <artifactId>annotations</artifactId>
-      <version>20.0.1</version>
+      <version>20.0.3</version>
       <scope>provided</scope>
     </dependency>
     
