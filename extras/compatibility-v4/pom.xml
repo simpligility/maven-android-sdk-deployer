@@ -15,7 +15,7 @@
     <properties>
         <jar.path>${sdk.extras.compatibility.path}/v4/android-support-v4.jar</jar.path>
         <android.support.artifactid>compatibility-v4</android.support.artifactid>
-        <jar.version>${Pkg.Revision}</jar.version>
+        <jar.version>r${Pkg.Revision}</jar.version>
     </properties>
     <build>
         <plugins>
