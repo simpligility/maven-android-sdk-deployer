@@ -1,6 +1,11 @@
 Changelog per release
 ---------------------
 
+2.1.0
+
+ - added Android 4.2, API 17 artifacts
+   contributed by Benoit Billington and Manfred Moser
+
 2.0.0
 
  - changed a bunch of versions to follow semver.org better by omitting the r for revision
