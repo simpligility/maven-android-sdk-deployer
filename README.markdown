@@ -1,7 +1,7 @@
 Maven Android SDK Deployer
 --------------------------
 
-Author and Project Maintainer:
+Author and Project Maintainer including numerous fixes and changes:
 
 Manfred Moser manfred@simpligility.com  at [simpligility technologies inc](http://www.simpligility.com)
 
@@ -14,7 +14,7 @@ Contributors:
 - Lorenzo Villani - initial 4.0 support
 - Paul Merlin http://eskatos.github.com - Google Analytics extra
 - Matteo Panella <morpheus@level28.org> - Google AdMobs extra, support for 4.1
-- Benoit Billington https://github.com/Shusshu Google Cloud Messaging Client and Server, annotations.jar
+- Benoit Billington https://github.com/Shusshu Google Cloud Messaging Client and Server, annotations.jar, 4.2
 - Michael Lake https://github.com/mlake support for Javadoc attachment for platforms
 - Nic Strong http://www.codepoets.co.nz Google Play Services (gms)
 - Matias Dumrauf http://github.com/mdumrauf - compatibility v7 library support
@@ -85,6 +85,7 @@ To install only a certain sdk level use
     mvn install -P 4.0
     mvn install -P 4.0.3
     mvn install -P 4.1
+    mvn install -P 4.2
 
 As a result you should find the android.jar and maps.jar and a number of other
 libraries in your users local repository (~/.m2/repository/) and you can therefore
@@ -169,6 +170,13 @@ For the core platforms
       <scope>provided</scope>
     </dependency>
 
+    <dependency>
+      <groupId>android</groupId>
+      <artifactId>android</artifactId>
+      <version>4.2_r1</version>
+      <scope>provided</scope>
+    </dependency>
+
 For the maps add ons
 
     <dependency>
@@ -248,6 +256,13 @@ For the maps add ons
       <scope>provided</scope>
     </dependency>
 
+    <dependency>
+      <groupId>com.google.android.maps</groupId>
+      <artifactId>maps</artifactId>
+      <version>17_r1</version>
+      <scope>provided</scope>
+    </dependency>
+
 For the usb add on
 
     <dependency>
@@ -292,18 +307,25 @@ For the usb add on
       <scope>provided</scope>
     </dependency>
 
+    <dependency>
+      <groupId>com.android.future</groupId>
+      <artifactId>usb</artifactId>
+      <version>17_r1</version>
+      <scope>provided</scope>
+    </dependency>
+
 For the compatibility extra (ATTENTION! Do NOT use provided scope!!)
 
     <dependency>
       <groupId>android.support</groupId>
       <artifactId>compatibility-v4</artifactId>
-      <version>10</version>
+      <version>11</version>
     </dependency>
 
     <dependency>
       <groupId>android.support</groupId>
       <artifactId>compatibility-v13</artifactId>
-      <version>10</version>
+      <version>11</version>
     </dependency>
 
 In order to use v7 extra, both dependencies (apklib & jar) are needed
@@ -311,14 +333,14 @@ In order to use v7 extra, both dependencies (apklib & jar) are needed
     <dependency>
       <groupId>android.support</groupId>
       <artifactId>compatibility-v7-gridlayout</artifactId>
-      <version>10</version>
+      <version>11</version>
       <type>apklib</type>
     </dependency>
 
     <dependency>
       <groupId>android.support</groupId>
       <artifactId>compatibility-v7-gridlayout</artifactId>
-      <version>10</version>
+      <version>11</version>
       <type>jar</type>
     </dependency>
 
