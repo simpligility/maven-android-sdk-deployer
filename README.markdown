@@ -417,28 +417,28 @@ For the Google Play Services extra (ATTENTION! Do NOT use provided scope!!)
 
 To install only a specific module use
 
-        mvn clean install -N
+    mvn clean install -N
 
 in any parent folder of the desired package and then the usual
                                   1
-        mvn clean install
+    mvn clean install
 
 For example to install only the compatibility v4 extra you can do the
 following
 
-        mvn clean install -N
-        cd extras
-        mvn clean install -N
-        cd compatibility-v4
-        mvn clean install
+    mvn clean install -N
+    cd extras
+    mvn clean install -N
+    cd compatibility-v4
+    mvn clean install
 
 Similar for only API level 12 add on use
 
-        mvn clean install -N
-        cd add-ons
-        mvn clean install -N
-        cd google-apis-12
-        mvn clean install
+    mvn clean install -N
+    cd add-ons
+    mvn clean install -N
+    cd google-apis-12
+    mvn clean install
 
 The same could be done with deploy
 
@@ -541,5 +541,3 @@ Potential todo items
   from maps to android jar
 
 - maybe some sort of reporting of errors, failures and success as well
-
-
