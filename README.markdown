@@ -93,306 +93,327 @@ use the following dependencies in your project
 
 For the core platforms
 
-    <dependency>
-      <groupId>android</groupId>
-      <artifactId>android</artifactId>
-      <version>1.5_r4</version>
-      <scope>provided</scope>
-    </dependency>
+```xml
+<dependency>
+  <groupId>android</groupId>
+  <artifactId>android</artifactId>
+  <version>1.5_r4</version>
+  <scope>provided</scope>
+</dependency>
 
-    <dependency>
-      <groupId>android</groupId>
-      <artifactId>android</artifactId>
-      <version>1.6_r3</version>
-      <scope>provided</scope>
-    </dependency>
+<dependency>
+  <groupId>android</groupId>
+  <artifactId>android</artifactId>
+  <version>1.6_r3</version>
+  <scope>provided</scope>
+</dependency>
 
-    <dependency>
-      <groupId>android</groupId>
-      <artifactId>android</artifactId>
-      <version>2.1_r3</version>
-      <scope>provided</scope>
-    </dependency>
+<dependency>
+  <groupId>android</groupId>
+  <artifactId>android</artifactId>
+  <version>2.1_r3</version>
+  <scope>provided</scope>
+</dependency>
 
-    <dependency>
-      <groupId>android</groupId>
-      <artifactId>android</artifactId>
-      <version>2.2_r3</version>
-      <scope>provided</scope>
-    </dependency>
+<dependency>
+  <groupId>android</groupId>
+  <artifactId>android</artifactId>
+  <version>2.2_r3</version>
+  <scope>provided</scope>
+</dependency>
 
-    <dependency>
-      <groupId>android</groupId>
-      <artifactId>android</artifactId>
-      <version>2.3.3_r2</version>
-      <scope>provided</scope>
-    </dependency>
+<dependency>
+  <groupId>android</groupId>
+  <artifactId>android</artifactId>
+  <version>2.3.3_r2</version>
+  <scope>provided</scope>
+</dependency>
 
-    <dependency>
-      <groupId>android</groupId>
-      <artifactId>android</artifactId>
-      <version>3.0_r2</version>
-      <scope>provided</scope>
-    </dependency>
+<dependency>
+  <groupId>android</groupId>
+  <artifactId>android</artifactId>
+  <version>3.0_r2</version>
+  <scope>provided</scope>
+</dependency>
 
-    <dependency>
-      <groupId>android</groupId>
-      <artifactId>android</artifactId>
-      <version>3.1_r3</version>
-      <scope>provided</scope>
-    </dependency>
+<dependency>
+  <groupId>android</groupId>
+  <artifactId>android</artifactId>
+  <version>3.1_r3</version>
+  <scope>provided</scope>
+</dependency>
 
-    <dependency>
-      <groupId>android</groupId>
-      <artifactId>android</artifactId>
-      <version>3.2_r1</version>
-      <scope>provided</scope>
-    </dependency>
+<dependency>
+  <groupId>android</groupId>
+  <artifactId>android</artifactId>
+  <version>3.2_r1</version>
+  <scope>provided</scope>
+</dependency>
 
-    <dependency>
-      <groupId>android</groupId>
-      <artifactId>android</artifactId>
-      <version>4.0_r3</version>
-      <scope>provided</scope>
-    </dependency>
+<dependency>
+  <groupId>android</groupId>
+  <artifactId>android</artifactId>
+  <version>4.0_r3</version>
+  <scope>provided</scope>
+</dependency>
 
-    <dependency>
-      <groupId>android</groupId>
-      <artifactId>android</artifactId>
-      <version>4.0.3_r3</version>
-      <scope>provided</scope>
-    </dependency>
+<dependency>
+  <groupId>android</groupId>
+  <artifactId>android</artifactId>
+  <version>4.0.3_r3</version>
+  <scope>provided</scope>
+</dependency>
 
-    <dependency>
-      <groupId>android</groupId>
-      <artifactId>android</artifactId>
-      <version>4.1.2_r2</version>
-      <scope>provided</scope>
-    </dependency>
+<dependency>
+  <groupId>android</groupId>
+  <artifactId>android</artifactId>
+  <version>4.1.2_r2</version>
+  <scope>provided</scope>
+</dependency>
 
-    <dependency>
-      <groupId>android</groupId>
-      <artifactId>android</artifactId>
-      <version>4.2_r1</version>
-      <scope>provided</scope>
-    </dependency>
+<dependency>
+  <groupId>android</groupId>
+  <artifactId>android</artifactId>
+  <version>4.2_r1</version>
+  <scope>provided</scope>
+</dependency>
+```
 
 For the maps add ons
 
-    <dependency>
-      <groupId>com.google.android.maps</groupId>
-      <artifactId>maps</artifactId>
-      <version>3_r3</version>
-      <scope>provided</scope>
-    </dependency>
+```xml
+<dependency>
+  <groupId>com.google.android.maps</groupId>
+  <artifactId>maps</artifactId>
+  <version>3_r3</version>
+  <scope>provided</scope>
+</dependency>
 
-    <dependency>
-      <groupId>com.google.android.maps</groupId>
-      <artifactId>maps</artifactId>
-      <version>4_r2</version>
-      <scope>provided</scope>
-    </dependency>
+<dependency>
+  <groupId>com.google.android.maps</groupId>
+  <artifactId>maps</artifactId>
+  <version>4_r2</version>
+  <scope>provided</scope>
+</dependency>
 
-    <dependency>
-      <groupId>com.google.android.maps</groupId>
-      <artifactId>maps</artifactId>
-      <version>7_r1</version>
-      <scope>provided</scope>
-    </dependency>
+<dependency>
+  <groupId>com.google.android.maps</groupId>
+  <artifactId>maps</artifactId>
+  <version>7_r1</version>
+  <scope>provided</scope>
+</dependency>
 
-    <dependency>
-      <groupId>com.google.android.maps</groupId>
-      <artifactId>maps</artifactId>
-      <version>8_r2</version>
-      <scope>provided</scope>
-    </dependency>
+<dependency>
+  <groupId>com.google.android.maps</groupId>
+  <artifactId>maps</artifactId>
+  <version>8_r2</version>
+  <scope>provided</scope>
+</dependency>
 
-    <dependency>
-      <groupId>com.google.android.maps</groupId>
-      <artifactId>maps</artifactId>
-      <version>10_r2</version>
-      <scope>provided</scope>
-    </dependency>
+<dependency>
+  <groupId>com.google.android.maps</groupId>
+  <artifactId>maps</artifactId>
+  <version>10_r2</version>
+  <scope>provided</scope>
+</dependency>
 
-    <dependency>
-      <groupId>com.google.android.maps</groupId>
-      <artifactId>maps</artifactId>
-      <version>11_r1</version>
-      <scope>provided</scope>
-    </dependency>
+<dependency>
+  <groupId>com.google.android.maps</groupId>
+  <artifactId>maps</artifactId>
+  <version>11_r1</version>
+  <scope>provided</scope>
+</dependency>
 
-    <dependency>
-      <groupId>com.google.android.maps</groupId>
-      <artifactId>maps</artifactId>
-      <version>12_r1</version>
-      <scope>provided</scope>
-    </dependency>
+<dependency>
+  <groupId>com.google.android.maps</groupId>
+  <artifactId>maps</artifactId>
+  <version>12_r1</version>
+  <scope>provided</scope>
+</dependency>
 
-    <dependency>
-      <groupId>com.google.android.maps</groupId>
-      <artifactId>maps</artifactId>
-      <version>13_r1</version>
-      <scope>provided</scope>
-    </dependency>
+<dependency>
+  <groupId>com.google.android.maps</groupId>
+  <artifactId>maps</artifactId>
+  <version>13_r1</version>
+  <scope>provided</scope>
+</dependency>
 
-    <dependency>
-      <groupId>com.google.android.maps</groupId>
-      <artifactId>maps</artifactId>
-      <version>14_r2</version>
-      <scope>provided</scope>
-    </dependency>
+<dependency>
+  <groupId>com.google.android.maps</groupId>
+  <artifactId>maps</artifactId>
+  <version>14_r2</version>
+  <scope>provided</scope>
+</dependency>
 
-    <dependency>
-      <groupId>com.google.android.maps</groupId>
-      <artifactId>maps</artifactId>
-      <version>15_r2</version>
-      <scope>provided</scope>
-    </dependency>
+<dependency>
+  <groupId>com.google.android.maps</groupId>
+  <artifactId>maps</artifactId>
+  <version>15_r2</version>
+  <scope>provided</scope>
+</dependency>
 
-    <dependency>
-      <groupId>com.google.android.maps</groupId>
-      <artifactId>maps</artifactId>
-      <version>16_r3</version>
-      <scope>provided</scope>
-    </dependency>
+<dependency>
+  <groupId>com.google.android.maps</groupId>
+  <artifactId>maps</artifactId>
+  <version>16_r3</version>
+  <scope>provided</scope>
+</dependency>
 
-    <dependency>
-      <groupId>com.google.android.maps</groupId>
-      <artifactId>maps</artifactId>
-      <version>17_r1</version>
-      <scope>provided</scope>
-    </dependency>
+<dependency>
+  <groupId>com.google.android.maps</groupId>
+  <artifactId>maps</artifactId>
+  <version>17_r1</version>
+  <scope>provided</scope>
+</dependency>
+```
 
 For the usb add on
 
-    <dependency>
-      <groupId>com.android.future</groupId>
-      <artifactId>usb</artifactId>
-      <version>10_r2</version>
-      <scope>provided</scope>
-    </dependency>
+```xml
+<dependency>
+  <groupId>com.android.future</groupId>
+  <artifactId>usb</artifactId>
+  <version>10_r2</version>
+  <scope>provided</scope>
+</dependency>
 
-    <dependency>
-      <groupId>com.android.future</groupId>
-      <artifactId>usb</artifactId>
-      <version>12_r1</version>
-      <scope>provided</scope>
-    </dependency>
+<dependency>
+  <groupId>com.android.future</groupId>
+  <artifactId>usb</artifactId>
+  <version>12_r1</version>
+  <scope>provided</scope>
+</dependency>
 
-    <dependency>
-      <groupId>com.android.future</groupId>
-      <artifactId>usb</artifactId>
-      <version>13_r1</version>
-      <scope>provided</scope>
-    </dependency>
+<dependency>
+  <groupId>com.android.future</groupId>
+  <artifactId>usb</artifactId>
+  <version>13_r1</version>
+  <scope>provided</scope>
+</dependency>
 
-    <dependency>
-      <groupId>com.android.future</groupId>
-      <artifactId>usb</artifactId>
-      <version>14_r2</version>
-      <scope>provided</scope>
-    </dependency>
+<dependency>
+  <groupId>com.android.future</groupId>
+  <artifactId>usb</artifactId>
+  <version>14_r2</version>
+  <scope>provided</scope>
+</dependency>
 
-    <dependency>
-      <groupId>com.android.future</groupId>
-      <artifactId>usb</artifactId>
-      <version>15_r2</version>
-      <scope>provided</scope>
-    </dependency>
+<dependency>
+  <groupId>com.android.future</groupId>
+  <artifactId>usb</artifactId>
+  <version>15_r2</version>
+  <scope>provided</scope>
+</dependency>
 
-    <dependency>
-      <groupId>com.android.future</groupId>
-      <artifactId>usb</artifactId>
-      <version>16_r3</version>
-      <scope>provided</scope>
-    </dependency>
+<dependency>
+  <groupId>com.android.future</groupId>
+  <artifactId>usb</artifactId>
+  <version>16_r3</version>
+  <scope>provided</scope>
+</dependency>
 
-    <dependency>
-      <groupId>com.android.future</groupId>
-      <artifactId>usb</artifactId>
-      <version>17_r1</version>
-      <scope>provided</scope>
-    </dependency>
+<dependency>
+  <groupId>com.android.future</groupId>
+  <artifactId>usb</artifactId>
+  <version>17_r1</version>
+  <scope>provided</scope>
+</dependency>
+```
 
 For the compatibility extra (ATTENTION! Do NOT use provided scope!!)
 
-    <dependency>
-      <groupId>android.support</groupId>
-      <artifactId>compatibility-v4</artifactId>
-      <version>11</version>
-    </dependency>
+```xml
+<dependency>
+  <groupId>android.support</groupId>
+  <artifactId>compatibility-v4</artifactId>
+  <version>11</version>
+</dependency>
 
-    <dependency>
-      <groupId>android.support</groupId>
-      <artifactId>compatibility-v13</artifactId>
-      <version>11</version>
-    </dependency>
+<dependency>
+  <groupId>android.support</groupId>
+  <artifactId>compatibility-v13</artifactId>
+  <version>11</version>
+</dependency>
+```
 
 In order to use v7 extra, both dependencies (apklib & jar) are needed
 
-    <dependency>
-      <groupId>android.support</groupId>
-      <artifactId>compatibility-v7-gridlayout</artifactId>
-      <version>11</version>
-      <type>apklib</type>
-    </dependency>
+```xml
+<dependency>
+  <groupId>android.support</groupId>
+  <artifactId>compatibility-v7-gridlayout</artifactId>
+  <version>11</version>
+  <type>apklib</type>
+</dependency>
 
-    <dependency>
-      <groupId>android.support</groupId>
-      <artifactId>compatibility-v7-gridlayout</artifactId>
-      <version>11</version>
-      <type>jar</type>
-    </dependency>
+<dependency>
+  <groupId>android.support</groupId>
+  <artifactId>compatibility-v7-gridlayout</artifactId>
+  <version>11</version>
+  <type>jar</type>
+</dependency>
+```
 
 For the Google Analytics extra (ATTENTION! Do NOT use provided scope!!)
 
-    <dependency>
-      <groupId>com.google.android.analytics</groupId>
-      <artifactId>analytics</artifactId>
-      <version>2</version>
-    </dependency>
+```xml
+<dependency>
+  <groupId>com.google.android.analytics</groupId>
+  <artifactId>analytics</artifactId>
+  <version>2</version>
+</dependency>
+```
 
 For the Google AdMob Ads extra (ATTENTION! Do NOT use provided scope!!)
 
-    <dependency>
-      <groupId>com.google.android.admob</groupId>
-      <artifactId>admob</artifactId>
-      <version>6.2.1-r8</version>
-    </dependency>
+```xml
+<dependency>
+  <groupId>com.google.android.admob</groupId>
+  <artifactId>admob</artifactId>
+  <version>6.2.1-r8</version>
+</dependency>
+```
 
 For the Google Cloud Messaging Library extra client library (ATTENTION! Do NOT use provided scope!!)
 
-    <dependency>
-      <groupId>com.google.android.gcm</groupId>
-      <artifactId>gcm-client</artifactId>
-      <version>3</version>
-    </dependency>
+```xml
+<dependency>
+  <groupId>com.google.android.gcm</groupId>
+  <artifactId>gcm-client</artifactId>
+  <version>3</version>
+</dependency>
+```
 
 For the Google Cloud Messaging Library extra server library (ATTENTION! Do NOT use provided scope!!)
 
-    <dependency>
-      <groupId>com.google.android.gcm</groupId>
-      <artifactId>gcm-server</artifactId>
-      <version>3</version>
-    </dependency>
+```xml
+<dependency>
+  <groupId>com.google.android.gcm</groupId>
+  <artifactId>gcm-server</artifactId>
+  <version>3</version>
+</dependency>
+```
     
 For the Android annotations tools 
 
-    <dependency>
-      <groupId>com.google.android.annotations</groupId>
-      <artifactId>annotations</artifactId>
-      <version>20.0.3</version>
-      <scope>provided</scope>
-    </dependency>
+```xml
+<dependency>
+  <groupId>com.google.android.annotations</groupId>
+  <artifactId>annotations</artifactId>
+  <version>20.0.3</version>
+  <scope>provided</scope>
+</dependency>
+```
     
 For the Google Play Services extra (ATTENTION! Do NOT use provided scope!!)
 
-    <dependency>
-      <groupId>com.google.android.gms</groupId>
-      <artifactId>google-play-services</artifactId>
-      <version>1</version>
-    </dependency>
-
+```xml
+<dependency>
+  <groupId>com.google.android.gms</groupId>
+  <artifactId>google-play-services</artifactId>
+  <version>1</version>
+</dependency>
+```
 
 To install only a specific module use
 
@@ -437,15 +458,17 @@ Edit the repo.url property in the pom.xml to point to the repository
 you want to publish to and then add a server with the credentials to
 your settings.xml.
 
-    <settings>
-      <servers>
-        <server>
-          <id>android.repo</id>
-          <username>your username</username>
-          <password>your password</password>
-        </server>
-      </servers>
-    </settings>
+```xml
+<settings>
+  <servers>
+    <server>
+      <id>android.repo</id>
+      <username>your username</username>
+      <password>your password</password>
+    </server>
+  </servers>
+</settings>
+```
 
 Run the command
 
