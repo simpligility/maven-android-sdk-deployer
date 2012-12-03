@@ -13,7 +13,7 @@
     </parent>
 
     <properties>
-        <jar.path>${sdk.extras.google.play.services.path}/libs/google-play-services.jar</jar.path>
+        <jar.path>${sdk.extras.google.play.services.path}/libproject/google-play-services_lib/libs/google-play-services.jar</jar.path>
         <extras.google.play.services.artifactId>google-play-services</extras.google.play.services.artifactId>
         <jar.version>${Pkg.Revision}</jar.version>
     </properties>
