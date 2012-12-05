@@ -3,7 +3,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.simpligility.android.sdk-deployer</groupId>
     <artifactId>google-play-services</artifactId>
-    <packaging>pom</packaging>
+    <packaging>apklib</packaging>
     <name>Android Google Play Services Extra</name>
 
     <parent>
@@ -17,8 +17,29 @@
         <extras.google.play.services.artifactId>google-play-services</extras.google.play.services.artifactId>
         <jar.version>${Pkg.Revision}</jar.version>
     </properties>
+
+    <dependencies>
+        <dependency>
+        <groupId>com.google.android</groupId>
+            <artifactId>android</artifactId>
+            <version>2.2.1</version>
+            <scope>provided</scope>
+        </dependency>
+    </dependencies>
+
     <build>
         <plugins>
+            <plugin>
+                <groupId>com.jayway.maven.plugins.android.generation2</groupId>
+                <artifactId>android-maven-plugin</artifactId>
+                <extensions>true</extensions>
+                <configuration>
+                    <resourceDirectory>${sdk.extras.google.play.services.path}/libproject/google-play-services_lib/res/</resourceDirectory>                    
+                    <androidManifestFile>${sdk.extras.google.play.services.path}/libproject/google-play-services_lib/AndroidManifest.xml</androidManifestFile>
+                    <sourceDirectory>${sdk.extras.google.play.services.path}/libproject/google-play-services_lib/src</sourceDirectory>
+              </configuration>  
+            </plugin>
+
             <plugin>
                 <groupId>org.codehaus.mojo</groupId>
                 <artifactId>properties-maven-plugin</artifactId>
@@ -36,6 +57,7 @@
                     </execution>
                 </executions>
             </plugin>
+            
             <plugin>
                 <artifactId>maven-install-plugin</artifactId>
                 <executions>
@@ -52,13 +74,26 @@
                             <file>${jar.path}</file>
                         </configuration>
                     </execution>
+                    <execution>
+                        <id>apklib-file</id>
+                        <phase>install</phase>
+                        <goals><goal>install-file</goal></goals>
+                        <configuration>
+                            <groupId>${extras.google.play.services.groupid}</groupId>
+                            <artifactId>${extras.google.play.services.artifactId}</artifactId>
+                            <packaging>apklib</packaging>
+                            <version>${jar.version}</version>
+                            <file>target/${extras.google.play.services.artifactId}-${project.version}.apklib</file>
+                        </configuration>
+                    </execution>
                 </executions>
             </plugin>
+
             <plugin>
                 <artifactId>maven-deploy-plugin</artifactId>
                 <executions>
                     <execution>
-                        <id>a</id>
+                        <id>jar-file</id>
                         <phase>deploy</phase>
                         <goals>
                             <goal>deploy-file</goal>
@@ -69,6 +104,20 @@
                             <packaging>jar</packaging>
                             <version>${jar.version}</version>
                             <file>${jar.path}</file>
+                            <url>${repo.url}</url>
+                            <repositoryId>${repo.id}</repositoryId>
+                        </configuration>
+                    </execution>
+                    <execution>
+                        <id>apklib-file</id>
+                        <phase>deploy</phase>
+                        <goals><goal>deploy-file</goal></goals>
+                        <configuration>
+                            <groupId>${extras.google.play.services.groupid}</groupId>
+                            <artifactId>${extras.google.play.services.artifactId}</artifactId>
+                            <packaging>apklib</packaging>
+                            <version>${jar.version}</version>
+                            <file>target/${extras.google.play.services.artifactId}-${project.version}.apklib</file>
                             <url>${repo.url}</url>
                             <repositoryId>${repo.id}</repositoryId>
                         </configuration>
