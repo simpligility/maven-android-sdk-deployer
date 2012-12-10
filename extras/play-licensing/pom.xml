@@ -60,7 +60,7 @@
             <plugin>
                 <artifactId>maven-install-plugin</artifactId>
                 <executions>
-                   <!-- <execution>
+                   <execution>
                         <phase>install</phase>
                         <goals>
                             <goal>install-file</goal>
@@ -70,9 +70,9 @@
                             <artifactId>${extras.google.play.licensing.artifactId}</artifactId>
                             <packaging>jar</packaging>
                             <version>${jar.version}</version>
-                            <file>${jar.path}</file>
+                            <file>target/${extras.google.play.licensing.artifactId}-${project.version}.jar</file>
                         </configuration>
-                    </execution> -->
+                    </execution>
                     <execution>
                         <id>apklib-file</id>
                         <phase>install</phase>

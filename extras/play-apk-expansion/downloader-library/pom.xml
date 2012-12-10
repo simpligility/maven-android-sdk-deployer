@@ -21,7 +21,7 @@
         <dependency>
         <groupId>com.google.android</groupId>
             <artifactId>android</artifactId>
-            <version>2.2.1</version>
+            <version>2.3.3</version>
             <scope>provided</scope>
         </dependency>
     </dependencies>
@@ -36,6 +36,9 @@
                     <resourceDirectory>${sdk.extras.google.play.apk.expansion.path}/downloader_library/res/res/</resourceDirectory>                    
                     <androidManifestFile>${sdk.extras.google.play.apk.expansion.path}/downloader_library/AndroidManifest.xml</androidManifestFile>
                     <sourceDirectory>${sdk.extras.google.play.apk.expansion.path}/downloader_library/src</sourceDirectory>
+					<sdk>
+						<platform>10</platform>
+					</sdk>
               </configuration>  
             </plugin>
 
@@ -60,19 +63,18 @@
             <plugin>
                 <artifactId>maven-install-plugin</artifactId>
                 <executions>
-                   <!-- <execution>
+					<execution>
+                        <id>jar-file</id>
                         <phase>install</phase>
-                        <goals>
-                            <goal>install-file</goal>
-                        </goals>
+                        <goals><goal>install-file</goal></goals>
                         <configuration>
                             <groupId>${extras.google.play.apk.expansion.groupid}</groupId>
                             <artifactId>${extras.google.play.apk.expansion.artifactId}</artifactId>
                             <packaging>jar</packaging>
                             <version>${jar.version}</version>
-                            <file>${jar.path}</file>
+                            <file>target/${extras.google.play.apk.expansion.artifactId}-${project.version}.jar</file>
                         </configuration>
-                    </execution> -->
+                    </execution>
                     <execution>
                         <id>apklib-file</id>
                         <phase>install</phase>
