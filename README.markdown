@@ -14,7 +14,7 @@ Contributors:
 - Lorenzo Villani - initial 4.0 support
 - Paul Merlin http://eskatos.github.com - Google Analytics extra
 - Matteo Panella <morpheus@level28.org> - Google AdMobs extra, support for 4.1
-- Benoit Billington https://github.com/Shusshu Google Cloud Messaging Client and Server, annotations.jar, 4.2
+- Benoit Billington https://github.com/Shusshu Google Cloud Messaging Client and Server, annotations.jar, 4.2, APK Expansion, Licensing
 - Michael Lake https://github.com/mlake support for Javadoc attachment for platforms
 - Nic Strong http://www.codepoets.co.nz Google Play Services (gms)
 - Matias Dumrauf http://github.com/mdumrauf - compatibility v7 library support
@@ -419,6 +419,34 @@ For the Google Play Services extra (ATTENTION! Do NOT use provided scope!!)
   <artifactId>google-play-services</artifactId>
   <version>3</version>
   <type>jar</type>
+</dependency>
+```
+
+For the Google Play APK Expansion extra (ATTENTION! Do NOT use provided scope!!)
+
+```xml
+<dependency>
+  <groupId>com.google.android.apk.expansion</groupId>
+  <artifactId>play-apk-expansion-downloader</artifactId>
+  <version>2</version>
+  <type>apklib</type>
+</dependency>
+<dependency>
+  <groupId>com.google.android.apk.expansion</groupId>
+  <artifactId>play-apk-expansion-zip</artifactId>
+  <version>2</version>
+  <type>apklib</type>
+</dependency>
+```
+
+For the Google Play Licensing extra (ATTENTION! Do NOT use provided scope!!)
+
+```xml
+<dependency>
+  <groupId>com.google.android.licensing</groupId>
+  <artifactId>play-licensing</artifactId>
+  <version>2</version>
+  <type>apklib</type>
 </dependency>
 ```
 
