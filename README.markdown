@@ -422,6 +422,34 @@ For the Google Play Services extra (ATTENTION! Do NOT use provided scope!!)
 </dependency>
 ```
 
+For the Google Play APK Expansion extra (ATTENTION! Do NOT use provided scope!!)
+
+```xml
+<dependency>
+  <groupId>com.google.android.apk.expansion</groupId>
+  <artifactId>play-apk-expansion-downloader</artifactId>
+  <version>2</version>
+  <type>apklib</type>
+</dependency>
+<dependency>
+  <groupId>com.google.android.apk.expansion</groupId>
+  <artifactId>play-apk-expansion-zip</artifactId>
+  <version>2</version>
+  <type>apklib</type>
+</dependency>
+```
+
+For the Google Play Licensing extra (ATTENTION! Do NOT use provided scope!!)
+
+```xml
+<dependency>
+  <groupId>com.google.android.licensing</groupId>
+  <artifactId>play-licensing</artifactId>
+  <version>2</version>
+  <type>apklib</type>
+</dependency>
+```
+
 To install only a specific module use
 
     mvn clean install -N
