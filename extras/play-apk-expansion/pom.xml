@@ -2,13 +2,13 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.simpligility.android.sdk-deployer</groupId>
-    <artifactId>android-extras</artifactId>
+    <artifactId>android-extras-apk-expansion</artifactId>
     <packaging>pom</packaging>
-    <name>Android Extras</name>
+    <name>Android Extras - Apk Expansion</name>
 
     <parent>
         <groupId>com.simpligility.android.sdk-deployer</groupId>
-        <artifactId>maven-android-sdk-deployer</artifactId>
+        <artifactId>android-extras</artifactId>
         <version>2.1.0</version>
     </parent>
   <build>
@@ -24,7 +24,7 @@
             </goals>
             <configuration>
               <files>
-                <file>${sdk.extras.compatibility.path}/source.properties</file>
+                <file>${sdk.extras.path}/google/play_apk_expansion/source.properties</file>
               </files>
             </configuration>
           </execution>
@@ -39,15 +39,8 @@
                 <activeByDefault>true</activeByDefault>
             </activation>
             <modules>
-                <module>compatibility-v4</module>
-                <module>compatibility-v7-gridlayout</module>
-                <module>compatibility-v13</module>
-                <module>analytics</module>
-                <module>admob</module>
-                <module>gcm</module>
-                <module>google-play-services</module>
-				<module>play-licensing</module>
-				<module>play-apk-expansion</module>
+				<module>zip-file</module>
+				<module>downloader-library</module>
             </modules>
         </profile>
     </profiles>
