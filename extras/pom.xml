@@ -46,8 +46,8 @@
                 <module>admob</module>
                 <module>gcm</module>
                 <module>google-play-services</module>
-				<module>play-licensing</module>
-				<module>play-apk-expansion</module>
+                <module>play-licensing</module>
+                <module>play-apk-expansion</module>
             </modules>
         </profile>
     </profiles>
