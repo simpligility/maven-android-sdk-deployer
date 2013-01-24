@@ -13,6 +13,7 @@
     </parent>
 
     <properties>
+        <jar.path>target/play-licensing-${project.version}.jar</jar.path>
         <extras.google.play.licensing.artifactId>play-licensing</extras.google.play.licensing.artifactId>
         <jar.version>${Pkg.Revision}</jar.version>
     </properties>
