@@ -40,8 +40,10 @@
             </activation>
             <modules>
                 <module>compatibility-v4</module>
+                <module>support-v4</module>
                 <module>compatibility-v7-gridlayout</module>
                 <module>compatibility-v13</module>
+                <module>support-v13</module>
                 <module>analytics</module>
                 <module>admob</module>
                 <module>gcm</module>
