@@ -15,7 +15,7 @@
     <properties>
         <jar.path>${sdk.extras.compatibility.path}/v13/android-support-v13.jar</jar.path>
         <android.support.artifactid>support-v13</android.support.artifactid>
-        <jar.version>${Pkg.Revision}</jar.version>
+        <jar.version>r${Pkg.Revision}</jar.version>
     </properties>
     <build>
         <plugins>
@@ -26,7 +26,7 @@
                         <phase>install</phase>
                         <goals><goal>install-file</goal></goals>
                         <configuration>
-                            <groupId>${extras.compatibility.groupid}</groupId>
+                            <groupId>${extras.support.groupid}</groupId>
                             <artifactId>${android.support.artifactid}</artifactId>
                             <packaging>jar</packaging>
                             <version>${jar.version}</version>
@@ -43,7 +43,7 @@
                         <phase>deploy</phase>
                         <goals><goal>deploy-file</goal></goals>
                         <configuration>
-                            <groupId>${extras.compatibility.groupid}</groupId>
+                            <groupId>${extras.support.groupid}</groupId>
                             <artifactId>${android.support.artifactid}</artifactId>
                             <packaging>jar</packaging>
                             <version>${jar.version}</version>

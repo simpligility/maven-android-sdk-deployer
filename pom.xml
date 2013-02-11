@@ -45,6 +45,7 @@
         <addon.android.future.usb.groupid>com.android.future</addon.android.future.usb.groupid>
         <addon.android.future.usb.artifactid>usb</addon.android.future.usb.artifactid>
         <extras.compatibility.groupid>android.support</extras.compatibility.groupid>
+        <extras.support.groupid>com.google.android</extras.support.groupid>
         <extras.analytics.groupid>com.google.android.analytics</extras.analytics.groupid>
         <extras.admob.groupid>com.google.android.admob</extras.admob.groupid>
         <extras.gcm.groupid>com.google.android.gcm</extras.gcm.groupid>
