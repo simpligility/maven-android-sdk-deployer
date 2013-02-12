@@ -336,6 +336,37 @@ For the compatibility extra (ATTENTION! Do NOT use provided scope!!)
 </dependency>
 ```
 
+If you find that the above `<dependency>` fails due to conflicts, your project and it's dependencies may both depend on the compatibility extra.  The first option is to add an `<exclude>` clause to each dependency that uses the library, as [described here](https://groups.google.com/forum/#!msg/actionbarsherlock/2cLR48IArck/U8--60QxeTkJ).  This works with command line builds but it may not work with your IDE.
+
+If you have problems with `<exclude>`, another option is to override the `<groupid>`, `<artifactid>`, and `<version>` properties used by the deployer to match Google's published library.
+
+Use one of the following `<dependency>` instead of those shown above.
+Note that `<version>` begins with a letter, e.g. `r11`.
+
+```xml
+    <dependency>
+      <groupId>com.google.android</groupId>
+      <artifactId>support-v4</artifactId>
+      <version>r11</version>
+    </dependency>
+
+    <dependency>
+      <groupId>com.google.android</groupId>
+      <artifactId>support-v13</artifactId>
+      <version>r11</version>
+    </dependency>
+```
+
+Then override `support-v4` or `support-v13` during installation:
+
+    mvn install -Dextras.compatibility.v4.groupid=com.google.android \
+                -Dextras.compatibility.v4.artifactid=support-v4 \
+                -Dextras.compatibility.v4.version.prefix=r
+
+    mvn install -Dextras.compatibility.v13.groupid=com.google.android \
+                -Dextras.compatibility.v13.artifactid=support-v13 \
+                -Dextras.compatibility.v13.version.prefix=r
+
 In order to use v7 extra, both dependencies (apklib & jar) are needed
 
 ```xml
