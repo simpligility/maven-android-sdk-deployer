@@ -25,7 +25,7 @@
         <!-- you need to provide username and password for the server in your settings.xml, see documentation
             for the maven-deploy-plugin -->
 
-        <!-- Following properties don't need to be changed   by user -->
+        <!-- The following properties don't need to be changed by the user -->
         <sdk.platforms.path>${android.sdk.path}/platforms</sdk.platforms.path>
         <sdk.addons.path>${android.sdk.path}/add-ons</sdk.addons.path>
         <sdk.extras.path>${android.sdk.path}/extras</sdk.extras.path>
@@ -44,13 +44,31 @@
         <addon.googlemaps.artifactid>maps</addon.googlemaps.artifactid>
         <addon.android.future.usb.groupid>com.android.future</addon.android.future.usb.groupid>
         <addon.android.future.usb.artifactid>usb</addon.android.future.usb.artifactid>
-        <extras.compatibility.groupid>android.support</extras.compatibility.groupid>
+
         <extras.analytics.groupid>com.google.android.analytics</extras.analytics.groupid>
         <extras.admob.groupid>com.google.android.admob</extras.admob.groupid>
         <extras.gcm.groupid>com.google.android.gcm</extras.gcm.groupid>
         <extras.google.play.services.groupid>com.google.android.gms</extras.google.play.services.groupid>
         <extras.google.play.apk.expansion.groupid>com.google.android.apk.expansion</extras.google.play.apk.expansion.groupid>
         <extras.google.play.licensing.groupid>com.google.android.licensing</extras.google.play.licensing.groupid>
+
+        <extras.compatibility.groupid>android.support</extras.compatibility.groupid>
+
+        <!-- If a project and it's dependencies both depend on the support library, the groupid,
+             artifactid, and version properties may need to be overridden.  For example:
+
+             mvn install -Dextras.compatibility.v4.groupid=com.google.android \
+                         -Dextras.compatibility.v4.artifactid=support-v4 \
+                         -Dextras.compatibility.v4.version.prefix=r -->
+
+        <extras.compatibility.v4.groupid>${extras.compatibility.groupid}</extras.compatibility.v4.groupid>
+        <extras.compatibility.v4.artifactid>compatibility-v4</extras.compatibility.v4.artifactid>
+        <extras.compatibility.v4.version.prefix></extras.compatibility.v4.version.prefix>
+
+        <extras.compatibility.v13.groupid>${extras.compatibility.groupid}</extras.compatibility.v13.groupid>
+        <extras.compatibility.v13.artifactid>compatibility-v13</extras.compatibility.v13.artifactid>
+        <extras.compatibility.v13.version.prefix></extras.compatibility.v13.version.prefix>
+
         <tools.annotations.groupid>com.google.android.annotations</tools.annotations.groupid>
     </properties>
 
