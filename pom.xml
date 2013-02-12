@@ -54,13 +54,6 @@
 
         <extras.compatibility.groupid>android.support</extras.compatibility.groupid>
 
-        <!-- If a project and it's dependencies both depend on the support library, the groupid,
-             artifactid, and version properties may need to be overridden.  For example:
-
-             mvn install -Dextras.compatibility.v4.groupid=com.google.android \
-                         -Dextras.compatibility.v4.artifactid=support-v4 \
-                         -Dextras.compatibility.v4.version.prefix=r -->
-
         <extras.compatibility.v4.groupid>${extras.compatibility.groupid}</extras.compatibility.v4.groupid>
         <extras.compatibility.v4.artifactid>compatibility-v4</extras.compatibility.v4.artifactid>
         <extras.compatibility.v4.version.prefix></extras.compatibility.v4.version.prefix>
