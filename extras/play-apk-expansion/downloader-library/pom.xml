@@ -104,7 +104,7 @@
                             <artifactId>${extras.google.play.apk.expansion.artifactId}</artifactId>
                             <packaging>jar</packaging>
                             <version>${jar.version}</version>
-                            <file>${jar.path}</file>
+                            <file>target/${extras.google.play.apk.expansion.artifactId}-${project.version}.jar</file>
                             <url>${repo.url}</url>
                             <repositoryId>${repo.id}</repositoryId>
                         </configuration>
