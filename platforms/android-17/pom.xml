@@ -19,6 +19,28 @@
 
     <build>
         <plugins>
+
+            <plugin>
+                <artifactId>maven-jar-plugin</artifactId>
+                <version>2.4</version>
+                <executions>
+                    <execution>
+                        <phase>generate-resources</phase>
+                        <goals>
+                            <goal>jar</goal>
+                        </goals>
+                        <configuration>
+                            <classesDirectory>${android.sdk.path}/sources/android-17</classesDirectory>
+                            <includes>
+                                <include>**/*</include>
+                            </includes>
+                            <finalName>android-sources</finalName>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+
+
             <plugin>
                 <artifactId>maven-install-plugin</artifactId>
                 <executions>
@@ -32,6 +54,7 @@
                             <version>${jar.version}</version>
                             <file>${jar.path}</file>
                             <javadoc>${javadoc.path}</javadoc>
+	                        <sources>${project.build.directory}/android-sources.jar</sources>
                         </configuration>
                     </execution>
                 </executions>
@@ -52,6 +75,7 @@
                             <url>${repo.url}</url>
                             <repositoryId>${repo.id}</repositoryId>
                             <javadoc>${javadoc.path}</javadoc>
+	                        <sources>${project.build.directory}/android-sources.jar</sources>
                         </configuration>
                     </execution>
                 </executions>
