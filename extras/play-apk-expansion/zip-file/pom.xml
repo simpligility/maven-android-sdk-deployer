@@ -13,6 +13,7 @@
     </parent>
 
     <properties>
+        <jar.path>target/play-apk-expansion-zip-${project.version}.jar</jar.path>
         <extras.google.play.apk.expansion.artifactId>play-apk-expansion-zip</extras.google.play.apk.expansion.artifactId>
         <jar.version>${Pkg.Revision}</jar.version>
     </properties>
