@@ -20,6 +20,10 @@ Contributors:
 - Matias Dumrauf http://github.com/mdumrauf - compatibility v7 library support
 - https://github.com/skyisle minor documentation fix                            
 - Viacheslav Rodionov https://github.com/bepcyc AdbMob update
+- David Venable https://github.com/dlvenable admob update
+- Jenny Loomis Williamson https://github.com/jloomis fix for deployment
+- James Wald https://github.com/jameswald configured groupId and artifactId for support libraries
+- Thomas Prochazka https://github.com/tprochazka javadoc attachment
 
 The Maven Android SDK Deployer is a helper maven project that can be
 used to install the libraries necessary to build Android applications

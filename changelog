@@ -1,6 +1,17 @@
 Changelog per release
 ---------------------
 
+2.2.0
+
+  - David Venable https://github.com/dlvenable admob update
+    https://github.com/mosabua/maven-android-sdk-deployer/pull/85
+  - Jenny Loomis Williamson https://github.com/jloomis fix for deployment
+    https://github.com/mosabua/maven-android-sdk-deployer/pull/79
+  - James Wald https://github.com/jameswald configured groupId and artifactId for support libraries
+    https://github.com/mosabua/maven-android-sdk-deployer/pull/81
+  - Thomas Prochazka https://github.com/tprochazka javadoc attachment
+    https://github.com/mosabua/maven-android-sdk-deployer/pull/82
+ 
 2.1.0
 
  - added Android 4.2, API 17 artifacts
@@ -10,7 +21,7 @@ Changelog per release
 
  - changed a bunch of versions to follow semver.org better by omitting the r for revision
    this is a API breakage bascially ;-), contributed by Manfred Moser
- - added support for gridlayout as combined jar/apklib, contributed by Matías Dumrauf
+ - added support for gridlayout as combined jar/apklib, contributed by Mat��as Dumrauf
    see https://github.com/mosabua/maven-android-sdk-deployer/pull/59
  - added support for Google Play services, contributed by Nic Strong
    see https://github.com/mosabua/maven-android-sdk-deployer/pull/60
