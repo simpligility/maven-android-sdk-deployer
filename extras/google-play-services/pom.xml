@@ -28,7 +28,20 @@
     </dependencies>
 
     <build>
+        <sourceDirectory>${sdk.extras.google.play.services.path}/libproject/google-play-services_lib/src</sourceDirectory>
+
         <plugins>
+
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-source-plugin</artifactId>
+            </plugin>
+
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-javadoc-plugin</artifactId>
+            </plugin>
+
             <plugin>
                 <groupId>com.jayway.maven.plugins.android.generation2</groupId>
                 <artifactId>android-maven-plugin</artifactId>
@@ -36,8 +49,7 @@
                 <configuration>
                     <resourceDirectory>${sdk.extras.google.play.services.path}/libproject/google-play-services_lib/res/</resourceDirectory>                    
                     <androidManifestFile>${sdk.extras.google.play.services.path}/libproject/google-play-services_lib/AndroidManifest.xml</androidManifestFile>
-                    <sourceDirectory>${sdk.extras.google.play.services.path}/libproject/google-play-services_lib/src</sourceDirectory>
-              </configuration>  
+              </configuration>
             </plugin>
 
             <plugin>
@@ -72,6 +84,8 @@
                             <packaging>jar</packaging>
                             <version>${jar.version}</version>
                             <file>${jar.path}</file>
+                            <sources>target/${extras.google.play.services.artifactId}-${project.version}-sources.jar</sources>
+                            <javadoc>target/${extras.google.play.services.artifactId}-${project.version}-javadoc.jar</javadoc>
                         </configuration>
                     </execution>
                     <execution>
@@ -104,6 +118,8 @@
                             <packaging>jar</packaging>
                             <version>${jar.version}</version>
                             <file>${jar.path}</file>
+                            <sources>target/${extras.google.play.apk.expansion.artifactId}-${project.version}-sources.jar</sources>
+                            <javadoc>target/${extras.google.play.apk.expansion.artifactId}-${project.version}-javadoc.jar</javadoc>
                             <url>${repo.url}</url>
                             <repositoryId>${repo.id}</repositoryId>
                         </configuration>
