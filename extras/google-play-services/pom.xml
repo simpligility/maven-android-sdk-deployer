@@ -118,8 +118,8 @@
                             <packaging>jar</packaging>
                             <version>${jar.version}</version>
                             <file>${jar.path}</file>
-                            <sources>target/${extras.google.play.apk.expansion.artifactId}-${project.version}-sources.jar</sources>
-                            <javadoc>target/${extras.google.play.apk.expansion.artifactId}-${project.version}-javadoc.jar</javadoc>
+                            <sources>target/${extras.google.play.services.artifactId}-${project.version}-sources.jar</sources>
+                            <javadoc>target/${extras.google.play.services.artifactId}-${project.version}-javadoc.jar</javadoc>
                             <url>${repo.url}</url>
                             <repositoryId>${repo.id}</repositoryId>
                         </configuration>
