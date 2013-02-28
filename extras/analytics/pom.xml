@@ -13,7 +13,7 @@
     </parent>
 
     <properties>
-        <jar.path>${sdk.extras.analytics.path}/libGoogleAnalytics.jar</jar.path>
+        <jar.path>${sdk.extras.analytics.path}/libGoogleAnalyticsV2.jar</jar.path>
         <extras.analytics.artifactId>analytics</extras.analytics.artifactId>
         <jar.version>${Pkg.Revision}</jar.version>
     </properties>
