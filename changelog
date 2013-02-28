@@ -11,7 +11,8 @@ Changelog per release
     https://github.com/mosabua/maven-android-sdk-deployer/pull/81
   - Thomas Prochazka https://github.com/tprochazka javadoc attachment
     https://github.com/mosabua/maven-android-sdk-deployer/pull/82
- 
+  - Manfred Moser - fixed analytics path for V2
+  
 2.1.0
 
  - added Android 4.2, API 17 artifacts
