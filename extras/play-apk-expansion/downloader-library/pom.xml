@@ -20,27 +20,34 @@
 
     <dependencies>
         <dependency>
-        <groupId>com.google.android</groupId>
+            <groupId>com.google.android</groupId>
             <artifactId>android</artifactId>
-            <version>2.3.3</version>
+            <version>4.1.1.4</version>
             <scope>provided</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>com.google.android.licensing</groupId>
+            <artifactId>play-licensing</artifactId>
+            <version>2</version>
+            <type>apklib</type>
         </dependency>
     </dependencies>
 
     <build>
+        <sourceDirectory>${sdk.extras.google.play.apk.expansion.path}/downloader_library/src</sourceDirectory>
         <plugins>
             <plugin>
                 <groupId>com.jayway.maven.plugins.android.generation2</groupId>
                 <artifactId>android-maven-plugin</artifactId>
                 <extensions>true</extensions>
                 <configuration>
-                    <resourceDirectory>${sdk.extras.google.play.apk.expansion.path}/downloader_library/res/res/</resourceDirectory>                    
+                    <resourceDirectory>${sdk.extras.google.play.apk.expansion.path}/downloader_library/res/</resourceDirectory>
                     <androidManifestFile>${sdk.extras.google.play.apk.expansion.path}/downloader_library/AndroidManifest.xml</androidManifestFile>
-                    <sourceDirectory>${sdk.extras.google.play.apk.expansion.path}/downloader_library/src</sourceDirectory>
-					<sdk>
-						<platform>10</platform>
-					</sdk>
-              </configuration>  
+                    <sdk>
+                        <platform>16</platform>
+                    </sdk>
+              </configuration>
             </plugin>
 
             <plugin>
@@ -64,7 +71,7 @@
             <plugin>
                 <artifactId>maven-install-plugin</artifactId>
                 <executions>
-					<execution>
+                    <execution>
                         <id>jar-file</id>
                         <phase>install</phase>
                         <goals><goal>install-file</goal></goals>
@@ -74,6 +81,8 @@
                             <packaging>jar</packaging>
                             <version>${jar.version}</version>
                             <file>target/${extras.google.play.apk.expansion.artifactId}-${project.version}.jar</file>
+                            <sources>target/${extras.google.play.apk.expansion.artifactId}-${project.version}-sources.jar</sources>
+                            <javadoc>target/${extras.google.play.apk.expansion.artifactId}-${project.version}-javadoc.jar</javadoc>
                         </configuration>
                     </execution>
                     <execution>
