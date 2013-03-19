@@ -9,13 +9,14 @@
     <parent>
         <groupId>com.simpligility.android.sdk-deployer</groupId>
         <artifactId>maven-android-sdk-deployer</artifactId>
-        <version>2.2.0</version>
+        <version>2.2.1</version>
     </parent>
 
     <properties>
         <jar.directory>${sdk.platforms.path}/${project.artifactId}</jar.directory>
         <jar.path>${jar.directory}/android.jar</jar.path>
         <jar.version>${Platform.Version}_r${Pkg.Revision}</jar.version>
+        <uiautomator.path>${jar.directory}/uiautomator.jar</uiautomator.path>
         <javadoc.path></javadoc.path>
     </properties>
 

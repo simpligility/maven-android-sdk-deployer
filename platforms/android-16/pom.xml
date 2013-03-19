@@ -9,7 +9,7 @@
     <parent>
         <groupId>com.simpligility.android.sdk-deployer</groupId>
         <artifactId>android-platforms</artifactId>
-        <version>2.2.0</version>
+        <version>2.2.1</version>
     </parent>
 
     <properties>
@@ -34,6 +34,18 @@
                             <javadoc>${javadoc.path}</javadoc>
                         </configuration>
                     </execution>
+                    <execution>
+                        <id>uiautomator-jar</id>
+                        <phase>install</phase>
+                        <goals><goal>install-file</goal></goals>
+                        <configuration>
+                            <groupId>${platform.uiautomator.groupid}</groupId>
+                            <artifactId>${platform.uiautomator.artifactid}</artifactId>
+                            <packaging>jar</packaging>
+                            <version>${jar.version}</version>
+                            <file>${uiautomator.path}</file>
+                        </configuration>
+                    </execution>
                 </executions>
             </plugin>
             <plugin>
@@ -52,6 +64,20 @@
                             <url>${repo.url}</url>
                             <repositoryId>${repo.id}</repositoryId>
                             <javadoc>${javadoc.path}</javadoc>
+                        </configuration>
+                    </execution>
+                    <execution>
+                        <id>uiautomator-jar</id>
+                        <phase>deploy</phase>
+                        <goals><goal>deploy-file</goal></goals>
+                        <configuration>
+                            <groupId>${platform.uiautomator.groupid}</groupId>
+                            <artifactId>${platform.uiautomator.artifactid}</artifactId>
+                            <packaging>jar</packaging>
+                            <version>${jar.version}</version>
+                            <file>${uiautomator.path}</file>
+                            <url>${repo.url}</url>
+                            <repositoryId>${repo.id}</repositoryId>
                         </configuration>
                     </execution>
                 </executions>

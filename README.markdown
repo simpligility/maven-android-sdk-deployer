@@ -439,6 +439,24 @@ For the Android annotations tools
   <scope>provided</scope>
 </dependency>
 ```
+
+For the uiautomator jar
+
+```xml
+<dependency>
+  <groupId>com.google.android.annotations</groupId>
+  <artifactId>annotations</artifactId>
+  <version>4.1.2_r4</version>
+  <scope>provided</scope>
+</dependency>
+
+<dependency>
+  <groupId>com.google.android.annotations</groupId>
+  <artifactId>annotations</artifactId>
+  <version>4.2.2_r2</version>
+  <scope>provided</scope>
+</dependency>
+```
     
 For the Google Play Services extra (ATTENTION! Do NOT use provided scope!!)
 

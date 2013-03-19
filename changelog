@@ -1,6 +1,15 @@
 Changelog per release
 ---------------------
 
+
+2.2.1
+
+  - Manfred Moser, updated admob to 6.3.1
+  - Artur Skowronski maps version correction
+  - Thomas Prochazka https://github.com/tprochazka javadoc for apk extension and play services
+    https://github.com/mosabua/maven-android-sdk-deployer/pull/89
+  - Manfred Moser, added support for uiautomator.jar for android-17 and android-16
+
 2.2.0
 
   - David Venable https://github.com/dlvenable admob update
