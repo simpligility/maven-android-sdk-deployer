@@ -28,6 +28,7 @@
     </dependencies>
 
     <build>
+        <sourceDirectory>${sdk.extras.google.play.apk.expansion.path}/zip_file/src</sourceDirectory>
         <plugins>
             <plugin>
                 <groupId>com.jayway.maven.plugins.android.generation2</groupId>
@@ -36,8 +37,7 @@
                 <configuration>
                     <resourceDirectory>${sdk.extras.google.play.apk.expansion.path}/zip_file/res/</resourceDirectory>                    
                     <androidManifestFile>${sdk.extras.google.play.apk.expansion.path}/zip_file/AndroidManifest.xml</androidManifestFile>
-                    <sourceDirectory>${sdk.extras.google.play.apk.expansion.path}/zip_file/src</sourceDirectory>
-              </configuration>  
+              </configuration>
             </plugin>
 
             <plugin>
@@ -72,6 +72,8 @@
                             <packaging>jar</packaging>
                             <version>${jar.version}</version>
                             <file>target/${extras.google.play.apk.expansion.artifactId}-${project.version}.jar</file>
+                            <sources>target/${extras.google.play.apk.expansion.artifactId}-${project.version}-sources.jar</sources>
+                            <javadoc>target/${extras.google.play.apk.expansion.artifactId}-${project.version}-javadoc.jar</javadoc>
                         </configuration>
                     </execution>
                     <execution>

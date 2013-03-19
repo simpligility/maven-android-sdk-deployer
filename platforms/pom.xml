@@ -163,7 +163,7 @@
                 </plugins>
             </build>
             <properties>
-                <javadoc.path>${project.build.directory}/android-javadoc.jar</javadoc.path>
+                <javadoc.path>${project.build.directory}/../../target/android-javadoc.jar</javadoc.path>
             </properties>
         </profile>
     </profiles>
