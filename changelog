@@ -8,6 +8,7 @@ Changelog per release
   - Artur Skowronski maps version correction
   - Thomas Prochazka https://github.com/tprochazka javadoc for apk extension and play services
     https://github.com/mosabua/maven-android-sdk-deployer/pull/89
+    deactivated those modules for now since compile breaks
   - Manfred Moser, added support for uiautomator.jar for android-17 and android-16
 
 2.2.0
