@@ -444,15 +444,15 @@ For the uiautomator jar
 
 ```xml
 <dependency>
-  <groupId>com.google.android.annotations</groupId>
-  <artifactId>annotations</artifactId>
+  <groupId>android.test.uiautomator</groupId>
+  <artifactId>uiautomator</artifactId>
   <version>4.1.2_r4</version>
   <scope>provided</scope>
 </dependency>
 
 <dependency>
-  <groupId>com.google.android.annotations</groupId>
-  <artifactId>annotations</artifactId>
+  <groupId>android.test.uiautomator</groupId>
+  <artifactId>uiautomator</artifactId>
   <version>4.2.2_r2</version>
   <scope>provided</scope>
 </dependency>
