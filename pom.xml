@@ -60,6 +60,10 @@
         <extras.compatibility.v4.artifactid>compatibility-v4</extras.compatibility.v4.artifactid>
         <extras.compatibility.v4.version.prefix></extras.compatibility.v4.version.prefix>
 
+        <extras.compatibility.v7.groupid>${extras.compatibility.groupid}</extras.compatibility.v7.groupid>
+        <extras.compatibility.v7.artifactid>compatibility-v7</extras.compatibility.v7.artifactid>
+        <extras.compatibility.v7.version.prefix></extras.compatibility.v7.version.prefix>
+
         <extras.compatibility.v13.groupid>${extras.compatibility.groupid}</extras.compatibility.v13.groupid>
         <extras.compatibility.v13.artifactid>compatibility-v13</extras.compatibility.v13.artifactid>
         <extras.compatibility.v13.version.prefix></extras.compatibility.v13.version.prefix>
