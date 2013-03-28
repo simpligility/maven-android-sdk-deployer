@@ -3,8 +3,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.simpligility.android.sdk-deployer</groupId>
     <artifactId>play-apk-expansion-downloader</artifactId>
-    <!--<packaging>apklib</packaging>-->
-    <packaging>pom</packaging>
+    <packaging>apklib</packaging>
     <name>Android Google Play APK Expansion Extra - Downloader</name>
 
     <parent>
