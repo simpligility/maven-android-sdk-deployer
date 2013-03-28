@@ -41,8 +41,8 @@
                 <activeByDefault>true</activeByDefault>
             </activation>
             <modules>
-               <!--<module>zip-file</module>-->
-               <!--<module>downloader-library</module>-->
+				<module>zip-file</module>
+				<module>downloader-library</module>
             </modules>
         </profile>
     </profiles>
