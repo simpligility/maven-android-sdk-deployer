@@ -405,7 +405,7 @@ For the Google AdMob Ads extra (ATTENTION! Do NOT use provided scope!!)
 <dependency>
   <groupId>com.google.android.admob</groupId>
   <artifactId>admob</artifactId>
-  <version>6.3.1-r10</version>
+  <version>6.4.1-r11</version>
 </dependency>
 ```
 
