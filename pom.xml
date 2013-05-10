@@ -48,6 +48,7 @@
         <addon.android.future.usb.artifactid>usb</addon.android.future.usb.artifactid>
 
         <extras.analytics.groupid>com.google.android.analytics</extras.analytics.groupid>
+        <extras.analytics.artifactId>analytics</extras.analytics.artifactId>
         <extras.admob.groupid>com.google.android.admob</extras.admob.groupid>
         <extras.gcm.groupid>com.google.android.gcm</extras.gcm.groupid>
         <extras.google.play.services.groupid>com.google.android.gms</extras.google.play.services.groupid>
