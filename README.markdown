@@ -391,11 +391,20 @@ In order to use v7 extra, both dependencies (apklib & jar) are needed
 
 For the Google Analytics extra (ATTENTION! Do NOT use provided scope!!)
 
+Google Analytics V1 (old)
 ```xml
 <dependency>
   <groupId>com.google.android.analytics</groupId>
   <artifactId>analytics</artifactId>
   <version>2</version>
+</dependency>
+```
+Google Analytics V2
+```xml
+<dependency>
+  <groupId>com.google.android.analytics</groupId>
+  <artifactId>analytics</artifactId>
+  <version>3</version>
 </dependency>
 ```
 
