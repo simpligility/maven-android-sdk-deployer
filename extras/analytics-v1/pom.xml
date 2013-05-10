@@ -2,7 +2,7 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.simpligility.android.sdk-deployer</groupId>
-    <artifactId>analytics</artifactId>
+    <artifactId>analytics-v1</artifactId>
     <packaging>pom</packaging>
     <name>Android Google Analytics Extra</name>
 
@@ -13,9 +13,8 @@
     </parent>
 
     <properties>
-        <jar.path>${sdk.extras.analytics.path}/libGoogleAnalytics.jar</jar.path>
-        <extras.analytics.artifactId>analytics</extras.analytics.artifactId>
-        <jar.version>${Pkg.Revision}</jar.version>
+        <v1.jar.path>${sdk.extras.analytics.v1.path}/libGoogleAnalytics.jar</v1.jar.path>
+        <v1.jar.version>${Pkg.Revision}</v1.jar.version>
     </properties>
     <build>
         <plugins>
@@ -30,7 +29,7 @@
             </goals>
             <configuration>
               <files>
-                <file>${sdk.extras.analytics.path}/source.properties</file>
+                <file>${sdk.extras.analytics.v1.path}/source.properties</file>
               </files>
             </configuration>
           </execution>
@@ -46,8 +45,8 @@
                             <groupId>${extras.analytics.groupid}</groupId>
                             <artifactId>${extras.analytics.artifactId}</artifactId>
                             <packaging>jar</packaging>
-                            <version>${jar.version}</version>
-                            <file>${jar.path}</file>
+                            <version>${v1.jar.version}</version>
+                            <file>${v1.jar.path}</file>
                         </configuration>
                     </execution>
                 </executions>
@@ -56,15 +55,14 @@
                 <artifactId>maven-deploy-plugin</artifactId>
                 <executions>
                     <execution>
-                        <id>a</id>
                         <phase>deploy</phase>
                         <goals><goal>deploy-file</goal></goals>
                         <configuration>
                             <groupId>${extras.analytics.groupid}</groupId>
                             <artifactId>${extras.analytics.artifactId}</artifactId>
                             <packaging>jar</packaging>
-                            <version>${jar.version}</version>
-                            <file>${jar.path}</file>
+                            <version>${v1.jar.version}</version>
+                            <file>${v1.jar.path}</file>
                             <url>${repo.url}</url>
                             <repositoryId>${repo.id}</repositoryId>
                         </configuration>
