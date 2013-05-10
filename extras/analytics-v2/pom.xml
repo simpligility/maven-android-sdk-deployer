@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>com.simpligility.android.sdk-deployer</groupId>
+    <artifactId>analytics-v2</artifactId>
+    <packaging>pom</packaging>
+    <name>Android Google Analytics Extra</name>
+
+    <parent>
+        <groupId>com.simpligility.android.sdk-deployer</groupId>
+        <artifactId>android-extras</artifactId>
+        <version>2.2.1</version>
+    </parent>
+
+    <properties>
+        <v2.jar.path>${sdk.extras.analytics.v2.path}/libGoogleAnalyticsV2.jar</v2.jar.path>
+        <v2.jar.version>${Pkg.Revision}</v2.jar.version>
+    </properties>
+    <build>
+        <plugins>
+      <plugin>
+        <groupId>org.codehaus.mojo</groupId>
+        <artifactId>properties-maven-plugin</artifactId>
+        <executions>
+          <execution>
+            <phase>initialize</phase>
+            <goals>
+              <goal>read-project-properties</goal>
+            </goals>
+            <configuration>
+              <files>
+                <file>${sdk.extras.analytics.v2.path}/source.properties</file>
+              </files>
+            </configuration>
+          </execution>
+        </executions>
+      </plugin>
+            <plugin>
+                <artifactId>maven-install-plugin</artifactId>
+                <executions>
+                    <execution>
+                        <phase>install</phase>
+                        <goals><goal>install-file</goal></goals>
+                        <configuration>
+                            <groupId>${extras.analytics.groupid}</groupId>
+                            <artifactId>${extras.analytics.artifactId}</artifactId>
+                            <packaging>jar</packaging>
+                            <version>${v2.jar.version}</version>
+                            <file>${v2.jar.path}</file>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+            <plugin>
+                <artifactId>maven-deploy-plugin</artifactId>
+                <executions>
+                    <execution>
+                        <phase>deploy</phase>
+                        <goals><goal>deploy-file</goal></goals>
+                        <configuration>
+                            <groupId>${extras.analytics.groupid}</groupId>
+                            <artifactId>${extras.analytics.artifactId}</artifactId>
+                            <packaging>jar</packaging>
+                            <version>${v2.jar.version}</version>
+                            <file>${v2.jar.path}</file>
+                            <url>${repo.url}</url>
+                            <repositoryId>${repo.id}</repositoryId>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+        </plugins>
+    </build>
+</project>

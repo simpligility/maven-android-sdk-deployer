@@ -74,6 +74,7 @@
                 <module>compatibility-v7-gridlayout</module>
                 <module>compatibility-v13</module>
                 <module>analytics-v1</module>
+                <module>analytics-v2</module>
                 <module>admob</module>
                 <module>gcm</module>
                 <module>google-play-services</module>
