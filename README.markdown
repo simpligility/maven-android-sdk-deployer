@@ -17,7 +17,7 @@ Contributors:
 - Benoit Billington https://github.com/Shusshu Google Cloud Messaging Client and Server, annotations.jar, 4.2, APK Expansion, Licensing
 - Michael Lake https://github.com/mlake support for Javadoc attachment for platforms
 - Nic Strong http://www.codepoets.co.nz Google Play Services (gms)
-- Matias Dumrauf http://github.com/mdumrauf - compatibility v7 library support
+- Matias Dumrauf http://github.com/mdumrauf - Compatibility v7 library support, Google Analytics support for V1 and V2
 - https://github.com/skyisle minor documentation fix                            
 - Viacheslav Rodionov https://github.com/bepcyc AdbMob update
 - David Venable https://github.com/dlvenable admob update
@@ -391,11 +391,20 @@ In order to use v7 extra, both dependencies (apklib & jar) are needed
 
 For the Google Analytics extra (ATTENTION! Do NOT use provided scope!!)
 
+Google Analytics V1 (old)
 ```xml
 <dependency>
   <groupId>com.google.android.analytics</groupId>
   <artifactId>analytics</artifactId>
   <version>2</version>
+</dependency>
+```
+Google Analytics V2
+```xml
+<dependency>
+  <groupId>com.google.android.analytics</groupId>
+  <artifactId>analytics</artifactId>
+  <version>3</version>
 </dependency>
 ```
 
