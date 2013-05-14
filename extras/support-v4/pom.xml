@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>com.simpligility.android.sdk-deployer</groupId>
+    <artifactId>support-v4</artifactId>
+    <packaging>pom</packaging>
+    <name>Android Compatibility Extra V4</name>
+
+    <parent>
+        <groupId>com.simpligility.android.sdk-deployer</groupId>
+        <artifactId>android-extras</artifactId>
+        <version>2.2.1</version>
+    </parent>
+
+    <properties>
+        <jar.path>${sdk.extras.compatibility.path}/v4/android-support-v4.jar</jar.path>
+        <jar.version>${extras.support.v4.version.prefix}${Pkg.Revision}</jar.version>
+    </properties>
+    <build>
+        <plugins>
+
+	        <plugin>
+		        <artifactId>maven-jar-plugin</artifactId>
+		        <version>2.4</version>
+		        <executions>
+			        <execution>
+				        <phase>generate-resources</phase>
+				        <goals>
+					        <goal>jar</goal>
+				        </goals>
+				        <configuration>
+					        <classesDirectory>${sdk.extras.compatibility.path}/v4/src/java</classesDirectory>
+					        <includes>
+						        <include>**/*</include>
+					        </includes>
+					        <finalName>support-sources</finalName>
+				        </configuration>
+			        </execution>
+		        </executions>
+	        </plugin>
+
+            <plugin>
+                <artifactId>maven-install-plugin</artifactId>
+                <executions>
+                    <execution>
+                        <phase>install</phase>
+                        <goals><goal>install-file</goal></goals>
+                        <configuration>
+                            <groupId>${extras.support.v4.groupid}</groupId>
+                            <artifactId>${extras.support.v4.artifactid}</artifactId>
+                            <packaging>jar</packaging>
+                            <version>${jar.version}</version>
+                            <file>${jar.path}</file>
+	                        <sources>${project.build.directory}/support-sources.jar</sources>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+            <plugin>
+                <artifactId>maven-deploy-plugin</artifactId>
+                <executions>
+                    <execution>
+                        <id>a</id>
+                        <phase>deploy</phase>
+                        <goals><goal>deploy-file</goal></goals>
+                        <configuration>
+                            <groupId>${extras.support.v4.groupid}</groupId>
+                            <artifactId>${extras.support.v4.artifactid}</artifactId>
+                            <packaging>jar</packaging>
+                            <version>${jar.version}</version>
+                            <file>${jar.path}</file>
+	                        <sources>${project.build.directory}/support-sources.jar</sources>
+                            <url>${repo.url}</url>
+                            <repositoryId>${repo.id}</repositoryId>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+        </plugins>
+    </build>
+</project>
