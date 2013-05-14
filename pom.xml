@@ -39,7 +39,7 @@
         <sdk.extras.google.play.licensing.path>${sdk.extras.path}/google/play_licensing</sdk.extras.google.play.licensing.path>
         <sdk.tools.path>${android.sdk.path}/tools</sdk.tools.path>
         <sdk.tools.annotations.path>${android.sdk.path}/tools/support</sdk.tools.annotations.path>
-        <platform.android.groupid>android</platform.android.groupid>
+        <platform.android.groupid>com.google.android</platform.android.groupid>
         <platform.android.artifactid>android</platform.android.artifactid>
         <platform.uiautomator.groupid>android.test.uiautomator</platform.uiautomator.groupid>
         <platform.uiautomator.artifactid>uiautomator</platform.uiautomator.artifactid>
