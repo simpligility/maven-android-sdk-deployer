@@ -57,6 +57,7 @@
         <extras.google.play.licensing.groupid>com.google.android.licensing</extras.google.play.licensing.groupid>
 
         <extras.compatibility.groupid>android.support</extras.compatibility.groupid>
+		<extras.support.groupid>com.google.android</extras.support.groupid>
 
         <extras.compatibility.v4.groupid>${extras.compatibility.groupid}</extras.compatibility.v4.groupid>
         <extras.compatibility.v4.artifactid>compatibility-v4</extras.compatibility.v4.artifactid>
@@ -69,6 +70,18 @@
         <extras.compatibility.v13.groupid>${extras.compatibility.groupid}</extras.compatibility.v13.groupid>
         <extras.compatibility.v13.artifactid>compatibility-v13</extras.compatibility.v13.artifactid>
         <extras.compatibility.v13.version.prefix></extras.compatibility.v13.version.prefix>
+		
+		<extras.support.v4.groupid>${extras.support.groupid}</extras.support.v4.groupid>
+		<extras.support.v4.artifactid>support-v4</extras.support.v4.artifactid>
+		<extras.support.v4.version.prefix>r</extras.support.v4.version.prefix>
+
+		<extras.support.v7.groupid>${extras.support.groupid}</extras.support.v7.groupid>
+		<extras.support.v7.artifactid>support-v7</extras.support.v7.artifactid>
+		<extras.support.v7.version.prefix>r</extras.support.v7.version.prefix>
+
+		<extras.support.v13.groupid>${extras.support.groupid}</extras.support.v13.groupid>
+		<extras.support.v13.artifactid>support-v13</extras.support.v13.artifactid>
+		<extras.support.v13.version.prefix>r</extras.support.v13.version.prefix>
 
         <tools.annotations.groupid>com.google.android.annotations</tools.annotations.groupid>
     </properties>
