@@ -330,13 +330,13 @@ For the compatibility extra (ATTENTION! Do NOT use provided scope!!)
 <dependency>
   <groupId>android.support</groupId>
   <artifactId>compatibility-v4</artifactId>
-  <version>11</version>
+  <version>13</version>
 </dependency>
 
 <dependency>
   <groupId>android.support</groupId>
   <artifactId>compatibility-v13</artifactId>
-  <version>11</version>
+  <version>13</version>
 </dependency>
 ```
 
@@ -377,14 +377,14 @@ In order to use v7 extra, both dependencies (apklib & jar) are needed
 <dependency>
   <groupId>android.support</groupId>
   <artifactId>compatibility-v7-gridlayout</artifactId>
-  <version>11</version>
+  <version>13</version>
   <type>apklib</type>
 </dependency>
 
 <dependency>
   <groupId>android.support</groupId>
   <artifactId>compatibility-v7-gridlayout</artifactId>
-  <version>11</version>
+  <version>13</version>
   <type>jar</type>
 </dependency>
 ```
