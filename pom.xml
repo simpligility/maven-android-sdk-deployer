@@ -100,9 +100,9 @@
                     <artifactId>properties-maven-plugin</artifactId>
                     <version>1.0-alpha-2</version>
                 </plugin>
-				<plugin>
+		<plugin>
                     <groupId>com.jayway.maven.plugins.android.generation2</groupId>
-					<artifactId>android-maven-plugin</artifactId>
+		    <artifactId>android-maven-plugin</artifactId>
                     <version>3.5.4-SNAPSHOT</version>
                 </plugin>
             </plugins>
