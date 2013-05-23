@@ -42,7 +42,7 @@
             </activation>
             <modules>
 				<module>zip-file</module>
-				<module>downloader-library</module>
+				<!-- <module>downloader-library</module> -->
             </modules>
         </profile>
     </profiles>
