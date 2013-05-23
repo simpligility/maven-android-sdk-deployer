@@ -1,118 +1,124 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
-    <modelVersion>4.0.0</modelVersion>
-    <parent>
-        <groupId>com.simpligility.maven</groupId>
-        <artifactId>progressive-company-super-pom</artifactId>
-        <version>0.3.1</version>
-    </parent>
-    <groupId>com.simpligility.android.sdk-deployer</groupId>
-    <artifactId>maven-android-sdk-deployer</artifactId>
-    <version>2.2.1</version>
-    <packaging>pom</packaging>
-    <name>Maven Android SDK Deployer</name>
-    <description>The Maven Android SDK Deployer is a helper maven project that can be used to install the libraries
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <groupId>com.simpligility.maven</groupId>
+    <artifactId>progressive-company-super-pom</artifactId>
+    <version>0.3.1</version>
+  </parent>
+  <groupId>com.simpligility.android.sdk-deployer</groupId>
+  <artifactId>maven-android-sdk-deployer</artifactId>
+  <version>2.2.1</version>
+  <packaging>pom</packaging>
+  <name>Maven Android SDK Deployer</name>
+  <description>The Maven Android SDK Deployer is a helper maven project that can be used to install the libraries
     necessary to build Android applications with Maven and the Maven Android Plugin. These are mostly android.jar and
     maps.jar at the moment although the setup can be expanded easily.</description>
 
-    <properties>
-        <!-- absolute path to the Android SDK install as defined in the ANDROID_HOME environment variable -->
-        <android.sdk.path>${env.ANDROID_HOME}/</android.sdk.path>
+  <properties>
+    <!-- absolute path to the Android SDK install as defined in the ANDROID_HOME 
+      environment variable -->
+    <android.sdk.path>${env.ANDROID_HOME}/</android.sdk.path>
 
-        <!-- The repository server for your android artifacts (e.g. Nexus instance in this example)-->
-        <repo.id>android.repo</repo.id>
-        <repo.url>http://localhost:8081/nexus/content/repositories/thirdparty</repo.url>
-        <!-- you need to provide username and password for the server in your settings.xml, see documentation
-            for the maven-deploy-plugin -->
+    <!-- The repository server for your android artifacts (e.g. Nexus instance 
+      in this example) -->
+    <repo.id>android.repo</repo.id>
+    <repo.url>http://localhost:8081/nexus/content/repositories/thirdparty</repo.url>
+    <!-- you need to provide username and password for the server in your 
+      settings.xml, see documentation for the maven-deploy-plugin -->
 
-        <!-- The following properties don't need to be changed by the user -->
-        <sdk.platforms.path>${android.sdk.path}/platforms</sdk.platforms.path>
-        <sdk.addons.path>${android.sdk.path}/add-ons</sdk.addons.path>
-        <sdk.extras.path>${android.sdk.path}/extras</sdk.extras.path>
-        <sdk.extras.compatibility.path>${sdk.extras.path}/android/support</sdk.extras.compatibility.path>
-        <sdk.extras.analytics.v1.path>${sdk.extras.path}/google/analytics_sdk</sdk.extras.analytics.v1.path>
-        <sdk.extras.analytics.v2.path>${sdk.extras.path}/google/analytics_sdk_v2</sdk.extras.analytics.v2.path>
-        <sdk.extras.admob.path>${sdk.extras.path}/google/admob_ads_sdk</sdk.extras.admob.path>
-        <sdk.extras.gcm.path>${sdk.extras.path}/google/gcm</sdk.extras.gcm.path>
-        <sdk.extras.google.play.services.path>${sdk.extras.path}/google/google_play_services</sdk.extras.google.play.services.path>
-        <sdk.extras.google.play.apk.expansion.path>${sdk.extras.path}/google/play_apk_expansion</sdk.extras.google.play.apk.expansion.path>
-        <sdk.extras.google.play.licensing.path>${sdk.extras.path}/google/play_licensing</sdk.extras.google.play.licensing.path>
-        <sdk.tools.path>${android.sdk.path}/tools</sdk.tools.path>
-        <sdk.tools.annotations.path>${android.sdk.path}/tools/support</sdk.tools.annotations.path>
-        <platform.android.groupid>android</platform.android.groupid>
-        <platform.android.artifactid>android</platform.android.artifactid>
-        <platform.uiautomator.groupid>android.test.uiautomator</platform.uiautomator.groupid>
-        <platform.uiautomator.artifactid>uiautomator</platform.uiautomator.artifactid>
-        <addon.googlemaps.groupid>com.google.android.maps</addon.googlemaps.groupid>
-        <addon.googlemaps.artifactid>maps</addon.googlemaps.artifactid>
-        <addon.android.future.usb.groupid>com.android.future</addon.android.future.usb.groupid>
-        <addon.android.future.usb.artifactid>usb</addon.android.future.usb.artifactid>
+    <!-- The following properties don't need to be changed by the user -->
+    <sdk.platforms.path>${android.sdk.path}/platforms</sdk.platforms.path>
+    <sdk.addons.path>${android.sdk.path}/add-ons</sdk.addons.path>
+    <sdk.extras.path>${android.sdk.path}/extras</sdk.extras.path>
+    <sdk.extras.compatibility.path>${sdk.extras.path}/android/support</sdk.extras.compatibility.path>
+    <sdk.extras.analytics.v1.path>${sdk.extras.path}/google/analytics_sdk</sdk.extras.analytics.v1.path>
+    <sdk.extras.analytics.v2.path>${sdk.extras.path}/google/analytics_sdk_v2</sdk.extras.analytics.v2.path>
+    <sdk.extras.admob.path>${sdk.extras.path}/google/admob_ads_sdk</sdk.extras.admob.path>
+    <sdk.extras.gcm.path>${sdk.extras.path}/google/gcm</sdk.extras.gcm.path>
+    <sdk.extras.google.play.services.path>${sdk.extras.path}/google/google_play_services</sdk.extras.google.play.services.path>
+    <sdk.extras.google.play.apk.expansion.path>${sdk.extras.path}/google/play_apk_expansion</sdk.extras.google.play.apk.expansion.path>
+    <sdk.extras.google.play.licensing.path>${sdk.extras.path}/google/play_licensing</sdk.extras.google.play.licensing.path>
+    <sdk.tools.path>${android.sdk.path}/tools</sdk.tools.path>
+    <sdk.tools.annotations.path>${android.sdk.path}/tools/support</sdk.tools.annotations.path>
+    <platform.android.groupid>android</platform.android.groupid>
+    <platform.android.artifactid>android</platform.android.artifactid>
+    <platform.uiautomator.groupid>android.test.uiautomator</platform.uiautomator.groupid>
+    <platform.uiautomator.artifactid>uiautomator</platform.uiautomator.artifactid>
+    <addon.googlemaps.groupid>com.google.android.maps</addon.googlemaps.groupid>
+    <addon.googlemaps.artifactid>maps</addon.googlemaps.artifactid>
+    <addon.android.future.usb.groupid>com.android.future</addon.android.future.usb.groupid>
+    <addon.android.future.usb.artifactid>usb</addon.android.future.usb.artifactid>
 
-        <extras.analytics.groupid>com.google.android.analytics</extras.analytics.groupid>
-        <extras.analytics.artifactId>analytics</extras.analytics.artifactId>
-        <extras.admob.groupid>com.google.android.admob</extras.admob.groupid>
-        <extras.gcm.groupid>com.google.android.gcm</extras.gcm.groupid>
-        <extras.google.play.services.groupid>com.google.android.gms</extras.google.play.services.groupid>
-        <extras.google.play.apk.expansion.groupid>com.google.android.apk.expansion</extras.google.play.apk.expansion.groupid>
-        <extras.google.play.licensing.groupid>com.google.android.licensing</extras.google.play.licensing.groupid>
+    <extras.analytics.groupid>com.google.android.analytics</extras.analytics.groupid>
+    <extras.analytics.artifactId>analytics</extras.analytics.artifactId>
+    <extras.admob.groupid>com.google.android.admob</extras.admob.groupid>
+    <extras.gcm.groupid>com.google.android.gcm</extras.gcm.groupid>
+    <extras.google.play.services.groupid>com.google.android.gms</extras.google.play.services.groupid>
+    <extras.google.play.apk.expansion.groupid>com.google.android.apk.expansion</extras.google.play.apk.expansion.groupid>
+    <extras.google.play.licensing.groupid>com.google.android.licensing</extras.google.play.licensing.groupid>
 
-        <extras.compatibility.groupid>android.support</extras.compatibility.groupid>
+    <extras.compatibility.groupid>android.support</extras.compatibility.groupid>
 
-        <extras.compatibility.v4.groupid>${extras.compatibility.groupid}</extras.compatibility.v4.groupid>
-        <extras.compatibility.v4.artifactid>compatibility-v4</extras.compatibility.v4.artifactid>
-        <extras.compatibility.v4.version.prefix></extras.compatibility.v4.version.prefix>
+    <extras.compatibility.v4.groupid>${extras.compatibility.groupid}</extras.compatibility.v4.groupid>
+    <extras.compatibility.v4.artifactid>compatibility-v4</extras.compatibility.v4.artifactid>
+    <extras.compatibility.v4.version.prefix></extras.compatibility.v4.version.prefix>
 
-        <extras.compatibility.v7.groupid>${extras.compatibility.groupid}</extras.compatibility.v7.groupid>
-        <extras.compatibility.v7.artifactid>compatibility-v7</extras.compatibility.v7.artifactid>
-        <extras.compatibility.v7.version.prefix></extras.compatibility.v7.version.prefix>
+    <extras.compatibility.v7.groupid>${extras.compatibility.groupid}</extras.compatibility.v7.groupid>
+    <extras.compatibility.v7.artifactid>compatibility-v7</extras.compatibility.v7.artifactid>
+    <extras.compatibility.v7.version.prefix></extras.compatibility.v7.version.prefix>
 
-        <extras.compatibility.v13.groupid>${extras.compatibility.groupid}</extras.compatibility.v13.groupid>
-        <extras.compatibility.v13.artifactid>compatibility-v13</extras.compatibility.v13.artifactid>
-        <extras.compatibility.v13.version.prefix></extras.compatibility.v13.version.prefix>
+    <extras.compatibility.v13.groupid>${extras.compatibility.groupid}</extras.compatibility.v13.groupid>
+    <extras.compatibility.v13.artifactid>compatibility-v13</extras.compatibility.v13.artifactid>
+    <extras.compatibility.v13.version.prefix></extras.compatibility.v13.version.prefix>
 
-        <tools.annotations.groupid>com.google.android.annotations</tools.annotations.groupid>
-    </properties>
+    <tools.annotations.groupid>com.google.android.annotations</tools.annotations.groupid>
+  </properties>
 
-    <issueManagement>
+  <issueManagement>
     <system>Github </system>
     <url>http://github.com/mosabua/maven-android-sdk-deployer/issues</url>
-    </issueManagement>
-    <mailingLists>
-        <mailingList>
-            <name>Maven Android Developers</name>
-            <post>http://groups.google.com/group/maven-android-developers/post</post>
-            <subscribe>http://groups.google.com/group/maven-android-developers</subscribe>
-        </mailingList>
-    </mailingLists>
-    <distributionManagement>
-        <repository>
-            <id>${repo.id}</id>
-            <name>Android Repository</name>
-            <url>${repo.url}</url>
-        </repository>
-    </distributionManagement>
+  </issueManagement>
+  <mailingLists>
+    <mailingList>
+      <name>Maven Android Developers</name>
+      <post>http://groups.google.com/group/maven-android-developers/post</post>
+      <subscribe>http://groups.google.com/group/maven-android-developers</subscribe>
+    </mailingList>
+  </mailingLists>
+  <distributionManagement>
+    <repository>
+      <id>${repo.id}</id>
+      <name>Android Repository</name>
+      <url>${repo.url}</url>
+    </repository>
+  </distributionManagement>
 
-    <build>
-        <pluginManagement>
-            <plugins>
-                <plugin>
-                    <groupId>org.codehaus.mojo</groupId>
-                    <artifactId>properties-maven-plugin</artifactId>
-                    <version>1.0-alpha-2</version>
-                </plugin>
-		<plugin>
-                    <groupId>com.jayway.maven.plugins.android.generation2</groupId>
-		    <artifactId>android-maven-plugin</artifactId>
-                    <version>3.5.4-SNAPSHOT</version>
-                </plugin>
-            </plugins>
-        </pluginManagement>
-    </build>
+  <build>
+    <pluginManagement>
+      <plugins>
+        <plugin>
+          <groupId>org.codehaus.mojo</groupId>
+          <artifactId>properties-maven-plugin</artifactId>
+          <version>1.0-alpha-2</version>
+        </plugin>
+        <plugin>
+          <groupId>com.jayway.maven.plugins.android.generation2</groupId>
+          <artifactId>android-maven-plugin</artifactId>
+          <version>3.6.0</version>
+          <configuration>
+            <sdk><platform>17</platform></sdk>
+          </configuration>
+        </plugin>
+      </plugins>
+    </pluginManagement>
+  </build>
 
-    <modules>
-        <module>platforms</module>
-        <module>add-ons</module>
-        <module>extras</module>
-        <module>tools</module>
-    </modules>
+  <modules>
+    <module>platforms</module>
+    <module>add-ons</module>
+    <module>extras</module>
+    <module>tools</module>
+  </modules>
 </project>
