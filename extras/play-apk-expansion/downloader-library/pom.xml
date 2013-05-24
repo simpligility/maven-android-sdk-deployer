@@ -53,7 +53,7 @@
                     <resourceDirectory>${sdk.extras.google.play.apk.expansion.path}/downloader_library/res/</resourceDirectory>
                     <androidManifestFile>${sdk.extras.google.play.apk.expansion.path}/downloader_library/AndroidManifest.xml</androidManifestFile>
                     <sdk>
-                        <platform>16</platform>
+                        <platform>${android.sdk.platform}</platform>
                     </sdk>
               </configuration>
             </plugin>
