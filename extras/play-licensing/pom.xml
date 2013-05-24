@@ -28,15 +28,18 @@
     </dependencies>
 
     <build>
+        <sourceDirectory>${sdk.extras.google.play.licensing.path}/library/src</sourceDirectory>
         <plugins>
             <plugin>
                 <groupId>com.jayway.maven.plugins.android.generation2</groupId>
                 <artifactId>android-maven-plugin</artifactId>
                 <extensions>true</extensions>
                 <configuration>
+                    <sdk>
+                        <platform>${android.sdk.platform}</platform>
+                    </sdk>
                     <resourceDirectory>${sdk.extras.google.play.licensing.path}/library/res/</resourceDirectory>                    
                     <androidManifestFile>${sdk.extras.google.play.licensing.path}/library/AndroidManifest.xml</androidManifestFile>
-                    <sourceDirectory>${sdk.extras.google.play.licensing.path}/library/src</sourceDirectory>
               </configuration>  
             </plugin>
 
