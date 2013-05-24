@@ -35,7 +35,7 @@
                 <artifactId>android-maven-plugin</artifactId>
                 <extensions>true</extensions>
                 <configuration>
-					<sdk>
+		    <sdk>
                         <platform>${android.sdk.platform}</platform>
                     </sdk>
                     <resourceDirectory>${sdk.extras.google.play.licensing.path}/library/res/</resourceDirectory>                    
