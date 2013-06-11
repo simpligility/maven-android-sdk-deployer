@@ -266,7 +266,7 @@ For the maps add ons
 <dependency>
   <groupId>com.google.android.maps</groupId>
   <artifactId>maps</artifactId>
-  <version>17_r1</version>
+  <version>17_r3</version>
   <scope>provided</scope>
 </dependency>
 ```
