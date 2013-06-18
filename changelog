@@ -1,7 +1,11 @@
 Changelog per release
 ---------------------
 
+2.3.0
 
+  - Manfred Moser, added support to install and deploy android and google Mavne repositories from the Android SDK
+  - Manfred Moser, fixed all docs
+  
 2.2.1
 
   - Manfred Moser, updated admob to 6.3.1
