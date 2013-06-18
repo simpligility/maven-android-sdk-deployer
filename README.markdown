@@ -178,7 +178,7 @@ For the core platforms
 <dependency>
   <groupId>android</groupId>
   <artifactId>android</artifactId>
-  <version>4.2_r1</version>
+  <version>4.2.2_r2</version>
   <scope>provided</scope>
 </dependency>
 ```
