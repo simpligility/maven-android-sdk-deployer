@@ -122,5 +122,6 @@
     <module>add-ons</module>
     <module>extras</module>
     <module>tools</module>
+    <module>repositories</module>
   </modules>
 </project>

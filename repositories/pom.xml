@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.simpligility.android.sdk-deployer</groupId>
+  <artifactId>repositories</artifactId>
+  <packaging>pom</packaging>
+  <name>Repositories</name>
+
+  <parent>
+    <groupId>com.simpligility.android.sdk-deployer</groupId>
+    <artifactId>maven-android-sdk-deployer</artifactId>
+    <version>2.2.1</version>
+  </parent>
+
+  <build>
+    <pluginManagement>
+      <plugins>
+        <plugin>
+          <groupId>org.codehaus.mojo</groupId>
+          <artifactId>wagon-maven-plugin</artifactId>
+          <!-- <version>1.0-beta-4</version> -->
+          <executions>
+            <execution>
+              <id>install-repo</id>
+              <phase>install</phase>
+              <goals>
+                <goal>merge-maven-repos</goal>
+              </goals>
+              <configuration>
+                <source>${repository.path}</source>
+                <target>file://${settings.localRepository}</target>
+              </configuration>
+            </execution>
+            <execution>
+              <id>deploy-repo</id>
+              <phase>deploy</phase>
+              <goals>
+                <goal>copy</goal>
+              </goals>
+              <configuration>
+                <source>${repository.path}</source>
+                <target>${repo.url}</target>
+                <targetId>${repo.id}</targetId>
+              </configuration>
+            </execution>
+          </executions>
+        </plugin>
+      </plugins>
+
+    </pluginManagement>
+  </build>
+
+  <profiles>
+    <profile>
+      <id>all</id>
+      <activation>
+        <activeByDefault>true</activeByDefault>
+      </activation>
+      <modules>
+        <module>google-m2repository</module>
+        <module>android-m2repository</module>
+      </modules>
+    </profile>
+  </profiles>
+</project>
