@@ -24,6 +24,7 @@ Contributors:
 - Jenny Loomis Williamson https://github.com/jloomis fix for deployment
 - James Wald https://github.com/jameswald configured groupId and artifactId for support libraries
 - Thomas Prochazka https://github.com/tprochazka javadoc attachment
+- Shairon Toledo http://www.hashcode.eti.br doc update
 
 The Maven Android SDK Deployer is a helper maven project that can be
 used to install the libraries necessary to build Android applications
