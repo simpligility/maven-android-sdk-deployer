@@ -25,6 +25,7 @@ Contributors:
 - James Wald https://github.com/jameswald configured groupId and artifactId for support libraries
 - Thomas Prochazka https://github.com/tprochazka javadoc attachment
 - Shairon Toledo http://www.hashcode.eti.br doc update
+- Kohsuke Kawaguchi http://kohsuke.org/ webdav support for deployment
 
 The Maven Android SDK Deployer is a helper maven project that can be
 used to install the libraries necessary to build Android applications
