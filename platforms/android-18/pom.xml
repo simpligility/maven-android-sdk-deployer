@@ -13,7 +13,7 @@
     </parent>
 
     <properties>
-        <jar.simpleVersion>4.2</jar.simpleVersion>
+        <jar.simpleVersion>4.3</jar.simpleVersion>
     </properties>
 
 
