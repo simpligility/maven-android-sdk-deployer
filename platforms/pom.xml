@@ -63,6 +63,7 @@
                 <module>android-15</module>
                 <module>android-16</module>
 				<module>android-17</module>
+				<module>android-18</module>
             </modules>
         </profile>
         <profile>
@@ -135,6 +136,12 @@
             <id>4.2</id>
             <modules>
                 <module>android-17</module>
+            </modules>
+        </profile>
+		<profile>
+            <id>4.3</id>
+            <modules>
+                <module>android-18</module>
             </modules>
         </profile>
         <profile>
