@@ -108,7 +108,7 @@
                             <packaging>jar</packaging>
                             <version>${jar.version}</version>
                             <file>${jar.path}</file>
-	                        <sources>${project.build.directory}/support-sources.jar</sources>
+	                        <sources>${project.build.directory}/support-appcompat-sources.jar</sources>
                             <url>${repo.url}</url>
                             <repositoryId>${repo.id}</repositoryId>
                         </configuration>
