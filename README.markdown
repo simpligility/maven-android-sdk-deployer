@@ -28,6 +28,7 @@ Contributors:
 - Kohsuke Kawaguchi http://kohsuke.org/ webdav support for deployment
 - Lars Hoss http://cv.woeye.net/ v7 appcompat library support
 - Nemanja Nedic https://github.com/nemanjanedic appcompat javadoc fix
+- Yuvi Panda https://github.com/yuvipanda appcompat fix
 
 The Maven Android SDK Deployer is a helper maven project that can be
 used to install the libraries necessary to build Android applications
