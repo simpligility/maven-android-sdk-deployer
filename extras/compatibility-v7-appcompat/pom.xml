@@ -104,11 +104,11 @@
                         <goals><goal>deploy-file</goal></goals>
                         <configuration>
                             <groupId>${extras.compatibility.v7.appcompat.groupid}</groupId>
-                            <artifactId>${extras.compatibility.v7.appcompat.groupid}</artifactId>
+                            <artifactId>${extras.compatibility.v7.appcompat.artifactid}</artifactId>
                             <packaging>jar</packaging>
                             <version>${jar.version}</version>
                             <file>${jar.path}</file>
-	                        <sources>${project.build.directory}/support-sources.jar</sources>
+	                        <sources>${project.build.directory}/support-appcompat-sources.jar</sources>
                             <url>${repo.url}</url>
                             <repositoryId>${repo.id}</repositoryId>
                         </configuration>
@@ -119,7 +119,7 @@
                         <goals><goal>deploy-file</goal></goals>
                         <configuration>
                             <groupId>${extras.compatibility.v7.appcompat.groupid}</groupId>
-                            <artifactId>${extras.compatibility.v7.appcompat.groupid}</artifactId>
+                            <artifactId>${extras.compatibility.v7.appcompat.artifactid}</artifactId>
                             <packaging>apklib</packaging>
                             <version>${jar.version}</version>
                             <file>target/${android.support.artifactid}-${project.version}.apklib</file>
