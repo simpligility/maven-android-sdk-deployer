@@ -61,7 +61,8 @@
                 <module>google-apis-14</module>
                 <module>google-apis-15</module>
                 <module>google-apis-16</module>
-				<module>google-apis-17</module>
+                <module>google-apis-17</module>
+                <module>google-apis-18</module>
             </modules>
         </profile>
         <profile>
