@@ -29,6 +29,7 @@ Contributors:
 - Lars Hoss http://cv.woeye.net/ v7 appcompat library support
 - Nemanja Nedic https://github.com/nemanjanedic appcompat javadoc fix
 - Yuvi Panda https://github.com/yuvipanda appcompat fix
+- Sebastian Roth https://github.com/ened added missing google-apis-18 add-on
 
 The Maven Android SDK Deployer is a helper maven project that can be
 used to install the libraries necessary to build Android applications
@@ -97,7 +98,7 @@ To install only a certain sdk level use
     mvn install -P 4.0.3
     mvn install -P 4.1
     mvn install -P 4.2
-	mvn install -P 4.3
+    mvn install -P 4.3
 
 As a result you should find the android.jar and maps.jar and a number of other
 libraries in your users local repository (~/.m2/repository/) and you can therefore
@@ -284,6 +285,13 @@ For the maps add ons
   <version>17_r3</version>
   <scope>provided</scope>
 </dependency>
+
+<dependency>
+  <groupId>com.google.android.maps</groupId>
+  <artifactId>maps</artifactId>
+  <version>18_r1</version>
+  <scope>provided</scope>
+</dependency>
 ```
 
 For the usb add on
@@ -335,6 +343,13 @@ For the usb add on
   <groupId>com.android.future</groupId>
   <artifactId>usb</artifactId>
   <version>17_r3</version>
+  <scope>provided</scope>
+</dependency>
+
+<dependency>
+  <groupId>com.android.future</groupId>
+  <artifactId>usb</artifactId>
+  <version>18_r1</version>
   <scope>provided</scope>
 </dependency>
 ```
