@@ -4,7 +4,7 @@
     <groupId>com.simpligility.android.sdk-deployer</groupId>
     <artifactId>android-18</artifactId>
     <packaging>pom</packaging>
-    <name>Android Platform 4.2 API 18</name>
+    <name>Android Platform 4.3 API 18</name>
 
     <parent>
         <groupId>com.simpligility.android.sdk-deployer</groupId>
