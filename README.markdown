@@ -30,7 +30,7 @@ Contributors:
 - Nemanja Nedic https://github.com/nemanjanedic appcompat javadoc fix
 - Yuvi Panda https://github.com/yuvipanda appcompat fix
 - Sebastian Roth https://github.com/ened added missing google-apis-18 add-on
-- Andreas https://github.com/andreas- added compatibility-v7-mediarouter
+- Andreas Gawelczyk https://github.com/andreas- - Compatibility v7 mediarouter
 
 The Maven Android SDK Deployer is a helper maven project that can be
 used to install the libraries necessary to build Android applications
