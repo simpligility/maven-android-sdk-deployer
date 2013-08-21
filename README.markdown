@@ -437,6 +437,24 @@ For the v7 appcompat library additional dependencies (apklib & jar) are required
 </dependency>
 ```
 
+For the v7 mediarouter library additional dependencies (apklib & jar) are required
+
+```xml
+<dependency>
+  <groupId>android.support</groupId>
+  <artifactId>compatibility-v7-mediarouter</artifactId>
+  <version>18</version>
+  <type>apklib</type>
+</dependency>
+
+<dependency>
+  <groupId>android.support</groupId>
+  <artifactId>compatibility-v7-mediarouter</artifactId>
+  <version>18</version>
+  <type>jar</type>
+</dependency>
+```
+
 For the Google Analytics extra (ATTENTION! Do NOT use provided scope!!)
 
 Google Analytics V2
