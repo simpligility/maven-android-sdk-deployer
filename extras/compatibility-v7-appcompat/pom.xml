@@ -26,8 +26,8 @@
             <scope>provided</scope>
         </dependency>
         <dependency>
-            <groupId>android.support</groupId>
-            <artifactId>compatibility-v4</artifactId>
+            <groupId>${extras.compatibility.v4.groupid}</groupId>
+            <artifactId>${extras.compatibility.v4.artifactid}</artifactId>
             <version>LATEST</version>
         </dependency>
     </dependencies>
