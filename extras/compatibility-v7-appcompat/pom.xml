@@ -15,7 +15,7 @@
     <properties>
         <android.support.artifactid>compatibility-v7-appcompat</android.support.artifactid>
         <jar.path>${sdk.extras.compatibility.path}/v7/appcompat/libs/android-support-v7-appcompat.jar</jar.path>
-        <jar.version>${Pkg.Revision}</jar.version>
+        <jar.version>${extras.compatibility.v7.appcompat.version.prefix}${Pkg.Revision}</jar.version>
     </properties>
 
     <dependencies>
