@@ -26,19 +26,19 @@
             <scope>provided</scope>
         </dependency>
         <dependency>
-            <groupId>android.support</groupId>
-            <artifactId>compatibility-v4</artifactId>
+            <groupId>${extras.compatibility.v4.groupid}</groupId>
+            <artifactId>${extras.compatibility.v4.artifactid}</artifactId>
             <version>LATEST</version>
         </dependency>		
 		<dependency>
-			<groupId>android.support</groupId>
-			<artifactId>compatibility-v7-appcompat</artifactId>
+			<groupId>${extras.compatibility.v7.appcompat.groupid}</groupId>
+			<artifactId>${extras.compatibility.v7.appcompat.artifactid}</artifactId>
 			<version>18</version>
 			<type>apklib</type>
 		</dependency>
 		<dependency>
-			<groupId>android.support</groupId>
-			<artifactId>compatibility-v7-appcompat</artifactId>
+			<groupId>${extras.compatibility.v7.appcompat.groupid}</groupId>
+			<artifactId>${extras.compatibility.v7.appcompat.artifactid}</artifactId>
 			<version>18</version>
 			<type>jar</type>
 		</dependency>
