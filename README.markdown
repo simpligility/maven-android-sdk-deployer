@@ -350,7 +350,7 @@ For the usb add on
 <dependency>
   <groupId>com.android.future</groupId>
   <artifactId>usb</artifactId>
-  <version>18_r1</version>
+  <version>18_r2</version>
   <scope>provided</scope>
 </dependency>
 ```
