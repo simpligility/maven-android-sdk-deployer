@@ -1,11 +1,19 @@
 Changelog per release
 ---------------------
 
+2.3.1
+
+ - Thomas Prochazka https://github.com/tprochazka
+	https://github.com/mosabua/maven-android-sdk-deployer/pull/139
+ - Manfred Moser, updates of all the versions in readme to latest
+	available ones
+ - Manfred Moser, fixed https://github.com/mosabua/maven-android-sdk-deployer/issues/143
+
 2.3.0
 
   - Manfred Moser, added support to install and deploy android and google Mavne repositories from the Android SDK
   - Manfred Moser, fixed all docs
-  
+
 2.2.1
 
   - Manfred Moser, updated admob to 6.3.1
@@ -26,7 +34,7 @@ Changelog per release
   - Thomas Prochazka https://github.com/tprochazka javadoc attachment
     https://github.com/mosabua/maven-android-sdk-deployer/pull/82
   - Manfred Moser - fixed analytics path for V2
-  
+
 2.1.0
 
  - added Android 4.2, API 17 artifacts

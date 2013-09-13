@@ -23,7 +23,7 @@ Contributors:
 - David Venable https://github.com/dlvenable admob update
 - Jenny Loomis Williamson https://github.com/jloomis fix for deployment
 - James Wald https://github.com/jameswald configured groupId and artifactId for support libraries
-- Thomas Prochazka https://github.com/tprochazka javadoc attachment
+- Thomas Prochazka https://github.com/tprochazka javadoc attachment, fix for artifactIds
 - Shairon Toledo http://www.hashcode.eti.br doc update
 - Kohsuke Kawaguchi http://kohsuke.org/ webdav support for deployment
 - Lars Hoss http://cv.woeye.net/ v7 appcompat library support
@@ -181,7 +181,7 @@ For the core platforms
 <dependency>
   <groupId>android</groupId>
   <artifactId>android</artifactId>
-  <version>4.1.2_r2</version>
+  <version>4.1.2_r4</version>
   <scope>provided</scope>
 </dependency>
 
@@ -290,7 +290,7 @@ For the maps add ons
 <dependency>
   <groupId>com.google.android.maps</groupId>
   <artifactId>maps</artifactId>
-  <version>18_r1</version>
+  <version>18_r2</version>
   <scope>provided</scope>
 </dependency>
 ```
@@ -350,7 +350,7 @@ For the usb add on
 <dependency>
   <groupId>com.android.future</groupId>
   <artifactId>usb</artifactId>
-  <version>18_r1</version>
+  <version>18_r2</version>
   <scope>provided</scope>
 </dependency>
 ```
@@ -503,7 +503,7 @@ For the Android annotations tools
 <dependency>
   <groupId>com.google.android.annotations</groupId>
   <artifactId>annotations</artifactId>
-  <version>22.0.1</version>
+  <version>22.0.5</version>
   <scope>provided</scope>
 </dependency>
 ```
@@ -524,6 +524,13 @@ For the uiautomator jar
   <version>4.2.2_r2</version>
   <scope>provided</scope>
 </dependency>
+
+<dependency>
+  <groupId>android.test.uiautomator</groupId>
+  <artifactId>uiautomator</artifactId>
+  <version>4.3_r1</version>
+  <scope>provided</scope>
+</dependency>
 ```
     
 For the Google Play Services extra (ATTENTION! Do NOT use provided scope!!)
@@ -532,7 +539,7 @@ For the Google Play Services extra (ATTENTION! Do NOT use provided scope!!)
 <dependency>
   <groupId>com.google.android.gms</groupId>
   <artifactId>google-play-services</artifactId>
-  <version>7</version>
+  <version>10</version>
   <type>apklib</type>
 </dependency>
 <dependency>
@@ -570,7 +577,6 @@ For the Google Play Licensing extra (ATTENTION! Do NOT use provided scope!!)
   <type>apklib</type>
 </dependency>
 ```
-
 
 Android SDK Maven Repositories
 
