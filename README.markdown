@@ -195,7 +195,7 @@ For the core platforms
 <dependency>
   <groupId>android</groupId>
   <artifactId>android</artifactId>
-  <version>4.3_r1</version>
+  <version>4.3_r2</version>
   <scope>provided</scope>
 </dependency>
 ```
@@ -528,7 +528,7 @@ For the uiautomator jar
 <dependency>
   <groupId>android.test.uiautomator</groupId>
   <artifactId>uiautomator</artifactId>
-  <version>4.3_r1</version>
+  <version>4.3_r2</version>
   <scope>provided</scope>
 </dependency>
 ```
