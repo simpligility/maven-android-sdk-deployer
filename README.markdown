@@ -290,7 +290,7 @@ For the maps add ons
 <dependency>
   <groupId>com.google.android.maps</groupId>
   <artifactId>maps</artifactId>
-  <version>18_r2</version>
+  <version>18_r3</version>
   <scope>provided</scope>
 </dependency>
 ```
@@ -539,13 +539,13 @@ For the Google Play Services extra (ATTENTION! Do NOT use provided scope!!)
 <dependency>
   <groupId>com.google.android.gms</groupId>
   <artifactId>google-play-services</artifactId>
-  <version>10</version>
+  <version>12</version>
   <type>apklib</type>
 </dependency>
 <dependency>
   <groupId>com.google.android.gms</groupId>
   <artifactId>google-play-services</artifactId>
-  <version>7</version>
+  <version>12</version>
   <type>jar</type>
 </dependency>
 ```
