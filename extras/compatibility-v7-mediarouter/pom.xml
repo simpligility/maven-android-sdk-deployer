@@ -33,13 +33,13 @@
 		<dependency>
 			<groupId>${extras.compatibility.v7.appcompat.groupid}</groupId>
 			<artifactId>${extras.compatibility.v7.appcompat.artifactid}</artifactId>
-			<version>18</version>
+			<version>19</version>
 			<type>apklib</type>
 		</dependency>
 		<dependency>
 			<groupId>${extras.compatibility.v7.appcompat.groupid}</groupId>
 			<artifactId>${extras.compatibility.v7.appcompat.artifactid}</artifactId>
-			<version>18</version>
+			<version>19</version>
 			<type>jar</type>
 		</dependency>
     </dependencies>
