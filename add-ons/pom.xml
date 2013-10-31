@@ -143,5 +143,11 @@
                 <module>google-apis-18</module>
             </modules>
         </profile>
+        <profile>
+            <id>4.4</id>
+            <modules>
+                <module>google-apis-19</module>
+            </modules>
+        </profile>
     </profiles>
 </project>
