@@ -14,7 +14,7 @@ Contributors:
 - Lorenzo Villani - initial 4.0 support
 - Paul Merlin http://eskatos.github.com - Google Analytics extra
 - Matteo Panella <morpheus@level28.org> - Google AdMobs extra, support for 4.1
-- Benoit Billington https://github.com/Shusshu Google Cloud Messaging Client and Server, annotations.jar, 4.2, 4.3, APK Expansion, Licensing
+- Benoit Billington https://github.com/Shusshu Google Cloud Messaging Client and Server, annotations.jar, 4.2, 4.3, 4.4, APK Expansion, Licensing
 - Michael Lake https://github.com/mlake support for Javadoc attachment for platforms
 - Nic Strong http://www.codepoets.co.nz Google Play Services (gms)
 - Matias Dumrauf http://github.com/mdumrauf - Compatibility v7 library support, Google Analytics support for V1 and V2
@@ -31,6 +31,7 @@ Contributors:
 - Yuvi Panda https://github.com/yuvipanda appcompat fix
 - Sebastian Roth https://github.com/ened added missing google-apis-18 add-on
 - Andreas Gawelczyk https://github.com/andreas- - Compatibility v7 mediarouter
+- Hoyt Summers Pittman https://github.com/secondsun - Google API 19, google play services to > Froyo, update android-maven-plugin
 
 The Maven Android SDK Deployer is a helper maven project that can be
 used to install the libraries necessary to build Android applications
@@ -100,6 +101,7 @@ To install only a certain sdk level use
     mvn install -P 4.1
     mvn install -P 4.2
     mvn install -P 4.3
+    mvn install -P 4.4
 
 As a result you should find the android.jar and maps.jar and a number of other
 libraries in your users local repository (~/.m2/repository/) and you can therefore
@@ -198,6 +200,13 @@ For the core platforms
   <version>4.3_r2</version>
   <scope>provided</scope>
 </dependency>
+
+<dependency>
+  <groupId>android</groupId>
+  <artifactId>android</artifactId>
+  <version>4.4_r1</version>
+  <scope>provided</scope>
+</dependency>
 ```
 
 For the maps add ons
@@ -291,6 +300,13 @@ For the maps add ons
   <groupId>com.google.android.maps</groupId>
   <artifactId>maps</artifactId>
   <version>18_r3</version>
+  <scope>provided</scope>
+</dependency>
+
+<dependency>
+  <groupId>com.google.android.maps</groupId>
+  <artifactId>maps</artifactId>
+  <version>19_r1</version>
   <scope>provided</scope>
 </dependency>
 ```
@@ -408,14 +424,14 @@ In order to use v7 extra, both dependencies (apklib & jar) are needed
 <dependency>
   <groupId>android.support</groupId>
   <artifactId>compatibility-v7</artifactId>
-  <version>18</version>
+  <version>19</version>
   <type>apklib</type>
 </dependency>
 
 <dependency>
   <groupId>android.support</groupId>
   <artifactId>compatibility-v7</artifactId>
-  <version>18</version>
+  <version>19</version>
   <type>jar</type>
 </dependency>
 ```
@@ -426,14 +442,14 @@ For the v7 appcompat library additional dependencies (apklib & jar) are required
 <dependency>
   <groupId>android.support</groupId>
   <artifactId>compatibility-v7-appcompat</artifactId>
-  <version>18</version>
+  <version>19</version>
   <type>apklib</type>
 </dependency>
 
 <dependency>
   <groupId>android.support</groupId>
   <artifactId>compatibility-v7-appcompat</artifactId>
-  <version>18</version>
+  <version>19</version>
   <type>jar</type>
 </dependency>
 ```
@@ -444,14 +460,14 @@ For the v7 mediarouter library additional dependencies (apklib & jar) are requir
 <dependency>
   <groupId>android.support</groupId>
   <artifactId>compatibility-v7-mediarouter</artifactId>
-  <version>18</version>
+  <version>19</version>
   <type>apklib</type>
 </dependency>
 
 <dependency>
   <groupId>android.support</groupId>
   <artifactId>compatibility-v7-mediarouter</artifactId>
-  <version>18</version>
+  <version>19</version>
   <type>jar</type>
 </dependency>
 ```
@@ -539,13 +555,13 @@ For the Google Play Services extra (ATTENTION! Do NOT use provided scope!!)
 <dependency>
   <groupId>com.google.android.gms</groupId>
   <artifactId>google-play-services</artifactId>
-  <version>12</version>
+  <version>13</version>
   <type>apklib</type>
 </dependency>
 <dependency>
   <groupId>com.google.android.gms</groupId>
   <artifactId>google-play-services</artifactId>
-  <version>12</version>
+  <version>13</version>
   <type>jar</type>
 </dependency>
 ```
