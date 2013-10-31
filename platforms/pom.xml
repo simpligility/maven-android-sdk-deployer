@@ -139,13 +139,13 @@
                 <module>android-17</module>
             </modules>
         </profile>
-		<profile>
+	<profile>
             <id>4.3</id>
             <modules>
                 <module>android-18</module>
             </modules>
         </profile>
-		<profile>
+	<profile>
             <id>4.4</id>
             <modules>
                 <module>android-19</module>
