@@ -63,6 +63,7 @@
                 <module>google-apis-16</module>
                 <module>google-apis-17</module>
                 <module>google-apis-18</module>
+                <module>google-apis-19</module>
             </modules>
         </profile>
         <profile>
