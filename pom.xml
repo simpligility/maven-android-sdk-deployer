@@ -4,8 +4,8 @@
   <modelVersion>4.0.0</modelVersion>
   <parent>
     <groupId>com.simpligility.maven</groupId>
-    <artifactId>progressive-company-super-pom</artifactId>
-    <version>0.5.0</version>
+    <artifactId>progressive-organization-pom</artifactId>
+    <version>1.0.0</version>
   </parent>
   <groupId>com.simpligility.android.sdk-deployer</groupId>
   <artifactId>maven-android-sdk-deployer</artifactId>
