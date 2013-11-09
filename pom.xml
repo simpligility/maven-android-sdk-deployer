@@ -114,7 +114,7 @@
         <plugin>
           <groupId>com.jayway.maven.plugins.android.generation2</groupId>
           <artifactId>android-maven-plugin</artifactId>
-          <version>3.7.0</version>
+          <version>3.8.0</version>
           <configuration>
             <sdk>
               <platform>${android.sdk.platform}</platform>
@@ -130,6 +130,28 @@
         <version>2.4</version>
       </extension>
     </extensions>
+    <plugins>
+      <plugin>
+        <artifactId>maven-enforcer-plugin</artifactId>
+        <executions>
+          <execution>
+            <id>enforce-maven</id>
+            <goals>
+              <goal>enforce</goal>
+            </goals>
+            <phase>initialize</phase>
+            <configuration>
+              <rules>
+                <requireMavenVersion>
+                  <version>[3.1.1,)</version>
+                  <message>Check for Maven version &gt;=3.1.1 failed. Upgrade your Maven installation.</message>
+                </requireMavenVersion>
+              </rules>
+            </configuration>
+          </execution>
+        </executions>
+      </plugin>
+    </plugins>
   </build>
 
   <modules>
