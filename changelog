@@ -1,6 +1,13 @@
 Changelog per release
 ---------------------
 
+2.4.0
+
+  - Manfred Moser, Moved to Android Maven Plugin 3.8.0
+  - Manfred Moser,Require Maven 3.1.1
+  - Manfred Moser, Platform profiles only work for platforms, do not included extras and other stuff anymore
+  - Benoit Billington, Android 4.4. and various fixes 
+
 2.3.1
 
  - Thomas Prochazka https://github.com/tprochazka
