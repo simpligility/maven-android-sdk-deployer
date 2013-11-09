@@ -9,7 +9,7 @@
   </parent>
   <groupId>com.simpligility.android.sdk-deployer</groupId>
   <artifactId>maven-android-sdk-deployer</artifactId>
-  <version>2.3.1</version>
+  <version>2.4.0</version>
   <packaging>pom</packaging>
   <name>Maven Android SDK Deployer</name>
   <description>The Maven Android SDK Deployer is a helper maven project that can be used to install the libraries
@@ -176,84 +176,98 @@
             <id>1.5</id>
             <modules>
                 <module>platforms</module>
+                <module>add-ons</module>
             </modules>
         </profile>
         <profile>
             <id>1.6</id>
             <modules>
                 <module>platforms</module>
+                <module>add-ons</module>
             </modules>
         </profile>
         <profile>
             <id>2.1</id>
             <modules>
                 <module>platforms</module>
+                <module>add-ons</module>
             </modules>
         </profile>
         <profile>
             <id>2.2</id>
             <modules>
                 <module>platforms</module>
+                <module>add-ons</module>
             </modules>
         </profile>
         <profile>
             <id>2.3.3</id>
             <modules>
                 <module>platforms</module>
+                <module>add-ons</module>
             </modules>
         </profile>
         <profile>
             <id>3.0</id>
             <modules>
                 <module>platforms</module>
+                <module>add-ons</module>
             </modules>
         </profile>
         <profile>
             <id>3.1</id>
             <modules>
                 <module>platforms</module>
+                <module>add-ons</module>
             </modules>
         </profile>
         <profile>
             <id>3.2</id>
             <modules>
                 <module>platforms</module>
+                <module>add-ons</module>
             </modules>
         </profile>
         <profile>
             <id>4.0</id>
             <modules>
                 <module>platforms</module>
+                <module>add-ons</module>
             </modules>
         </profile>
         <profile>
             <id>4.0.3</id>
             <modules>
                 <module>platforms</module>
+                <module>add-ons</module>
             </modules>
         </profile>
         <profile>
             <id>4.1</id>
             <modules>
                 <module>platforms</module>
+                <module>add-ons</module>
             </modules>
         </profile>
         <profile>
             <id>4.2</id>
             <modules>
                 <module>platforms</module>
+                <module>add-ons</module>
             </modules>
         </profile>
         <profile>
             <id>4.3</id>
             <modules>
                 <module>platforms</module>
+                <module>add-ons</module>
             </modules>
         </profile>
         <profile>
             <id>4.4</id>
             <modules>
                 <module>platforms</module>
+                <module>add-ons</module>
             </modules>
         </profile>
     </profiles>
