@@ -61,6 +61,8 @@ How to Use
 Download the latest Android SDK from
 http://developer.android.com/sdk/index.html following the instructions
 there.
+
+Apache Maven 3.1.1 or higher is required!
  
 - For the default usage of the deployer install **all platforms and
 add-on apis**, ensure that all folder in the platforms folder have
