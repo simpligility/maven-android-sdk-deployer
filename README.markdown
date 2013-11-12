@@ -379,13 +379,13 @@ For the compatibility extra (ATTENTION! Do NOT use provided scope!!)
 <dependency>
   <groupId>android.support</groupId>
   <artifactId>compatibility-v4</artifactId>
-  <version>18</version>
+  <version>19.0.0</version>
 </dependency>
 
 <dependency>
   <groupId>android.support</groupId>
   <artifactId>compatibility-v13</artifactId>
-  <version>18</version>
+  <version>19.0.0</version>
 </dependency>
 ```
 
@@ -394,19 +394,19 @@ If you find that the above `<dependency>` fails due to conflicts, your project a
 If you have problems with `<exclude>`, another option is to override the `<groupid>`, `<artifactid>`, and `<version>` properties used by the deployer to match Google's published library.
 
 Use one of the following `<dependency>` instead of those shown above.
-Note that `<version>` begins with a letter, e.g. `r11`.
+Note that `<version>` begins with a letter, e.g. `19.0.0`.
 
 ```xml
     <dependency>
       <groupId>com.google.android</groupId>
       <artifactId>support-v4</artifactId>
-      <version>r11</version>
+      <version>19.0.0</version>
     </dependency>
 
     <dependency>
       <groupId>com.google.android</groupId>
       <artifactId>support-v13</artifactId>
-      <version>r11</version>
+      <version>19.0.0</version>
     </dependency>
 ```
 
@@ -426,14 +426,14 @@ In order to use v7 extra, both dependencies (apklib & jar) are needed
 <dependency>
   <groupId>android.support</groupId>
   <artifactId>compatibility-v7</artifactId>
-  <version>19</version>
+  <version>19.0.0</version>
   <type>apklib</type>
 </dependency>
 
 <dependency>
   <groupId>android.support</groupId>
   <artifactId>compatibility-v7</artifactId>
-  <version>19</version>
+  <version>19.0.0</version>
   <type>jar</type>
 </dependency>
 ```
@@ -444,14 +444,14 @@ For the v7 appcompat library additional dependencies (apklib & jar) are required
 <dependency>
   <groupId>android.support</groupId>
   <artifactId>compatibility-v7-appcompat</artifactId>
-  <version>19</version>
+  <version>19.0.0</version>
   <type>apklib</type>
 </dependency>
 
 <dependency>
   <groupId>android.support</groupId>
   <artifactId>compatibility-v7-appcompat</artifactId>
-  <version>19</version>
+  <version>19.0.0</version>
   <type>jar</type>
 </dependency>
 ```
@@ -462,14 +462,14 @@ For the v7 mediarouter library additional dependencies (apklib & jar) are requir
 <dependency>
   <groupId>android.support</groupId>
   <artifactId>compatibility-v7-mediarouter</artifactId>
-  <version>19</version>
+  <version>19.0.0</version>
   <type>apklib</type>
 </dependency>
 
 <dependency>
   <groupId>android.support</groupId>
   <artifactId>compatibility-v7-mediarouter</artifactId>
-  <version>19</version>
+  <version>19.0.0</version>
   <type>jar</type>
 </dependency>
 ```
@@ -481,7 +481,7 @@ Google Analytics V2
 <dependency>
   <groupId>com.google.android.analytics</groupId>
   <artifactId>analytics</artifactId>
-  <version>3</version>
+  <version>3.0.0</version>
 </dependency>
 ```
 
@@ -495,13 +495,13 @@ For the Google AdMob Ads extra (ATTENTION! Do NOT use provided scope!!)
 </dependency>
 ```
 
-For the Google Cloud Messaging Library extra client library (ATTENTION! Do NOT use provided scope!!)
+For the Google Cloud Messaging Library extra client library (ATTENTION! Do NOT use provided scope!!) (Deprecated)
 
 ```xml
 <dependency>
   <groupId>com.google.android.gcm</groupId>
   <artifactId>gcm-client</artifactId>
-  <version>3</version>
+  <version>3.0.0</version>
 </dependency>
 ```
 
@@ -511,7 +511,7 @@ For the Google Cloud Messaging Library extra server library (ATTENTION! Do NOT u
 <dependency>
   <groupId>com.google.android.gcm</groupId>
   <artifactId>gcm-server</artifactId>
-  <version>3</version>
+  <version>3.0.0</version>
 </dependency>
 ```
     
@@ -521,7 +521,7 @@ For the Android annotations tools
 <dependency>
   <groupId>com.google.android.annotations</groupId>
   <artifactId>annotations</artifactId>
-  <version>22.0.5</version>
+  <version>22.3</version>
   <scope>provided</scope>
 </dependency>
 ```
@@ -532,21 +532,7 @@ For the uiautomator jar
 <dependency>
   <groupId>android.test.uiautomator</groupId>
   <artifactId>uiautomator</artifactId>
-  <version>4.1.2_r4</version>
-  <scope>provided</scope>
-</dependency>
-
-<dependency>
-  <groupId>android.test.uiautomator</groupId>
-  <artifactId>uiautomator</artifactId>
-  <version>4.2.2_r2</version>
-  <scope>provided</scope>
-</dependency>
-
-<dependency>
-  <groupId>android.test.uiautomator</groupId>
-  <artifactId>uiautomator</artifactId>
-  <version>4.3_r2</version>
+  <version>4.4_r1</version>
   <scope>provided</scope>
 </dependency>
 ```
@@ -557,13 +543,13 @@ For the Google Play Services extra (ATTENTION! Do NOT use provided scope!!)
 <dependency>
   <groupId>com.google.android.gms</groupId>
   <artifactId>google-play-services</artifactId>
-  <version>13</version>
+  <version>13.0.0</version>
   <type>apklib</type>
 </dependency>
 <dependency>
   <groupId>com.google.android.gms</groupId>
   <artifactId>google-play-services</artifactId>
-  <version>13</version>
+  <version>13.0.0</version>
   <type>jar</type>
 </dependency>
 ```
@@ -574,13 +560,13 @@ For the Google Play APK Expansion extra (ATTENTION! Do NOT use provided scope!!)
 <dependency>
   <groupId>com.google.android.apk.expansion</groupId>
   <artifactId>play-apk-expansion-downloader</artifactId>
-  <version>3</version>
+  <version>3.0.0</version>
   <type>apklib</type>
 </dependency>
 <dependency>
   <groupId>com.google.android.apk.expansion</groupId>
   <artifactId>play-apk-expansion-zip</artifactId>
-  <version>3</version>
+  <version>3.0.0</version>
   <type>apklib</type>
 </dependency>
 ```
@@ -591,7 +577,7 @@ For the Google Play Licensing extra (ATTENTION! Do NOT use provided scope!!)
 <dependency>
   <groupId>com.google.android.licensing</groupId>
   <artifactId>play-licensing</artifactId>
-  <version>2</version>
+  <version>2.0.0</version>
   <type>apklib</type>
 </dependency>
 ```
