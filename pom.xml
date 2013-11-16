@@ -32,7 +32,7 @@
     <sdk.platforms.path>${android.sdk.path}/platforms</sdk.platforms.path>
     <sdk.addons.path>${android.sdk.path}/add-ons</sdk.addons.path>
     <sdk.extras.path>${android.sdk.path}/extras</sdk.extras.path>
-    <sdk.extras.compatibility.path>${sdk.extras.path}/android/support</sdk.extras.compatibility.path>
+    <sdk.extras.compatibility.path>${sdk.extras.path}/android/compatibility</sdk.extras.compatibility.path>
     <sdk.extras.analytics.v1.path>${sdk.extras.path}/google/analytics_sdk</sdk.extras.analytics.v1.path>
     <sdk.extras.analytics.v2.path>${sdk.extras.path}/google/analytics_sdk_v2</sdk.extras.analytics.v2.path>
     <sdk.extras.admob.path>${sdk.extras.path}/google/admob_ads_sdk</sdk.extras.admob.path>
