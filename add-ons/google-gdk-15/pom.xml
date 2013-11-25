@@ -4,7 +4,7 @@
     <groupId>com.simpligility.android.sdk-deployer</groupId>
     <artifactId>google-gdk-15</artifactId>
     <packaging>pom</packaging>
-    <name>Google GDK API 15</name>
+    <name>Google Glass Development Kit (GDK) API 15</name>
     <description>A set of Android SDK features geared toward Google Glass development</description>
 
     <parent>
