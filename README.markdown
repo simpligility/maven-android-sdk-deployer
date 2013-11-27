@@ -32,6 +32,7 @@ Contributors:
 - Sebastian Roth https://github.com/ened added missing google-apis-18 add-on
 - Andreas Gawelczyk https://github.com/andreas- - Compatibility v7 mediarouter
 - Hoyt Summers Pittman https://github.com/secondsun - Google API 19, google play services to > Froyo, update android-maven-plugin
+- Aaron Alaniz https://github.com/aaalaniz - Google Glass Development Kit
 
 The Maven Android SDK Deployer is a helper maven project that can be
 used to install the libraries necessary to build Android applications
@@ -578,6 +579,23 @@ For the Google Play Licensing extra (ATTENTION! Do NOT use provided scope!!)
   <artifactId>play-licensing</artifactId>
   <version>2.0.0</version>
   <type>apklib</type>
+</dependency>
+```
+
+For Google Glass development
+
+```xml
+<dependency>
+	<groupId>android</groupId>
+	<artifactId>android</artifactId>
+	<version>4.0.3_r3</version>
+	<scope>provided</scope>
+</dependency>
+<dependency>
+	<groupId>com.google.android.gdk</groupId>
+	<artifactId>gdk</artifactId>
+	<version>15_r2</version>
+	<scope>provided</scope>
 </dependency>
 ```
 
