@@ -719,6 +719,12 @@ Deployer' is adapted to the lastet naming
 scheme. To do that yourself remove all "Google APIs by Google Inc" in
 the android SDK manager and install them again.
 
+Similar problem occurs with the extras version identifier. If the folders 
+naming is 100% allright and you receive the messages about not finding 
+some arifacts - remove extras and reinstall them back. That's because Google
+changed the version identifier naming policy. For example for support extras 
+it was 19, now it's 19.0.0
+
 Issues
 ------
 
@@ -733,12 +739,3 @@ Potential todo items
   from maps to android jar
 
 - maybe some sort of reporting of errors, failures and success as well
-
-FAQ
---------------------
-
-Q: What if I got the error like this: 
-"Failure to find com.google.android.licensing:play-licensing:apklib:2.0.0" 
-or any other artifact with the version identifier $NUM.0.0
-
-A: Don't panic! Go to your SDK, remove extras and reinstall them back
