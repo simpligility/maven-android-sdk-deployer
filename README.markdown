@@ -737,6 +737,8 @@ Potential todo items
 FAQ
 --------------------
 
-Q: What if I got the error like this: "Failure to find com.google.android.licensing:play-licensing:apklib:2.0.0"
+Q: What if I got the error like this: 
+"Failure to find com.google.android.licensing:play-licensing:apklib:2.0.0" 
 or any other artifact with the version identifier $NUM.0.0
-A: Don't panic! Check the your local repository for this artifact (.m2/com/google/android/licensing/play-licensing) and check if there's a folder named "$NUM" alongside or instead of "$NUM.0.0". If so, then go to your SDK, remove extras and reinstall them back. This issue is caused because Google have changed the versions naming (2 -> 2.0.0 and 19 -> 19.0.0 for example), you can see the example naming in $ANDROID_HOME/extras/android/support/source.properties in the  Pkg.Revision field.
+
+A: Don't panic! Go to your SDK, remove extras and reinstall them back
