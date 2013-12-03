@@ -17,15 +17,15 @@
     maps.jar at the moment although the setup can be expanded easily.</description>
 
   <properties>
-    <!-- absolute path to the Android SDK install as defined in the ANDROID_HOME 
+    <!-- absolute path to the Android SDK install as defined in the ANDROID_HOME
       environment variable -->
     <android.sdk.path>${env.ANDROID_HOME}/</android.sdk.path>
     <android.sdk.platform>19</android.sdk.platform>
-    <!-- The repository server for your android artifacts (e.g. Nexus instance 
+    <!-- The repository server for your android artifacts (e.g. Nexus instance
       in this example) -->
     <repo.id>android.repo</repo.id>
     <repo.url>http://localhost:8081/nexus/content/repositories/thirdparty</repo.url>
-    <!-- you need to provide username and password for the server in your 
+    <!-- you need to provide username and password for the server in your
       settings.xml, see documentation for the maven-deploy-plugin -->
 
     <!-- The following properties don't need to be changed by the user -->
@@ -50,6 +50,8 @@
     <addon.googlemaps.artifactid>maps</addon.googlemaps.artifactid>
     <addon.android.future.usb.groupid>com.android.future</addon.android.future.usb.groupid>
     <addon.android.future.usb.artifactid>usb</addon.android.future.usb.artifactid>
+    <addon.android.gdk.groupid>com.google.android.gdk</addon.android.gdk.groupid>
+    <addon.android.gdk.artifactid>gdk</addon.android.gdk.artifactid>
 
     <extras.analytics.groupid>com.google.android.analytics</extras.analytics.groupid>
     <extras.analytics.artifactId>analytics</extras.analytics.artifactId>
