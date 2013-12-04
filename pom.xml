@@ -75,6 +75,10 @@
     <extras.compatibility.v7.mediarouter.artifactid>compatibility-v7-mediarouter</extras.compatibility.v7.mediarouter.artifactid>
     <extras.compatibility.v7.mediarouter.version.prefix></extras.compatibility.v7.mediarouter.version.prefix>
 
+    <extras.compatibility.v7.gridlayout.groupid>${extras.compatibility.groupid}</extras.compatibility.v7.gridlayout.groupid>
+    <extras.compatibility.v7.gridlayout.artifactid>compatibility-v7-gridlayout</extras.compatibility.v7.gridlayout.artifactid>
+    <extras.compatibility.v7.gridlayout.version.prefix></extras.compatibility.v7.gridlayout.version.prefix>
+
     <extras.compatibility.v7.groupid>${extras.compatibility.groupid}</extras.compatibility.v7.groupid>
     <extras.compatibility.v7.artifactid>compatibility-v7</extras.compatibility.v7.artifactid>
     <extras.compatibility.v7.version.prefix></extras.compatibility.v7.version.prefix>

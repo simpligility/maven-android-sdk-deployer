@@ -15,7 +15,7 @@
     <properties>
         <android.support.artifactid>compatibility-v7-gridlayout</android.support.artifactid>
         <jar.path>${sdk.extras.compatibility.path}/v7/gridlayout/libs/android-support-v7-gridlayout.jar</jar.path>
-        <jar.version>${extras.compatibility.v7.version.prefix}${Pkg.Revision}</jar.version>
+        <jar.version>${extras.compatibility.v7.gridlayout.version.prefix}${Pkg.Revision}</jar.version>
     </properties>
 
     <dependencies>
@@ -68,8 +68,8 @@
                         <phase>install</phase>
                         <goals><goal>install-file</goal></goals>
                         <configuration>
-                            <groupId>${extras.compatibility.v7.groupid}</groupId>
-                            <artifactId>${extras.compatibility.v7.artifactid}</artifactId>
+                            <groupId>${extras.compatibility.v7.gridlayout.groupid}</groupId>
+                            <artifactId>${extras.compatibility.v7.gridlayout.artifactid}</artifactId>
                             <packaging>jar</packaging>
                             <version>${jar.version}</version>
                             <file>${jar.path}</file>
@@ -81,8 +81,8 @@
                         <phase>install</phase>
                         <goals><goal>install-file</goal></goals>
                         <configuration>
-                            <groupId>${extras.compatibility.v7.groupid}</groupId>
-                            <artifactId>${extras.compatibility.v7.artifactid}</artifactId>
+                            <groupId>${extras.compatibility.v7.gridlayout.groupid}</groupId>
+                            <artifactId>${extras.compatibility.v7.gridlayout.artifactid}</artifactId>
                             <packaging>apklib</packaging>
                             <version>${jar.version}</version>
                             <file>target/${android.support.artifactid}-${project.version}.apklib</file>
@@ -98,8 +98,8 @@
                         <phase>deploy</phase>
                         <goals><goal>deploy-file</goal></goals>
                         <configuration>
-                            <groupId>${extras.compatibility.v7.groupid}</groupId>
-                            <artifactId>${extras.compatibility.v7.artifactid}</artifactId>
+                            <groupId>${extras.compatibility.v7.gridlayout.groupid}</groupId>
+                            <artifactId>${extras.compatibility.v7.gridlayout.artifactid}</artifactId>
                             <packaging>jar</packaging>
                             <version>${jar.version}</version>
                             <file>${jar.path}</file>
@@ -113,8 +113,8 @@
                         <phase>deploy</phase>
                         <goals><goal>deploy-file</goal></goals>
                         <configuration>
-                            <groupId>${extras.compatibility.v7.groupid}</groupId>
-                            <artifactId>${extras.compatibility.v7.artifactid}</artifactId>
+                            <groupId>${extras.compatibility.v7.gridlayout.groupid}</groupId>
+                            <artifactId>${extras.compatibility.v7.gridlayout.artifactid}</artifactId>
                             <packaging>apklib</packaging>
                             <version>${jar.version}</version>
                             <file>target/${android.support.artifactid}-${project.version}.apklib</file>
