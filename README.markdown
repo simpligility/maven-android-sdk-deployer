@@ -646,9 +646,7 @@ As a condition you need to have a repository server used by all
 those machines and the following process will deploy to this server,
 which will in turn provide the artifacts to all the machines.
 
-Edit the repo.url property in the pom.xml to point to the repository
-you want to publish to and then add a server with the credentials to
-your settings.xml.
+Add a server with the credentials to your settings.xml:
 
 ```xml
 <settings>
@@ -662,12 +660,18 @@ your settings.xml.
 </settings>
 ```
 
-Run the command
+You can either:
+  * modify the repo.url property in the pom.xml to point to the repository
+you want to publish to and then a run the command
 
-    mvn deploy
+    ```mvn deploy```
 
+  * set the repo.url property with the command
+
+    ```mvn deploy -Drepo.url={someUrl}```
+    
 in the root folder of this project (same as README you are just
-reading), you can also use the same profile options for the different
+reading). You can also use the same profile options for the different
 api level. As a result you should find the artifact in the repository
 of your remote server
 
