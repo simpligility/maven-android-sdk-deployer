@@ -104,6 +104,14 @@
       <url>${repo.url}</url>
     </repository>
   </distributionManagement>
+  
+  <repositories>
+    <repository>
+      <id>${repo.id}</id>
+      <name>Android Repository</name>
+      <url>${repo.url}</url>
+    </repository>
+  </repositories>
 
   <build>
     <pluginManagement>
