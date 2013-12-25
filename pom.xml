@@ -38,6 +38,7 @@
     <sdk.extras.admob.path>${sdk.extras.path}/google/admob_ads_sdk</sdk.extras.admob.path>
     <sdk.extras.gcm.path>${sdk.extras.path}/google/gcm</sdk.extras.gcm.path>
     <sdk.extras.google.play.services.path>${sdk.extras.path}/google/google_play_services</sdk.extras.google.play.services.path>
+    <sdk.extras.google.play.services.for.froyo.path>${sdk.extras.path}/google/google_play_services_froyo</sdk.extras.google.play.services.for.froyo.path>
     <sdk.extras.google.play.apk.expansion.path>${sdk.extras.path}/google/play_apk_expansion</sdk.extras.google.play.apk.expansion.path>
     <sdk.extras.google.play.licensing.path>${sdk.extras.path}/google/play_licensing</sdk.extras.google.play.licensing.path>
     <sdk.tools.path>${android.sdk.path}/tools</sdk.tools.path>

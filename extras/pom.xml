@@ -80,6 +80,7 @@
                 <module>admob</module>
                 <module>gcm</module>
                 <module>google-play-services</module>
+                <module>google-play-services-for-froyo</module>
                 <module>play-licensing</module>
                 <module>play-apk-expansion</module>
             </modules>

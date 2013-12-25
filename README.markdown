@@ -554,6 +554,23 @@ For the Google Play Services extra (ATTENTION! Do NOT use provided scope!!)
 </dependency>
 ```
 
+For the Google Play Services for Froyo extra (ATTENTION! Do NOT use provided scope!!)
+
+```xml
+<dependency>
+  <groupId>com.google.android.gms</groupId>
+  <artifactId>google-play-services-for-froyo</artifactId>
+  <version>12</version>
+  <type>apklib</type>
+</dependency>
+<dependency>
+  <groupId>com.google.android.gms</groupId>
+  <artifactId>google-play-services-for-froyo</artifactId>
+  <version>12</version>
+  <type>jar</type>
+</dependency>
+```
+
 For the Google Play APK Expansion extra (ATTENTION! Do NOT use provided scope!!)
 
 ```xml
