@@ -380,13 +380,13 @@ For the compatibility extra (ATTENTION! Do NOT use provided scope!!)
 <dependency>
   <groupId>android.support</groupId>
   <artifactId>compatibility-v4</artifactId>
-  <version>19.0.0</version>
+  <version>19.0.1</version>
 </dependency>
 
 <dependency>
   <groupId>android.support</groupId>
   <artifactId>compatibility-v13</artifactId>
-  <version>19.0.0</version>
+  <version>19.0.1</version>
 </dependency>
 ```
 
@@ -400,13 +400,13 @@ Use one of the following `<dependency>` instead of those shown above.
     <dependency>
       <groupId>com.google.android</groupId>
       <artifactId>support-v4</artifactId>
-      <version>19.0.0</version>
+      <version>19.0.1</version>
     </dependency>
 
     <dependency>
       <groupId>com.google.android</groupId>
       <artifactId>support-v13</artifactId>
-      <version>19.0.0</version>
+      <version>19.0.1</version>
     </dependency>
 ```
 
@@ -426,14 +426,14 @@ In order to use v7 extra, both dependencies (apklib & jar) are needed
 <dependency>
   <groupId>android.support</groupId>
   <artifactId>compatibility-v7</artifactId>
-  <version>19.0.0</version>
+  <version>19.0.1</version>
   <type>apklib</type>
 </dependency>
 
 <dependency>
   <groupId>android.support</groupId>
   <artifactId>compatibility-v7</artifactId>
-  <version>19.0.0</version>
+  <version>19.0.1</version>
   <type>jar</type>
 </dependency>
 ```
@@ -444,14 +444,14 @@ For the v7 appcompat library additional dependencies (apklib & jar) are required
 <dependency>
   <groupId>android.support</groupId>
   <artifactId>compatibility-v7-appcompat</artifactId>
-  <version>19.0.0</version>
+  <version>19.0.1</version>
   <type>apklib</type>
 </dependency>
 
 <dependency>
   <groupId>android.support</groupId>
   <artifactId>compatibility-v7-appcompat</artifactId>
-  <version>19.0.0</version>
+  <version>19.0.1</version>
   <type>jar</type>
 </dependency>
 ```
@@ -462,14 +462,14 @@ For the v7 mediarouter library additional dependencies (apklib & jar) are requir
 <dependency>
   <groupId>android.support</groupId>
   <artifactId>compatibility-v7-mediarouter</artifactId>
-  <version>19.0.0</version>
+  <version>19.0.1</version>
   <type>apklib</type>
 </dependency>
 
 <dependency>
   <groupId>android.support</groupId>
   <artifactId>compatibility-v7-mediarouter</artifactId>
-  <version>19.0.0</version>
+  <version>19.0.1</version>
   <type>jar</type>
 </dependency>
 ```
@@ -740,7 +740,7 @@ Similar problem occurs with the extras version identifier. If the folders
 naming is 100% allright and you receive the messages about not finding 
 some arifacts - remove extras and reinstall them back. That's because Google
 changed the version identifier naming policy. For example for support extras 
-it was 19, now it's 19.0.0
+it was 19, now it's 19.0.1
 
 Issues
 ------
