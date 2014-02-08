@@ -77,8 +77,6 @@
                 <module>compatibility-v13</module>
                 <!--<module>analytics-v1</module>-->
                 <module>analytics-v2</module>
-                <module>admob</module>
-                <module>gcm</module>
                 <module>google-play-services</module>
                 <module>google-play-services-for-froyo</module>
                 <module>play-licensing</module>
