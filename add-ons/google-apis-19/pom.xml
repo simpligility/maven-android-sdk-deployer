@@ -13,7 +13,7 @@
     </parent>
 
     <properties>
-        <jar.simpleVersion>19</jar.simpleVersion>
+        <jar.simpleVersion>19-1</jar.simpleVersion>
     </properties>
 
     <build>

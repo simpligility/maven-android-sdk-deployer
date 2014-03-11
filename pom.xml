@@ -2,7 +2,7 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
   <modelVersion>4.0.0</modelVersion>
-  <parent>
+    <parent>
     <groupId>com.simpligility.maven</groupId>
     <artifactId>progressive-organization-pom</artifactId>
     <version>1.1.0</version>
@@ -21,6 +21,7 @@
       environment variable -->
     <android.sdk.path>${env.ANDROID_HOME}/</android.sdk.path>
     <android.sdk.platform>19</android.sdk.platform>
+    <android.buildtools.version>19.0.3</android.buildtools.version>
     <!-- The repository server for your android artifacts (e.g. Nexus instance
       in this example) -->
     <repo.id>android.repo</repo.id>
@@ -32,6 +33,7 @@
     <sdk.platforms.path>${android.sdk.path}/platforms</sdk.platforms.path>
     <sdk.addons.path>${android.sdk.path}/add-ons</sdk.addons.path>
     <sdk.extras.path>${android.sdk.path}/extras</sdk.extras.path>
+    <sdk.buildtools.path>${android.sdk.path}/build-tools/${android.buildtools.version}</sdk.buildtools.path>
     <sdk.extras.compatibility.path>${sdk.extras.path}/android/support</sdk.extras.compatibility.path>
     <sdk.extras.analytics.v1.path>${sdk.extras.path}/google/analytics_sdk</sdk.extras.analytics.v1.path>
     <sdk.extras.analytics.v2.path>${sdk.extras.path}/google/analytics_sdk_v2</sdk.extras.analytics.v2.path>
@@ -54,6 +56,10 @@
     <addon.android.gdk.groupid>com.google.android.gdk</addon.android.gdk.groupid>
     <addon.android.gdk.artifactid>gdk</addon.android.gdk.artifactid>
 
+    <buildtools.renderscript.groupid>android.support.v8</buildtools.renderscript.groupid>
+    <buildtools.renderscript.artifactid>renderscript</buildtools.renderscript.artifactid>
+
+
     <extras.analytics.groupid>com.google.android.analytics</extras.analytics.groupid>
     <extras.analytics.artifactId>analytics</extras.analytics.artifactId>
     <extras.admob.groupid>com.google.android.admob</extras.admob.groupid>
@@ -66,7 +72,6 @@
 
     <extras.compatibility.v4.groupid>${extras.compatibility.groupid}</extras.compatibility.v4.groupid>
     <extras.compatibility.v4.artifactid>compatibility-v4</extras.compatibility.v4.artifactid>
-    <extras.compatibility.v4.version.prefix></extras.compatibility.v4.version.prefix>
 
     <extras.compatibility.v7.appcompat.groupid>${extras.compatibility.groupid}</extras.compatibility.v7.appcompat.groupid>
     <extras.compatibility.v7.appcompat.artifactid>compatibility-v7-appcompat</extras.compatibility.v7.appcompat.artifactid>
@@ -170,6 +175,7 @@
             <modules>
                 <module>platforms</module>
                 <module>add-ons</module>
+                <module>build-tools</module>
                 <module>extras</module>
                 <module>tools</module>
                 <module>repositories</module>
