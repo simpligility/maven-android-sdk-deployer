@@ -88,7 +88,7 @@
   </properties>
 
   <issueManagement>
-    <system>Github </system>
+    <system>Github</system>
     <url>http://github.com/mosabua/maven-android-sdk-deployer/issues</url>
   </issueManagement>
   <mailingLists>
