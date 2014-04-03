@@ -380,13 +380,13 @@ For the compatibility extra (ATTENTION! Do NOT use provided scope!!)
 <dependency>
   <groupId>android.support</groupId>
   <artifactId>compatibility-v4</artifactId>
-  <version>19.0.1</version>
+  <version>19.1.0</version>
 </dependency>
 
 <dependency>
   <groupId>android.support</groupId>
   <artifactId>compatibility-v13</artifactId>
-  <version>19.0.1</version>
+  <version>19.1.0</version>
 </dependency>
 ```
 
@@ -400,13 +400,13 @@ Use one of the following `<dependency>` instead of those shown above.
     <dependency>
       <groupId>com.google.android</groupId>
       <artifactId>support-v4</artifactId>
-      <version>19.0.1</version>
+      <version>19.1.0</version>
     </dependency>
 
     <dependency>
       <groupId>com.google.android</groupId>
       <artifactId>support-v13</artifactId>
-      <version>19.0.1</version>
+      <version>19.1.0</version>
     </dependency>
 ```
 
@@ -426,14 +426,14 @@ In order to use v7 extra, both dependencies (apklib & jar) are needed
 <dependency>
   <groupId>android.support</groupId>
   <artifactId>compatibility-v7</artifactId>
-  <version>19.0.1</version>
+  <version>19.1.0</version>
   <type>apklib</type>
 </dependency>
 
 <dependency>
   <groupId>android.support</groupId>
   <artifactId>compatibility-v7</artifactId>
-  <version>19.0.1</version>
+  <version>19.1.0</version>
   <type>jar</type>
 </dependency>
 ```
@@ -444,14 +444,14 @@ For the v7 appcompat library additional dependencies (apklib & jar) are required
 <dependency>
   <groupId>android.support</groupId>
   <artifactId>compatibility-v7-appcompat</artifactId>
-  <version>19.0.1</version>
+  <version>19.1.0</version>
   <type>apklib</type>
 </dependency>
 
 <dependency>
   <groupId>android.support</groupId>
   <artifactId>compatibility-v7-appcompat</artifactId>
-  <version>19.0.1</version>
+  <version>19.1.0</version>
   <type>jar</type>
 </dependency>
 ```
@@ -462,14 +462,14 @@ For the v7 mediarouter library additional dependencies (apklib & jar) are requir
 <dependency>
   <groupId>android.support</groupId>
   <artifactId>compatibility-v7-mediarouter</artifactId>
-  <version>19.0.1</version>
+  <version>19.1.0</version>
   <type>apklib</type>
 </dependency>
 
 <dependency>
   <groupId>android.support</groupId>
   <artifactId>compatibility-v7-mediarouter</artifactId>
-  <version>19.0.1</version>
+  <version>19.1.0</version>
   <type>jar</type>
 </dependency>
 ```
