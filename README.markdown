@@ -220,7 +220,7 @@ For the maps add ons
   <groupId>com.google.android.maps</groupId>
   <artifactId>maps</artifactId>
   <version>3_r3</version>
-  <scope>provided</scope>f
+  <scope>provided</scope>
 </dependency>
 
 <dependency>
