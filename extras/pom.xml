@@ -75,9 +75,10 @@
                 <module>compatibility-v7-appcompat</module>
                 <module>compatibility-v7-mediarouter</module>
                 <module>compatibility-v13</module>
-                <!--<module>analytics-v1</module>-->
                 <module>analytics-v2</module>
-                <!-- deprecated by google --><!-- <module>admob</module> -->
+                <!--  deprecated by Google with Aug 2014, but still available for download
+                might remove then  -->
+                <module>admob</module> 
                 <module>gcm</module>
                 <module>google-play-services</module>
                 <module>google-play-services-for-froyo</module>
