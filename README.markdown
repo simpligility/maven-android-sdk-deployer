@@ -529,7 +529,7 @@ For the Android annotations tools
 <dependency>
   <groupId>com.google.android.annotations</groupId>
   <artifactId>annotations</artifactId>
-  <version>22.3</version>
+  <version>22.6.2</version>
   <scope>provided</scope>
 </dependency>
 ```
@@ -540,7 +540,28 @@ For the uiautomator jar
 <dependency>
   <groupId>android.test.uiautomator</groupId>
   <artifactId>uiautomator</artifactId>
-  <version>4.4_r1</version>
+  <version>4.1.2_r4</version>
+  <scope>provided</scope>
+</dependency>
+
+<dependency>
+  <groupId>android.test.uiautomator</groupId>
+  <artifactId>uiautomator</artifactId>
+  <version>4.2.2_r2</version>
+  <scope>provided</scope>
+</dependency>
+
+<dependency>
+  <groupId>android.test.uiautomator</groupId>
+  <artifactId>uiautomator</artifactId>
+  <version>4.3_r2</version>
+  <scope>provided</scope>
+</dependency>
+
+<dependency>
+  <groupId>android.test.uiautomator</groupId>
+  <artifactId>uiautomator</artifactId>
+  <version>4.4.2_r3</version>
   <scope>provided</scope>
 </dependency>
 ```
@@ -551,13 +572,13 @@ For the Google Play Services extra (ATTENTION! Do NOT use provided scope!!)
 <dependency>
   <groupId>com.google.android.gms</groupId>
   <artifactId>google-play-services</artifactId>
-  <version>13.0.0</version>
+  <version>16.0.0</version>
   <type>apklib</type>
 </dependency>
 <dependency>
   <groupId>com.google.android.gms</groupId>
   <artifactId>google-play-services</artifactId>
-  <version>13.0.0</version>
+  <version>16.0.0</version>
   <type>jar</type>
 </dependency>
 ```
@@ -568,13 +589,13 @@ For the Google Play Services for Froyo extra (ATTENTION! Do NOT use provided sco
 <dependency>
   <groupId>com.google.android.gms</groupId>
   <artifactId>google-play-services-for-froyo</artifactId>
-  <version>12</version>
+  <version>12.0.0</version>
   <type>apklib</type>
 </dependency>
 <dependency>
   <groupId>com.google.android.gms</groupId>
   <artifactId>google-play-services-for-froyo</artifactId>
-  <version>12</version>
+  <version>12.0.0</version>
   <type>jar</type>
 </dependency>
 ```
