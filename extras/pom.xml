@@ -40,6 +40,12 @@
                             </goals>
                         </execution>
                     </executions>
+                    <configuration>
+                        <sourcepath>${basedir}/target/generated-sources</sourcepath>
+	                <sourceFileExcludes>
+                            <exclude>**/R.java</exclude>
+                        </sourceFileExcludes>
+                    </configuration>
                 </plugin>
             </plugins>
         </pluginManagement>
