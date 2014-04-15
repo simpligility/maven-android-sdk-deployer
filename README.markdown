@@ -5,7 +5,7 @@ Author and Project Maintainer including numerous fixes and changes:
 
 Manfred Moser manfred@simpligility.com  at [simpligility technologies inc](http://www.simpligility.com)
 
-Contributors:
+Contributors (historical order..):
 
 - Hugo Josefson <hugo@josefson.org> - properties plugin usage
 - Jake Wharton <jakewharton@gmail.com> - 3.2, compatibility v13 and 4.0.3 support
@@ -33,6 +33,7 @@ Contributors:
 - Andreas Gawelczyk https://github.com/andreas- - Compatibility v7 mediarouter
 - Hoyt Summers Pittman https://github.com/secondsun - Google API 19, google play services to > Froyo, update android-maven-plugin
 - Aaron Alaniz https://github.com/aaalaniz - Google Glass Development Kit
+- Heath Borders https://github.com/hborders - documentation update
 
 The Maven Android SDK Deployer is a helper maven project that can be
 used to install the libraries necessary to build Android applications
@@ -207,7 +208,7 @@ For the core platforms
 <dependency>
   <groupId>android</groupId>
   <artifactId>android</artifactId>
-  <version>4.4_r1</version>
+  <version>4.4.2_r3</version>
   <scope>provided</scope>
 </dependency>
 ```
@@ -219,7 +220,7 @@ For the maps add ons
   <groupId>com.google.android.maps</groupId>
   <artifactId>maps</artifactId>
   <version>3_r3</version>
-  <scope>provided</scope>
+  <scope>provided</scope>f
 </dependency>
 
 <dependency>
@@ -309,7 +310,7 @@ For the maps add ons
 <dependency>
   <groupId>com.google.android.maps</groupId>
   <artifactId>maps</artifactId>
-  <version>19_r1</version>
+  <version>19_r4</version>
   <scope>provided</scope>
 </dependency>
 ```
@@ -369,7 +370,14 @@ For the usb add on
 <dependency>
   <groupId>com.android.future</groupId>
   <artifactId>usb</artifactId>
-  <version>18_r2</version>
+  <version>18_r3</version>
+  <scope>provided</scope>
+</dependency>
+
+<dependency>
+  <groupId>com.android.future</groupId>
+  <artifactId>usb</artifactId>
+  <version>19_r4</version>
   <scope>provided</scope>
 </dependency>
 ```
@@ -380,13 +388,13 @@ For the compatibility extra (ATTENTION! Do NOT use provided scope!!)
 <dependency>
   <groupId>android.support</groupId>
   <artifactId>compatibility-v4</artifactId>
-  <version>19.0.1</version>
+  <version>19.1.0</version>
 </dependency>
 
 <dependency>
   <groupId>android.support</groupId>
   <artifactId>compatibility-v13</artifactId>
-  <version>19.0.1</version>
+  <version>19.1.0</version>
 </dependency>
 ```
 
@@ -400,13 +408,13 @@ Use one of the following `<dependency>` instead of those shown above.
     <dependency>
       <groupId>com.google.android</groupId>
       <artifactId>support-v4</artifactId>
-      <version>19.0.1</version>
+      <version>19.1.0</version>
     </dependency>
 
     <dependency>
       <groupId>com.google.android</groupId>
       <artifactId>support-v13</artifactId>
-      <version>19.0.1</version>
+      <version>19.1.0</version>
     </dependency>
 ```
 
@@ -426,14 +434,14 @@ In order to use v7 extra, both dependencies (apklib & jar) are needed
 <dependency>
   <groupId>android.support</groupId>
   <artifactId>compatibility-v7</artifactId>
-  <version>19.0.1</version>
+  <version>19.1.0</version>
   <type>apklib</type>
 </dependency>
 
 <dependency>
   <groupId>android.support</groupId>
   <artifactId>compatibility-v7</artifactId>
-  <version>19.0.1</version>
+  <version>19.1.0</version>
   <type>jar</type>
 </dependency>
 ```
@@ -444,14 +452,14 @@ For the v7 appcompat library additional dependencies (apklib & jar) are required
 <dependency>
   <groupId>android.support</groupId>
   <artifactId>compatibility-v7-appcompat</artifactId>
-  <version>19.0.1</version>
+  <version>19.1.0</version>
   <type>apklib</type>
 </dependency>
 
 <dependency>
   <groupId>android.support</groupId>
   <artifactId>compatibility-v7-appcompat</artifactId>
-  <version>19.0.1</version>
+  <version>19.1.0</version>
   <type>jar</type>
 </dependency>
 ```
@@ -462,14 +470,14 @@ For the v7 mediarouter library additional dependencies (apklib & jar) are requir
 <dependency>
   <groupId>android.support</groupId>
   <artifactId>compatibility-v7-mediarouter</artifactId>
-  <version>19.0.1</version>
+  <version>19.1.0</version>
   <type>apklib</type>
 </dependency>
 
 <dependency>
   <groupId>android.support</groupId>
   <artifactId>compatibility-v7-mediarouter</artifactId>
-  <version>19.0.1</version>
+  <version>19.1.0</version>
   <type>jar</type>
 </dependency>
 ```
@@ -491,7 +499,7 @@ For the Google AdMob Ads extra (ATTENTION! Do NOT use provided scope!!)
 <dependency>
   <groupId>com.google.android.admob</groupId>
   <artifactId>admob</artifactId>
-  <version>6.4.1-r11</version>
+  <version>6.4.1-r11.0.0</version>
 </dependency>
 ```
 
