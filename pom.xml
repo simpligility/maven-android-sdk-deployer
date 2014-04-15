@@ -24,7 +24,7 @@
     <!-- The repository server for your android artifacts (e.g. Nexus instance
       in this example) -->
     <repo.id>android.repo</repo.id>
-    <repo.url>http://nxs.bm.afrogleap.com/nexus/content/repositories/android-sdk</repo.url>
+    <repo.url>http://localhost:8081/nexus/content/repositories/thirdparty</repo.url>
     <!-- you need to provide username and password for the server in your
       settings.xml, see documentation for the maven-deploy-plugin -->
 
