@@ -482,8 +482,8 @@ For the v7 mediarouter library additional dependencies (apklib & jar) are requir
 </dependency>
 ```
 
-For the Google Analytics extra (ATTENTION! Do NOT use provided scope!!)
-
+For the Google Analytics extra (ATTENTION! Do NOT use provided scope!!) (Deprecated)
+See: https://developers.google.com/analytics/devguides/collection/android/v4/
 Google Analytics V2
 ```xml
 <dependency>
@@ -493,7 +493,8 @@ Google Analytics V2
 </dependency>
 ```
 
-For the Google AdMob Ads extra (ATTENTION! Do NOT use provided scope!!)
+For the Google AdMob Ads extra (ATTENTION! Do NOT use provided scope!!) (Deprecated)
+See: http://googleadsdeveloper.blogspot.ca/2014/02/since-joining-google-play-services-back.html 
 
 ```xml
 <dependency>
