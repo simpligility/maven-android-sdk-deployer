@@ -2,10 +2,10 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.simpligility.android.sdk-deployer</groupId>
-    <artifactId>google-gdk-15</artifactId>
+    <artifactId>google-gdk-19</artifactId>
     <packaging>pom</packaging>
-    <name>Google Glass Development Kit (GDK) API 15</name>
-    <description>A set of Android SDK features geared toward Google Glass development</description>
+    <name>Google Glass Development Kit (GDK) API 19</name>
+    <description>A set of Android SDK features geared toward Google Glass development on KitKat</description>
 
     <parent>
         <groupId>com.simpligility.android.sdk-deployer</groupId>
@@ -14,8 +14,8 @@
     </parent>
 
     <properties>
-        <jar.simpleVersion>15</jar.simpleVersion>
-        <jar.simpleGdkVersion>15</jar.simpleGdkVersion>
+        <jar.simpleVersion>19-1</jar.simpleVersion>
+        <jar.simpleGdkVersion>19</jar.simpleGdkVersion>
     </properties>
 
     <build>

@@ -631,6 +631,7 @@ For the Google Play Licensing extra (ATTENTION! Do NOT use provided scope!!)
 For Google Glass development
 
 ```xml
+<!-- For development on ICS with GDK -->
 <dependency>
 	<groupId>android</groupId>
 	<artifactId>android</artifactId>
@@ -642,6 +643,21 @@ For Google Glass development
 	<artifactId>gdk</artifactId>
 	<version>15_r2</version>
 	<scope>provided</scope>
+</dependency>
+
+<!-- For development on KitKat with GDK -->
+<!-- Android Dependency -->
+<dependency>
+    <groupId>android</groupId>
+    <artifactId>android</artifactId>
+    <version>4.4.2_r3</version>
+    <scope>provided</scope>
+</dependency>
+<dependency>
+    <groupId>com.google.android.gdk</groupId>
+    <artifactId>gdk</artifactId>
+    <version>19_r4</version>
+    <scope>provided</scope>
 </dependency>
 ```
 
