@@ -646,7 +646,6 @@ For Google Glass development
 </dependency>
 
 <!-- For development on KitKat with GDK -->
-<!-- Android Dependency -->
 <dependency>
     <groupId>android</groupId>
     <artifactId>android</artifactId>
