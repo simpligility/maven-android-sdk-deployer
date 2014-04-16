@@ -14,8 +14,7 @@
     </parent>
 
     <properties>
-        <jar.simpleVersion>19-1</jar.simpleVersion>
-        <jar.simpleGdkVersion>19</jar.simpleGdkVersion>
+        <jar.simpleVersion>19</jar.simpleVersion>
     </properties>
 
     <build>

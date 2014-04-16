@@ -15,7 +15,6 @@
 
     <properties>
         <jar.simpleVersion>15</jar.simpleVersion>
-        <jar.simpleGdkVersion>15</jar.simpleGdkVersion>
     </properties>
 
     <build>

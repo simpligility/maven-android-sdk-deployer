@@ -16,7 +16,7 @@
         <jar.path>${sdk.addons.path}/${addon.directory}/libs/maps.jar</jar.path>
         <jar.version>${AndroidVersion.ApiLevel}_r${Pkg.Revision}</jar.version>
         <addon.directory>addon-google_apis-google-${jar.simpleVersion}</addon.directory>
-        <gdk.directory>addon-google_gdk-google-${jar.simpleGdkVersion}</gdk.directory>
+        <gdk.directory>addon-google_gdk-google-${jar.simpleVersion}</gdk.directory>
         <usb.jar.path>${sdk.addons.path}/${addon.directory}/libs/usb.jar</usb.jar.path>
         <gdk.jar.path>${sdk.addons.path}/${gdk.directory}/libs/gdk.jar</gdk.jar.path>
     </properties>
