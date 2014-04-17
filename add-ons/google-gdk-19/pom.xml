@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>com.simpligility.android.sdk-deployer</groupId>
+    <artifactId>google-gdk-19</artifactId>
+    <packaging>pom</packaging>
+    <name>Google Glass Development Kit (GDK) API 19</name>
+    <description>A set of Android SDK features geared toward Google Glass development on KitKat</description>
+
+    <parent>
+        <groupId>com.simpligility.android.sdk-deployer</groupId>
+        <artifactId>android-add-ons</artifactId>
+        <version>2.4.0</version>
+    </parent>
+
+    <properties>
+        <jar.simpleVersion>19</jar.simpleVersion>
+    </properties>
+
+    <build>
+        <plugins>
+            <plugin>
+                <artifactId>maven-install-plugin</artifactId>
+                <executions>
+                    <execution>
+                        <id>maps</id>
+                        <phase>install</phase>
+                        <goals><goal>install-file</goal></goals>
+                        <configuration>
+                            <groupId>${addon.android.gdk.groupid}</groupId>
+                            <artifactId>${addon.android.gdk.artifactid}</artifactId>
+                            <packaging>jar</packaging>
+                            <version>${jar.version}</version>
+                            <file>${gdk.jar.path}</file>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+            <plugin>
+                <artifactId>maven-deploy-plugin</artifactId>
+                <executions>
+                    <execution>
+                        <id>maps</id>
+                        <phase>deploy</phase>
+                        <goals><goal>deploy-file</goal></goals>
+                        <configuration>
+                            <groupId>${addon.android.gdk.groupid}</groupId>
+                            <artifactId>${addon.android.gdk.artifactid}</artifactId>
+                            <packaging>jar</packaging>
+                            <version>${jar.version}</version>
+                            <file>${gdk.jar.path}</file>
+                            <url>${repo.url}</url>
+                            <repositoryId>${repo.id}</repositoryId>
+                        </configuration>
+                    </execution>
+               </executions>
+            </plugin>
+            <plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>properties-maven-plugin</artifactId>
+            </plugin>
+        </plugins>
+    </build>
+</project>

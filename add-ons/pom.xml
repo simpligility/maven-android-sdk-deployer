@@ -67,6 +67,7 @@
                 <module>google-apis-18</module>
                 <module>google-apis-19</module>
                 <module>google-gdk-15</module>
+                <module>google-gdk-19</module>
             </modules>
         </profile>
         <profile>
@@ -152,6 +153,7 @@
             <id>4.4</id>
             <modules>
                 <module>google-apis-19</module>
+                <module>google-gdk-19</module>
             </modules>
         </profile>
     </profiles>
