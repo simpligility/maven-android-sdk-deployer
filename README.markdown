@@ -34,6 +34,7 @@ Contributors (historical order..):
 - Hoyt Summers Pittman https://github.com/secondsun - Google API 19, google play services to > Froyo, update android-maven-plugin
 - Aaron Alaniz https://github.com/aaalaniz - Google Glass Development Kit
 - Heath Borders https://github.com/hborders - documentation update
+- Hoyt Summers Pittman https://github.com/secondsun - javadoc fix for Java 8 support
 
 The Maven Android SDK Deployer is a helper maven project that can be
 used to install the libraries necessary to build Android applications
@@ -515,6 +516,9 @@ For the Google Cloud Messaging Library extra client library (ATTENTION! Do NOT u
 ```
 
 For the Google Cloud Messaging Library extra server library (ATTENTION! Do NOT use provided scope!!)
+
+You will need to run the extras/gcm module manually since it is deactivated
+due to GCM being deprecated by Google in the Android SDK.
 
 ```xml
 <dependency>
