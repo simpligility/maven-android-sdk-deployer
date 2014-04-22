@@ -19,26 +19,50 @@
     <build>
         <plugins>
 
-	        <plugin>
-		        <artifactId>maven-jar-plugin</artifactId>
-		        <version>2.4</version>
-		        <executions>
-			        <execution>
-				        <phase>generate-resources</phase>
-				        <goals>
-					        <goal>jar</goal>
-				        </goals>
-				        <configuration>
-					        <classesDirectory>${sdk.extras.compatibility.path}/v13/src/java</classesDirectory>
-					        <includes>
-						        <include>**/*</include>
-					        </includes>
-					        <finalName>support-sources</finalName>
-				        </configuration>
-			        </execution>
-		        </executions>
-	        </plugin>
-
+            <plugin>
+                <artifactId>maven-resources-plugin</artifactId>
+                <version>2.4.3</version>
+                <executions>
+                    <execution>
+                        <phase>generate-resources</phase>
+                        <goals>
+                            <goal>copy-resources</goal>
+                        </goals>
+                        <configuration>
+                            <outputDirectory>${project.build.directory}/sources/</outputDirectory>
+                            <resources>
+                                <resource>
+                                    <directory>${sdk.extras.compatibility.path}/v13/src/java/</directory>
+                                </resource>
+                                <resource>
+                                    <directory>${sdk.extras.compatibility.path}/v4/src/java/</directory>
+                                </resource>
+                            </resources>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+        
+            <plugin>
+                <artifactId>maven-jar-plugin</artifactId>
+                <version>2.4</version>
+                <executions>
+                    <execution>
+                        <phase>generate-resources</phase>
+                        <goals>
+                            <goal>jar</goal>
+                        </goals>
+                        <configuration>
+                            <classesDirectory>${project.build.directory}/sources</classesDirectory>
+                            <includes>
+                                <include>**/*</include>
+                            </includes>
+                            <finalName>support-sources</finalName>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+            
             <plugin>
                 <artifactId>maven-install-plugin</artifactId>
                 <executions>
@@ -51,7 +75,7 @@
                             <packaging>jar</packaging>
                             <version>${jar.version}</version>
                             <file>${jar.path}</file>
-	                        <sources>${project.build.directory}/support-sources.jar</sources>
+                            <sources>${project.build.directory}/support-sources.jar</sources>
                         </configuration>
                     </execution>
                 </executions>
@@ -69,7 +93,7 @@
                             <packaging>jar</packaging>
                             <version>${jar.version}</version>
                             <file>${jar.path}</file>
-	                        <sources>${project.build.directory}/support-sources.jar</sources>
+                            <sources>${project.build.directory}/support-sources.jar</sources>
                             <url>${repo.url}</url>
                             <repositoryId>${repo.id}</repositoryId>
                         </configuration>
