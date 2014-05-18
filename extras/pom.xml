@@ -89,7 +89,7 @@
                 <!--  deprecated by Google, will leave in for a while in case someone wants to manually activate and use it -->
                 <!-- <module>gcm</module>  -->
                 <module>google-play-services</module>
-                <module>google-play-services-for-froyo</module>
+                <module>google-play-services-froyo</module>
                 <module>play-licensing</module>
                 <module>play-apk-expansion</module>
             </modules>
