@@ -1,6 +1,12 @@
 Changelog per release
 ---------------------
 
+2.5.0
+
+  - Csaba Kozák, fixed source for compatibility https://github.com/mosabua/maven-android-sdk-deployer/pull/222
+  - Manfred Moser, many changes and updates
+  - Benoit Billington, many changes and updates
+
 2.4.0
 
   - Manfred Moser, Moved to Android Maven Plugin 3.8.0
