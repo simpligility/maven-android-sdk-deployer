@@ -465,6 +465,24 @@ For the v7 appcompat library additional dependencies (apklib & jar) are required
 </dependency>
 ```
 
+For the v7 gridlayout library additional dependencies (apklib & jar) are required
+
+```xml
+<dependency>
+  <groupId>android.support</groupId>
+  <artifactId>compatibility-v7-gridlayout</artifactId>
+  <version>19.0.1</version>
+  <type>apklib</type>
+</dependency>
+
+<dependency>
+  <groupId>android.support</groupId>
+  <artifactId>compatibility-v7-gridlayout</artifactId>
+  <version>19.0.1</version>
+  <type>jar</type>
+</dependency>
+```
+
 For the v7 mediarouter library additional dependencies (apklib & jar) are required
 
 ```xml
