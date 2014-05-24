@@ -69,7 +69,7 @@
                         <goals><goal>install-file</goal></goals>
                         <configuration>
                             <groupId>${extras.compatibility.v7.groupid}</groupId>
-                            <artifactId>${extras.compatibility.v7.artifactid}</artifactId>
+                            <artifactId>${android.support.artifactid}</artifactId>
                             <packaging>jar</packaging>
                             <version>${jar.version}</version>
                             <file>${jar.path}</file>
@@ -82,7 +82,7 @@
                         <goals><goal>install-file</goal></goals>
                         <configuration>
                             <groupId>${extras.compatibility.v7.groupid}</groupId>
-                            <artifactId>${extras.compatibility.v7.artifactid}</artifactId>
+                            <artifactId>${android.support.artifactid}</artifactId>
                             <packaging>apklib</packaging>
                             <version>${jar.version}</version>
                             <file>target/${android.support.artifactid}-${project.version}.apklib</file>
@@ -99,7 +99,7 @@
                         <goals><goal>deploy-file</goal></goals>
                         <configuration>
                             <groupId>${extras.compatibility.v7.groupid}</groupId>
-                            <artifactId>${extras.compatibility.v7.artifactid}</artifactId>
+                            <artifactId>${android.support.artifactid}</artifactId>
                             <packaging>jar</packaging>
                             <version>${jar.version}</version>
                             <file>${jar.path}</file>
@@ -114,7 +114,7 @@
                         <goals><goal>deploy-file</goal></goals>
                         <configuration>
                             <groupId>${extras.compatibility.v7.groupid}</groupId>
-                            <artifactId>${extras.compatibility.v7.artifactid}</artifactId>
+                            <artifactId>${android.support.artifactid}</artifactId>
                             <packaging>apklib</packaging>
                             <version>${jar.version}</version>
                             <file>target/${android.support.artifactid}-${project.version}.apklib</file>
