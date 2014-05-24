@@ -85,11 +85,11 @@
                 <!-- <module>analytics-v2</module> -->
                 <!--  deprecated by Google with Aug 2014, but still available for download
                 might remove then, see http://googleadsdeveloper.blogspot.ca/2014/02/since-joining-google-play-services-back.html  -->
-                <module>admob</module> 
+                <module>admob-ads-sdk</module>
                 <!--  deprecated by Google, will leave in for a while in case someone wants to manually activate and use it -->
                 <!-- <module>gcm</module>  -->
                 <module>google-play-services</module>
-                <module>google-play-services-for-froyo</module>
+                <module>google-play-services-froyo</module>
                 <module>play-licensing</module>
                 <module>play-apk-expansion</module>
             </modules>
