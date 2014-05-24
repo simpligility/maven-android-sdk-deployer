@@ -1,9 +1,14 @@
 Maven Android SDK Deployer
 --------------------------
 
-Author and Project Maintainer including numerous fixes and changes:
+Original author including numerous fixes and changes:
 
 Manfred Moser manfred@simpligility.com  at [simpligility technologies inc](http://www.simpligility.com)
+
+Project maintainers:
+
+- Manfred Moser manfred@simpligility.com  at [simpligility technologies inc](http://www.simpligility.com)
+- Benoit Billington https://github.com/Shusshu
 
 Contributors (historical order..):
 
@@ -35,6 +40,9 @@ Contributors (historical order..):
 - Aaron Alaniz https://github.com/aaalaniz - Google Glass Development Kit
 - Heath Borders https://github.com/hborders - documentation update
 - Hoyt Summers Pittman https://github.com/secondsun - javadoc fix for Java 8 support
+- Dieter Adriaenssens https://github.com/ruleant
+- Quentin Rousseau https://github.com/kwent
+- Mingfai Ma https://github.com/mingfai
 
 The Maven Android SDK Deployer is a helper maven project that can be
 used to install the libraries necessary to build Android applications
@@ -471,14 +479,14 @@ For the v7 gridlayout library additional dependencies (apklib & jar) are require
 <dependency>
   <groupId>android.support</groupId>
   <artifactId>compatibility-v7-gridlayout</artifactId>
-  <version>19.0.1</version>
+  <version>19.1.0/version>
   <type>apklib</type>
 </dependency>
 
 <dependency>
   <groupId>android.support</groupId>
   <artifactId>compatibility-v7-gridlayout</artifactId>
-  <version>19.0.1</version>
+  <version>19.1.0</version>
   <type>jar</type>
 </dependency>
 ```

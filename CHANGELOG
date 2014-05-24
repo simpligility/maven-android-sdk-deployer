@@ -1,6 +1,12 @@
 Changelog per release
 ---------------------
 
+2.6.0
+
+ - https://github.com/mosabua/maven-android-sdk-deployer/pull/225
+ - https://github.com/mosabua/maven-android-sdk-deployer/pull/224
+ - https://github.com/mosabua/maven-android-sdk-deployer/pull/208
+ 
 2.5.0
 
   - Csaba Kozák, fixed source for compatibility https://github.com/mosabua/maven-android-sdk-deployer/pull/222
