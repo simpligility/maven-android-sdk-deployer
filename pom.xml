@@ -273,5 +273,17 @@
                 <module>add-ons</module>
             </modules>
         </profile>
+        <profile>
+            <id>4.4W</id>
+            <modules>
+                <module>platforms</module>
+            </modules>
+        </profile>
+        <profile>
+            <id>L</id>
+            <modules>
+                <module>platforms</module>
+            </modules>
+        </profile>
     </profiles>
 </project>
