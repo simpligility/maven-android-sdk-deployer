@@ -65,6 +65,8 @@
 				<module>android-17</module>
 				<module>android-18</module>
 				<module>android-19</module>
+				<module>android-20</module>
+				<module>android-L</module>
             </modules>
         </profile>
         <profile>
@@ -139,16 +141,28 @@
                 <module>android-17</module>
             </modules>
         </profile>
-	<profile>
+		<profile>
             <id>4.3</id>
             <modules>
                 <module>android-18</module>
             </modules>
         </profile>
-	<profile>
+		<profile>
             <id>4.4</id>
             <modules>
                 <module>android-19</module>
+            </modules>
+        </profile>
+		<profile>
+            <id>4.4W</id>
+            <modules>
+                <module>android-20</module>
+            </modules>
+        </profile>
+		<profile>
+            <id>L</id>
+            <modules>
+                <module>android-L</module>
             </modules>
         </profile>
         <profile>
