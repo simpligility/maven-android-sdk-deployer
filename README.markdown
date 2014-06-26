@@ -471,7 +471,7 @@ In order to use v7 extra, both dependencies (apklib & jar) are needed
 </dependency>
 ```
 
-For the v7 appcompat library additional dependencies (apklib & jar) are required
+For the v7 appcompat library additional dependencies (apklib & jar) are required (Deprecated)
 
 ```xml
 <dependency>
@@ -489,7 +489,18 @@ For the v7 appcompat library additional dependencies (apklib & jar) are required
 </dependency>
 ```
 
-For the v7 gridlayout library additional dependencies (apklib & jar) are required
+For the v7 appcompat library an additional dependency (aar) is required
+
+```xml
+<dependency>
+  <groupId>com.android.support</groupId>
+  <artifactId>appcompat-v7</artifactId>
+  <version>21.0.0-rc1</version>
+  <type>aar</type>
+</dependency>
+```
+
+For the v7 gridlayout library additional dependencies (apklib & jar) are required (Deprecated)
 
 ```xml
 <dependency>
@@ -507,7 +518,18 @@ For the v7 gridlayout library additional dependencies (apklib & jar) are require
 </dependency>
 ```
 
-For the v7 mediarouter library additional dependencies (apklib & jar) are required
+For the v7 gridlayout library an additional dependency (aar) is required
+
+```xml
+<dependency>
+  <groupId>com.android.support</groupId>
+  <artifactId>gridlayout-v7</artifactId>
+  <version>21.0.0-rc1</version>
+  <type>aar</type>
+</dependency>
+```
+
+For the v7 mediarouter library additional dependencies (apklib & jar) are required (Deprecated)
 
 ```xml
 <dependency>
@@ -522,6 +544,61 @@ For the v7 mediarouter library additional dependencies (apklib & jar) are requir
   <artifactId>compatibility-v7-mediarouter</artifactId>
   <version>20.0.0</version>
   <type>jar</type>
+</dependency>
+```
+
+For the v7 mediarouter library an additional dependency (aar) is required
+
+```xml
+<dependency>
+  <groupId>com.android.support</groupId>
+  <artifactId>mediarouter-v7</artifactId>
+  <version>21.0.0-rc1</version>
+  <type>aar</type>
+</dependency>
+```
+
+For the v7 cardview library an additional dependency (aar) is required
+
+```xml
+<dependency>
+  <groupId>com.android.support</groupId>
+  <artifactId>cardview-v7</artifactId>
+  <version>21.0.0-rc1</version>
+  <type>aar</type>
+</dependency>
+```
+
+For the v17 leanback library an additional dependency (aar) is required
+
+```xml
+<dependency>
+  <groupId>com.android.support</groupId>
+  <artifactId>leanback-v7</artifactId>
+  <version>21.0.0-rc1</version>
+  <type>aar</type>
+</dependency>
+```
+
+For the v7 palette library an additional dependency (aar) is required
+
+```xml
+<dependency>
+  <groupId>com.android.support</groupId>
+  <artifactId>palette-v7</artifactId>
+  <version>21.0.0-rc1</version>
+  <type>aar</type>
+</dependency>
+```
+
+For the v7 recyclerview library an additional dependency (aar) is required
+
+```xml
+<dependency>
+  <groupId>com.android.support</groupId>
+  <artifactId>recyclerview-v7</artifactId>
+  <version>21.0.0-rc1</version>
+  <type>aar</type>
 </dependency>
 ```
 
@@ -613,7 +690,7 @@ For the uiautomator jar
 </dependency>
 ```
     
-For the Google Play Services extra (ATTENTION! Do NOT use provided scope!!)
+For the Google Play Services extra (ATTENTION! Do NOT use provided scope!!) (Deprecated)
 
 ```xml
 <dependency>
@@ -627,6 +704,17 @@ For the Google Play Services extra (ATTENTION! Do NOT use provided scope!!)
   <artifactId>google-play-services</artifactId>
   <version>16.0.0</version>
   <type>jar</type>
+</dependency>
+```
+
+For the Google Play Services extra (ATTENTION! Do NOT use provided scope!!)
+
+```xml
+<dependency>
+  <groupId>com.google.android.gms</groupId>
+  <artifactId>play-services</artifactId>
+  <version>4.4.52</version>
+  <type>aar</type>
 </dependency>
 ```
 
