@@ -19,7 +19,7 @@ Contributors (historical order..):
 - Lorenzo Villani - initial 4.0 support
 - Paul Merlin http://eskatos.github.com - Google Analytics extra
 - Matteo Panella <morpheus@level28.org> - Google AdMobs extra, support for 4.1
-- Benoit Billington https://github.com/Shusshu Google Cloud Messaging Client and Server, annotations.jar, 4.2, 4.3, 4.4, APK Expansion, Licensing
+- Benoit Billington https://github.com/Shusshu Google Cloud Messaging Client and Server, annotations.jar, 4.2, 4.3, 4.4, APK Expansion, Licensing, 4.4W, L
 - Michael Lake https://github.com/mlake support for Javadoc attachment for platforms
 - Nic Strong http://www.codepoets.co.nz Google Play Services (gms)
 - Matias Dumrauf http://github.com/mdumrauf - Compatibility v7 library support, Google Analytics support for V1 and V2
@@ -115,6 +115,8 @@ To install only a certain sdk level use
     mvn install -P 4.2
     mvn install -P 4.3
     mvn install -P 4.4
+	mvn install -P 4.4W
+	mvn install -P L
 
 As a result you should find the android.jar and maps.jar and a number of other
 libraries in your users local repository (~/.m2/repository/) and you can therefore
@@ -218,6 +220,20 @@ For the core platforms
   <groupId>android</groupId>
   <artifactId>android</artifactId>
   <version>4.4.2_r3</version>
+  <scope>provided</scope>
+</dependency>
+
+<dependency>
+  <groupId>android</groupId>
+  <artifactId>android</artifactId>
+  <version>4.4W_r1</version>
+  <scope>provided</scope>
+</dependency>
+
+<dependency>
+  <groupId>android</groupId>
+  <artifactId>android</artifactId>
+  <version>L_r1</version>
   <scope>provided</scope>
 </dependency>
 ```
@@ -397,13 +413,13 @@ For the compatibility extra (ATTENTION! Do NOT use provided scope!!)
 <dependency>
   <groupId>android.support</groupId>
   <artifactId>compatibility-v4</artifactId>
-  <version>19.1.0</version>
+  <version>20.0.0</version>
 </dependency>
 
 <dependency>
   <groupId>android.support</groupId>
   <artifactId>compatibility-v13</artifactId>
-  <version>19.1.0</version>
+  <version>20.0.0</version>
 </dependency>
 ```
 
@@ -417,13 +433,13 @@ Use one of the following `<dependency>` instead of those shown above.
     <dependency>
       <groupId>com.google.android</groupId>
       <artifactId>support-v4</artifactId>
-      <version>19.1.0</version>
+      <version>21.0.0-rc1</version>
     </dependency>
 
     <dependency>
       <groupId>com.google.android</groupId>
       <artifactId>support-v13</artifactId>
-      <version>19.1.0</version>
+      <version>21.0.0-rc1</version>
     </dependency>
 ```
 
@@ -461,14 +477,14 @@ For the v7 appcompat library additional dependencies (apklib & jar) are required
 <dependency>
   <groupId>android.support</groupId>
   <artifactId>compatibility-v7-appcompat</artifactId>
-  <version>19.1.0</version>
+  <version>20.0.0</version>
   <type>apklib</type>
 </dependency>
 
 <dependency>
   <groupId>android.support</groupId>
   <artifactId>compatibility-v7-appcompat</artifactId>
-  <version>19.1.0</version>
+  <version>20.0.0</version>
   <type>jar</type>
 </dependency>
 ```
@@ -479,14 +495,14 @@ For the v7 gridlayout library additional dependencies (apklib & jar) are require
 <dependency>
   <groupId>android.support</groupId>
   <artifactId>compatibility-v7-gridlayout</artifactId>
-  <version>19.1.0/version>
+  <version>20.0.0/version>
   <type>apklib</type>
 </dependency>
 
 <dependency>
   <groupId>android.support</groupId>
   <artifactId>compatibility-v7-gridlayout</artifactId>
-  <version>19.1.0</version>
+  <version>20.0.0</version>
   <type>jar</type>
 </dependency>
 ```
@@ -497,14 +513,14 @@ For the v7 mediarouter library additional dependencies (apklib & jar) are requir
 <dependency>
   <groupId>android.support</groupId>
   <artifactId>compatibility-v7-mediarouter</artifactId>
-  <version>19.1.0</version>
+  <version>20.0.0</version>
   <type>apklib</type>
 </dependency>
 
 <dependency>
   <groupId>android.support</groupId>
   <artifactId>compatibility-v7-mediarouter</artifactId>
-  <version>19.1.0</version>
+  <version>20.0.0</version>
   <type>jar</type>
 </dependency>
 ```
