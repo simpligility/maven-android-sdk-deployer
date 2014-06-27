@@ -92,6 +92,7 @@
                 <module>google-play-services-froyo</module>
                 <module>play-licensing</module>
                 <module>play-apk-expansion</module>
+                <module>annotations</module>
             </modules>
         </profile>
     </profiles>

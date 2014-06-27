@@ -8,34 +8,34 @@
 
     <parent>
         <groupId>com.simpligility.android.sdk-deployer</groupId>
-        <artifactId>android-tools</artifactId>
+        <artifactId>android-extras</artifactId>
         <version>2.4.0</version>
     </parent>
 
     <properties>
-        <jar.path>${sdk.tools.annotations.path}/annotations.jar</jar.path>
-        <tools.annotations.artifactId>annotations</tools.annotations.artifactId>
+        <jar.path>${sdk.extras.annotations.path}/android-support-annotations.jar</jar.path>
+        <extras.annotations.artifactId>annotations</extras.annotations.artifactId>
         <jar.version>${Pkg.Revision}</jar.version>
     </properties>
     <build>
         <plugins>
-      <plugin>
-        <groupId>org.codehaus.mojo</groupId>
-        <artifactId>properties-maven-plugin</artifactId>
-        <executions>
-          <execution>
-            <phase>initialize</phase>
-            <goals>
-              <goal>read-project-properties</goal>
-            </goals>
-            <configuration>
-              <files>
-                <file>${sdk.tools.path}/source.properties</file>
-              </files>
-            </configuration>
-          </execution>
-        </executions>
-      </plugin>
+            <plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>properties-maven-plugin</artifactId>
+                <executions>
+                    <execution>
+                        <phase>initialize</phase>
+                        <goals>
+                            <goal>read-project-properties</goal>
+                        </goals>
+                        <configuration>
+                            <files>
+                                <file>${sdk.extras.compatibility.path}/source.properties</file>
+                            </files>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
             <plugin>
                 <artifactId>maven-install-plugin</artifactId>
                 <executions>
@@ -43,8 +43,8 @@
                         <phase>install</phase>
                         <goals><goal>install-file</goal></goals>
                         <configuration>
-                            <groupId>${tools.annotations.groupid}</groupId>
-                            <artifactId>${tools.annotations.artifactId}</artifactId>
+                            <groupId>${extras.annotations.groupid}</groupId>
+                            <artifactId>${extras.annotations.artifactId}</artifactId>
                             <packaging>jar</packaging>
                             <version>${jar.version}</version>
                             <file>${jar.path}</file>
@@ -60,8 +60,8 @@
                         <phase>deploy</phase>
                         <goals><goal>deploy-file</goal></goals>
                         <configuration>
-                            <groupId>${tools.annotations.groupid}</groupId>
-                            <artifactId>${tools.annotations.artifactId}</artifactId>
+                            <groupId>${extras.annotations.groupid}</groupId>
+                            <artifactId>${extras.annotations.artifactId}</artifactId>
                             <packaging>jar</packaging>
                             <version>${jar.version}</version>
                             <file>${jar.path}</file>
