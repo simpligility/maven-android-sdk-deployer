@@ -171,7 +171,8 @@
                 <module>platforms</module>
                 <module>add-ons</module>
                 <module>extras</module>
-                <module>tools</module>
+				<!-- Deprecated tools as the only module 'annotation' is now part of the android sdk jar -->
+                <!-- <module>tools</module> -->
                 <module>repositories</module>
             </modules>
         </profile>
