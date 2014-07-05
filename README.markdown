@@ -63,7 +63,7 @@ older artifacts deployed to Maven central. If you use this tool make
 sure your dependencies are as documented here.
 
 The android.jar artifacts in Maven central are available with the
-groupId com.google.android, whereas this tool uses android.android to
+groupId `com.google.android`, whereas this tool uses groupId `android` to
 avoid overlap.
 
 How to Use
