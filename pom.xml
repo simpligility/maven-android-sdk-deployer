@@ -35,7 +35,7 @@
     <sdk.extras.compatibility.path>${sdk.extras.path}/android/support</sdk.extras.compatibility.path>
     <sdk.extras.analytics.v1.path>${sdk.extras.path}/google/analytics_sdk</sdk.extras.analytics.v1.path>
     <sdk.extras.analytics.v2.path>${sdk.extras.path}/google/analytics_sdk_v2</sdk.extras.analytics.v2.path>
-    <sdk.extras.admob.path>${sdk.extras.path}/google/admob_ads_sdk</sdk.extras.admob.path>
+    <!-- <sdk.extras.admob.path>${sdk.extras.path}/google/admob_ads_sdk</sdk.extras.admob.path>-->
     <sdk.extras.gcm.path>${sdk.extras.path}/google/gcm</sdk.extras.gcm.path>
     <sdk.extras.google.play.services.path>${sdk.extras.path}/google/google_play_services</sdk.extras.google.play.services.path>
     <sdk.extras.google.play.services.for.froyo.path>${sdk.extras.path}/google/google_play_services_froyo</sdk.extras.google.play.services.for.froyo.path>
@@ -56,7 +56,7 @@
 
     <extras.analytics.groupid>com.google.android.analytics</extras.analytics.groupid>
     <extras.analytics.artifactId>analytics</extras.analytics.artifactId>
-    <extras.admob.groupid>com.google.android.admob</extras.admob.groupid>
+    <!-- <extras.admob.groupid>com.google.android.admob</extras.admob.groupid>-->
     <extras.gcm.groupid>com.google.android.gcm</extras.gcm.groupid>
     <extras.google.play.services.groupid>com.google.android.gms</extras.google.play.services.groupid>
     <extras.google.play.apk.expansion.groupid>com.google.android.apk.expansion</extras.google.play.apk.expansion.groupid>
