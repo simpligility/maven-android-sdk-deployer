@@ -5,7 +5,7 @@
   <parent>
     <groupId>com.simpligility.maven</groupId>
     <artifactId>progressive-organization-pom</artifactId>
-    <version>1.4.0</version>
+    <version>1.5.1</version>
   </parent>
   <groupId>com.simpligility.android.sdk-deployer</groupId>
   <artifactId>maven-android-sdk-deployer</artifactId>
