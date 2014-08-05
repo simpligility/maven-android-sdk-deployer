@@ -66,8 +66,6 @@
                 <module>google-apis-17</module>
                 <module>google-apis-18</module>
                 <module>google-apis-19</module>
-                <!-- This old GDK is deprecated -->
-                <!--<module>google-gdk-15</module>-->
                 <module>google-gdk-19</module>
             </modules>
         </profile>
