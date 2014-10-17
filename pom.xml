@@ -281,9 +281,10 @@
             </modules>
         </profile>
         <profile>
-            <id>L</id>
+            <id>5.0</id>
             <modules>
                 <module>platforms</module>
+				<module>add-ons</module>
             </modules>
         </profile>
     </profiles>
