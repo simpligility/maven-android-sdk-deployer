@@ -66,7 +66,7 @@
 				<module>android-18</module>
 				<module>android-19</module>
 				<module>android-20</module>
-				<module>android-L</module>
+				<module>android-21</module>
             </modules>
         </profile>
         <profile>
@@ -160,9 +160,9 @@
             </modules>
         </profile>
 		<profile>
-            <id>L</id>
+            <id>5.0</id>
             <modules>
-                <module>android-L</module>
+                <module>android-21</module>
             </modules>
         </profile>
         <profile>
