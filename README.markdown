@@ -427,7 +427,7 @@ If you find that the above `<dependency>` fails due to conflicts, your project a
 
 If you have problems with `<exclude>`, another option is to override the `<groupid>`, `<artifactid>`, and `<version>` properties used by the deployer to match Google's published library.
 
-Use one of the following `<dependency>` instead of those shown above. From version 20.0.0 the support-v4 & v7 are packaged as aar instead of jar
+Use one of the following `<dependency>` instead of those shown above. From version 20.0.0 the support-v4 & v13 are packaged as aar instead of jar
 
 ```xml
     <dependency>
