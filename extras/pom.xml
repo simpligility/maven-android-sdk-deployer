@@ -10,7 +10,7 @@
     <parent>
         <groupId>com.simpligility.android.sdk-deployer</groupId>
         <artifactId>maven-android-sdk-deployer</artifactId>
-        <version>2.4.0</version>
+        <version>2.7.0</version>
     </parent>
     <build>
         <pluginManagement>
@@ -92,6 +92,7 @@
                 <module>google-play-services-froyo</module>
                 <module>play-licensing</module>
                 <module>play-apk-expansion</module>
+				<module>multidex</module>
             </modules>
         </profile>
     </profiles>

@@ -2,20 +2,20 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.simpligility.android.sdk-deployer</groupId>
-    <artifactId>google-apis-8</artifactId>
+    <artifactId>multidex</artifactId>
     <packaging>pom</packaging>
-    <name>Android Add-On Google Platform 2.2 API 8 (Maps)</name>
+    <name>Android MultiDex</name>
 
     <parent>
         <groupId>com.simpligility.android.sdk-deployer</groupId>
-        <artifactId>android-add-ons</artifactId>
+        <artifactId>android-extras</artifactId>
         <version>2.7.0</version>
     </parent>
 
     <properties>
-        <jar.simpleVersion>8</jar.simpleVersion>
+        <jar.path>${sdk.extras.multidex.path}/libs/android-support-multidex.jar</jar.path>
+        <jar.version>${Pkg.Revision}</jar.version>
     </properties>
-
     <build>
         <plugins>
             <plugin>
@@ -25,8 +25,8 @@
                         <phase>install</phase>
                         <goals><goal>install-file</goal></goals>
                         <configuration>
-                            <groupId>${addon.googlemaps.groupid}</groupId>
-                            <artifactId>${addon.googlemaps.artifactid}</artifactId>
+                            <groupId>${extras.multidex.groupId}</groupId>
+                            <artifactId>${extras.multidex.artifactId}</artifactId>
                             <packaging>jar</packaging>
                             <version>${jar.version}</version>
                             <file>${jar.path}</file>
@@ -42,8 +42,8 @@
                         <phase>deploy</phase>
                         <goals><goal>deploy-file</goal></goals>
                         <configuration>
-                            <groupId>${addon.googlemaps.groupid}</groupId>
-                            <artifactId>${addon.googlemaps.artifactid}</artifactId>
+                            <groupId>${extras.multidex.groupId}</groupId>
+                            <artifactId>${extras.multidex.artifactId}</artifactId>
                             <packaging>jar</packaging>
                             <version>${jar.version}</version>
                             <file>${jar.path}</file>
@@ -52,10 +52,6 @@
                         </configuration>
                     </execution>
                 </executions>
-            </plugin>
-            <plugin>
-                <groupId>org.codehaus.mojo</groupId>
-                <artifactId>properties-maven-plugin</artifactId>
             </plugin>
         </plugins>
     </build>
