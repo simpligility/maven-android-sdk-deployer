@@ -1,6 +1,12 @@
 Changelog per release
 ---------------------
 
+2.7.0
+ 
+ - Benoit Billington, Android 5.0 API 21 & MultiDex
+ - Saleh Hamadeh readme correction
+ - Raphael Ackermann android sdk platform 21 for apklibs
+
 2.6.0
 
  - https://github.com/mosabua/maven-android-sdk-deployer/pull/225
