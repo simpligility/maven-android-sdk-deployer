@@ -185,42 +185,42 @@ For the core platforms
 <dependency>
   <groupId>android</groupId>
   <artifactId>android</artifactId>
-  <version>4.0_r3</version>
+  <version>4.0_r4</version>
   <scope>provided</scope>
 </dependency>
 
 <dependency>
   <groupId>android</groupId>
   <artifactId>android</artifactId>
-  <version>4.0.3_r3</version>
+  <version>4.0.3_r5</version>
   <scope>provided</scope>
 </dependency>
 
 <dependency>
   <groupId>android</groupId>
   <artifactId>android</artifactId>
-  <version>4.1.2_r4</version>
+  <version>4.1.2_r5</version>
   <scope>provided</scope>
 </dependency>
 
 <dependency>
   <groupId>android</groupId>
   <artifactId>android</artifactId>
-  <version>4.2.2_r2</version>
+  <version>4.2.2_r3</version>
   <scope>provided</scope>
 </dependency>
 
 <dependency>
   <groupId>android</groupId>
   <artifactId>android</artifactId>
-  <version>4.3_r2</version>
+  <version>4.3.1_r3</version>
   <scope>provided</scope>
 </dependency>
 
 <dependency>
   <groupId>android</groupId>
   <artifactId>android</artifactId>
-  <version>4.4.2_r3</version>
+  <version>4.4.2_r4</version>
   <scope>provided</scope>
 </dependency>
 
