@@ -30,7 +30,7 @@
             </goals>
             <configuration>
               <files>
-                <file>${sdk.tools.path}/source.properties</file>
+                <file>${sdk.extras.compatibility.path}/source.properties</file>
               </files>
             </configuration>
           </execution>
