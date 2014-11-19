@@ -920,7 +920,7 @@ the android SDK manager and install them again.
 
 Similar problem occurs with the extras version identifier. If the folders 
 naming is 100% allright and you receive the messages about not finding 
-some arifacts - remove extras and reinstall them back. That's because Google
+some artifacts - remove extras and reinstall them back. That's because Google
 changed the version identifier naming policy. For example for support extras 
 it was 19, now it's 19.0.1
 
