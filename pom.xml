@@ -5,7 +5,7 @@
   <parent>
     <groupId>com.simpligility.maven</groupId>
     <artifactId>progressive-organization-pom</artifactId>
-    <version>1.5.1</version>
+    <version>2.2.0</version>
   </parent>
   <groupId>com.simpligility.android.sdk-deployer</groupId>
   <artifactId>maven-android-sdk-deployer</artifactId>
@@ -32,7 +32,7 @@
     <sdk.platforms.path>${android.sdk.path}/platforms</sdk.platforms.path>
     <sdk.addons.path>${android.sdk.path}/add-ons</sdk.addons.path>
     <sdk.extras.path>${android.sdk.path}/extras</sdk.extras.path>
-	<sdk.extras.multidex.path>${sdk.extras.path}/android/support/multidex/library</sdk.extras.multidex.path>
+    <sdk.extras.multidex.path>${sdk.extras.path}/android/support/multidex/library</sdk.extras.multidex.path>
     <sdk.extras.compatibility.path>${sdk.extras.path}/android/support</sdk.extras.compatibility.path>
     <sdk.extras.analytics.v1.path>${sdk.extras.path}/google/analytics_sdk</sdk.extras.analytics.v1.path>
     <sdk.extras.analytics.v2.path>${sdk.extras.path}/google/analytics_sdk_v2</sdk.extras.analytics.v2.path>
@@ -54,9 +54,8 @@
     <addon.android.future.usb.artifactid>usb</addon.android.future.usb.artifactid>
     <addon.android.gdk.groupid>com.google.android.gdk</addon.android.gdk.groupid>
     <addon.android.gdk.artifactid>gdk</addon.android.gdk.artifactid>
-
-	<extras.multidex.groupId>com.google.android.multidex</extras.multidex.groupId>
-	<extras.multidex.artifactId>android-support-multidex</extras.multidex.artifactId>
+    <extras.multidex.groupId>com.google.android.multidex</extras.multidex.groupId>
+    <extras.multidex.artifactId>android-support-multidex</extras.multidex.artifactId>
     <extras.analytics.groupid>com.google.android.analytics</extras.analytics.groupid>
     <extras.analytics.artifactId>analytics</extras.analytics.artifactId>
     <extras.admob.groupid>com.google.android.admob</extras.admob.groupid>
@@ -113,14 +112,8 @@
     <pluginManagement>
       <plugins>
         <plugin>
-          <groupId>org.codehaus.mojo</groupId>
-          <artifactId>properties-maven-plugin</artifactId>
-          <version>1.0-alpha-2</version>
-        </plugin>
-        <plugin>
           <groupId>com.simpligility.maven.plugins</groupId>
           <artifactId>android-maven-plugin</artifactId>
-          <version>4.0.0</version>
           <configuration>
             <sdk>
               <platform>${android.sdk.platform}</platform>
@@ -287,7 +280,7 @@
             <id>5.0</id>
             <modules>
                 <module>platforms</module>
-				<module>add-ons</module>
+		            <module>add-ons</module>
             </modules>
         </profile>
     </profiles>
