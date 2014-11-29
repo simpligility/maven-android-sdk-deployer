@@ -839,15 +839,19 @@ How To Use for Deploying Onto Remote Server
 
 The above deployment works fine for one machine, but what if you need
 to supply a whole team of developers and a cluster of build machines
-with the artifacts.
+with the artifacts? Then it is best to deploy to a repository manager 
+like Sonatype Nexus.
 
 As a condition you need to have a repository server used by all
 those machines and the following process will deploy to this server,
 which will in turn provide the artifacts to all the machines.
 
-Edit the repo.url property in the pom.xml to point to the repository
-you want to publish to and then add a server with the credentials to
-your settings.xml.
+Edit the repo.url property in the pom.xml to point to the repository you want to publish to. The recommended practice
+is to have a separate repository for the Android components and expose it via a repository group. The repository needs
+to be in Maven 2 format and use a release policy (not snapshots). For repeated runs of the deployer, you need to ensure
+to allow redeployment into the specific repository. By default this is not the case for release repositories! 
+
+Then add a server with the credentials to your settings.xml.
 
 ```xml
 <settings>
