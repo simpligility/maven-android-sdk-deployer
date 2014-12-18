@@ -123,223 +123,50 @@ As a result you should find the android.jar and maps.jar and a number of other
 libraries in your users local repository (~/.m2/repository/) and you can therefore
 use the following dependencies in your project
 
-For the core platforms
+For the core platforms providing the Android API use
 
 ```xml
 <dependency>
   <groupId>android</groupId>
   <artifactId>android</artifactId>
+  <version>x.y.z</version>
+  <scope>provided</scope>
+</dependency>
+```
+with versions of 
+
+```xml
   <version>1.5_r4</version>
-  <scope>provided</scope>
-</dependency>
-
-<dependency>
-  <groupId>android</groupId>
-  <artifactId>android</artifactId>
   <version>1.6_r3</version>
-  <scope>provided</scope>
-</dependency>
-
-<dependency>
-  <groupId>android</groupId>
-  <artifactId>android</artifactId>
   <version>2.1_r3</version>
-  <scope>provided</scope>
-</dependency>
-
-<dependency>
-  <groupId>android</groupId>
-  <artifactId>android</artifactId>
   <version>2.2_r3</version>
-  <scope>provided</scope>
-</dependency>
-
-<dependency>
-  <groupId>android</groupId>
-  <artifactId>android</artifactId>
   <version>2.3.3_r2</version>
-  <scope>provided</scope>
-</dependency>
-
-<dependency>
-  <groupId>android</groupId>
-  <artifactId>android</artifactId>
   <version>3.0_r2</version>
-  <scope>provided</scope>
-</dependency>
-
-<dependency>
-  <groupId>android</groupId>
-  <artifactId>android</artifactId>
   <version>3.1_r3</version>
-  <scope>provided</scope>
-</dependency>
-
-<dependency>
-  <groupId>android</groupId>
-  <artifactId>android</artifactId>
   <version>3.2_r1</version>
-  <scope>provided</scope>
-</dependency>
-
-<dependency>
-  <groupId>android</groupId>
-  <artifactId>android</artifactId>
   <version>4.0_r4</version>
-  <scope>provided</scope>
-</dependency>
-
-<dependency>
-  <groupId>android</groupId>
-  <artifactId>android</artifactId>
   <version>4.0.3_r5</version>
-  <scope>provided</scope>
-</dependency>
-
-<dependency>
-  <groupId>android</groupId>
-  <artifactId>android</artifactId>
   <version>4.1.2_r5</version>
-  <scope>provided</scope>
-</dependency>
-
-<dependency>
-  <groupId>android</groupId>
-  <artifactId>android</artifactId>
   <version>4.2.2_r3</version>
-  <scope>provided</scope>
-</dependency>
-
-<dependency>
-  <groupId>android</groupId>
-  <artifactId>android</artifactId>
   <version>4.3.1_r3</version>
-  <scope>provided</scope>
-</dependency>
-
-<dependency>
-  <groupId>android</groupId>
-  <artifactId>android</artifactId>
   <version>4.4.2_r4</version>
-  <scope>provided</scope>
-</dependency>
-
-<dependency>
-  <groupId>android</groupId>
-  <artifactId>android</artifactId>
-  <version>4.4W_r1</version>
-  <scope>provided</scope>
-</dependency>
-
-<dependency>
-  <groupId>android</groupId>
-  <artifactId>android</artifactId>
-  <version>5.0_r1</version>
-  <scope>provided</scope>
-</dependency>
+  <version>4.4W.2_r2</version>
+  <version>5.0_r2</version>
 ```
 
-For the maps add ons
+For the maps add ons use a dependency
 
 ```xml
 <dependency>
   <groupId>com.google.android.maps</groupId>
   <artifactId>maps</artifactId>
-  <version>3_r3</version>
-  <scope>provided</scope>
-</dependency>
-
-<dependency>
-  <groupId>com.google.android.maps</groupId>
-  <artifactId>maps</artifactId>
-  <version>4_r2</version>
-  <scope>provided</scope>
-</dependency>
-
-<dependency>
-  <groupId>com.google.android.maps</groupId>
-  <artifactId>maps</artifactId>
-  <version>7_r1</version>
-  <scope>provided</scope>
-</dependency>
-
-<dependency>
-  <groupId>com.google.android.maps</groupId>
-  <artifactId>maps</artifactId>
-  <version>8_r2</version>
-  <scope>provided</scope>
-</dependency>
-
-<dependency>
-  <groupId>com.google.android.maps</groupId>
-  <artifactId>maps</artifactId>
-  <version>10_r2</version>
-  <scope>provided</scope>
-</dependency>
-
-<dependency>
-  <groupId>com.google.android.maps</groupId>
-  <artifactId>maps</artifactId>
-  <version>11_r1</version>
-  <scope>provided</scope>
-</dependency>
-
-<dependency>
-  <groupId>com.google.android.maps</groupId>
-  <artifactId>maps</artifactId>
-  <version>12_r1</version>
-  <scope>provided</scope>
-</dependency>
-
-<dependency>
-  <groupId>com.google.android.maps</groupId>
-  <artifactId>maps</artifactId>
-  <version>13_r1</version>
-  <scope>provided</scope>
-</dependency>
-
-<dependency>
-  <groupId>com.google.android.maps</groupId>
-  <artifactId>maps</artifactId>
-  <version>14_r2</version>
-  <scope>provided</scope>
-</dependency>
-
-<dependency>
-  <groupId>com.google.android.maps</groupId>
-  <artifactId>maps</artifactId>
-  <version>15_r2</version>
-  <scope>provided</scope>
-</dependency>
-
-<dependency>
-  <groupId>com.google.android.maps</groupId>
-  <artifactId>maps</artifactId>
-  <version>16_r3</version>
-  <scope>provided</scope>
-</dependency>
-
-<dependency>
-  <groupId>com.google.android.maps</groupId>
-  <artifactId>maps</artifactId>
-  <version>17_r3</version>
-  <scope>provided</scope>
-</dependency>
-
-<dependency>
-  <groupId>com.google.android.maps</groupId>
-  <artifactId>maps</artifactId>
-  <version>18_r3</version>
-  <scope>provided</scope>
-</dependency>
-
-<dependency>
-  <groupId>com.google.android.maps</groupId>
-  <artifactId>maps</artifactId>
-  <version>19_r4</version>
+  <version>x.y.z</version>
   <scope>provided</scope>
 </dependency>
 ```
+
+with versions of 3_r3, 4_r2, 7_r1, 8_r2, 11_r1, 12_r1, 
+13_r1, 14_r2, 15_r2, 16_r3, 17_r3, 18_r3, 19_r10, 21_r1
 
 For the usb add on
 
@@ -347,104 +174,147 @@ For the usb add on
 <dependency>
   <groupId>com.android.future</groupId>
   <artifactId>usb</artifactId>
-  <version>10_r2</version>
-  <scope>provided</scope>
-</dependency>
-
-<dependency>
-  <groupId>com.android.future</groupId>
-  <artifactId>usb</artifactId>
-  <version>12_r1</version>
-  <scope>provided</scope>
-</dependency>
-
-<dependency>
-  <groupId>com.android.future</groupId>
-  <artifactId>usb</artifactId>
-  <version>13_r1</version>
-  <scope>provided</scope>
-</dependency>
-
-<dependency>
-  <groupId>com.android.future</groupId>
-  <artifactId>usb</artifactId>
-  <version>14_r2</version>
-  <scope>provided</scope>
-</dependency>
-
-<dependency>
-  <groupId>com.android.future</groupId>
-  <artifactId>usb</artifactId>
-  <version>15_r2</version>
-  <scope>provided</scope>
-</dependency>
-
-<dependency>
-  <groupId>com.android.future</groupId>
-  <artifactId>usb</artifactId>
-  <version>16_r3</version>
-  <scope>provided</scope>
-</dependency>
-
-<dependency>
-  <groupId>com.android.future</groupId>
-  <artifactId>usb</artifactId>
-  <version>17_r3</version>
-  <scope>provided</scope>
-</dependency>
-
-<dependency>
-  <groupId>com.android.future</groupId>
-  <artifactId>usb</artifactId>
-  <version>18_r3</version>
-  <scope>provided</scope>
-</dependency>
-
-<dependency>
-  <groupId>com.android.future</groupId>
-  <artifactId>usb</artifactId>
-  <version>19_r4</version>
+  <version>x.y.z</version>
   <scope>provided</scope>
 </dependency>
 ```
 
-For the compatibility extra (ATTENTION! Do NOT use provided scope!!)
+with versions of 10_r2, 12_r1, 13_r1, 14_r2, 15_r2, 16_r3, 17_r3, 
+18_r3, 19_r4, 21_r1
+
+
+Android SDK Maven Repositories
+
+The Maven repositories from the Android SDK for Google and Android are copied to the local repository or uploaded to 
+a remote repository manager just like they are in the SDK and contain all components from these repositories. 
+Currently they are in the package space com.android.support and com.google.android and present the preferred components 
+for usage. Specifically the various compatibility and support libraries as Android Archives:
+
+```xml
+<dependency>
+  <groupId>com.android.support</groupId>
+  <artifactId>appcompat-v7</artifactId>
+  <version>x.y.z</version>
+  <type>aar</type>
+</dependency>
+```
+
+with versions 18.0.0, 19.0.0, 19.0.1, 19.1.0, 20.0.0, 21.0.0, 21.0.2, 21.0.3
+
+```xml
+<dependency>
+  <groupId>com.android.support</groupId>
+  <artifactId>cardview-v7</artifactId>
+  <version>x.y.z</version>
+  <type>aar</type>
+</dependency>
+```
+
+with versions 21.0.0, 21.0.2, 21.0.3
+
+```xml
+<dependency>
+  <groupId>com.android.support</groupId>
+  <artifactId>gridlayout-v7</artifactId>
+  <version>x.y.z</version>
+  <type>aar</type>
+</dependency>
+```
+
+with versions 13.0.0, 18.0.0, 19.0.0, 19.0.1, 19.1.0, 20.0.0, 21.0.0, 21.0.2, 21.0.3
+
+```xml
+<dependency>
+  <groupId>com.android.support</groupId>
+  <artifactId>leanback-v7</artifactId>
+  <version>x.y.z</version>
+  <type>aar</type>
+</dependency>
+```
+
+with versions 21.0.0, 21.0.2, 21.0.3
+
+```xml
+<dependency>
+  <groupId>com.android.support</groupId>
+  <artifactId>mediarouter-v7</artifactId>
+  <version>x.y.z</version>
+  <type>aar</type>
+</dependency>
+```
+
+with versions 18.0.0, 19.0.0, 19.0.1, 19.1.0, 20.0.0, 21.0.0, 21.0.2, 21.0.3
+
+```xml
+<dependency>
+  <groupId>com.android.support</groupId>
+  <artifactId>palette-v7</artifactId>
+  <version>x.y.z</version>
+  <type>aar</type>
+</dependency>
+```
+
+with versions 21.0.0, 21.0.2, 21.0.3
+
+```xml
+<dependency>
+  <groupId>com.android.support</groupId>
+  <artifactId>recyclerview-v7</artifactId>
+  <version>x.y.z</version>
+  <type>aar</type>
+</dependency>
+```
+
+with versions 21.0.0, 21.0.2, 21.0.3
+
+```xml
+<dependency>
+  <groupId>com.android.support</groupId>
+  <artifactId>support-v13</artifactId>
+  <version>x.y.z</version>
+  <type>aar</type>
+</dependency>
+```
+
+with versions 13.0.0, 18.0.0, 19.0.0, 19.0.1, 19.1.0, 20.0.0, 21.0.0, 21.0.2, 21.0.3
+
+```xml
+<dependency>
+  <groupId>com.android.support</groupId>
+  <artifactId>support-v4</artifactId>
+  <version>x.y.z</version>
+  <type>aar</type>
+</dependency>
+```
+
+with versions 13.0.0, 18.0.0, 19.0.0, 19.0.1, 19.1.0, 20.0.0, 21.0.0, 21.0.2, 21.0.3
+
+Besides the artifacts provided for the compatibility libraries from the Android SDK Maven Repositories 
+the following are also provided. 
+For the compatibility extra (ATTENTION! Do NOT use provided scope!!) 
 
 ```xml
 <dependency>
   <groupId>android.support</groupId>
   <artifactId>compatibility-v4</artifactId>
-  <version>20.0.0</version>
+  <version>21.0.3</version>
 </dependency>
 
 <dependency>
   <groupId>android.support</groupId>
   <artifactId>compatibility-v13</artifactId>
-  <version>20.0.0</version>
+  <version>21.0.3</version>
 </dependency>
 ```
 
-If you find that the above `<dependency>` fails due to conflicts, your project and it's dependencies may both depend on the compatibility extra.  The first option is to add an `<exclude>` clause to each dependency that uses the library, as [described here](https://groups.google.com/forum/#!msg/actionbarsherlock/2cLR48IArck/U8--60QxeTkJ).  This works with command line builds but it may not work with your IDE.
+If you find that the above `<dependency>` fails due to conflicts, your project and it's dependencies may 
+both depend on the compatibility extra.  The first option is to add an `<exclude>` 
+clause to each dependency that uses the library, 
+as [described here](https://groups.google.com/forum/#!msg/actionbarsherlock/2cLR48IArck/U8--60QxeTkJ).  This works 
+with command line builds but it may not work with your IDE.
 
-If you have problems with `<exclude>`, another option is to override the `<groupid>`, `<artifactid>`, and `<version>` properties used by the deployer to match Google's published library.
-
-Use one of the following `<dependency>` instead of those shown above. From version 20.0.0 the support-v4 & v13 are packaged as aar instead of jar
-
-```xml
-    <dependency>
-      <groupId>com.google.android</groupId>
-      <artifactId>support-v4</artifactId>
-      <version>21.0.0-rc1</version>
-	  <type>aar</type>
-    </dependency>
-
-    <dependency>
-      <groupId>com.google.android</groupId>
-      <artifactId>support-v13</artifactId>
-      <version>21.0.0-rc1</version>
-	  <type>aar</type>
-    </dependency>
-```
+If you have problems with `<exclude>`, another option is to override the `<groupid>`, `<artifactid>`, and `<version>` 
+properties used by the deployer to match Google's published library.
 
 Then override `support-v4` or `support-v13` during installation:
 
@@ -462,14 +332,14 @@ In order to use v7 extra, both dependencies (apklib & jar) are needed
 <dependency>
   <groupId>android.support</groupId>
   <artifactId>compatibility-v7</artifactId>
-  <version>19.1.0</version>
+  <version>21.0.3</version>
   <type>apklib</type>
 </dependency>
 
 <dependency>
   <groupId>android.support</groupId>
   <artifactId>compatibility-v7</artifactId>
-  <version>19.1.0</version>
+  <version>21.0.3</version>
   <type>jar</type>
 </dependency>
 ```
@@ -480,28 +350,29 @@ For the v7 appcompat library additional dependencies (apklib & jar) are required
 <dependency>
   <groupId>android.support</groupId>
   <artifactId>compatibility-v7-appcompat</artifactId>
-  <version>20.0.0</version>
+  <version>21.0.3</version>
   <type>apklib</type>
 </dependency>
 
 <dependency>
   <groupId>android.support</groupId>
   <artifactId>compatibility-v7-appcompat</artifactId>
-  <version>20.0.0</version>
+  <version>21.0.3</version>
   <type>jar</type>
 </dependency>
 ```
 
-For the v7 appcompat library an additional dependency (aar) is required
+The v7 appcompat library an Android Archive dependency (aar) as provided by the Android SDK Google repository
 
 ```xml
 <dependency>
   <groupId>com.android.support</groupId>
   <artifactId>appcompat-v7</artifactId>
-  <version>21.0.0-rc1</version>
+  <version>21.0.3</version>
   <type>aar</type>
 </dependency>
 ```
+with versions 18.
 
 For the v7 gridlayout library additional dependencies (apklib & jar) are required (Deprecated)
 
@@ -509,7 +380,7 @@ For the v7 gridlayout library additional dependencies (apklib & jar) are require
 <dependency>
   <groupId>android.support</groupId>
   <artifactId>compatibility-v7-gridlayout</artifactId>
-  <version>20.0.0/version>
+  <version>21.0.3/version>
   <type>apklib</type>
 </dependency>
 
@@ -547,61 +418,6 @@ For the v7 mediarouter library additional dependencies (apklib & jar) are requir
   <artifactId>compatibility-v7-mediarouter</artifactId>
   <version>20.0.0</version>
   <type>jar</type>
-</dependency>
-```
-
-For the v7 mediarouter library an additional dependency (aar) is required
-
-```xml
-<dependency>
-  <groupId>com.android.support</groupId>
-  <artifactId>mediarouter-v7</artifactId>
-  <version>21.0.0-rc1</version>
-  <type>aar</type>
-</dependency>
-```
-
-For the v7 cardview library an additional dependency (aar) is required
-
-```xml
-<dependency>
-  <groupId>com.android.support</groupId>
-  <artifactId>cardview-v7</artifactId>
-  <version>21.0.0-rc1</version>
-  <type>aar</type>
-</dependency>
-```
-
-For the v17 leanback library an additional dependency (aar) is required
-
-```xml
-<dependency>
-  <groupId>com.android.support</groupId>
-  <artifactId>leanback-v7</artifactId>
-  <version>21.0.0-rc1</version>
-  <type>aar</type>
-</dependency>
-```
-
-For the v7 palette library an additional dependency (aar) is required
-
-```xml
-<dependency>
-  <groupId>com.android.support</groupId>
-  <artifactId>palette-v7</artifactId>
-  <version>21.0.0-rc1</version>
-  <type>aar</type>
-</dependency>
-```
-
-For the v7 recyclerview library an additional dependency (aar) is required
-
-```xml
-<dependency>
-  <groupId>com.android.support</groupId>
-  <artifactId>recyclerview-v7</artifactId>
-  <version>21.0.0-rc1</version>
-  <type>aar</type>
 </dependency>
 ```
 
@@ -670,28 +486,9 @@ For the uiautomator jar
   <version>4.1.2_r4</version>
   <scope>provided</scope>
 </dependency>
+````
 
-<dependency>
-  <groupId>android.test.uiautomator</groupId>
-  <artifactId>uiautomator</artifactId>
-  <version>4.2.2_r2</version>
-  <scope>provided</scope>
-</dependency>
-
-<dependency>
-  <groupId>android.test.uiautomator</groupId>
-  <artifactId>uiautomator</artifactId>
-  <version>4.3_r2</version>
-  <scope>provided</scope>
-</dependency>
-
-<dependency>
-  <groupId>android.test.uiautomator</groupId>
-  <artifactId>uiautomator</artifactId>
-  <version>4.4.2_r3</version>
-  <scope>provided</scope>
-</dependency>
-```
+with versions 4.1.2_r4, 4.2.2_r2, 4.3_r2, 4.4.2_r3
     
 For the Google Play Services extra (ATTENTION! Do NOT use provided scope!!) (Deprecated)
 
@@ -797,14 +594,6 @@ For Google Glass development
     <scope>provided</scope>
 </dependency>
 ```
-
-Android SDK Maven Repositories
-
-The Maven repositories from the Android SDK for google and android are copied to the local repository or uploaded to 
-a remote repository manager just like they are in the SDK and contain whatever components are in there. See the pom 
-files. Currently they are in the package space com.android.support and com.google.android. 
-
-
 
 To install only a specific module use
 
