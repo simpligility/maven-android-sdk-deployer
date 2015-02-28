@@ -666,6 +666,12 @@ of your remote server
 For more information about this stuff look at the documentation for
 the maven-deploy-plugin.
 
+#### A online Maven repository
+
+> This repository contains the components build by this project, you can use this repository directly.
+
+> https://github.com/liaohuqiu/android-maven-repository
+
 
 Javadoc
 -------
