@@ -668,9 +668,9 @@ the maven-deploy-plugin.
 
 #### A online Maven repository
 
-> This repository contains the components build by this project, you can use this repository directly.
+This repository contains the components built by this project, you can use this repository directly.
 
-> https://github.com/liaohuqiu/android-maven-repository
+https://github.com/liaohuqiu/android-maven-repository
 
 
 Javadoc
