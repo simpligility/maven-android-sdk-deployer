@@ -226,7 +226,7 @@ with versions 13.0.0, 18.0.0, 19.0.0, 19.0.1, 19.1.0, 20.0.0, 21.0.0, 21.0.2, 21
 ```xml
 <dependency>
   <groupId>com.android.support</groupId>
-  <artifactId>leanback-v7</artifactId>
+  <artifactId>leanback-v17</artifactId>
   <version>x.y.z</version>
   <type>aar</type>
 </dependency>
