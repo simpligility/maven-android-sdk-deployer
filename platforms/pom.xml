@@ -67,6 +67,7 @@
 				<module>android-19</module>
 				<module>android-20</module>
 				<module>android-21</module>
+				<module>android-22</module>
             </modules>
         </profile>
         <profile>
@@ -165,6 +166,12 @@
                 <module>android-21</module>
             </modules>
         </profile>
+		<profile>
+			<id>5.1</id>
+			<modules>
+				<module>android-22</module>
+			</modules>
+		</profile>
         <profile>
             <id>with-javadoc</id>
             <build>

@@ -283,5 +283,12 @@
 		            <module>add-ons</module>
             </modules>
         </profile>
+        <profile>
+            <id>5.1</id>
+            <modules>
+                <module>platforms</module>
+                <module>add-ons</module>
+            </modules>
+        </profile>
     </profiles>
 </project>
