@@ -118,6 +118,7 @@ To install only a certain sdk level use
     mvn install -P 4.4
     mvn install -P 4.4W
     mvn install -P 5.0
+    mvn install -P 5.1
 
 As a result you should find the android.jar and maps.jar and a number of other
 libraries in your users local repository (~/.m2/repository/) and you can therefore
@@ -152,6 +153,7 @@ with versions of
   <version>4.4.2_r4</version>
   <version>4.4W.2_r2</version>
   <version>5.0_r2</version>
+  <version>5.1_r1</version>
 ```
 
 For the maps add ons use a dependency
