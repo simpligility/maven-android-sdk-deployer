@@ -79,9 +79,10 @@
                 <module>compatibility-v4</module>
                 <module>compatibility-v7-gridlayout</module>
                 <module>compatibility-v7-appcompat</module>
-                <module>compatibility-v7-mediarouter</module>
+                <!--  commented out since it currently breaks on Mac OSX -->
+                <!-- <module>compatibility-v7-mediarouter</module> -->
                 <module>compatibility-v13</module>
-				<!--  deprecated by Google, will leave in for a while in case someone wants to manually activate and use it -->
+                <!--  deprecated by Google, will leave in for a while in case someone wants to manually activate and use it -->
                 <!-- <module>analytics-v2</module> -->
                 <!--  deprecated by Google with Aug 2014, but still available for download
                 might remove then, see http://googleadsdeveloper.blogspot.ca/2014/02/since-joining-google-play-services-back.html  -->
@@ -91,7 +92,7 @@
                 <module>google-play-services</module>
                 <module>play-licensing</module>
                 <module>play-apk-expansion</module>
-				<module>multidex</module>
+                <module>multidex</module>
             </modules>
         </profile>
     </profiles>
