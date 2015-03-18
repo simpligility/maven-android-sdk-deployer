@@ -51,23 +51,16 @@
                 <activeByDefault>true</activeByDefault>
             </activation>
             <modules>
-                <module>android-3</module>
-                <module>android-4</module>
-                <module>android-7</module>
                 <module>android-8</module>
                 <module>android-10</module>
-                <module>android-11</module>
-                <module>android-12</module>
-                <module>android-13</module>
-                <module>android-14</module>
                 <module>android-15</module>
                 <module>android-16</module>
-				<module>android-17</module>
-				<module>android-18</module>
-				<module>android-19</module>
-				<module>android-20</module>
-				<module>android-21</module>
-				<module>android-22</module>
+		<module>android-17</module>
+		<module>android-18</module>
+		<module>android-19</module>
+		<module>android-20</module>
+		<module>android-21</module>
+		<module>android-22</module>
             </modules>
         </profile>
         <profile>

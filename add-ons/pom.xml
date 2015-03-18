@@ -52,15 +52,8 @@
                 <activeByDefault>true</activeByDefault>
             </activation>
             <modules>
-                <module>google-apis-3</module>
-                <module>google-apis-4</module>
-                <module>google-apis-7</module>
                 <module>google-apis-8</module>
                 <module>google-apis-10</module>
-                <module>google-apis-11</module>
-                <module>google-apis-12</module>
-                <module>google-apis-13</module>
-                <module>google-apis-14</module>
                 <module>google-apis-15</module>
                 <module>google-apis-16</module>
                 <module>google-apis-17</module>
