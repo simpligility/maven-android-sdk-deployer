@@ -55,12 +55,13 @@
                 <module>android-10</module>
                 <module>android-15</module>
                 <module>android-16</module>
-		<module>android-17</module>
-		<module>android-18</module>
-		<module>android-19</module>
-		<module>android-20</module>
-		<module>android-21</module>
-		<module>android-22</module>
+                <module>android-17</module>
+                <module>android-18</module>
+                <module>android-19</module>
+                <module>android-20</module>
+                <module>android-21</module>
+                <module>android-22</module>
+                <module>android-MNC</module>
             </modules>
         </profile>
         <profile>
@@ -163,6 +164,12 @@
 			<id>5.1</id>
 			<modules>
 				<module>android-22</module>
+			</modules>
+		</profile>
+		<profile>
+			<id>MNC</id>
+			<modules>
+				<module>android-MNC</module>
 			</modules>
 		</profile>
         <profile>

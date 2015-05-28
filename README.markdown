@@ -19,7 +19,7 @@ Contributors (historical order..):
 - Lorenzo Villani - initial 4.0 support
 - Paul Merlin http://eskatos.github.com - Google Analytics extra
 - Matteo Panella <morpheus@level28.org> - Google AdMobs extra, support for 4.1
-- Benoit Billington https://github.com/Shusshu Google Cloud Messaging Client and Server, annotations.jar, 4.2, 4.3, 4.4, APK Expansion, Licensing, 4.4W, L, 5.0, MultiDex
+- Benoit Billington https://github.com/Shusshu Google Cloud Messaging Client and Server, annotations.jar, 4.2, 4.3, 4.4, APK Expansion, Licensing, 4.4W, L, 5.0, MultiDex, MNC
 - Michael Lake https://github.com/mlake support for Javadoc attachment for platforms
 - Nic Strong http://www.codepoets.co.nz Google Play Services (gms)
 - Matias Dumrauf http://github.com/mdumrauf - Compatibility v7 library support, Google Analytics support for V1 and V2
@@ -119,6 +119,7 @@ To install only a certain sdk level use
     mvn install -P 4.4W
     mvn install -P 5.0
     mvn install -P 5.1
+    mvn install -P MNC
 
 As a result you should find the android.jar and maps.jar and a number of other
 libraries in your users local repository (~/.m2/repository/) and you can therefore
