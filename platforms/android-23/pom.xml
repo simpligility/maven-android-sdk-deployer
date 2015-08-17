@@ -2,9 +2,9 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.simpligility.android.sdk-deployer</groupId>
-    <artifactId>android-18</artifactId>
+    <artifactId>android-23</artifactId>
     <packaging>pom</packaging>
-    <name>Android Platform 4.3 API 18</name>
+    <name>Android Platform 6.0 API 23</name>
 
     <parent>
         <groupId>com.simpligility.android.sdk-deployer</groupId>
@@ -13,7 +13,7 @@
     </parent>
 
     <properties>
-        <jar.simpleVersion>4.3</jar.simpleVersion>
+        <jar.simpleVersion>6.0</jar.simpleVersion>
     </properties>
 
 
@@ -30,7 +30,7 @@
                             <goal>jar</goal>
                         </goals>
                         <configuration>
-                            <classesDirectory>${android.sdk.path}/sources/android-18</classesDirectory>
+                            <classesDirectory>${android.sdk.path}/sources/android-23</classesDirectory>
                             <includes>
                                 <include>**/*</include>
                             </includes>
