@@ -9,7 +9,7 @@
     <parent>
         <groupId>com.simpligility.android.sdk-deployer</groupId>
         <artifactId>maven-android-sdk-deployer</artifactId>
-        <version>2.7.0</version>
+        <version>2.8.0</version>
     </parent>
 
     <properties>
@@ -61,7 +61,7 @@
                 <module>android-20</module>
                 <module>android-21</module>
                 <module>android-22</module>
-                <module>android-MNC</module>
+				<module>android-23</module>
             </modules>
         </profile>
         <profile>
@@ -167,9 +167,9 @@
 			</modules>
 		</profile>
 		<profile>
-			<id>MNC</id>
+			<id>6.0</id>
 			<modules>
-				<module>android-MNC</module>
+				<module>android-23</module>
 			</modules>
 		</profile>
         <profile>
