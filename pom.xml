@@ -20,7 +20,7 @@
     <!-- absolute path to the Android SDK install as defined in the ANDROID_HOME
       environment variable -->
     <android.sdk.path>${env.ANDROID_HOME}/</android.sdk.path>
-    <android.sdk.platform>21</android.sdk.platform>
+    <android.sdk.platform>23</android.sdk.platform>
     <!-- The repository server for your android artifacts (e.g. Nexus instance
       in this example) -->
     <repo.id>android.repo</repo.id>
