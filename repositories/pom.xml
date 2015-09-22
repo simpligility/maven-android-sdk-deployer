@@ -42,6 +42,7 @@
                 <source>${repository.path}</source>
                 <target>${repo.url}</target>
                 <targetId>${repo.id}</targetId>
+                <excludes>NOTICE.txt,source.properties</excludes>
               </configuration>
             </execution>
           </executions>
