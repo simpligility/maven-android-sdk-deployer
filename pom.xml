@@ -33,6 +33,7 @@
     <sdk.addons.path>${android.sdk.path}/add-ons</sdk.addons.path>
     <sdk.extras.path>${android.sdk.path}/extras</sdk.extras.path>
     <sdk.extras.multidex.path>${sdk.extras.path}/android/support/multidex/library</sdk.extras.multidex.path>
+    <sdk.extras.customtabs.path>${sdk.extras.path}/android/support/customtabs</sdk.extras.customtabs.path>
     <sdk.extras.compatibility.path>${sdk.extras.path}/android/support</sdk.extras.compatibility.path>
     <sdk.extras.analytics.v1.path>${sdk.extras.path}/google/analytics_sdk</sdk.extras.analytics.v1.path>
     <sdk.extras.analytics.v2.path>${sdk.extras.path}/google/analytics_sdk_v2</sdk.extras.analytics.v2.path>
@@ -56,6 +57,8 @@
     <addon.android.gdk.artifactid>gdk</addon.android.gdk.artifactid>
     <extras.multidex.groupId>com.google.android.multidex</extras.multidex.groupId>
     <extras.multidex.artifactId>android-support-multidex</extras.multidex.artifactId>
+    <extras.customtabs.groupId>com.android.support</extras.customtabs.groupId>    
+    <extras.customtabs.artifactId>customtabs</extras.customtabs.artifactId>
     <extras.analytics.groupid>com.google.android.analytics</extras.analytics.groupid>
     <extras.analytics.artifactId>analytics</extras.analytics.artifactId>
     <extras.admob.groupid>com.google.android.admob</extras.admob.groupid>

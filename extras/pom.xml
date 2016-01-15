@@ -93,6 +93,7 @@
                 <module>play-licensing</module>
                 <module>play-apk-expansion</module>
                 <module>multidex</module>
+                <module>customtabs</module>
             </modules>
         </profile>
     </profiles>
