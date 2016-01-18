@@ -598,6 +598,15 @@ For Google Glass development
 </dependency>
 ```
 
+For Chrome Custom Tabs 
+See: https://developer.chrome.com/multidevice/android/customtabs
+
+<dependency>
+	<groupId>com.android.support</groupId>
+	<artifactId>customtabs</artifactId>
+	<version>23.1.1</version>
+</dependency>
+		
 To install only a specific module use
 
     mvn clean install -N
