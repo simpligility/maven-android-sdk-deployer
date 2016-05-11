@@ -150,6 +150,10 @@
                   <version>[3.1.1,)</version>
                   <message>Check for Maven version &gt;=3.1.1 failed. Upgrade your Maven installation.</message>
                 </requireMavenVersion>
+                <requireJavaVersion>
+                  <version>(,1.7]</version>
+                  <message>Java 8 is not yet supported.</message>
+                </requireJavaVersion>
               </rules>
             </configuration>
           </execution>
