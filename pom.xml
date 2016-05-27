@@ -40,8 +40,8 @@
     <sdk.extras.gcm.path>${sdk.extras.path}/google/gcm</sdk.extras.gcm.path>
     <sdk.extras.google.play.services.path>${sdk.extras.path}/google/google_play_services</sdk.extras.google.play.services.path>
     <sdk.extras.google.play.services.for.froyo.path>${sdk.extras.path}/google/google_play_services_froyo</sdk.extras.google.play.services.for.froyo.path>
-    <sdk.extras.google.play.apk.expansion.path>${sdk.extras.path}/google/play_apk_expansion</sdk.extras.google.play.apk.expansion.path>
-    <sdk.extras.google.play.licensing.path>${sdk.extras.path}/google/play_licensing</sdk.extras.google.play.licensing.path>
+    <sdk.extras.google.play.apk.expansion.path>${sdk.extras.path}/google/market_apk_expansion</sdk.extras.google.play.apk.expansion.path>
+    <sdk.extras.google.play.licensing.path>${sdk.extras.path}/google/market_licensing</sdk.extras.google.play.licensing.path>
     <sdk.tools.path>${android.sdk.path}/tools</sdk.tools.path>
     <sdk.tools.annotations.path>${android.sdk.path}/tools/support</sdk.tools.annotations.path>
     <platform.android.groupid>android</platform.android.groupid>
