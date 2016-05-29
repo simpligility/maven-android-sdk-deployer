@@ -45,6 +45,8 @@ Contributors (historical order..):
 - Mingfai Ma https://github.com/mingfai
 - Raphael Ackermann https://github.com/rtack sdk 21 fix for apklibs
 
+[![Build Status](https://travis-ci.org/simpligility/maven-android-sdk-deployer.png)](https://travis-ci.org/simpligility/maven-android-sdk-deployer.png)
+
 The Maven Android SDK Deployer is a helper maven project that can be
 used to install the libraries necessary to build Android applications
 with Maven and the Android Maven Plugin directly from your local

@@ -1,0 +1,30 @@
+sudo: false
+cache:
+  directories:
+  - $HOME/.m2
+jdk: oraclejdk7
+language: android
+android:
+  components:
+    - tools
+    - platform-tools
+    - build-tools-23.0.1
+    - build-tools-22.0.0
+    - build-tools-22.0.1
+    - build-tools-21.1.2
+    - build-tools-21.1.1
+    - android-23
+    - android-22
+    - android-21
+    - android-20
+    - android-19
+    - android-18
+    - android-17
+    - android-16
+    - android-15
+    - android-10
+    - extra-android-support
+    - extra-google-google_play_services
+    - extra-google-m2repository
+    - extra-android-m2repository
+script: mvn install
