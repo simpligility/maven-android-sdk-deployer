@@ -23,6 +23,7 @@ android:
     - android-16
     - android-15
     - android-10
+    - android-8
     - extra-android-support
     - extra-google-google_play_services
     - extra-google-m2repository
