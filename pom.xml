@@ -165,9 +165,9 @@
             </activation>
             <modules>
                 <module>repositories</module>
-                <module>extras</module>
+                <!-- <module>extras</module>  -->
                 <module>platforms</module>
-                <module>add-ons</module>
+                <!-- <module>add-ons</module>  -->
 				<!-- Deprecated tools as the only module 'annotation' is now part of the android sdk jar -->
                 <!-- <module>tools</module> -->
             </modules>
