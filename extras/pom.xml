@@ -85,9 +85,6 @@
 
 <!--                 <module>compatibility-v13</module> -->
 
-                <!--  deprecated by Google, will leave in for a while in case someone wants to manually activate and use it -->
-                <!-- <module>gcm</module>  -->
-                
                 <!--  currently broken with latest SDK -->
                 <!--  <module>google-play-services</module>  -->
 
