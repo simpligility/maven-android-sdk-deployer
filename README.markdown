@@ -1,6 +1,8 @@
 Maven Android SDK Deployer
 --------------------------
 
+[![Build Status](https://travis-ci.org/simpligility/maven-android-sdk-deployer.png)](https://travis-ci.org/simpligility/maven-android-sdk-deployer.png)
+
 Original author including numerous fixes and changes:
 
 Manfred Moser manfred@simpligility.com  at [simpligility technologies inc](http://www.simpligility.com)
@@ -45,7 +47,7 @@ Contributors (historical order..):
 - Mingfai Ma https://github.com/mingfai
 - Raphael Ackermann https://github.com/rtack sdk 21 fix for apklibs
 
-[![Build Status](https://travis-ci.org/simpligility/maven-android-sdk-deployer.png)](https://travis-ci.org/simpligility/maven-android-sdk-deployer.png)
+
 
 The Maven Android SDK Deployer is a helper maven project that can be
 used to install the libraries necessary to build Android applications
@@ -104,8 +106,6 @@ reading) to install all platforms and add-on apis
 
 To install only a certain sdk level use
 
-    mvn install -P 1.5
-    mvn install -P 1.6
     mvn install -P 2.1
     mvn install -P 2.2
     mvn install -P 2.3.3
@@ -140,8 +140,6 @@ For the core platforms providing the Android API use
 with versions of 
 
 ```xml
-  <version>1.5_r4</version>
-  <version>1.6_r3</version>
   <version>2.1_r3</version>
   <version>2.2_r3</version>
   <version>2.3.3_r2</version>
@@ -170,7 +168,7 @@ For the maps add ons use a dependency
 </dependency>
 ```
 
-with versions of 3_r3, 4_r2, 7_r1, 8_r2, 11_r1, 12_r1, 
+with versions of 7_r1, 8_r2, 11_r1, 12_r1, 
 13_r1, 14_r2, 15_r2, 16_r3, 17_r3, 18_r3, 19_r10, 21_r1
 
 For the usb add on
@@ -426,62 +424,6 @@ For the v7 mediarouter library additional dependencies (apklib & jar) are requir
 </dependency>
 ```
 
-For the Google Analytics extra (ATTENTION! Do NOT use provided scope!!) (Deprecated)
-See: https://developers.google.com/analytics/devguides/collection/android/v4/
-Google Analytics V2
-```xml
-<dependency>
-  <groupId>com.google.android.analytics</groupId>
-  <artifactId>analytics</artifactId>
-  <version>3.0.0</version>
-</dependency>
-```
-
-For the Google AdMob Ads extra (ATTENTION! Do NOT use provided scope!!) (Deprecated)
-See: http://googleadsdeveloper.blogspot.ca/2014/02/since-joining-google-play-services-back.html 
-
-```xml
-<dependency>
-  <groupId>com.google.android.admob</groupId>
-  <artifactId>admob</artifactId>
-  <version>6.4.1-r11.0.0</version>
-</dependency>
-```
-
-For the Google Cloud Messaging Library extra client library (ATTENTION! Do NOT use provided scope!!) (Deprecated)
-
-```xml
-<dependency>
-  <groupId>com.google.android.gcm</groupId>
-  <artifactId>gcm-client</artifactId>
-  <version>3.0.0</version>
-</dependency>
-```
-
-For the Google Cloud Messaging Library extra server library (ATTENTION! Do NOT use provided scope!!)
-
-You will need to run the extras/gcm module manually since it is deactivated
-due to GCM being deprecated by Google in the Android SDK.
-
-```xml
-<dependency>
-  <groupId>com.google.android.gcm</groupId>
-  <artifactId>gcm-server</artifactId>
-  <version>3.0.0</version>
-</dependency>
-```
-    
-For the Android annotations tools 
-
-```xml
-<dependency>
-  <groupId>com.google.android.annotations</groupId>
-  <artifactId>annotations</artifactId>
-  <version>22.6.2</version>
-  <scope>provided</scope>
-</dependency>
-```
-
 For the uiautomator jar
 
 ```xml
@@ -523,23 +465,6 @@ For the Google Play Services extra (ATTENTION! Do NOT use provided scope!!)
 </dependency>
 ```
 
-For the Google Play Services for Froyo extra (ATTENTION! Do NOT use provided scope!!)
-
-```xml
-<dependency>
-  <groupId>com.google.android.gms</groupId>
-  <artifactId>google-play-services-for-froyo</artifactId>
-  <version>12.0.0</version>
-  <type>apklib</type>
-</dependency>
-<dependency>
-  <groupId>com.google.android.gms</groupId>
-  <artifactId>google-play-services-for-froyo</artifactId>
-  <version>12.0.0</version>
-  <type>jar</type>
-</dependency>
-```
-
 For the Google Play APK Expansion extra (ATTENTION! Do NOT use provided scope!!)
 
 ```xml
@@ -565,38 +490,6 @@ For the Google Play Licensing extra (ATTENTION! Do NOT use provided scope!!)
   <artifactId>play-licensing</artifactId>
   <version>2.0.0</version>
   <type>apklib</type>
-</dependency>
-```
-
-For Google Glass development
-
-```xml
-<!-- For development on ICS with GDK -->
-<dependency>
-	<groupId>android</groupId>
-	<artifactId>android</artifactId>
-	<version>4.0.3_r3</version>
-	<scope>provided</scope>
-</dependency>
-<dependency>
-	<groupId>com.google.android.gdk</groupId>
-	<artifactId>gdk</artifactId>
-	<version>15_r2</version>
-	<scope>provided</scope>
-</dependency>
-
-<!-- For development on KitKat with GDK -->
-<dependency>
-    <groupId>android</groupId>
-    <artifactId>android</artifactId>
-    <version>4.4.2_r3</version>
-    <scope>provided</scope>
-</dependency>
-<dependency>
-    <groupId>com.google.android.gdk</groupId>
-    <artifactId>gdk</artifactId>
-    <version>19_r4</version>
-    <scope>provided</scope>
 </dependency>
 ```
 
