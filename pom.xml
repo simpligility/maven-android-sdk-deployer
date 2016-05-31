@@ -34,10 +34,6 @@
     <sdk.extras.path>${android.sdk.path}/extras</sdk.extras.path>
     <sdk.extras.multidex.path>${sdk.extras.path}/android/support/multidex/library</sdk.extras.multidex.path>
     <sdk.extras.compatibility.path>${sdk.extras.path}/android/support</sdk.extras.compatibility.path>
-    <sdk.extras.analytics.v1.path>${sdk.extras.path}/google/analytics_sdk</sdk.extras.analytics.v1.path>
-    <sdk.extras.analytics.v2.path>${sdk.extras.path}/google/analytics_sdk_v2</sdk.extras.analytics.v2.path>
-    <sdk.extras.admob.path>${sdk.extras.path}/google/admob_ads_sdk</sdk.extras.admob.path>
-    <sdk.extras.gcm.path>${sdk.extras.path}/google/gcm</sdk.extras.gcm.path>
     <sdk.extras.google.play.services.path>${sdk.extras.path}/google/google_play_services</sdk.extras.google.play.services.path>
     <sdk.extras.google.play.services.for.froyo.path>${sdk.extras.path}/google/google_play_services_froyo</sdk.extras.google.play.services.for.froyo.path>
     <sdk.extras.google.play.apk.expansion.path>${sdk.extras.path}/google/market_apk_expansion</sdk.extras.google.play.apk.expansion.path>
