@@ -87,7 +87,7 @@
 
   <issueManagement>
     <system>Github</system>
-    <url>http://github.com/mosabua/maven-android-sdk-deployer/issues</url>
+    <url>https://github.com/simpligility/maven-android-sdk-deployer/issues</url>
   </issueManagement>
   <mailingLists>
     <mailingList>
@@ -161,7 +161,7 @@
             </activation>
             <modules>
                 <module>repositories</module>
-                <!-- <module>extras</module>  -->
+                <module>extras</module>
                 <module>platforms</module>
                 <module>add-ons</module>
             </modules>
@@ -274,7 +274,7 @@
             <id>5.0</id>
             <modules>
                 <module>platforms</module>
-		        <module>add-ons</module>
+                <module>add-ons</module>
             </modules>
         </profile>
         <profile>
@@ -284,11 +284,11 @@
                 <module>add-ons</module>
             </modules>
         </profile>
-		<profile>
+        <profile>
             <id>6.0</id>
             <modules>
                 <module>platforms</module>
-				<module>add-ons</module>
+                <module>add-ons</module>
             </modules>
         </profile>
     </profiles>
