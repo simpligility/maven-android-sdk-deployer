@@ -59,24 +59,12 @@
                 <module>google-apis-17</module>
                 <module>google-apis-18</module>
                 <module>google-apis-19</module>
-				<module>google-apis-21</module>
+                <module>google-apis-21</module>
                 <module>google-apis-22</module>
-				<module>google-apis-23</module>
+                <module>google-apis-23</module>
                 <!-- This old GDK is deprecated -->
                 <!--<module>google-gdk-15</module>-->
                 <module>google-gdk-19</module>
-            </modules>
-        </profile>
-        <profile>
-            <id>1.5</id>
-            <modules>
-                <module>google-apis-3</module>
-            </modules>
-        </profile>
-        <profile>
-            <id>1.6</id>
-            <modules>
-                <module>google-apis-4</module>
             </modules>
         </profile>
         <profile>
