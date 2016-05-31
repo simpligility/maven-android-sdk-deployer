@@ -52,8 +52,8 @@
                 <activeByDefault>true</activeByDefault>
             </activation>
             <modules>
-                <module>google-apis-8</module>
-                <module>google-apis-10</module>
+                <!-- deprecated: <module>google-apis-8</module>  -->
+                <!-- deprecated: <module>google-apis-10</module> -->
                 <module>google-apis-15</module>
                 <module>google-apis-16</module>
                 <module>google-apis-17</module>

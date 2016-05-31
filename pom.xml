@@ -163,7 +163,7 @@
                 <module>repositories</module>
                 <!-- <module>extras</module>  -->
                 <module>platforms</module>
-                <!-- <module>add-ons</module>  -->
+                <module>add-ons</module>
             </modules>
         </profile>
         <profile>
