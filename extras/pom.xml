@@ -75,6 +75,7 @@
             </activation>
             <modules>
                 <!--  none of the compatibility modules are in the SDK anymore for me -->
+
 <!--                 <module>compatibility-v4</module> -->
 <!--                 <module>compatibility-v7-gridlayout</module> -->
 <!--                 <module>compatibility-v7-appcompat</module> -->
@@ -90,8 +91,13 @@
                 <!--  currently broken with latest SDK -->
                 <!--  <module>google-play-services</module>  -->
 
+<!-- seems to be all changed and called market-licensing now, needs to be refactored to work again -->
 <!--                 <module>play-licensing</module> -->
+
+<!-- seems to be all changed and called market-apk-expansion now, needs to be refactored to work again -->
 <!--                 <module>play-apk-expansion</module> -->
+
+<!-- seems to be all gone -->
 <!--                 <module>multidex</module> -->
             </modules>
         </profile>
