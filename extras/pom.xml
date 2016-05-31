@@ -74,7 +74,7 @@
                 <activeByDefault>true</activeByDefault>
             </activation>
             <modules>
-                <!--  none of the compatibility modules are in the SDK anymore for me -->
+                <!--  none of the compatibility modules are in the SDK anymore for me (2016-05)-->
 
 <!--                 <module>compatibility-v4</module> -->
 <!--                 <module>compatibility-v7-gridlayout</module> -->
@@ -85,16 +85,13 @@
 
 <!--                 <module>compatibility-v13</module> -->
 
-                <!--  currently broken with latest SDK -->
+                <!--  currently broken with latest SDK, seems to be very changed a lot (2016-05)-->
                 <!--  <module>google-play-services</module>  -->
 
-<!-- seems to be all changed and called market-licensing now, needs to be refactored to work again -->
-<!--                 <module>play-licensing</module> -->
+                 <module>play-licensing</module>
+                 <module>play-apk-expansion</module> 
 
-<!-- seems to be all changed and called market-apk-expansion now, needs to be refactored to work again -->
-<!--                 <module>play-apk-expansion</module> -->
-
-<!-- seems to be all gone -->
+<!-- seems to be all gone (2016-05 )-->
 <!--                 <module>multidex</module> -->
             </modules>
         </profile>
