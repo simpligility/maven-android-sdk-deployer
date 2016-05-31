@@ -88,8 +88,13 @@
                 <!--  currently broken with latest SDK, seems to be very changed a lot (2016-05)-->
                 <!--  <module>google-play-services</module>  -->
 
-                 <module>play-licensing</module>
-                 <module>play-apk-expansion</module> 
+                 <!--  these following two work with Google Play Licensing Library package
+                  and Google Play APK Expansion Library package installed 
+                  see https://developer.android.com/google/play/expansion-files.html#AboutLibraries
+                  but not sure how to get it installed on the command line or in travis
+                  therefore commenting out here -->
+<!--                  <module>play-licensing</module>  -->
+<!--                  <module>play-apk-expansion</module>  -->
 
 <!-- seems to be all gone (2016-05 )-->
 <!--                 <module>multidex</module> -->
