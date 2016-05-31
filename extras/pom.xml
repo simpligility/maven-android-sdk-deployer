@@ -47,27 +47,25 @@
                         </sourceFileExcludes>
                     </configuration>
                 </plugin>
+                <plugin>
+                    <groupId>org.codehaus.mojo</groupId>
+                    <artifactId>properties-maven-plugin</artifactId>
+                    <executions>
+                        <execution>
+                            <phase>initialize</phase>
+                            <goals>
+                                <goal>read-project-properties</goal>
+                            </goals>
+                            <configuration>
+                                <files>
+                                    <file>${sdk.extras.compatibility.path}/source.properties</file>
+                                </files>
+                            </configuration>
+                        </execution>
+                    </executions>
+                </plugin>
             </plugins>
         </pluginManagement>
-        <plugins>
-            <plugin>
-                <groupId>org.codehaus.mojo</groupId>
-                <artifactId>properties-maven-plugin</artifactId>
-                <executions>
-                    <execution>
-                        <phase>initialize</phase>
-                        <goals>
-                            <goal>read-project-properties</goal>
-                        </goals>
-                        <configuration>
-                            <files>
-                                <file>${sdk.extras.compatibility.path}/source.properties</file>
-                            </files>
-                        </configuration>
-                    </execution>
-                </executions>
-            </plugin>
-        </plugins>
     </build>
     <profiles>
         <profile>
@@ -76,23 +74,32 @@
                 <activeByDefault>true</activeByDefault>
             </activation>
             <modules>
-                <module>compatibility-v4</module>
-                <module>compatibility-v7-gridlayout</module>
-                <module>compatibility-v7-appcompat</module>
+                <!--  none of the compatibility modules are in the SDK anymore for me -->
+<!--                 <module>compatibility-v4</module> -->
+<!--                 <module>compatibility-v7-gridlayout</module> -->
+<!--                 <module>compatibility-v7-appcompat</module> -->
+
                 <!--  commented out since it currently breaks on Mac OSX -->
                 <!-- <module>compatibility-v7-mediarouter</module> -->
-                <module>compatibility-v13</module>
+
+<!--                 <module>compatibility-v13</module> -->
+
                 <!--  deprecated by Google, will leave in for a while in case someone wants to manually activate and use it -->
                 <!-- <module>analytics-v2</module> -->
+
                 <!--  deprecated by Google with Aug 2014, but still available for download
                 might remove then, see http://googleadsdeveloper.blogspot.ca/2014/02/since-joining-google-play-services-back.html  -->
                 <!--  <module>admob-ads-sdk</module> -->
+
                 <!--  deprecated by Google, will leave in for a while in case someone wants to manually activate and use it -->
                 <!-- <module>gcm</module>  -->
-                <!--<module>google-play-services</module>-->
-                <module>play-licensing</module>
-                <module>play-apk-expansion</module>
-                <module>multidex</module>
+                
+                <!--  currently broken with latest SDK -->
+                <!--  <module>google-play-services</module>  -->
+
+<!--                 <module>play-licensing</module> -->
+<!--                 <module>play-apk-expansion</module> -->
+<!--                 <module>multidex</module> -->
             </modules>
         </profile>
     </profiles>
