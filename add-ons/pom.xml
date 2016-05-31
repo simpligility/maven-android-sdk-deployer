@@ -64,7 +64,7 @@
                 <module>google-apis-23</module>
                 <!-- This old GDK is deprecated -->
                 <!--<module>google-gdk-15</module>-->
-                <module>google-gdk-19</module>
+                <!-- <module>google-gdk-19</module>  -->
             </modules>
         </profile>
         <profile>
