@@ -46,6 +46,7 @@ Contributors (historical order..):
 - Quentin Rousseau https://github.com/kwent
 - Mingfai Ma https://github.com/mingfai
 - Raphael Ackermann https://github.com/rtack sdk 21 fix for apklibs
+- Daniel Passos https://github.com/danielpassos - Google API 24
 
 
 
@@ -121,6 +122,8 @@ To install only a certain sdk level use
     mvn install -P 4.4W
     mvn install -P 5.0
     mvn install -P 5.1
+    mvn install -P 6.0
+    mvn install -P 7.0
     mvn install -P MNC
 
 As a result you should find the android.jar and maps.jar and a number of other
@@ -155,6 +158,8 @@ with versions of
   <version>4.4W.2_r2</version>
   <version>5.0_r2</version>
   <version>5.1_r1</version>
+  <version>6.0_r3</version>
+  <version>7.0_r2</version>
 ```
 
 For the maps add ons use a dependency
