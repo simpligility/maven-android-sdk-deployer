@@ -100,5 +100,11 @@
 <!--                 <module>multidex</module> -->
             </modules>
         </profile>
+        <profile>
+            <id>compat-only</id>
+            <modules>
+                <module>compatibility-v4</module>
+            </modules>
+        </profile>
     </profiles>
 </project>
