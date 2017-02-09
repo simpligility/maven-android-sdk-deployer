@@ -62,6 +62,7 @@
                 <module>android-22</module>
                 <module>android-23</module>
                 <module>android-24</module>
+                <module>android-25</module>
             </modules>
         </profile>
         <profile>
@@ -164,6 +165,12 @@
             <id>7.0</id>
             <modules>
                 <module>android-24</module>
+            </modules>
+        </profile>
+        <profile>
+            <id>7.1</id>
+            <modules>
+                <module>android-25</module>
             </modules>
         </profile>
         <profile>
