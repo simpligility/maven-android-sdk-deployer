@@ -280,5 +280,11 @@
                 <module>add-ons</module>
             </modules>
         </profile>
+        <profile>
+            <id>7.1</id>
+            <modules>
+                <module>platforms</module>
+            </modules>
+        </profile>
     </profiles>
 </project>
