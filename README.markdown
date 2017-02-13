@@ -47,7 +47,7 @@ Contributors (historical order..):
 - Mingfai Ma https://github.com/mingfai
 - Raphael Ackermann https://github.com/rtack sdk 21 fix for apklibs
 - Daniel Passos https://github.com/danielpassos - Google API 24
-
+- Edda Björk Konráðsdóttir, Android 7.1 API 25
 
 
 The Maven Android SDK Deployer is a helper maven project that can be
