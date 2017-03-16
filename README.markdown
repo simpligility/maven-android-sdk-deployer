@@ -48,7 +48,7 @@ Contributors (historical order..):
 - Raphael Ackermann https://github.com/rtack sdk 21 fix for apklibs
 - Daniel Passos https://github.com/danielpassos - Google API 24
 - Edda Björk Konráðsdóttir, Android 7.1 API 25
-
+- Alexander Berezovsky https://github.com/alezandr - Android API 15 & 25 sources
 
 The Maven Android SDK Deployer is a helper maven project that can be
 used to install the libraries necessary to build Android applications
