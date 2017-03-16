@@ -30,7 +30,7 @@
                             <goal>jar</goal>
                         </goals>
                         <configuration>
-                            <classesDirectory>${android.sdk.path}/sources/android-24</classesDirectory>
+                            <classesDirectory>${android.sdk.path}/sources/android-25</classesDirectory>
                             <includes>
                                 <include>**/*</include>
                             </includes>
