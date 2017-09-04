@@ -8,13 +8,16 @@ android:
   components:
     - tools
     - platform-tools
+    - build-tools-26.0.1
     - build-tools-23.0.1
     - build-tools-22.0.0
     - build-tools-22.0.1
     - build-tools-21.1.2
     - build-tools-21.1.1
+    - android-26
     - android-25
     - android-24
+    - addon-google_apis-google-26
     - addon-google_apis-google-24
     - android-23
     - addon-google_apis-google-23

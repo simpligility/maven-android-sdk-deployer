@@ -2,47 +2,72 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.simpligility.android.sdk-deployer</groupId>
-    <artifactId>google-apis-10</artifactId>
+    <artifactId>android-26</artifactId>
     <packaging>pom</packaging>
-    <name>Android Add-On Google Platform 2.3.3 API 10 (Maps and USB)</name>
+    <name>Android Platform 8.0 API 26</name>
 
     <parent>
         <groupId>com.simpligility.android.sdk-deployer</groupId>
-        <artifactId>android-add-ons</artifactId>
+        <artifactId>android-platforms</artifactId>
         <version>2.10.0</version>
     </parent>
 
     <properties>
-        <jar.simpleVersion>10</jar.simpleVersion>
+        <jar.simpleVersion>8.0</jar.simpleVersion>
     </properties>
+
 
     <build>
         <plugins>
+
+            <plugin>
+                <artifactId>maven-jar-plugin</artifactId>
+                <version>2.4</version>
+                <executions>
+                    <execution>
+                        <phase>generate-resources</phase>
+                        <goals>
+                            <goal>jar</goal>
+                        </goals>
+                        <configuration>
+                            <classesDirectory>${android.sdk.path}/sources/android-26</classesDirectory>
+                            <includes>
+                                <include>**/*</include>
+                            </includes>
+                            <finalName>android-sources</finalName>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+
+
             <plugin>
                 <artifactId>maven-install-plugin</artifactId>
                 <executions>
                     <execution>
-                        <id>maps</id>
+                        <id>android-jar</id>
                         <phase>install</phase>
                         <goals><goal>install-file</goal></goals>
                         <configuration>
-                            <groupId>${addon.googlemaps.groupid}</groupId>
-                            <artifactId>${addon.googlemaps.artifactid}</artifactId>
+                            <groupId>${platform.android.groupid}</groupId>
+                            <artifactId>${platform.android.artifactid}</artifactId>
                             <packaging>jar</packaging>
                             <version>${jar.version}</version>
                             <file>${jar.path}</file>
+                            <javadoc>${javadoc.path}</javadoc>
+	                        <sources>${project.build.directory}/android-sources.jar</sources>
                         </configuration>
                     </execution>
                     <execution>
-                        <id>usb</id>
+                        <id>uiautomator-jar</id>
                         <phase>install</phase>
                         <goals><goal>install-file</goal></goals>
                         <configuration>
-                            <groupId>${addon.android.future.usb.groupid}</groupId>
-                            <artifactId>${addon.android.future.usb.artifactid}</artifactId>
+                            <groupId>${platform.uiautomator.groupid}</groupId>
+                            <artifactId>${platform.uiautomator.artifactid}</artifactId>
                             <packaging>jar</packaging>
                             <version>${jar.version}</version>
-                            <file>${usb.jar.path}</file>
+                            <file>${uiautomator.path}</file>
                         </configuration>
                     </execution>
                 </executions>
@@ -51,35 +76,38 @@
                 <artifactId>maven-deploy-plugin</artifactId>
                 <executions>
                     <execution>
-                        <id>maps</id>
+                        <id>android-jar</id>
                         <phase>deploy</phase>
                         <goals><goal>deploy-file</goal></goals>
                         <configuration>
-                            <groupId>${addon.googlemaps.groupid}</groupId>
-                            <artifactId>${addon.googlemaps.artifactid}</artifactId>
+                            <groupId>${platform.android.groupid}</groupId>
+                            <artifactId>${platform.android.artifactid}</artifactId>
                             <packaging>jar</packaging>
                             <version>${jar.version}</version>
                             <file>${jar.path}</file>
                             <url>${repo.url}</url>
                             <repositoryId>${repo.id}</repositoryId>
+                            <javadoc>${javadoc.path}</javadoc>
+	                        <sources>${project.build.directory}/android-sources.jar</sources>
                         </configuration>
                     </execution>
                     <execution>
-                        <id>usb</id>
+                        <id>uiautomator-jar</id>
                         <phase>deploy</phase>
                         <goals><goal>deploy-file</goal></goals>
                         <configuration>
-                            <groupId>${addon.android.future.usb.groupid}</groupId>
-                            <artifactId>${addon.android.future.usb.artifactid}</artifactId>
+                            <groupId>${platform.uiautomator.groupid}</groupId>
+                            <artifactId>${platform.uiautomator.artifactid}</artifactId>
                             <packaging>jar</packaging>
                             <version>${jar.version}</version>
-                            <file>${usb.jar.path}</file>
+                            <file>${uiautomator.path}</file>
                             <url>${repo.url}</url>
                             <repositoryId>${repo.id}</repositoryId>
                         </configuration>
                     </execution>
                 </executions>
             </plugin>
+
             <plugin>
                 <groupId>org.codehaus.mojo</groupId>
                 <artifactId>properties-maven-plugin</artifactId>
