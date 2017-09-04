@@ -49,6 +49,7 @@ Contributors (historical order..):
 - Daniel Passos https://github.com/danielpassos - Google API 24
 - Edda Björk Konráðsdóttir, Android 7.1 API 25
 - Alexander Berezovsky https://github.com/alezandr - Android API 15 & 25 sources
+- Alix Warnke, Android 8.0 API 26
 
 The Maven Android SDK Deployer is a helper maven project that can be
 used to install the libraries necessary to build Android applications
@@ -124,6 +125,8 @@ To install only a certain sdk level use
     mvn install -P 5.1
     mvn install -P 6.0
     mvn install -P 7.0
+    mvn install -P 7.1
+    mvn install -P 8.0
     mvn install -P MNC
 
 As a result you should find the android.jar and maps.jar and a number of other
