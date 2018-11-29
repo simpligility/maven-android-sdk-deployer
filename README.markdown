@@ -50,6 +50,7 @@ Contributors (historical order..):
 - Edda Björk Konráðsdóttir, Android 7.1 API 25
 - Alexander Berezovsky https://github.com/alezandr - Android API 15 & 25 sources
 - Alix Warnke, Android 8.0 API 26
+- Zsolt Fatér, https://github.com/zsoltii - Android 8.1 API 27, Android 9.0 API 28, adding repositories/extras-m2repository, fixes for add-ons
 
 The Maven Android SDK Deployer is a helper maven project that can be
 used to install the libraries necessary to build Android applications
@@ -127,6 +128,8 @@ To install only a certain sdk level use
     mvn install -P 7.0
     mvn install -P 7.1
     mvn install -P 8.0
+    mvn install -P 8.1
+    mvn install -P 9.0
     mvn install -P MNC
 
 As a result you should find the android.jar and maps.jar and a number of other
@@ -163,6 +166,10 @@ with versions of
   <version>5.1_r1</version>
   <version>6.0_r3</version>
   <version>7.0_r2</version>
+  <version>7.1.1_r3</version>
+  <version>8.0.0_r2</version>
+  <version>8.1.0_r3</version>
+  <version>9_r6</version>
 ```
 
 For the maps add ons use a dependency
