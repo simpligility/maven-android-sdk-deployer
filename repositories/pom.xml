@@ -61,6 +61,7 @@
       <modules>
         <module>google-m2repository</module>
         <module>android-m2repository</module>
+        <module>extras-m2repository</module>
       </modules>
     </profile>
   </profiles>

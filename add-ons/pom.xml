@@ -35,7 +35,8 @@
                             </goals>
                             <configuration>
                                 <files>
-                                    <file>${sdk.addons.path}/${addon.directory}/source.properties</file>
+                                    <!--<file>${sdk.addons.path}/${addon.directory}/source.properties</file>-->
+                                    <file>${project.basedir}/source.properties</file>
                                 </files>
                             </configuration>
                         </execution>
