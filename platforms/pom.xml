@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
-	<modelVersion>4.0.0</modelVersion>
-	<groupId>com.simpligility.android.sdk-deployer</groupId>
-	<artifactId>android-platforms</artifactId>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>com.simpligility.android.sdk-deployer</groupId>
+    <artifactId>android-platforms</artifactId>
     <packaging>pom</packaging>
     <name>Android Platforms</name>
 
@@ -50,6 +51,29 @@
             <activation>
                 <activeByDefault>true</activeByDefault>
             </activation>
+            <modules>
+                <module>android-8</module>
+                <module>android-10</module>
+                <module>android-15</module>
+                <module>android-16</module>
+                <module>android-17</module>
+                <module>android-18</module>
+                <module>android-19</module>
+                <module>android-21</module>
+                <module>android-22</module>
+                <module>android-23</module>
+                <module>android-24</module>
+                <module>android-25</module>
+                <module>android-26</module>
+                <!-- Travis-CI Android SDK not contains API-27 and API-28
+                 If you want to use allLocal profile
+                 -->
+                <!--<module>android-27</module>-->
+                <!--<module>android-28</module>-->
+            </modules>
+        </profile>
+        <profile>
+            <id>allLocal</id>
             <modules>
                 <module>android-8</module>
                 <module>android-10</module>
@@ -122,48 +146,48 @@
                 <module>android-16</module>
             </modules>
         </profile>
-		<profile>
+        <profile>
             <id>4.2</id>
             <modules>
                 <module>android-17</module>
             </modules>
         </profile>
-		<profile>
+        <profile>
             <id>4.3</id>
             <modules>
                 <module>android-18</module>
             </modules>
         </profile>
-		<profile>
+        <profile>
             <id>4.4</id>
             <modules>
                 <module>android-19</module>
             </modules>
         </profile>
-		<profile>
+        <profile>
             <id>4.4W</id>
             <modules>
                 <module>android-20</module>
             </modules>
         </profile>
-		<profile>
+        <profile>
             <id>5.0</id>
             <modules>
                 <module>android-21</module>
             </modules>
         </profile>
-		<profile>
-			<id>5.1</id>
-			<modules>
-				<module>android-22</module>
-			</modules>
-		</profile>
-		<profile>
-			<id>6.0</id>
-			<modules>
-				<module>android-23</module>
-			</modules>
-		</profile>
+        <profile>
+            <id>5.1</id>
+            <modules>
+                <module>android-22</module>
+            </modules>
+        </profile>
+        <profile>
+            <id>6.0</id>
+            <modules>
+                <module>android-23</module>
+            </modules>
+        </profile>
         <profile>
             <id>7.0</id>
             <modules>
