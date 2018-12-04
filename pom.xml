@@ -292,5 +292,17 @@
                 <module>platforms</module>
             </modules>
         </profile>
+        <profile>
+            <id>8.1</id>
+            <modules>
+                <module>platforms</module>
+            </modules>
+        </profile>
+        <profile>
+            <id>9.0</id>
+            <modules>
+                <module>platforms</module>
+            </modules>
+        </profile>
     </profiles>
 </project>
