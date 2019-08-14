@@ -70,6 +70,7 @@
                  -->
                 <!--<module>android-27</module>-->
                 <!--<module>android-28</module>-->
+                <!--<module>android-29</module>-->
             </modules>
         </profile>
         <profile>
@@ -90,6 +91,7 @@
                 <module>android-26</module>
                 <module>android-27</module>
                 <module>android-28</module>
+                <module>android-29</module>
             </modules>
         </profile>
         <profile>
@@ -216,6 +218,12 @@
             <id>9.0</id>
             <modules>
                 <module>android-28</module>
+            </modules>
+        </profile>
+        <profile>
+            <id>10.0</id>
+            <modules>
+                <module>android-29</module>
             </modules>
         </profile>
         <profile>
