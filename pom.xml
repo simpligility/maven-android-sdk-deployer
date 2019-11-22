@@ -304,5 +304,11 @@
                 <module>platforms</module>
             </modules>
         </profile>
+        <profile>
+            <id>10.0</id>
+            <modules>
+                <module>platforms</module>
+            </modules>
+        </profile>
     </profiles>
 </project>
