@@ -71,6 +71,11 @@
                 <!--<module>android-27</module>-->
                 <!--<module>android-28</module>-->
                 <!--<module>android-29</module>-->
+                <!--<module>android-30</module>-->
+                <!--<module>android-31</module>-->
+                <!--<module>android-32</module>-->
+                <!--<module>android-33</module>-->
+                <!--<module>android-34</module>-->
             </modules>
         </profile>
         <profile>
@@ -92,6 +97,11 @@
                 <module>android-27</module>
                 <module>android-28</module>
                 <module>android-29</module>
+                <module>android-30</module>
+                <module>android-31</module>
+                <module>android-32</module>
+                <module>android-33</module>
+                <module>android-34</module>
             </modules>
         </profile>
         <profile>
@@ -224,6 +234,36 @@
             <id>10.0</id>
             <modules>
                 <module>android-29</module>
+            </modules>
+        </profile>
+        <profile>
+            <id>11.0</id>
+            <modules>
+                <module>android-30</module>
+            </modules>
+        </profile>
+        <profile>
+            <id>12.0</id>
+            <modules>
+                <module>android-31</module>
+            </modules>
+        </profile>
+        <profile>
+            <id>12L</id>
+            <modules>
+                <module>android-32</module>
+            </modules>
+        </profile>
+        <profile>
+            <id>13.0</id>
+            <modules>
+                <module>android-33</module>
+            </modules>
+        </profile>
+        <profile>
+            <id>14.0</id>
+            <modules>
+                <module>android-34</module>
             </modules>
         </profile>
         <profile>
